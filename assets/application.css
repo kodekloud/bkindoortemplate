@@ -1774,7 +1774,7 @@ table th[class*="col-"] {
   background-color: #ebcccc;
 }
 @media (max-width: 767px) {
-    body{
+    .main_window{
         width:100%;
     }
     .footer_text{
