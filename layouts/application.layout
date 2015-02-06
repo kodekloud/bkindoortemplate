@@ -82,7 +82,8 @@
 <style>
     /*custom styles*/
     .site_welcome_msg{
-        
+        font-size:22px;
+        color:#6b6b6b;
     }
 </style>
 </head>
