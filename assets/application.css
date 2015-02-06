@@ -484,6 +484,12 @@ body {
     display:block;
     background:white;
 }
+.footer_div{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:600px;
+}
 input,
 button,
 select,
@@ -1779,6 +1785,10 @@ table th[class*="col-"] {
     }
     .footer_text{
         width:auto !important;
+    }
+    
+    .footer_div{
+        width:100%;
     }
     
     #search_input{
