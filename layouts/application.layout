@@ -84,10 +84,12 @@
     .site_welcome_msg{
         font-size:22px !important;
         color:#6b6b6b;
+        margin-top:0 !important;
     }
     .site_description{
         font-size:15px !important;
         line-height:20px !important;
+        margin-bottom:0 !important;
     }
 </style>
 </head>
