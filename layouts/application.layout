@@ -102,6 +102,9 @@
     #social_media_wrapper a{
         color:black;
     }
+    #social_media_wrapper a:hover{
+        color:black;
+    }
 </style>
 </head>
 <body>
