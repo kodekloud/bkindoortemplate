@@ -94,6 +94,10 @@
         line-height:20px !important;
         margin-bottom:0 !important;
     }
+    /*social media box color*/
+    #social_media_wrapper{
+        background:black !important;
+    }
 </style>
 </head>
 <body>
