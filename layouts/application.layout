@@ -79,6 +79,10 @@
     sessionStorage.setItem('primary_locale', 'en-CA');
     sessionStorage.setItem('secondary_locale', 'fr-CA');
 </script>
+<style>
+    /*custom styles*/
+    
+</style>
 </head>
 <body>
 <header>
