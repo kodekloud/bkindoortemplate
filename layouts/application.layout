@@ -196,8 +196,6 @@
                         <label for="search_input" style="display:none">Search</label>
                         <input style="color:black;width:265px" type="text" id="search_input" class="search_input" placeholder="Search"><button class="search_button"><img alt="Search" src="http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/70483e4f30054855ef30b8872dc7948d/icon_search.png"/></button>
                     </div>
-                 </div>
-                 <div class="footer_teaser col-sm-4 col-md-4">
                     <div class="search-results" id="search_results" style="display:none">
                         <!-- START MUSTACHE TEMPLATE FOR EVENT ITEM WITH AN IMAGE-->
                         <script id="search_results_template" type="x-tmpl-mustache/text">{% raw %}
@@ -254,6 +252,9 @@
                             </div>
                         </ul>
                     </div>
+                 </div>
+                 <div class="footer_teaser col-sm-4 col-md-4">
+                    
                  </div>
                  
             </div>
