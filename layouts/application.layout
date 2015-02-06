@@ -177,6 +177,9 @@
                     <br>
                 </form>
             </div>
+                <div class="footer_teaser col-sm-1 col-md-1">
+                    
+                 </div>
                 <div class="footer_teaser">
                     <div id="footer_container">
                         <script id="footer_template" type="x-tmpl-mustache/text">
