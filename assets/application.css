@@ -488,7 +488,8 @@ body {
     display:block;
     margin-left:auto;
     margin-right:auto;
-    width:600px;
+    width:800px;
+    position:relative;
 }
 .footer_teaser{}
 input,
