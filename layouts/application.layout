@@ -85,6 +85,9 @@
         font-size:22px !important;
         color:#6b6b6b;
     }
+    .site_description{
+        font-size:15px !important;
+    }
 </style>
 </head>
 <body>
