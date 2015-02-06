@@ -81,6 +81,9 @@
 </script>
 <style>
     /*custom styles*/
+    body{
+        background:#313131 !important;
+    }
     .site_welcome_msg{
         font-size:22px !important;
         color:#6b6b6b;
