@@ -491,7 +491,11 @@ body {
     width:800px;
     position:relative;
 }
-.footer_teaser{}
+.footer_teaser{
+    width:48%;
+    display:inline-block;
+    vertical-align:top;
+}
 input,
 button,
 select,
