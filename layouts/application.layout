@@ -185,8 +185,7 @@
                         <p class="footer_text" style="width:300px;font-size:17px">
                         {{address1}}</br>
                         {{city}}, {{province_state}}
-                        </br>
-                        </br>
+                    
                         </p>
                         <p><i class="fa fa-phone"></i> {{contact_phone}}</p>
                         <p><i class="fa fa-envelope"></i> <a href="mailto:{{contact_email}}">{{contact_email}}</a></p>
