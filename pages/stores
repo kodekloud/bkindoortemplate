@@ -17,6 +17,14 @@
     <div class="page_banner">
         store directory
     </div>
+    <div class="inside_page_content">
+        <div class="left_column">
+            
+        </div>
+        <div class="right_column">
+            
+        </div>
+    </div>
 </div>
 <div style="display:none">
 <div class="full_page_photo" style="overflow:hidden">
