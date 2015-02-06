@@ -52,7 +52,10 @@
 </div>
 <script>
     $(window).load(function() {
-        $('.flexslider').flexslider();
+        $('.flexslider').flexslider({
+              animation: "slide",
+              controlsContainer: ".flex-container"
+        });
       });
 
     $(document).ready(function() {
