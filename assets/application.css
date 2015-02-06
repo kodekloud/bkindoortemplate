@@ -370,7 +370,8 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 }
 
 .feature_div{
-    
+    width:266px;
+    display:inline-block;
 }
 @media print {
   * {
