@@ -82,7 +82,7 @@
 <style>
     /*custom styles*/
     body{
-        background:#313131 !important;
+        background:#313131;
     }
     .site_welcome_msg{
         font-size:22px !important;
