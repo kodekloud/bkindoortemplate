@@ -391,10 +391,10 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     text-transform:uppercase;
 }
 
-.loading_screen {
+#loading_screen {
     
 }
-.loading_screen img{
+#loading_screen img{
     
 }
 @media print {
