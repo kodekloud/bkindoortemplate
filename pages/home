@@ -56,7 +56,7 @@
 </div>
 <script>
     
-    $( "div.portfolio_strict > div:nth-child(3)").css( "margin-right","0" );
+    $( "div.portfolio_strict > div:nth-child(2)").css( "margin-right","0" );
     $(document).ready(function() {
    
        
