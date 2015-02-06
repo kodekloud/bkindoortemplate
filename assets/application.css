@@ -474,9 +474,11 @@ body {
   line-height: 1.42857143;
   color: #333333;
   background-color: #ffffff;
-  width:960px;
   margin-left:auto;
   margin-right:auto;
+}
+.main_window{
+    width:960px;
 }
 input,
 button,
