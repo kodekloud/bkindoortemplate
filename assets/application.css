@@ -390,6 +390,13 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     font-size:28px;
     text-transform:uppercase;
 }
+
+.loading_screen {
+    
+}
+.loading_screen img{
+    
+}
 @media print {
   * {
     text-shadow: none !important;
