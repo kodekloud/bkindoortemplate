@@ -96,7 +96,7 @@
     }
     /*social media box color*/
     #social_media_wrapper{
-        background:black !important;
+        background:black;
     }
     /*social media icon inner color*/
     #social_media_wrapper a{
