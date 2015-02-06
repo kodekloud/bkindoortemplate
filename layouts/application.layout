@@ -86,7 +86,6 @@
     }
     .site_welcome_msg{
         font-size:22px !important;
-        color:#6b6b6b;
         margin-top:0 !important;
         line-height:20px !important;
     }
