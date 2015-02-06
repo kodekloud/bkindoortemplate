@@ -52,7 +52,7 @@
      </div>
 </div>
 <script>
-    $("#feature_items > :nth-child(3n)").css("height","1000px");
+    
     $(document).ready(function() {
    
        
@@ -64,6 +64,7 @@
             renderBanner('#banner_template','#home_banner',repoList);
             renderFeatureItems('#feature_template', '#feature_items', featureList)
             renderPropertyDescription('#description_template','#description_section', propertyDetails )
+            $("#feature_items > :nth-child(3n)").css("height","1000px");
         }
         
         function renderPropertyDescription(description_template, description_section, propertyDetails){
