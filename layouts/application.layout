@@ -98,6 +98,10 @@
     #social_media_wrapper{
         background:black !important;
     }
+    /*social media icon inner color*/
+    #social_media_wrapper a{
+        color:black;
+    }
 </style>
 </head>
 <body>
