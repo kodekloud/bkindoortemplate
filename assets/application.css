@@ -366,7 +366,9 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 }
 
 #feature_items{
-    margin-top:57px;
+    margin:57px;
+    margin-left:57px;
+    margin-right:57px;
 }
 
 .feature_div{
