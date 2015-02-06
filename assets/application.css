@@ -397,6 +397,31 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 #loading_screen img{
     margin-top:50px;
 }
+
+/********************inside page CSS*****************************/
+.inside_page_content{
+    width:852px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:32px;
+}
+.left_column{
+    width:562px;
+    margin-right:39px;
+    display:inline-block;
+}
+.right_column{
+    margin-left:39px;
+    display:inline-block;
+    
+}
+
+.inside_banner_image{
+    height:192px;
+    width:532px;
+    margin-bottom:36px;
+}
 @media print {
   * {
     text-shadow: none !important;
