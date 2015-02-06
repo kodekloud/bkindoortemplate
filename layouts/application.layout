@@ -180,7 +180,9 @@
                     <br>
                 </form>
             </div>
-                
+                <div class="footer_teaser col-sm-2 col-md-2">
+                    
+                 </div>
                 <div class="footer_teaser col-sm-4 col-md-4">
                     <div id="footer_container">
                         <script id="footer_template" type="x-tmpl-mustache/text">
