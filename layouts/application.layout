@@ -84,6 +84,16 @@
     body{
         background:#313131;
     }
+    
+    /*menu colors*/
+    .navbar .nav li a{
+        color:yellow;
+    }
+    
+    .navbar .nav li a:hover,.navbar .nav li a:active{
+        color:red;
+    }
+    
     .site_welcome_msg{
         font-size:22px !important;
         margin-top:0 !important;
