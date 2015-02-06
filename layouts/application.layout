@@ -160,7 +160,7 @@
     <section id="footer_teasers_wrapper">
         
         <div class="container">
-            <div class="row">
+            <div class="row footer_div">
             <div class="footer_teaser col-sm-4 col-md-4">
                 <h3 class="footer_text" style="font-size:17px;width:300px;text-align:center">Sign up and save</h3>
                 <p class="footer_text" style="width:300px;font-size:17px">Join our list and stay connected to be the first to hear about special sales & exclusive events!</p>
