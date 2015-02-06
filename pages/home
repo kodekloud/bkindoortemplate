@@ -34,7 +34,7 @@
                          <div class="portfolio_item wow animated flipInX"> <a href="http://{{url}}" data-path-hover="M 180,190 0,158 0,0 180,0 z">
                               
                               <figure >
-                                   <img src="{{image_url}}" />
+                                   <img class="feature_image" src="{{image_url}}" />
                                    <figcaption>
                                         <!-- <p>{{description}}</p> -->
                                         <div class="view_button">View</div>
