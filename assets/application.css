@@ -382,6 +382,10 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     width:266px;
     border:1.5px solid white;
 }
+
+.page_banner{
+    
+}
 @media print {
   * {
     text-shadow: none !important;
