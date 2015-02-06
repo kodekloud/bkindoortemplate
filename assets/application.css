@@ -6196,8 +6196,7 @@ header .container {
 }
 .navbar a.navbar-brand {
   margin: 0px 0;
-  padding-top: 20px;
-  padding-bottom: 0px;
+  padding: 0;
   overflow: hidden;
   width: 315px;
   height: 90px;
