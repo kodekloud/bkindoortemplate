@@ -56,7 +56,7 @@
 </div>
 <script>
     
-    $( "#feature_items feature_div:nth-child(2)" ).css( "margin-right","0" );
+    $( "#feature_items div:nth-child(2)" ).css( "margin-right","0" );
     $(document).ready(function() {
    
        
