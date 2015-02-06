@@ -182,10 +182,12 @@
                         <script id="footer_template" type="x-tmpl-mustache/text">
                         {% raw %}
                         <h3 class="footer_text" style="font-size:17px;width:300px;">{{name}}</h3>
+                        <p class="footer_text" style="width:300px;font-size:17px">
                         {{address1}}</br>
                         {{city}}, {{province_state}}
                         </br>
                         </br>
+                        </p>
                         <p><i class="fa fa-phone"></i> {{contact_phone}}</p>
                         <p><i class="fa fa-envelope"></i> <a href="mailto:{{contact_email}}">{{contact_email}}</a></p>
                         </br>
