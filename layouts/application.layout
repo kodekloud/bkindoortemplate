@@ -81,7 +81,9 @@
 </script>
 <style>
     /*custom styles*/
-    
+    .site_welcome_msg{
+        
+    }
 </style>
 </head>
 <body>
