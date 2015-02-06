@@ -375,6 +375,10 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     width:266px;
     display:inline-block;
 }
+
+.feature_image{
+    
+}
 @media print {
   * {
     text-shadow: none !important;
