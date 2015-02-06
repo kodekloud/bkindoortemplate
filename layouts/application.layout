@@ -103,7 +103,8 @@
         color:black;
     }
     #social_media_wrapper a:hover{
-        color:black;
+        color:white;
+        background:black;
     }
 </style>
 </head>
