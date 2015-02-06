@@ -161,6 +161,9 @@
         
         <div class="container">
             <div class="row">
+            <div class="footer_teaser col-sm-2 col-md-2">
+                    
+                 </div>
             <div class="footer_teaser col-sm-4 col-md-4">
                 <h3 class="footer_text" style="font-size:17px;width:300px;text-align:center">Sign up and save</h3>
                 <p class="footer_text" style="width:300px;font-size:17px">Join our list and stay connected to be the first to hear about special sales & exclusive events!</p>
@@ -177,9 +180,7 @@
                     <br>
                 </form>
             </div>
-                <div class="footer_teaser col-sm-2 col-md-2">
-                    
-                 </div>
+                
                 <div class="footer_teaser col-sm-4 col-md-4">
                     <div id="footer_container">
                         <script id="footer_template" type="x-tmpl-mustache/text">
