@@ -20,7 +20,6 @@
     <div class="inside_page_content">
         <div class="left_column">
             <img class="inside_banner_image" src="http://kodekloud.s3.amazonaws.com/sites/54cfab316e6f6433ad020000/23ec067017848a36dcdff8e19a7cef09/events_aboutus.jpg"/>
-            <div>
             <table class="directory_table" id="store_list_container">
                 <tr>
                     <th id="list_header">
@@ -37,9 +36,8 @@
                 </tr>
                 </script>
             </table>
-            </div>
-            <script id="category_store_list_template" type="x-tmpl-mustache/text">
             <table class="directory_table" id="store_category_list_container">
+                <script id="category_store_list_template" type="x-tmpl-mustache/text">
                 <tr>
                     <th id="list_header">
                         category Name
@@ -48,10 +46,10 @@
                         Phone
                     </th>
                 </tr>
-                
+                </script>
                 
             </table>
-            </script>
+            
         </div>
         <div class="right_column">
             
