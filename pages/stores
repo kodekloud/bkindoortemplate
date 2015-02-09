@@ -43,7 +43,7 @@
             <br>
             <p class="right_column_header">categories</p>
             <div id="categories_container">
-                <a href="#categories_container" onclick="(show_cat('view_all', 'all'))" id="view_all_link" class="categories">View All</a><br>
+                <a href="#categories_container" onclick="(show_cat('view_all', 'all'))" id="view_all_link" class="cat_links">View All</a><br>
             </div>
             
         </div>
