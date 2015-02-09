@@ -469,6 +469,17 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     height:211px;
     width:211px;
 }
+
+.promo_list_div{
+    
+}
+
+.promo_inside_content{}
+.promo_image{
+    height:211px;
+    width:211px;
+}
+.promo_desc_box{}
 @media print {
   * {
     text-shadow: none !important;
