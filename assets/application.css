@@ -437,10 +437,11 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 }
 
 .directory_name_col{
-    display:inline;
+    display:inline-block;
+    width:82%;
 }
 .directory_phone_col{
-    display:inline;
+    display:inline-block;
 }
 .store_list{
     
