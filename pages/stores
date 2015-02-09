@@ -292,11 +292,13 @@
     
     function show_cat(link, type){
         $(".cat_links").css("font-weight","normal");
-        $("#"+link.id+"_link").css("font-weight","bold");
+        
         if (type == "all"){
+            $("#view_all_link").css("font-weight","bold");
             $("#no_cat_list").show();
             $(".cat_list_div").hide();    
         } else {
+            $("#"+link.id+"_link").css("font-weight","bold");
             $("#no_cat_list").hide();
             $(".cat_list_div").hide();
             $("#"+link.id).show();    
