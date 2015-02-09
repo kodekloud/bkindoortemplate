@@ -459,6 +459,12 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     font-weight:bold;
     
 }
+
+.store_map{
+    height:318px;
+    width:562px;
+}
+
 @media print {
   * {
     text-shadow: none !important;
