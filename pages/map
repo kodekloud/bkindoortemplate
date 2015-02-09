@@ -1,3 +1,12 @@
+<div id="pop-over">
+    <span class="pull-left">
+        <p id="pop-over-map-name">Default Name</p>
+        <p id="pop-over-map-phone">Phone Number</p>
+    </span>
+    <span class="pullright">
+        <img alt="arrow" src="http://kodekloud.s3.amazonaws.com/sites/54612c496e6f6474ba020000/efe6c3ca0d8b7c35dc70c11b3c667cdf/arrow_green.png">
+    </span>
+</div>
 <div id="loading_screen">
     <img src="http://kodekloud.s3.amazonaws.com/sites/5447ebb66e6f641987020000/3604f5c26997bea3de504de139debcec/loading.gif"/>
 </div>
