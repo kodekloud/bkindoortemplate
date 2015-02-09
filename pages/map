@@ -53,6 +53,14 @@
             var s = Snap("#map");
             var stores = getStoresList();
             if (maptype == "svg"){
+                var startingMapTransform = 'scale(0.50)';
+                var startingPanX = -180;
+                var startingPanY = -150;
+                if(isMobile) {
+                        startingMapTransform = 'scale(0.23)';
+                        startingPanX = -230;
+                        startingPanY = -150;
+                }
                 $(".png_map").hide();
                 Snap.load(getSVGMapURL(), function (f) {
                     $.each( stores, function( key, value ) {
@@ -93,16 +101,17 @@
                 
             } else {
                 $(".png_map").attr("src", getPNGMapURL())
+                var startingMapTransform = 'scale(0.50)';
+                var startingPanX = -180;
+                var startingPanY = -150;
+                if(isMobile) {
+                        startingMapTransform = 'scale(0.23)';
+                        startingPanX = -230;
+                        startingPanY = -150;
+                }
             }
             
-            var startingMapTransform = 'scale(0.50)';
-            var startingPanX = -180;
-            var startingPanY = -150;
-            if(isMobile) {
-                    startingMapTransform = 'scale(0.23)';
-                    startingPanX = -230;
-                    startingPanY = -150;
-            }
+            
                 // $('#loading').hide();
                 $( "#page_content" ).fadeIn( "fast", function() {
                     var panzoom = $(".panzoom-elements").panzoom({
