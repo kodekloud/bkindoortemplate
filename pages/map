@@ -25,7 +25,7 @@
         <button class="zoom-out"><span class="glyphicon glyphicon-minus"></span></button>
         
     </div>
-    <div id="map" class="panzoom-elements" style=""><img src="http://kodekloud.s3.amazonaws.com/sites/54cfab316e6f6433ad020000/8ac9317674f1fc6bcca268b1915e5589/map_2.png"></div>
+    <div id="map" class="panzoom-elements" style=""><img class="png_map" src="http://kodekloud.s3.amazonaws.com/sites/54cfab316e6f6433ad020000/8ac9317674f1fc6bcca268b1915e5589/map_2.png"></div>
 </div>
 </div>
 
@@ -53,6 +53,7 @@
             var s = Snap("#map");
             var stores = getStoresList();
             if (maptype == "svg"){
+                $(".png_map").hide();
                 console.log(getSVGMapURL())
                 Snap.load(getSVGMapURL(), function (f) {
                     $.each( stores, function( key, value ) {
