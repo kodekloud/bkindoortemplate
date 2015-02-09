@@ -20,7 +20,7 @@
     <div class="inside_page_content">
         <div class="left_column">
             <img class="inside_banner_image" src="http://kodekloud.s3.amazonaws.com/sites/54cfab316e6f6433ad020000/23ec067017848a36dcdff8e19a7cef09/events_aboutus.jpg"/>
-            <table class="directory_table" id="store_list_container">
+            <table class="directory_table">
                 <tr>
                     <th id="list_header">
                         Merchant Name
@@ -29,12 +29,14 @@
                         Phone
                     </th>
                 </tr>
-                <script id="store_list_template" type="x-tmpl-mustache/text">
-                <tr>
+                
+                <tr id="store_list_container">
+                    <script id="store_list_template" type="x-tmpl-mustache/text">
                     <td class="store_list_name"><a href="../stores/{{slug}}">{{name}}</a></td>
                     <td class="store_list_phone"><a href="tel:{{phone}}">  {{phone}}</a></td>
+                    </script>
                 </tr>
-                </script>
+                
             </table>
             <table class="directory_table" id="store_category_list_container">
                 <script id="category_store_list_template" type="x-tmpl-mustache/text">
