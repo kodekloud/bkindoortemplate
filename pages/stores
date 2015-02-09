@@ -49,9 +49,9 @@
             <p class="right_column_header">centre map</p>
             <div id="centre_info_container">
                 <script id="centre_info_template" type="x-tmpl-mustache/text">
-                    <p class="cat_links">{{name}}</p>
-                    <p class="cat_links">{{address1}}</p>
-                    <p class="cat_links">{{city}}, {{province_state}} {{postal_code}}</p>
+                    <p class="directory_content">{{name}}</p>
+                    <p class="directory_content">{{address1}}</p>
+                    <p class="directory_content">{{city}}, {{province_state}} {{postal_code}}</p>
                 </script>
             </div>
             
