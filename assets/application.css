@@ -480,10 +480,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     opacity:1;
 }
 
-.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev {
-    opacity: 1;
-    
-}
+
 .promo_inside_content{}
 .promo_image{
     height:211px;
