@@ -53,7 +53,7 @@
             var s = Snap("#map");
             var stores = getStoresList();
             if (maptype == "svg"){
-                var startingMapTransform = 'scale(0.50)';
+                var startingMapTransform = 'scale(1)';
                 var startingPanX = -180;
                 var startingPanY = -150;
                 if(isMobile) {
