@@ -1,3 +1,12 @@
+<div style="overflow:hidden">
+    <div id="zControls">
+        <button class="zoom-in"><span class="glyphicon glyphicon-plus"></span></button>
+        <button class="zoom-out"><span class="glyphicon glyphicon-minus"></span></button>
+        
+    </div>
+    <div id="map" class="panzoom-elements" style=""><img src="http://kodekloud.s3.amazonaws.com/sites/54cfab316e6f6433ad020000/8ac9317674f1fc6bcca268b1915e5589/map_2.png"></div>
+</div>
+
 <!--For more information please see http://learnjs.io/blog/2013/11/30/snapsvg-resources/-->
 <script src="//cdnjs.cloudflare.com/ajax/libs/snap.svg/0.3.0/snap.svg-min.js"></script>
 <script src="http://kodekloud.s3.amazonaws.com/sites/5422419e4a616d74d9030000/e1fb5e17ab727d248230fbcb51da868f/jquery.panzoom.min.js"></script>
