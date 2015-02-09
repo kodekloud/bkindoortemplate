@@ -101,7 +101,7 @@
                 
             } else {
                 $(".png_map").attr("src", getPNGMapURL())
-                var startingMapTransform = 'scale(1.20)';
+                var startingMapTransform = 'scale(1.10)';
                 var startingPanX = -180;
                 var startingPanY = -150;
                 if(isMobile) {
