@@ -20,7 +20,7 @@
     <div class="inside_page_content">
         <div class="left_column">
             <img class="inside_banner_image" alt="store list banner" src="http://kodekloud.s3.amazonaws.com/sites/54cfab316e6f6433ad020000/23ec067017848a36dcdff8e19a7cef09/events_aboutus.jpg"/>
-            <div class="directory_div">
+            <div class="directory_div" id="no_cat_list">
                 <span><p class="directory_header_name directory_name_col">Merchant Name</p><p class="directory_header_phone directory_phone_col">Phone</p></span>
                 <div class="store_list" id="store_list_container">
                     <script id="store_list_template" type="x-tmpl-mustache/text">
@@ -294,10 +294,10 @@
     function show_cat(link, type){
    
         if (type == "all"){
-            $("#store_list_container").show();
+            $(".no_cat_list").show();
             $(".cat_list_div").hide();    
         } else {
-            $("#store_list_container").hide();
+            $(".no_cat_list").hide();
             $(".cat_list_div").hide();
             $("#"+link.id).show();    
         }
