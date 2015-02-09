@@ -41,15 +41,15 @@
             </table>
             <table class="directory_table" id="store_category_list_container">
                 <script id="category_store_list_template" type="x-tmpl-mustache/text">
-                <tr>
-                    <th id="list_header">
-                        {{name}}
-                    <th>
-                        Phone
-                    </th>
-                </tr>
-                <tbody id="cat{{id}}">
-                </tbody>
+                    <tr>
+                        <th id="list_header">
+                            {{name}}
+                        <th>
+                            Phone
+                        </th>
+                    </tr>
+                    <tbody id="cat{{id}}">
+                    </tbody>
                 </script>
                 
             </table>
