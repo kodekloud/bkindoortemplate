@@ -291,7 +291,6 @@
     });
     
     function show_cat(link, type){
-        console.log(this.id)
         if (type == "all"){
             $("#no_cat_list").show();
             $(".cat_list_div").hide();    
