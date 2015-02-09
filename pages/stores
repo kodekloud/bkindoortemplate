@@ -21,7 +21,6 @@
         <div class="left_column">
             <img class="inside_banner_image" src="http://kodekloud.s3.amazonaws.com/sites/54cfab316e6f6433ad020000/23ec067017848a36dcdff8e19a7cef09/events_aboutus.jpg"/>
             <table class="directory_table" id="store_list_container">
-                
                 <tr>
                     <th id="header">
                         Merchant Name
@@ -33,7 +32,7 @@
                 <script id="store_list_template" type="x-tmpl-mustache/text">
                 <tr>
                     <td class="store_list_name">{{name}}</td>
-                    <td class="store_list_phone">{{phone}}</td>
+                    <td class="store_list_phone"><a href="tel:{{phone}}">  {{phone}}</a></td>
                 </tr>
                 </script>
             </table>
