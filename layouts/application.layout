@@ -98,7 +98,7 @@
     }
     
     .btn{
-        background: #e2222f !important;
+        background: #d9534f !important;
         border-color:#d43f3a !important;
     }
     
