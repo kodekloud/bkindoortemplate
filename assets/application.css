@@ -482,7 +482,8 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     margin-right:30px;
 }
 .promo_desc_box{
-    
+    display:inline-block;
+    width:55%;
 }
 @media print {
   * {
