@@ -417,6 +417,10 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     vertical-align:top;
     
 }
+.right_column_header{
+    color:#0076a8;
+    font-size:20px;
+}
 
 .inside_banner_image{
     height:192px;
