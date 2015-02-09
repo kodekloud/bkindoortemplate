@@ -473,7 +473,11 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 .promo_list_div{
     
 }
-
+.flex-direction-nav a{
+    width:40px;
+    height:45px;
+    margin:-21px -12px 0;
+}
 
 .promo_inside_content{}
 .promo_image{
