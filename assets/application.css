@@ -429,12 +429,11 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     width:562px;
 }
 
-.store_list_phone{
-    text-align:right;
+.directory_content{
+    font-size:12px;
+    color:black;
 }
-.store_list_name{
-    
-}
+
 
 .directory_name_col{
     display:inline-block;
