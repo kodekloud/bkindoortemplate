@@ -478,8 +478,12 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 .promo_image{
     height:211px;
     width:211px;
+    vertical-align:top;
+    margin-right:30px;
 }
-.promo_desc_box{}
+.promo_desc_box{
+    
+}
 @media print {
   * {
     text-shadow: none !important;
