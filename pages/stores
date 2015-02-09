@@ -294,10 +294,10 @@
     function show_cat(link, type){
    
         if (type == "all"){
-            $(".no_cat_list").show();
+            $("#no_cat_list").show();
             $(".cat_list_div").hide();    
         } else {
-            $(".no_cat_list").hide();
+            $("#no_cat_list").hide();
             $(".cat_list_div").hide();
             $("#"+link.id).show();    
         }
