@@ -99,6 +99,7 @@
     
     .btn{
         background: #e2222f !important;
+        border-color:#d43f3a;
     }
     
     /*menu colors*/
