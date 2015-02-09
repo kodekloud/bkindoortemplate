@@ -290,7 +290,7 @@
   
     });
     
-    function show_cat(link, type){
+    function show_cat(link, type, id){
         if (type == "all"){
             $("#no_cat_list").show();
             $(".cat_list_div").hide();    
