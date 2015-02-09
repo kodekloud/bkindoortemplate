@@ -432,6 +432,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 .directory_content{
     font-size:12px;
     color:black;
+    margin-bottom:3px;
 }
 
 
