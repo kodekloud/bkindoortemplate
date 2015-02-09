@@ -44,6 +44,7 @@
             var s = Snap("#map");
             var stores = getStoresList();
             if (maptype == "svg"){
+                console.log(getSVGMapURL())
                 Snap.load(getSVGMapURL(), function (f) {
                     $.each( stores, function( key, value ) {
                         if(value.svgmap_region != null && typeof(value.svgmap_region)  != 'undefined'){
