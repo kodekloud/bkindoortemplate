@@ -98,7 +98,7 @@
     }
     
     .btn{
-        background: blue !important;
+        background: #e2222f !important;
     }
     
     /*menu colors*/
