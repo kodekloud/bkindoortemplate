@@ -97,7 +97,7 @@
         background:#313131;
     }
     
-    .btn{
+    .btn-primary{
         background: #d9534f !important;
         border-color:#d43f3a !important;
     }
