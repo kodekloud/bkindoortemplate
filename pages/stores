@@ -30,12 +30,12 @@
                     </th>
                 </tr>
                 <tbody id="store_list_container">
+                    <script id="store_list_template" type="x-tmpl-mustache/text">
                     <tr>
-                        <script id="store_list_template" type="x-tmpl-mustache/text">
                         <td class="store_list_name"><a href="../stores/{{slug}}">{{name}}</a></td>
                         <td class="store_list_phone"><a href="tel:{{phone}}">  {{phone}}</a></td>
-                        </script>
                     </tr>
+                    </script>
                 </tbody>
                 
             </table>
