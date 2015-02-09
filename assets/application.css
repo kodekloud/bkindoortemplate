@@ -367,8 +367,8 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 
 #feature_items{
     margin-top:57px;
-    margin-left:57px;
-    margin-right:57px;
+    margin-left:18px;
+    margin-right:18px;
 }
 
 .feature_div{
@@ -570,7 +570,6 @@ body {
     margin-right:auto;
     display:block;
     background:white;
-    border:40px solid #eaf1fb;
 }
 .footer_div{
     display:block;
