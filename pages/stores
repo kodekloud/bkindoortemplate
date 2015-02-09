@@ -22,7 +22,7 @@
             <img class="inside_banner_image" src="http://kodekloud.s3.amazonaws.com/sites/54cfab316e6f6433ad020000/23ec067017848a36dcdff8e19a7cef09/events_aboutus.jpg"/>
             <table>
                 <tr>
-                    <th>
+                    <th id="header">
                         Merchant Name
                     </th>
                     <th>
