@@ -29,19 +29,14 @@
                 </div>
                 
             </div>
-            
-            <table class="directory_table" id="store_category_list_container">
+            <div class="directory_div" id="store_category_list_container">
                 <script id="category_store_list_template" type="x-tmpl-mustache/text">
-                    <tr>
-                        <th id="list_header">
-                            {{name}}
-                        <th class="store_list_phone">
-                            Phone
-                        </th>
-                    </tr>
-                </script>
-            </table>
-            
+                    <div id="cat{{id}}">
+                    <span><p class="directory_header_name directory_name_col">{{name}}</p><p class="directory_header_phone directory_phone_col">Phone</p></span>
+                    <div class="store_list" id="cat{{id}}_list">
+                    </div>
+                </script>    
+            </div>
         </div>
         <div class="right_column">
             
