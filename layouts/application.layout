@@ -103,6 +103,7 @@
     .btn-primary{
         background: #d9534f !important;
         border-color:#d43f3a !important;
+        text-align:center;
     }
     
     /*menu colors*/
