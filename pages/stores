@@ -45,6 +45,16 @@
             <div id="categories_container">
                 <a href="#categories_container" onclick="(show_cat('view_all', 'all'))" id="view_all_link" class="cat_links">View All</a><br>
             </div>
+            <br>
+            <p class="right_column_header">centre map</p>
+            <div id="centre_info_container">
+                <script id="centre_info_template" type="x-tmpl-mustache/text">
+                <p class="cat_links">{{name}}</p><br>
+                <p class="cat_links">{{address1}}</p><br>
+                <p class="cat_links">{{city}}, {{province_state}} {{postal_code}}</p>
+                
+            </div>
+            
             
         </div>
     </div>
