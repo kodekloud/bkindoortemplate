@@ -421,6 +421,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     color:#0076a8;
     font-size:20px;
     text-transform:uppercase;
+    margin-bottom:0;
 }
 
 .inside_banner_image{
