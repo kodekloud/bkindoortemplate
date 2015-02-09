@@ -422,6 +422,10 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     width:532px;
     margin-bottom:36px;
 }
+
+.directory_table{
+    width:562px;
+}
 @media print {
   * {
     text-shadow: none !important;
