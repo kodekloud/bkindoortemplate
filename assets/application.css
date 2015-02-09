@@ -422,9 +422,17 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     width:562px;
     margin-bottom:36px;
 }
+/*store list CSS*/
 
 .directory_table{
     width:562px;
+}
+
+.store_list_phone{
+    text-align:right;
+}
+.store_list_name{
+    
 }
 @media print {
   * {
