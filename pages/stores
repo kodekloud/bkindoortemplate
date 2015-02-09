@@ -51,7 +51,6 @@
                     <tbody id="cat{{id}}">
                     </tbody>
                 </script>
-                
             </table>
             
         </div>
@@ -208,6 +207,7 @@
                 }
                 var rendered = Mustache.render(template_html,all_categories[i]);
                 item_rendered.push(rendered);
+                console.log(rendered)
             }
             $("#store_category_list_container").show();
             $("#store_category_list_container").html(item_rendered.join(''));
