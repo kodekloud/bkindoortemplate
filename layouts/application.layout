@@ -121,7 +121,7 @@
     .page_banner{
         color:black;
         background:lightblue;
-        /*box-shadow: 0px 0px 30px lightgray inset;*/
+        box-shadow: 0px 0px 30px lightgray inset;
     }
 </style>
 </head>
