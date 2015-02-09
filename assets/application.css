@@ -465,6 +465,10 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     width:562px;
 }
 
+.detail_logo{
+    height:211px;
+    width:211px;
+}
 @media print {
   * {
     text-shadow: none !important;
