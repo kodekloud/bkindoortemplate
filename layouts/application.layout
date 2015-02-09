@@ -144,6 +144,10 @@
         background:lightblue;
         box-shadow: 0px 0px 30px lightgray inset;
     }
+    
+    .section_header{}
+    .promo_header{}
+    
 </style>
 </head>
 <body>
