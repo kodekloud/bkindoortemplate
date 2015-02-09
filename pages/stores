@@ -49,9 +49,9 @@
                         </th>
                     </tr>
                         
-                    <tr id="cat{{id}}">
+                    <tbody id="cat{{id}}">
                         test
-                    </tr>
+                    </tbody>
                    
                 </script>
             </table>
