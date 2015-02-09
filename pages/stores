@@ -39,7 +39,7 @@
             </div>
         </div>
         <div class="right_column">
-            <p class="right_column_header"><a href="/map">centre map</a></p>
+            <a href="/map"><p class="right_column_header">centre map</p></a>
             <br>
             <p class="right_column_header">categories</p>
             <div id="categories_container">
