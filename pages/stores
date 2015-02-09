@@ -39,20 +39,18 @@
                 </tbody>
                 
             </table>
-            <table class="directory_table">
-                
+            <table class="directory_table" id="store_category_list_container">
+                <script id="category_store_list_template" type="x-tmpl-mustache/text">
                 <tr>
                     <th id="list_header">
-                        category Name
-                    </th>
+                        {{name}}
                     <th>
                         Phone
                     </th>
                 </tr>
-                <tbody  id="store_category_list_container">
-                    <script id="category_store_list_template" type="x-tmpl-mustache/text">
-                    </script>
+                <tbody id="cat{{id}}">
                 </tbody>
+                </script>
                 
             </table>
             
