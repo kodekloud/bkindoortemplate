@@ -25,7 +25,7 @@
                     <th id="list_header">
                         Merchant Name
                     </th>
-                    <th>
+                    <th class="store_list_phone">
                         Phone
                     </th>
                 </tr>
@@ -44,15 +44,10 @@
                     <tr>
                         <th id="list_header">
                             {{name}}
-                        <th>
+                        <th class="store_list_phone">
                             Phone
                         </th>
                     </tr>
-                        
-                    <div id="cat{{id}}">
-                        test
-                    </div>
-                   
                 </script>
             </table>
             
