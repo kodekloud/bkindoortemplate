@@ -81,6 +81,13 @@
 </script>
 <style>
     /*custom styles*/
+    
+    /*hyperlinks*/
+    a{
+        color:yellow;
+        text-decoration:none;
+    }
+    
     body{
         background:#313131;
     }
