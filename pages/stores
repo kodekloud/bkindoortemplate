@@ -292,7 +292,7 @@
     });
     
     function show_cat(link, type){
-   
+        $(this).css("font-size","25px")
         if (type == "all"){
             $("#no_cat_list").show();
             $(".cat_list_div").hide();    
