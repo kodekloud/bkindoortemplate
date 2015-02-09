@@ -32,8 +32,8 @@
                 </tr>
                 <script id="store_list_template" type="x-tmpl-mustache/text">
                 <tr>
-                    <td>{{name}}</td>
-                    <td>{{phone}}</td>
+                    <td class="store_list_name">{{name}}</td>
+                    <td class="store_list_phone">{{phone}}</td>
                 </tr>
                 </script>
             </table>
