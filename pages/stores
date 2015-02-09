@@ -85,7 +85,7 @@
             
             $.each( categories , function( key, val ) {
                 val.link = "cat" + val.id;
-                $("#categories_container").append('<a href="#categories_container" onclick=(show_cat('+val.link+')) class="categories" id="cat'+val.id+'_link">'+val.name+'</a><br>');
+                $("#categories_container").append('<a href="#categories_container" class="cat_links" onclick=(show_cat('+val.link+')) class="categories" id="cat'+val.id+'_link">'+val.name+'</a><br>');
             });
         };
         function renderPageData(container, template, collection, type){
@@ -291,6 +291,7 @@
     });
     
     function show_cat(link, type){
+        $(".cat_links").css("font-weight","normal");
         $("#"+link.id+"_link").css("font-weight","bold");
         if (type == "all"){
             $("#no_cat_list").show();
