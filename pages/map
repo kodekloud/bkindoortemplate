@@ -54,8 +54,8 @@
             var stores = getStoresList();
             if (maptype == "svg"){
                 var startingMapTransform = 'scale(1)';
-                var startingPanX = -180;
-                var startingPanY = -150;
+                var startingPanX = 0;
+                var startingPanY = 0;
                 if(isMobile) {
                         startingMapTransform = 'scale(0.23)';
                         startingPanX = -230;
