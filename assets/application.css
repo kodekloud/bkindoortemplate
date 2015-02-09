@@ -479,6 +479,10 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     margin:-21px -12px 0;
 }
 
+.flexslider .flex-next, .flexslider .flex-prev {
+    opacity: 1;
+    
+}
 .promo_inside_content{}
 .promo_image{
     height:211px;
