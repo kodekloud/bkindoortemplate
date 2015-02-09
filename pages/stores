@@ -85,7 +85,7 @@
             
             $.each( categories , function( key, val ) {
                 val.link = "cat" + val.id;
-                $("#categories_container").append('<a href="#categories_container" onclick=(show_cat('+val.link+')) class="categories" id="cat_'val.id'_link">'+val.name+'</a><br>');
+                $("#categories_container").append('<a href="#categories_container" onclick=(show_cat('+val.link+')) class="categories" id="cat_'+val.id+'_link">'+val.name+'</a><br>');
             });
         };
         function renderPageData(container, template, collection, type){
