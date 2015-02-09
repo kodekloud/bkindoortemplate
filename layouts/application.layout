@@ -84,7 +84,7 @@
     
     /*hyperlinks*/
     a{
-        color:yellow;
+        color:#e2222f;
         text-decoration:none;
     }
     
