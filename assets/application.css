@@ -570,6 +570,7 @@ body {
     margin-right:auto;
     display:block;
     background:white;
+    border:40px solid #eaf1fb;
 }
 .footer_div{
     display:block;
