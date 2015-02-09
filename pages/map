@@ -28,7 +28,9 @@
         function renderAll (){
             $("#loading_screen").hide();
             $("#main_content").show();
-            renderMap(); 
+            // specify the type of map here. "png" or "svg"
+            var maptype = "png"
+            renderMap(maptype); 
         }
         
         function renderMap(){
