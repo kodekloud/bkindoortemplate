@@ -48,8 +48,7 @@
                             Phone
                         </th>
                     </tr>
-                    <tbody id="cat{{id}}">
-                    </tbody>
+                   
                 </script>
             </table>
             
