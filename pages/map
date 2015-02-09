@@ -52,7 +52,7 @@
             });
             var s = Snap("#map");
             var stores = getStoresList();
-            if (maptype == "png"){
+            if (maptype == "svg"){
                 $(".png_map").hide();
                 Snap.load(getSVGMapURL(), function (f) {
                     $.each( stores, function( key, value ) {
