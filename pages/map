@@ -218,6 +218,6 @@ background-color: #FFFFFF ;
         
     function dropPin(x, y){
         console.log("+_+_+_+_+_+_+_")
-        $(".panzoom-elements").panzoom("pan", x, y, { relative: false , silent: false});
+        $(".panzoom-elements").panzoom("pan", x, y, { relative: false});
     }
 </script>
