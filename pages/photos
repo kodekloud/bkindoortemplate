@@ -12,7 +12,27 @@
     </div>
     <div class="inside_page_content">
         <div class="left_column">
-
+            <section class="portfolio_strict" id="photo_container">
+                <div class="row isotope_portfolio_container">
+                    <script id="photo_template" type="x-tmpl-mustache/text">
+                        <div class="cat_travel col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="portfolio_item wow animated flipInX" style="height:230px;box-shadow:none"> 
+                                <a href="{{alt_url}}" target="_blank" data-path-hover="M 180,190 0,158 0,0 180,0 z">
+                                    <figure style="background-image:url({{alt_url}})">
+                                        <svg viewBox="0 0 180 320" preserveAspectRatio="none">
+                                            <path d="M 180,0 0,0 0,0 180,0 z"/>
+                                        </svg>
+                                        <figcaption>
+                                            <p>{{description}}</p>
+                                            <div class="view_button">View</div>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                             </div>
+                        </div>
+                    </script>
+               </div>
+          </section>
         </div>
         <div class="right_column">
             <p class="right_column_header">centre information</p>
@@ -33,8 +53,33 @@
         function renderAll (){
             var propertyDetails = getPropertyDetails();
             renderPageData('#centre_info_container','#centre_info_template',propertyDetails, 'property_details')
+            var repoList = getRepoList();  
+            renderPhotos("#photo_container", "#photo_template", repoList);
             $("#loading_screen").hide();
             $("#main_content").show();
+        }
+        
+        function renderPhotos(container, template, collection){
+            var item_list = [];
+            var item_rendered = [];
+            var template_html = $(template).html();
+            Mustache.parse(template_html);   // optional, speeds up future uses
+            $.each( collection , function( key, val ) {
+                if( val.name == "photos"){
+                    $.each( val.images , function( key, val ) {
+                        val.alt_url = getImageURL(val.photo_url);
+                        item_list.push(val);
+                        
+                    });
+                }
+            });
+            $.each( item_list , function( key, val ) {
+                var repo_rendered = Mustache.render(template_html,val);
+                item_rendered.push(repo_rendered);
+            });
+            
+            $(container).show();
+            $(container).html(item_rendered.join(''));    
         }
         
     
