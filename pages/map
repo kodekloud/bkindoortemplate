@@ -214,6 +214,6 @@
     
     function dropPin(x, y){
         // $("#png_map").append(' <div class="marker" id="scroll_to_marker" data-coords="'x', 'y'"></div> ')
-        // $("#scroll_to_marker").click();
+        $("#scroll_to_marker").click();
     }
 </script>
