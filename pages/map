@@ -53,7 +53,7 @@
         <button class="zoom-in"><span class="glyphicon glyphicon-plus"></span></button>
         <button class="zoom-out"><span class="glyphicon glyphicon-minus"></span></button>
     </div>
-    <div class="demo1 panzoom-elements">
+    <div class="demo1 panzoom-elements" id="png_map">
         <img alt="map" src="" class="png_map" id="map" />                
     </div>  
 </div>
@@ -108,7 +108,7 @@
                         startingPanX = 0;
                         startingPanY = 0;
                 }
-                $(".png_map").hide();
+                $("#png_map").hide();
                 Snap.load(getSVGMapURL(), function (f) {
                     $.each( stores, function( key, value ) {
                         console.log(value.svgmap_region)
@@ -213,34 +213,6 @@
     });
     
     function dropPin(x, y){
-        var startingMapTransform = 'scale(1.10)';
-        var startingPanX = x;
-        var startingPanY = y;
-                
-        $( "#page_content" ).fadeIn( "fast", function() {
-                    var panzoom = $(".panzoom-elements").panzoom({
-                        cursor: "move",
-                        increment: 0.05,
-                        minScale: 0.15,
-                        maxScale: 20,
-                        transition: true,
-                        duration: 150,
-                        easing: "ease-in-out",
-                        $zoomIn: $('.zoom-in'),
-                        $zoomOut: $('.zoom-out'),
-                        $zoomRange: $('.zoom-range'),
-                        startTransform: startingMapTransform
-            
-                    });
-                    $(".panzoom-elements").panzoom("pan", startingPanX, startingPanY, { relative: true });
-                    
-                    panzoom.on('panzoomchange', function(e, panzoom, matrix, changed) {
-                      didPanZoom = true;
-                    });
-                    
-                    panzoom.on('panzoomend', function(e, panzoom, matrix, changed) {
-                      didPanZoom = false;
-                    });
-                });
+        
     }
 </script>
