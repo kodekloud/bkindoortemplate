@@ -1,13 +1,11 @@
 <style>
     .demo1{
-float: left;
- margin-bottom:29px;
-  height: 100%;
-    width: 100%;
-background-color: #FFFFFF ;
-  border: 1px solid #b2aaab;
-
-}
+        float: left;
+        margin-bottom:29px;
+        height: 100%;
+        width: 100%;
+        background-color: #FFFFFF ;
+    }
 .froala-element img{
     cursor:default !important;
 }
