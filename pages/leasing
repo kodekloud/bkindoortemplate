@@ -1,5 +1,5 @@
 <div id="loading_screen">
-    <img src="http://kodekloud.s3.amazonaws.com/sites/5447ebb66e6f641987020000/3604f5c26997bea3de504de139debcec/loading.gif"/>
+    <img alt="loading" src="http://kodekloud.s3.amazonaws.com/sites/5447ebb66e6f641987020000/3604f5c26997bea3de504de139debcec/loading.gif"/>
 </div>
 <div  id="main_content" style="display:none">
     <ul class="breadcrumb">
@@ -11,7 +11,7 @@
     </div>
     <div class="inside_page_content">
         <div class="left_column">
-            <img class="inside_banner_image" alt="store list banner" src="http://kodekloud.s3.amazonaws.com/sites/54cfab316e6f6433ad020000/23ec067017848a36dcdff8e19a7cef09/events_aboutus.jpg"/>
+            <img class="inside_banner_image" alt="banner" src="http://kodekloud.s3.amazonaws.com/sites/54cfab316e6f6433ad020000/23ec067017848a36dcdff8e19a7cef09/events_aboutus.jpg"/>
             <p class="columns_2">
                         <h3>Market Summary</h3>
                         <p>10 Dundas East located at the centre of downtown Toronto is one of the City's most animated and vibrant commercial hubs and occupies one of the busiest intersections in Canada. The 332,595 sf enclosed, multi-level mixed use building has excellent exposure to Dundas Square – a popular focal point of the downtown community which has been designated as a public open space and event venue. 10 Dundas East is home to the second highest grossing theatre in Toronto and the highest grossing Future Shop in Canada, while Jack Astor's Bar & Grill, and Milestones are both producing at the top of their chains.</p>
