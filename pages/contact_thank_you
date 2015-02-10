@@ -4,20 +4,12 @@
 <div  id="main_content" style="display:none">
     <ul class="breadcrumb">
         <li><a href="/home">Home</a> </li>
-        <li class="active">page template</li>
     </ul>
     <div class="page_banner">
-        page template
+        Thank You
     </div>
     <div class="inside_page_content">
         <div class="left_column">
-            <img class="inside_banner_image" alt="store list banner" src="http://kodekloud.s3.amazonaws.com/sites/54cfab316e6f6433ad020000/23ec067017848a36dcdff8e19a7cef09/events_aboutus.jpg"/>
-            <section class="hgroup">
-               <h1>Thank you</h1>
-               <ul class="breadcrumb pull-right">
-                    <li><a href="/home">Home</a> </li>
-               </ul>
-            </section>
             <section class="article-text">
                <div class="row">
                     Your message has been submitted. We will contact you shortly.
