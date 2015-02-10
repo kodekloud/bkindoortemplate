@@ -408,9 +408,10 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     margin-top:32px;
 }
 .left_column{
-    width:562px;
-    margin-right:40px;
+    width:602px;
+    padding-right:40px;
     display:inline-block;
+    border-right:1px solid #eeeeee;
 }
 .right_column{
     margin-left:40px;
