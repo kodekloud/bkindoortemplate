@@ -216,7 +216,7 @@ background-color: #FFFFFF ;
         dropPin($(this).children(":selected").html());
     });
         
-    function dropPin(this){
+    function dropPin(){
         console.log("+_+_+_+_+_+_+_")
         console.log(this)
         // $(".panzoom-elements").panzoom("pan", x, y, { relative: false });
