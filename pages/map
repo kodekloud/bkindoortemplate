@@ -1,11 +1,13 @@
 <style>
     .demo1{
-        float: left;
-        margin-bottom:29px;
-        height: 100%;
-        width: 100%;
-        background-color: #FFFFFF ;
-    }
+float: left;
+ margin-bottom:29px;
+  height: 318px;
+    width: 562px;
+background-color: #FFFFFF ;
+  border: 1px solid #b2aaab;
+
+}
 .froala-element img{
     cursor:default !important;
 }
@@ -20,8 +22,6 @@
     width: 50px;
 }
 </style>
-
-<script src="http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/92b82a88144a6207ab1a5e8e0f63d3d1/craftmap.js"></script>
 
 
 <div id="pop-over">
@@ -55,9 +55,7 @@
         <button class="zoom-in"><span class="glyphicon glyphicon-plus"></span></button>
         <button class="zoom-out"><span class="glyphicon glyphicon-minus"></span></button>
     </div>
-    <div class="demo1" id="png_map">
-        <img alt="map" src="" class="png_map imgMap" id="map"/>                
-    </div>  
+    <div id="map" class="panzoom-elements" style=""><img class="png_map" src=""></div>
 </div>
 </div>
 
@@ -73,7 +71,6 @@
             $("#main_content").show();
             // specify the type of map here. "png" or "svg"
             var maptype = "png"
-            $.getScript("http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/92b82a88144a6207ab1a5e8e0f63d3d1/craftmap.js");
             renderMap(maptype); 
         }
         
@@ -111,7 +108,7 @@
                         startingPanX = 0;
                         startingPanY = 0;
                 }
-                $("#png_map").hide();
+                $(".png_map").hide();
                 Snap.load(getSVGMapURL(), function (f) {
                     $.each( stores, function( key, value ) {
                         console.log(value.svgmap_region)
@@ -151,24 +148,14 @@
                 
             } else {
                 $(".png_map").attr("src", getPNGMapURL())
-                $('.demo1').craftmap({
-                    image: {
-                        width: 2240,
-                        height: 943,
-                        name: 'imgMap'
-                    },
-                    map: {
-                        position: 'center'
-                    }
-                });
-                // var startingMapTransform = 'scale(1.10)';
-                // var startingPanX = 0;
-                // var startingPanY = 0;
-                // if(isMobile) {
-                //         startingMapTransform = 'scale(1)';
-                //         startingPanX = 0;
-                //         startingPanY = 0;
-                // }
+                var startingMapTransform = 'scale(1.10)';
+                var startingPanX = 0;
+                var startingPanY = 0;
+                if(isMobile) {
+                        startingMapTransform = 'scale(1)';
+                        startingPanX = 0;
+                        startingPanY = 0;
+                }
             }
             
             
@@ -226,9 +213,34 @@
     });
     
     function dropPin(x, y){
-        $("#scroll_to_marker").remove();
-        $("#png_map").append('<div class="marker" id="scroll_to_marker" data-coords="'+x+','+y+'"></div> ')
-        $("#anchor_id").click();
-        $("#scroll_to_marker").click();
+        var startingMapTransform = 'scale(1.10)';
+        var startingPanX = x;
+        var startingPanY = y;
+                
+        $( "#page_content" ).fadeIn( "fast", function() {
+                    var panzoom = $(".panzoom-elements").panzoom({
+                        cursor: "move",
+                        increment: 0.05,
+                        minScale: 0.15,
+                        maxScale: 20,
+                        transition: true,
+                        duration: 150,
+                        easing: "ease-in-out",
+                        $zoomIn: $('.zoom-in'),
+                        $zoomOut: $('.zoom-out'),
+                        $zoomRange: $('.zoom-range'),
+                        startTransform: startingMapTransform
+            
+                    });
+                    $(".panzoom-elements").panzoom("pan", startingPanX, startingPanY, { relative: true });
+                    
+                    panzoom.on('panzoomchange', function(e, panzoom, matrix, changed) {
+                      didPanZoom = true;
+                    });
+                    
+                    panzoom.on('panzoomend', function(e, panzoom, matrix, changed) {
+                      didPanZoom = false;
+                    });
+                });
     }
 </script>
