@@ -505,6 +505,9 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     text-transform:uppercase;
 }
 
+.storelist_dd{
+    
+}
 @media print {
   * {
     text-shadow: none !important;
