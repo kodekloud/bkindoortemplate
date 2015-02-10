@@ -166,6 +166,35 @@
                 $( "#page_content" ).fadeIn( "fast");
             }
         }
+        
+        
+    function dropPin(x, y){
+        $( "#page_content" ).fadeIn( "fast", function() {
+                    var panzoom = $(".panzoom-elements").panzoom({
+                        cursor: "move",
+                        increment: 0.05,
+                        minScale: 0.15,
+                        maxScale: 20,
+                        transition: true,
+                        duration: 150,
+                        easing: "ease-in-out",
+                        $zoomIn: $('.zoom-in'),
+                        $zoomOut: $('.zoom-out'),
+                        $zoomRange: $('.zoom-range'),
+                        startTransform: startingMapTransform
+            
+                    });
+                    $(".panzoom-elements").panzoom("pan", startingPanX, startingPanY, { relative: true });
+                    
+                    panzoom.on('panzoomchange', function(e, panzoom, matrix, changed) {
+                      didPanZoom = true;
+                    });
+                    
+                    panzoom.on('panzoomend', function(e, panzoom, matrix, changed) {
+                      didPanZoom = false;
+                    });
+                });
+    }
     
     function goToStore(store_details){
         if(typeof(store_details) != 'undefined' && store_details != null){
