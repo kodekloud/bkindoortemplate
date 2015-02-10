@@ -12,23 +12,7 @@
     <div class="inside_page_content">
         <div class="left_column">
             <img class="inside_banner_image" alt="store list banner" src="http://kodekloud.s3.amazonaws.com/sites/54cfab316e6f6433ad020000/23ec067017848a36dcdff8e19a7cef09/events_aboutus.jpg"/>
-            <div class="directory_div" id="no_cat_list">
-                <span><p class="directory_header_name directory_name_col">Merchant Name</p><p class="directory_header_phone directory_phone_col">Phone</p></span>
-                <div class="store_list" id="store_list_container">
-                    <script id="store_list_template" type="x-tmpl-mustache/text">
-                        <span><a href="/stores/{{slug}}"><p class="directory_content directory_name_col">{{name}}</p></a><a href="tel:{{phone}}"><p class="directory_content directory_phone_col">{{phone}}</p></a></span>
-                    </script>
-                </div>
-                
-            </div>
-            <div class="directory_div" id="store_category_list_container">
-                <script id="category_store_list_template" type="x-tmpl-mustache/text">
-                    <div id="cat{{id}}" class="cat_list_div" style="display:none">
-                        <span><p class="directory_header_name directory_name_col">{{name}}</p><p class="directory_header_phone directory_phone_col">Phone</p></span>
-                        <div class="store_list" id="cat{{id}}_list"></div>
-                    </div>
-                </script>    
-            </div>
+            
         </div>
         <div class="right_column">
             <p class="right_column_header">centre information</p>
