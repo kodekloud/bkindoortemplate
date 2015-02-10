@@ -1,4 +1,4 @@
-<div  id="main_content" style="display:none">
+<div  id="main_content">
     <ul class="breadcrumb">
         <li><a href="/home">Home</a> </li>
         <li class="active">Tenant Services</li>
