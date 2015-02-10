@@ -48,7 +48,7 @@ background-color: #FFFFFF ;
 <div style="overflow:hidden">
     <select id="storelist_container" class="pull-left storelist_dd">
         <script id="storelist_template" type="x-tmpl-mustache/text">
-            <option><p onclick="javascript:dropPin({{x_coordinate}},{{y_coordinate}})">{{name}}</p></option>
+            <option><{{name}}</option>
         </script>
     </select>
     <div id="zControls" class="pull-right">
@@ -212,8 +212,13 @@ background-color: #FFFFFF ;
         loadMallData(renderAll);  
     });
     
-    function dropPin(x, y){
+    $("select#storelist_container").change(function(){
+        dropPin($(this).children(":selected").html());
+    });
+        
+    function dropPin(this){
         console.log("+_+_+_+_+_+_+_")
-        $(".panzoom-elements").panzoom("pan", x, y, { relative: false });
+        console.log(this)
+        // $(".panzoom-elements").panzoom("pan", x, y, { relative: false });
     }
 </script>
