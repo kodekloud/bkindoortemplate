@@ -373,7 +373,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 }
 
 .feature_div{
-    width:266px;
+    width:267px;
     display:inline-block;
     margin-right:19px;
 }
@@ -7270,8 +7270,8 @@ ul.portfolio_filters li .active a:hover {
   -webkit-transform: translateY(0);
 }
 .portfolio_strict .portfolio_item figure {
-  height: 134px;
-  width:266px;
+  height: 144px;
+  width:267px;
   position: relative;
   overflow: hidden;
   margin: 0px;
