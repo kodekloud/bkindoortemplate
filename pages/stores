@@ -39,7 +39,7 @@
                 <a href="#categories_container" onclick="(show_cat('view_all', 'all'))" id="view_all_link" class="cat_links directory_content" style="font-weight:bold">View All</a><br>
             </div>
             <br>
-            <p class="right_column_header">centre map</p>
+            <p class="right_column_header">centre information</p>
             <div id="centre_info_container">
                 <script id="centre_info_template" type="x-tmpl-mustache/text">
                     <p class="directory_content">{{name}}</p>
