@@ -187,6 +187,10 @@
     });
     
     function dropPin(x, y){
+        var startingMapTransform = 'scale(1.10)';
+        var startingPanX = x;
+        var startingPanY = y;
+                
         $( "#page_content" ).fadeIn( "fast", function() {
                     var panzoom = $(".panzoom-elements").panzoom({
                         cursor: "move",
