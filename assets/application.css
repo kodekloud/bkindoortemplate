@@ -379,8 +379,8 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 }
 
 .feature_image{
-    height:134px;
-    width:266px;
+    height:100%;
+    width:100%;
     border:1px solid #eeeeee;
 }
 
