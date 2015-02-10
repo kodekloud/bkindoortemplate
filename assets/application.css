@@ -493,7 +493,10 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 }
 
 .list_section_header{
-    margin-top:60px;    
+    margin-top:60px;   
+    font-size:20px;
+    font-weight:bold;
+    text-transform:uppercase;
 }
 
 @media print {
