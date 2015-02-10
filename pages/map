@@ -216,11 +216,16 @@ background-color: #FFFFFF ;
         dropPin($(this).children(":selected").html());
     });
     
-    function reset(){
+    function reset_map(){
         $(".panzoom-elements").panzoom("reset");
     }
     
     function dropPin(x, y){
+        if (x == 0 && y == 0){
+            reset_map()
+        } else {
+            $(".panzoom-elements").panzoom("pan", x, y, { relative: false});
+        }
         // $(".panzoom-elements").panzoom("reset");
         // $(".panzoom-elements").panzoom("pan", x, y, { relative: false});
         $(".panzoom-elements").panzoom("zoom", 2, { silent: false });
