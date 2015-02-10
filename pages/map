@@ -109,6 +109,7 @@ background-color: #FFFFFF ;
                         startingPanY = 0;
                 }
                 $(".png_map").hide();
+                $("#storelist_container").hide()
                 Snap.load(getSVGMapURL(), function (f) {
                     $.each( stores, function( key, value ) {
                         console.log(value.svgmap_region)
