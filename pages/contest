@@ -1,4 +1,8 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"></script>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" />
+<script type="text/javascript" src="http://cdn.jsdelivr.net/slimbox/2.0.5/js/slimbox2.js"></script>
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/slimbox/2.0.5/css/slimbox2.css" type="text/css" media="screen" />
 
-<a href="http://kodekloud.s3.amazonaws.com/sites/54d4e9206e6f64691f000000/f1f22bba054942c67e50114dd58c8b15/featured-arrows.png" data-lightbox="image-1" data-title="My caption">Image #1</a>
+
+
+<a href="http://kodekloud.s3.amazonaws.com/sites/54cfab316e6f6433ad020000/696687d954d5727f2581c6e4b92bdfe2/JackAstor's_Contest_Page_940x450px.png" rel="lightbox-gallery" title="{{promo.name}}">
+    <img class="promo_image" src="http://kodekloud.s3.amazonaws.com/sites/54cfab316e6f6433ad020000/696687d954d5727f2581c6e4b92bdfe2/JackAstor's_Contest_Page_940x450px.png" />
+</a> 
