@@ -207,10 +207,19 @@ background-color: #FFFFFF ;
         var mallDataJSON = JSON.parse(sessionStorage.mallData);
         return 'http://cdn.mallmaverick.com' + mallDataJSON.property.svgmap_url;
     }
+    
+    $("#storelist_container").on('change', function() {
+        console.log("+_+_+_+")
+        panzoom.panzoom("reset");
+    });
+    
+    
     function reset_map(){
         console.log("+_+_+_+")
         panzoom.panzoom("reset");
     }
+    
+    
     
     function dropPin(x, y){
         if (x == "0" && y == "0"){
