@@ -20,13 +20,11 @@
     Centre Map
 </div>
 <div style="overflow:hidden">
-
-        <select id="storelist_container" class="pull-left">
-            <script id="storelist_template" type="x-tmpl-mustache/text">
-                <option>{{name}}</option>
-            </script>
-        </select>
-
+    <select id="storelist_container" class="pull-left storelist_dd">
+        <script id="storelist_template" type="x-tmpl-mustache/text">
+            <option>{{name}}</option>
+        </script>
+    </select>
     <div id="zControls" class="pull-right">
         <button class="zoom-in"><span class="glyphicon glyphicon-plus"></span></button>
         <button class="zoom-out"><span class="glyphicon glyphicon-minus"></span></button>
