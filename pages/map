@@ -217,6 +217,7 @@ background-color: #FFFFFF ;
     });
         
     function dropPin(x, y){
+        $(".panzoom-elements").panzoom("reset");
         console.log("+_+_+_+_+_+_+_")
         $(".panzoom-elements").panzoom("reset");
         $(".panzoom-elements").panzoom("pan", x, y, { relative: false});
