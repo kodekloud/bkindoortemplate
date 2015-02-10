@@ -53,7 +53,7 @@
         <button class="zoom-in"><span class="glyphicon glyphicon-plus"></span></button>
         <button class="zoom-out"><span class="glyphicon glyphicon-minus"></span></button>
     </div>
-    <div class="panzoom-elements" id="png_map">
+    <div class="demo1 panzoom-elements" id="png_map">
         <img alt="map" src="" class="png_map" id="map"/>                
     </div>  
 </div>
@@ -213,7 +213,7 @@
     });
     
     function dropPin(x, y){
-        $("#png_map").append(' <div class="marker" id="scroll_to_marker" data-coords="'x', 'y'"></div> ')
-        $("#scroll_to_marker").click();
+        // $("#png_map").append(' <div class="marker" id="scroll_to_marker" data-coords="'x', 'y'"></div> ')
+        // $("#scroll_to_marker").click();
     }
 </script>
