@@ -1,6 +1,7 @@
 <style>
     h3 {
         margin-top:0 !important;
+        text-transform:uppercase;
     }
 </style>
 <section id="slider_wrapper" class="slider_wrapper">
