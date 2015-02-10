@@ -475,7 +475,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     margin-top:5px;
     padding-bottom:5px;
     border-bottom:solid 1px #cccccc;
-    margin-bottom:5px;
+    margin-bottom:20px;
 }
 .flex-direction-nav a{
     width:40px;
