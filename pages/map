@@ -213,33 +213,6 @@ background-color: #FFFFFF ;
     });
     
     function dropPin(x, y){
-        var startingMapTransform = 'scale(1.10)';
-        var startingPanX = x;
-        var startingPanY = y;
-                
         
-        var panzoom = $(".panzoom-elements").panzoom({
-            cursor: "move",
-            increment: 0.05,
-            minScale: 0.15,
-            maxScale: 20,
-            transition: true,
-            duration: 150,
-            easing: "ease-in-out",
-            $zoomIn: $('.zoom-in'),
-            $zoomOut: $('.zoom-out'),
-            $zoomRange: $('.zoom-range'),
-            startTransform: startingMapTransform
-
-        });
-        $(".panzoom-elements").panzoom("pan", startingPanX, startingPanY, { relative: true });
-        
-        panzoom.on('panzoomchange', function(e, panzoom, matrix, changed) {
-          didPanZoom = true;
-        });
-        
-        panzoom.on('panzoomend', function(e, panzoom, matrix, changed) {
-          didPanZoom = false;
-        });
     }
 </script>
