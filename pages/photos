@@ -4,15 +4,15 @@
 <div  id="main_content" style="display:none">
     <ul class="breadcrumb">
         <li><a href="/home">Home</a> </li>
-        <li class="active">page template</li>
+        <li><a href="/leasing">Leasing</a> </li>
+        <li class="active">Photos</li>
     </ul>
     <div class="page_banner">
-        page template
+        Photos
     </div>
     <div class="inside_page_content">
         <div class="left_column">
-            <img class="inside_banner_image" alt="banner" src="http://kodekloud.s3.amazonaws.com/sites/54d4e9206e6f64691f000000/1f4fed1d858c9ddcaf0105aacf32e785/store_list_banner.jpg"/>
-            
+
         </div>
         <div class="right_column">
             <p class="right_column_header">centre information</p>
