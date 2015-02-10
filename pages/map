@@ -213,24 +213,11 @@ background-color: #FFFFFF ;
         $(".panzoom-elements").panzoom("reset");
         coords = this.value.split(',');
         console.log(coords)
-        $(".panzoom-elements").panzoom("pan", coords[0], coords[1], { relative: false, silent: false});
+        x = parseInt(coords[0]) - 150;
+        y = parseInt(coords[1]) - 150;
+        $(".panzoom-elements").panzoom("pan", x, coords[1], { relative: false, silent: false});
         // $(".panzoom-elements").panzoom("zoom", 2, { silent: false });
     });
-    
-    
-    
-    
-    
-    function dropPin(x, y){
-        if (x == "0" && y == "0"){
-            reset_map()
-        } else {
-            $(".panzoom-elements").panzoom("pan", x, y, { relative: false});
-        }
-        // $(".panzoom-elements").panzoom("reset");
-        // $(".panzoom-elements").panzoom("pan", x, y, { relative: false});
-        $(".panzoom-elements").panzoom("zoom", 2, { silent: false });
-    }
     
         loadMallData(renderAll);  
     });
