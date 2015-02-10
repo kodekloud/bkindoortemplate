@@ -221,7 +221,7 @@ background-color: #FFFFFF ;
     }
     
     function dropPin(x, y){
-        if (x == 0 && y == 0){
+        if (x == "0" && y == "0"){
             reset_map()
         } else {
             $(".panzoom-elements").panzoom("pan", x, y, { relative: false});
