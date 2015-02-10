@@ -21,11 +21,11 @@
 </div>
 <div style="overflow:hidden">
     <div id="storelist_container" class="pull-left">
-        <script id="storelist_template" type="x-tmpl-mustache/text">
-            <select>
+        <select>
+            <script id="storelist_template" type="x-tmpl-mustache/text">
                 <option>{{name}}</option>
-            </select>
-        </script>
+            </script>
+        </select>
     </div>
     <div id="zControls" class="pull-right">
         <button class="zoom-in"><span class="glyphicon glyphicon-plus"></span></button>
