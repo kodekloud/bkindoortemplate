@@ -209,7 +209,6 @@ background-color: #FFFFFF ;
     }
     
     $("#storelist_container").on('change', function() {
-        console.log("+_+_+_+")
         $(".panzoom-elements").panzoom("reset");
     });
     
