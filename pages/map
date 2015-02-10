@@ -210,7 +210,7 @@ background-color: #FFFFFF ;
     
     $("#storelist_container").on('change', function() {
         console.log("+_+_+_+")
-        panzoom.panzoom("reset");
+        $(".panzoom-elements").panzoom("reset");
     });
     
     
