@@ -53,8 +53,8 @@
         <button class="zoom-in"><span class="glyphicon glyphicon-plus"></span></button>
         <button class="zoom-out"><span class="glyphicon glyphicon-minus"></span></button>
     </div>
-    <div class="demo1 panzoom-elements" id="png_map">
-        <img alt="map" src="" class="png_map" id="map" />                
+    <div class="panzoom-elements" id="png_map">
+        <img alt="map" src="" class="png_map" id="map"/>                
     </div>  
 </div>
 </div>
