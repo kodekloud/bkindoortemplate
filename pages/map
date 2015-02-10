@@ -55,7 +55,11 @@ background-color: #FFFFFF ;
         <button class="zoom-in"><span class="glyphicon glyphicon-plus"></span></button>
         <button class="zoom-out"><span class="glyphicon glyphicon-minus"></span></button>
     </div>
-    <div id="map" class="panzoom-elements" style=""><img class="png_map" src=""></div>
+    
+    <div class="demo1">
+        <img alt="map" src="" class="png_map" id="map" />                
+        <div class="marker" id='scroll_to_marker' data-coords="{{x_coordinate}}, {{y_coordinate}}"></div>   
+    </div>  
 </div>
 </div>
 
