@@ -208,6 +208,7 @@
                          <li id="directory_link" class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle">Store Directory <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="/stores">Store Directory</a></li>
+                                <li><a href="/map">Centre Map</a></li>
                                 <li><a href="/office_directory">Office Directory</a></li>
                             </ul> 
                          </li>
