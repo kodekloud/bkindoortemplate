@@ -6473,6 +6473,7 @@ header .container {
   z-index: 101;
   overflow: hidden;
   padding: 10px;
+  margin-top:10px;
 }
 #social_media_wrapper a {
   text-align: center;
