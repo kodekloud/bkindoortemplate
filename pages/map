@@ -212,13 +212,12 @@ background-color: #FFFFFF ;
         loadMallData(renderAll);  
     });
     
-    $("select#storelist_container").change(function(){
+    $("select#yourSelect").change(function(){
         dropPin($(this).children(":selected").html());
     });
         
-    function dropPin(){
+    function dropPin(x, y){
         console.log("+_+_+_+_+_+_+_")
-        console.log(this)
-        // $(".panzoom-elements").panzoom("pan", x, y, { relative: false });
+        $(".panzoom-elements").panzoom("pan", x, y, { relative: false });
     }
 </script>
