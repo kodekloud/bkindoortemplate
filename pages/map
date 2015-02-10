@@ -213,6 +213,6 @@ background-color: #FFFFFF ;
     });
     
     function dropPin(x, y){
-        $(".panzoom-elements").panzoom("pan", x, y, { relative: true });
+        $(".panzoom-elements").panzoom("pan", x, y, { relative: false });
     }
 </script>
