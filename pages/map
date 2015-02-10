@@ -215,12 +215,14 @@ background-color: #FFFFFF ;
     $("select#yourSelect").change(function(){
         dropPin($(this).children(":selected").html());
     });
-        
-    function dropPin(x, y){
+    
+    function reset(){
         $(".panzoom-elements").panzoom("reset");
-        console.log("+_+_+_+_+_+_+_")
+    }
+    
+    function dropPin(x, y){
         // $(".panzoom-elements").panzoom("reset");
         // $(".panzoom-elements").panzoom("pan", x, y, { relative: false});
-        // $(".panzoom-elements").panzoom("zoom", 2, { silent: false });
+        $(".panzoom-elements").panzoom("zoom", 2, { silent: false });
     }
 </script>
