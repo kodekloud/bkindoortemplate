@@ -215,7 +215,7 @@ background-color: #FFFFFF ;
         console.log(coords[0])
         console.log(coords[1])
         x = parseInt(coords[0]) + 150;
-        y = parseInt(coords[1]) + 150;
+        y = parseInt(coords[1]) - 150;
         $(".panzoom-elements").panzoom("pan", x, y, { relative: false, silent: false});
         // $(".panzoom-elements").panzoom("zoom", 2, { silent: false });
     });
