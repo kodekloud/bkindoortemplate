@@ -13,32 +13,32 @@
         <div class="left_column">
             <img class="inside_banner_image" alt="store list banner" src="http://kodekloud.s3.amazonaws.com/sites/54cfab316e6f6433ad020000/23ec067017848a36dcdff8e19a7cef09/events_aboutus.jpg"/>
             <form name="contact_form" id="contact_form" method="post" action="http://mobilefringe.createsend.com/t/d/s/tkuikd/">
-                              <div class="row">
-                                   <div class="col-sm-6 col-md-6">
-                                        <label>Name</label>
-                                        <input name="cm-name" id="name" class="form-control" type="text" value="" required>
-                                   </div>
-                                   <div class="col-sm-6 col-md-6">
-                                        <label>E-mail</label>
-                                        <input name="cm-tkuikd-tkuikd" id="email" class="form-control" type="text" value="" required>
-                                   </div>
-                              </div>
-                              <div class="row">
-                                   <div class="col-sm-12 col-md-12">
-                                        <label>Subject</label>
-                                        <input name="cm-f-jrhiil" id="subject" class="form-control" type="text" required>
-                                   </div>
-                              </div>
-                              <div class="row">
-                                   <div class="col-sm-12 col-md-12">
-                                        <label>Message</label>
-                                        <textarea name="cm-f-jrhiir" id="message" rows="8" class="form-control" required></textarea>
-                                   </div>
-                                   <div class="col-sm-12 col-md-12"><br/>
-                                        <button id="submit" class="btn btn-primary" type="submit">Submit</button>
-                                   </div>
-                              </div>
-                         </form>
+                <div class="row">
+                    <div class="col-sm-6 col-md-6">
+                        <label>Name</label>
+                        <input name="cm-name" id="name" class="form-control" type="text" value="" required>
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                        <label>E-mail</label>
+                        <input name="cm-tkuikd-tkuikd" id="email" class="form-control" type="text" value="" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12">
+                        <label>Subject</label>
+                        <input name="cm-f-jrhiil" id="subject" class="form-control" type="text" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12">
+                        <label>Message</label>
+                        <textarea name="cm-f-jrhiir" id="message" rows="8" class="form-control" required></textarea>
+                    </div>
+                        <div class="col-sm-12 col-md-12"><br/>
+                        <button id="submit" class="btn btn-primary" type="submit">Submit</button>
+                    </div>
+                </div>
+            </form>
         </div>
         <div class="right_column">
             <p class="right_column_header">centre information</p>
