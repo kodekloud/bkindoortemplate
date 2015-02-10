@@ -217,6 +217,7 @@ background-color: #FFFFFF ;
     });
     
     function reset_map(){
+        console.log("+_+_+_+")
         $(".panzoom-elements").panzoom("reset");
     }
     
