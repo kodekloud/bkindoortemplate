@@ -48,7 +48,7 @@ background-color: #FFFFFF ;
 <div style="overflow:hidden">
     <select id="storelist_container" class="pull-left storelist_dd">
         <script id="storelist_template" type="x-tmpl-mustache/text">
-            <option onclick="javascript:dropPin({{x_coordinate}},{{y_coordinate}})">{{name}}</option>
+            <option><p onclick="javascript:dropPin({{x_coordinate}},{{y_coordinate}})">{{name}}</p></option>
         </script>
     </select>
     <div id="zControls" class="pull-right">
