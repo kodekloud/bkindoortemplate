@@ -1,0 +1,4 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" />
+
+<a href="http://kodekloud.s3.amazonaws.com/sites/54d4e9206e6f64691f000000/f1f22bba054942c67e50114dd58c8b15/featured-arrows.png" data-lightbox="image-1" data-title="My caption">Image #1</a>
