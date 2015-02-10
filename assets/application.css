@@ -1931,6 +1931,7 @@ table th[class*="col-"] {
     
     #social_media_wrapper{
         right:0 !important;
+        margin-top:10px;
     }
     
     .navbar .btn-navbar{
