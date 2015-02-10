@@ -474,6 +474,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 .promo_date{
     margin-top:5px;
     padding-bottom:5px;
+    border:solid 1px #cccccc;
 }
 .flex-direction-nav a{
     width:40px;
