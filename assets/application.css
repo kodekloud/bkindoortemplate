@@ -423,6 +423,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     font-size:20px;
     text-transform:uppercase;
     margin-bottom:0;
+    font-weight:bold;
 }
 
 .inside_banner_image{
