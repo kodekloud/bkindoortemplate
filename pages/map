@@ -168,6 +168,24 @@
         }
         
         
+    
+    
+    function goToStore(store_details){
+        if(typeof(store_details) != 'undefined' && store_details != null){
+            window.location.href = "/stores/"+store_details.slug;
+        }
+    }
+
+    function getSVGMapURL(){
+        initData();
+        var mallDataJSON = JSON.parse(sessionStorage.mallData);
+        return 'http://cdn.mallmaverick.com' + mallDataJSON.property.svgmap_url;
+    }
+    
+    
+        loadMallData(renderAll);  
+    });
+    
     function dropPin(x, y){
         $( "#page_content" ).fadeIn( "fast", function() {
                     var panzoom = $(".panzoom-elements").panzoom({
@@ -195,20 +213,4 @@
                     });
                 });
     }
-    
-    function goToStore(store_details){
-        if(typeof(store_details) != 'undefined' && store_details != null){
-            window.location.href = "/stores/"+store_details.slug;
-        }
-    }
-
-    function getSVGMapURL(){
-        initData();
-        var mallDataJSON = JSON.parse(sessionStorage.mallData);
-        return 'http://cdn.mallmaverick.com' + mallDataJSON.property.svgmap_url;
-    }
-    
-    
-        loadMallData(renderAll);  
-    });
 </script>
