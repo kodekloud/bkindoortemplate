@@ -211,13 +211,11 @@ background-color: #FFFFFF ;
     
     $("#storelist_container").on('change', function() {
         $(".panzoom-elements").panzoom("reset");
+        coords = this.value.split(',');
+        console.log(coords)
     });
     
     
-    function reset_map(){
-        console.log("+_+_+_+")
-        panzoom.panzoom("reset");
-    }
     
     
     
