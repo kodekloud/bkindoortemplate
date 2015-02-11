@@ -211,7 +211,7 @@ background-color: #FFFFFF ;
     
     $("#storelist_container").on('change', function() {
         $(".panzoom-elements").panzoom("reset");
-        var rect = $(".panzoom-elements").getBoundingClientRect();
+        var rect = $(".png_map").getBoundingClientRect();
         coords = this.value.split(',');
         console.log(rect)
         x = parseInt(coords[0]) ;
