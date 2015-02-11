@@ -55,6 +55,8 @@
     <div id="zControls" class="pull-right">
         <button class="zoom-in"><span class="glyphicon glyphicon-plus"></span></button>
         <button class="zoom-out"><span class="glyphicon glyphicon-minus"></span></button>
+        <button onclick="png_zoomin()">in</button>
+        <button onclick="png_zoomout()">out</button>
     </div>
     <div id="map" class="panzoom-elements" style=""><img src=""></div>
     <div class="demo1" id="demo1">
@@ -222,7 +224,12 @@
         }
         
         
-    
+   function png_zoomin(){
+       
+   } 
+   function png_zoomout(){
+       
+   }
     
     function goToStore(store_details){
         if(typeof(store_details) != 'undefined' && store_details != null){
