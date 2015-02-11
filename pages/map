@@ -240,9 +240,6 @@
         $(".marker").hide();
         id = this.value
         $("#"+id).show();
-        // $("#scroll_to_marker").remove();
-        // $("#demo1").append('<div class="marker" id="scroll_to_marker" data-coords="'+x+','+y+'"></div>')
-        // $("#anchor_id").click();
         $("#"+id).click();
         
     });
