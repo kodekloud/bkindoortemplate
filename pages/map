@@ -234,8 +234,7 @@
     
     $("#storelist_container").on('change', function() {
         coords = this.value.split(',');
-        x = parseInt(coords[0]) - 17 ;
-        y = parseInt(coords[1]) - 75;
+        
         $("#scroll_to_marker").remove();
         $("#demo1").append('<div class="marker" id="scroll_to_marker" data-coords="'+x+','+y+'"></div>')
         $("#anchor_id").click();
