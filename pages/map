@@ -182,7 +182,7 @@
                 var startingPanX = 0;
                 var startingPanY = 0;
                 if(isMobile) {
-                        startingMapTransform = 'scale(1)';
+                        startingMapTransform = 'scale(.5)';
                         startingPanX = 0;
                         startingPanY = 0;
                 }
@@ -246,6 +246,7 @@
         // $("#demo1").append('<div class="marker" id="scroll_to_marker" data-coords="'+x+','+y+'"></div>')
         // $("#anchor_id").click();
         $("#"+id).click();
+        $(".png_map").panzoom("zoom");
     });
     
         loadMallData(renderAll);  
