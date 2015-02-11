@@ -167,8 +167,9 @@
                         image: {
                             // width: 2240,
                             // height: 943,
-                            width: 1060,
-                            height: 400,
+                            width:1060,
+                            height:400,
+                            
                             name: 'imgMap'
                         },
                         map: {
@@ -205,7 +206,7 @@
                         startTransform: startingMapTransform
             
                     });
-                    $(".demo1").panzoom("pan", startingPanX, startingPanY, { relative: true });
+                    $(".png_map").panzoom("pan", startingPanX, startingPanY, { relative: true });
                     
                     panzoom.on('panzoomchange', function(e, panzoom, matrix, changed) {
                       didPanZoom = true;
