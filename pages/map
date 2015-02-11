@@ -177,11 +177,11 @@
                         }
                     });
                 });
-                var startingMapTransform = 'scale(1)';
+                var startingMapTransform = 'scale(0.5)';
                 var startingPanX = 0;
                 var startingPanY = 0;
                 if(isMobile) {
-                        startingMapTransform = 'scale(1)';
+                        startingMapTransform = 'scale(.5)';
                         startingPanX = 0;
                         startingPanY = 0;
                 }
@@ -198,18 +198,19 @@
                         easing: "ease-in-out",
                         $zoomIn: $('.zoom-in'),
                         $zoomOut: $('.zoom-out'),
-                        $zoomRange: $('.zoom-range')
+                        $zoomRange: $('.zoom-range'),
+                        startTransform: startingMapTransform
                         
             
                     });
                     $(".demo1").panzoom("pan", startingPanX, startingPanY, { relative: true });
                     
-                    $(".demo1").panzoom.on('panzoomchange', function(e, panzoom, matrix, changed) {
+                    panzoom.on('panzoomchange', function(e, panzoom, matrix, changed) {
                       didPanZoom = true;
                     });
                     
-                    $(".demo1").panzoom.on('panzoomend', function(e, panzoom, matrix, changed) {
-                      didPanZoom = true;
+                    panzoom.on('panzoomend', function(e, panzoom, matrix, changed) {
+                      didPanZoom = false;
                     });
                 });
             }else{
