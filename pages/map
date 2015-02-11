@@ -202,7 +202,9 @@
                         $zoomIn: $('.zoom-in'),
                         $zoomOut: $('.zoom-out'),
                         $zoomRange: $('.zoom-range'),
+                        disablePan: true,
                         startTransform: startingMapTransform
+                        
             
                     });
                     $(".png_map").panzoom("pan", startingPanX, startingPanY, { relative: true });
@@ -246,7 +248,7 @@
         // $("#demo1").append('<div class="marker" id="scroll_to_marker" data-coords="'+x+','+y+'"></div>')
         // $("#anchor_id").click();
         $("#"+id).click();
-        $(".png_map").panzoom("zoom");
+        
     });
     
         loadMallData(renderAll);  
