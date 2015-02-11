@@ -5,6 +5,7 @@
     height: 400px;
     width: 100%;
     background-color: #FFFFFF ;
+    overflow: visible !important;
 
 }
 .froala-element img{
