@@ -189,7 +189,7 @@
             
                 // $('#loading').hide();
                 $( "#page_content" ).fadeIn( "fast", function() {
-                    var panzoom = $(".png_map").panzoom({
+                    var panzoom = $(".demo1").panzoom({
                         cursor: "move",
                         increment: 0.05,
                         minScale: 0.15,
