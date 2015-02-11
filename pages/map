@@ -172,6 +172,9 @@
                             // height:400,
                             
                             name: 'imgMap'
+                        },
+                        map: {
+                            position: 'center'
                         }
                     });
                 });
@@ -203,15 +206,15 @@
                         
             
                     });
-                    $(".demo1").panzoom("pan", startingPanX, startingPanY, { relative: true });
+                    // $(".demo1").panzoom("pan", startingPanX, startingPanY, { relative: true });
                     
-                    panzoom.on('panzoomchange', function(e, panzoom, matrix, changed) {
-                      didPanZoom = true;
-                    });
+                    // panzoom.on('panzoomchange', function(e, panzoom, matrix, changed) {
+                    //   didPanZoom = true;
+                    // });
                     
-                    panzoom.on('panzoomend', function(e, panzoom, matrix, changed) {
-                      didPanZoom = false;
-                    });
+                    // panzoom.on('panzoomend', function(e, panzoom, matrix, changed) {
+                    //   didPanZoom = false;
+                    // });
                 });
             }else{
                 $('#loading').hide();
