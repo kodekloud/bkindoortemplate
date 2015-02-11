@@ -1,10 +1,10 @@
 <style>
-    .demo1{
-        float: left;
-        margin-bottom:29px;
-        height: 400px;
-        width: 100%;
-        background-color: #FFFFFF ;
+.demo1{
+    float: left;
+    margin-bottom:29px;
+    height: 400px;
+    width: 100%;
+    background-color: #FFFFFF ;
 
 }
 .froala-element img{
