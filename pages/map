@@ -236,6 +236,7 @@
     }
     
     $("#storelist_container").on('change', function() {
+        $(".marker").hide();
         id = this.value
         $("#"+id).show();
         // $("#scroll_to_marker").remove();
