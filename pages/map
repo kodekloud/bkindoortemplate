@@ -228,14 +228,9 @@
     }
     
     $("#storelist_container").on('change', function() {
-        $(".panzoom-elements").panzoom("reset");
-        var matrix = $(".panzoom-elements").panzoom("getMatrix");
-        console.log(matrix)
         coords = this.value.split(',');
         x = parseInt(coords[0]) / 217 ;
         y = parseInt(coords[1]) / 235;
-        $(".panzoom-elements").panzoom("pan", x, y, { relative: true, silent: false});
-        // $(".panzoom-elements").panzoom("zoom", 2, { silent: false });
     });
     
         loadMallData(renderAll);  
