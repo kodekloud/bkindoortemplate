@@ -198,8 +198,7 @@
                         easing: "ease-in-out",
                         $zoomIn: $('.zoom-in'),
                         $zoomOut: $('.zoom-out'),
-                        $zoomRange: $('.zoom-range'),
-                        startTransform: startingMapTransform
+                        $zoomRange: $('.zoom-range')
                         
             
                     });
