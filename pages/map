@@ -203,7 +203,7 @@
                         startTransform: startingMapTransform
             
                     });
-                    $(".panzoom-elements").panzoom("pan", startingPanX, startingPanY, { relative: true });
+                    $(".png_map").panzoom("pan", startingPanX, startingPanY, { relative: true });
                     
                     panzoom.on('panzoomchange', function(e, panzoom, matrix, changed) {
                       didPanZoom = true;
