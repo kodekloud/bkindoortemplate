@@ -172,9 +172,6 @@
                             // height:400,
                             
                             name: 'imgMap'
-                        },
-                        map: {
-                            position: 'center'
                         }
                     });
                 });
