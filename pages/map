@@ -213,8 +213,6 @@ background-color: #FFFFFF ;
         $(".panzoom-elements").panzoom("reset");
         var rect = $(".panzoom-elements").getBoundingClientRect();
         coords = this.value.split(',');
-        console.log(coords[0])
-        console.log(coords[1])
         console.log(rect)
         x = parseInt(coords[0]) ;
         y = parseInt(coords[1]) ;
