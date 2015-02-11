@@ -196,7 +196,7 @@
                         increment: 0.05,
                         minScale: 1,
                         maxScale: 20,
-                        transition: true,
+                        transition: false,
                         duration: 150,
                         easing: "ease-in-out",
                         $zoomIn: $('.zoom-in'),
