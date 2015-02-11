@@ -160,17 +160,13 @@
                 
             } else {
                 // $("#zControls").hide();
-                $(".panzoom-elements").remove();
+                $(".panzoom-elements").hide();
                 $(".png_map").attr("src", getPNGMapURL())
                 $(function(){
                 $('.demo1').craftmap({
                         image: {
                             width: 2240,
-                            height: 943,
-                            // width:1060,
-                            // height:400,
-                            
-                            name: 'imgMap'
+                            height: 943
                         },
                         map: {
                             position: 'center'
