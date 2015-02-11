@@ -178,8 +178,8 @@
                     });
                 });
                 var startingMapTransform = 'scale(0.5)';
-                var startingPanX = 200;
-                var startingPanY = 200;
+                var startingPanX = 0;
+                var startingPanY = 0;
                 if(isMobile) {
                         startingMapTransform = 'scale(.5)';
                         startingPanX = 0;
