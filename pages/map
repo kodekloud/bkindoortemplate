@@ -163,16 +163,16 @@
                 $(".panzoom-elements").hide();
                 $(".png_map").attr("src", getPNGMapURL())
                 $(function(){
-                // $('.demo1').craftmap({
-                //         image: {
-                //             width: 2240,
-                //             height: 943
-                //         },
-                //         map: {
-                //             position: 'center'
-                //         }
-                //     });
-                // });
+                $('.demo1').craftmap({
+                        image: {
+                            width: 2240,
+                            height: 943
+                        },
+                        map: {
+                            position: 'center'
+                        }
+                    });
+                });
                 var startingMapTransform = 'scale(0.5)';
                 var startingPanX = 0;
                 var startingPanY = 0;
