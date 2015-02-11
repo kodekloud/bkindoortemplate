@@ -13,12 +13,13 @@
 .marker {
     background: url("http://kodekloud.s3.amazonaws.com/sites/54cfab316e6f6433ad020000/530d3a9b7bc13ce4a511089c23463f99/10dundas_pin.png") no-repeat;
     cursor: pointer;
-    display: block;
+    /*display: block;*/
     height: 75px;
     margin-top: 5px;
     outline: medium none;
     text-indent: -9999px;
     width: 50px;
+    display:none;
 }
 </style>
 
@@ -47,7 +48,7 @@
 <div style="overflow:hidden">
     <select id="storelist_container" class="pull-left storelist_dd">
         <script id="storelist_template" type="x-tmpl-mustache/text">
-            <option value="{{x_coordinate}},{{y_coordinate}}">{{name}}</option>
+            <option value="scroll_to_marker{{id}}">{{name}}</option>
         </script>
     </select>
     <div id="zControls" class="pull-right">
