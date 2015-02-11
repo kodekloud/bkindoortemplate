@@ -196,13 +196,12 @@
                         increment: 0.05,
                         minScale: 1,
                         maxScale: 20,
-                        transition: false,
+                        transition: true,
                         duration: 150,
                         easing: "ease-in-out",
                         $zoomIn: $('.zoom-in'),
                         $zoomOut: $('.zoom-out'),
                         $zoomRange: $('.zoom-range'),
-                        disablePan: true,
                         startTransform: startingMapTransform
                         
             
