@@ -286,6 +286,14 @@
         
     });
     
+    function pngZoomOut(){
+        
+    }
+    
+    function pngZoomIn(){
+        
+    }
+    
         loadMallData(renderAll);  
     });
     
