@@ -238,6 +238,16 @@
     }
     
     $("#storelist_container").on('change', function() {
+        $('.demo1').craftmap({
+            image: {
+                width: 1060,
+                height: 400,
+                name: 'imgMap'
+            },
+            map: {
+                position: 'center'
+            }
+        });
         $(".marker").hide();
         id = this.value
         $("#"+id).show();
