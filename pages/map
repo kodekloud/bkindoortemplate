@@ -159,7 +159,8 @@
                 });
                 
             } else {
-                $("#zControls").hide();
+                // $("#zControls").hide();
+                $("#panzoom-elements").hide();
                 $(".png_map").attr("src", getPNGMapURL())
                 $(function(){
                 $('.demo1').craftmap({
