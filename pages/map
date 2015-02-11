@@ -195,6 +195,7 @@
                         maxScale: 2,
                         transition: true,
                         duration: 150,
+                        disablePan: true,
                         easing: "ease-in-out",
                         $zoomIn: $('.zoom-in'),
                         $zoomOut: $('.zoom-out'),
