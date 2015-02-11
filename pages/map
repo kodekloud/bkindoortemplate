@@ -154,14 +154,28 @@ background-color: #FFFFFF ;
                 
             } else {
                 $(".png_map").attr("src", getPNGMapURL())
-                var startingMapTransform = 'scale(1)';
-                var startingPanX = 0;
-                var startingPanY = 0;
-                if(isMobile) {
-                        startingMapTransform = 'scale(1)';
-                        startingPanX = 0;
-                        startingPanY = 0;
-                }
+                $(function(){
+                $('.demo1').craftmap({
+                        image: {
+                            width: 2240,
+                            height: 943,
+                            name: 'imgMap'
+                        },
+                        map: {
+                            position: 'center'
+                        }
+                    });
+                    // $("#anchor_id").click();
+                    // $("#scroll_to_marker").click();
+                });
+                // var startingMapTransform = 'scale(1)';
+                // var startingPanX = 0;
+                // var startingPanY = 0;
+                // if(isMobile) {
+                //         startingMapTransform = 'scale(1)';
+                //         startingPanX = 0;
+                //         startingPanY = 0;
+                // }
             }
             
             
