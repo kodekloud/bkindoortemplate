@@ -56,7 +56,7 @@
         <button class="zoom-out"><span class="glyphicon glyphicon-minus"></span></button>
     </div>
     <div id="map" class="panzoom-elements" style=""><img src=""></div>
-    <div class="demo1 panzoom-elements" id="demo1">
+    <div class="demo1" id="demo1">
         <img alt="map" src="" class="imgMap png_map" id="map_image" />                
         <div id="pin_container">
             <script id="pin_template" type="x-tmpl-mustache/text">
@@ -175,20 +175,20 @@
                     // $("#anchor_id").click();
                     // $("#scroll_to_marker").click();
                 });
-                // var startingMapTransform = 'scale(1)';
-                // var startingPanX = 0;
-                // var startingPanY = 0;
-                // if(isMobile) {
-                //         startingMapTransform = 'scale(1)';
-                //         startingPanX = 0;
-                //         startingPanY = 0;
-                // }
+                var startingMapTransform = 'scale(1)';
+                var startingPanX = 0;
+                var startingPanY = 0;
+                if(isMobile) {
+                        startingMapTransform = 'scale(1)';
+                        startingPanX = 0;
+                        startingPanY = 0;
+                }
             }
             
             
                 // $('#loading').hide();
                 $( "#page_content" ).fadeIn( "fast", function() {
-                    var panzoom = $(".panzoom-elements").panzoom({
+                    var panzoom = $(".demo1").panzoom({
                         cursor: "move",
                         increment: 0.05,
                         minScale: 0.15,
