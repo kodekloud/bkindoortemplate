@@ -63,6 +63,11 @@
             </script>
         </div>
     </div>   
+    <div class = "controls">
+<a href = "#" rel = "France"> France </a>
+<a href = "#" rel = "russia" > Russia </a >
+<a href = "#" rel = "poland" > Poland </a >
+</div >
     
 </div>
 </div>
