@@ -73,6 +73,7 @@
         function renderAll (){
             var stores = getStoresList();
             renderPageData('#storelist_container','#storelist_template',stores)
+            renderPageData('#demo1','#pin_template',stores);
             $("#loading_screen").hide();
             $("#main_content").show();
             // specify the type of map here. "png" or "svg"
