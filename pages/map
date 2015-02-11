@@ -58,7 +58,7 @@
     </div>
     <div id="map" class="panzoom-elements" style=""><img src=""></div>
     <div class="demo1" id="demo1">
-        <img alt="map" src="" class="imgMap" id="map_image" />                
+        <img alt="map" src="" class="imgMap png_map" id="map_image" />                
         <div id="pin_container">
             <script id="pin_template" type="x-tmpl-mustache/text">
                 <div class="marker" id='scroll_to_marker{{id}}' data-coords="{{x_coordinate}}, {{y_coordinate}}"></div> 
@@ -164,7 +164,7 @@
                 $(".panzoom-elements").hide();
                 $(".png_map").attr("src", getPNGMapURL())
                 $(function(){
-                $('.imgMap').craftmap({
+                $('.demo1').craftmap({
                         image: {
                             width: 2240,
                             height: 943,
@@ -191,7 +191,7 @@
             
                 // $('#loading').hide();
                 $( "#page_content" ).fadeIn( "fast", function() {
-                    var panzoom = $(".imgMap").panzoom({
+                    var panzoom = $(".demo1").panzoom({
                         cursor: "move",
                         increment: 0.05,
                         minScale: 1,
@@ -206,7 +206,7 @@
                         
             
                     });
-                    $(".imgMap").panzoom("pan", startingPanX, startingPanY, { relative: true });
+                    $(".demo1").panzoom("pan", startingPanX, startingPanY, { relative: true });
                     
                     panzoom.on('panzoomchange', function(e, panzoom, matrix, changed) {
                       didPanZoom = true;
