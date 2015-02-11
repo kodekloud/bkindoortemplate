@@ -231,7 +231,7 @@
         coords = this.value.split(',');
         x = parseInt(coords[0]) - 17 ;
         y = parseInt(coords[1]) - 75;
-        $(".demo1").append('<div class="marker" id="scroll_to_marker" data-coords="'+x+','+y+'"></div>')
+        $("#demo1").append('<div class="marker" id="scroll_to_marker" data-coords="'+x+','+y+'"></div>')
         
     });
     
