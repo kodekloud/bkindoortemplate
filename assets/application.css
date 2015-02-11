@@ -4533,6 +4533,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   list-style: none;
   background-color: transparent;
   border-radius: 4px;
+  text-transform:uppercase;
 }
 .breadcrumb > li {
   display: inline-block;
