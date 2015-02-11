@@ -56,10 +56,11 @@
     </div>
     <div class="demo1" id="demo1">
         <img alt="map" src="" class="imgMap png_map" id="map_image" />                
-        <script id="pin_template" type="x-tmpl-mustache/text">
-            <div class="marker" id='scroll_to_marker{{id}}' data-coords="{{x_coordinate}}, {{y_coordinate}}"></div> 
-        </script>
-        
+        <div id="pin_container">
+            <script id="pin_template" type="x-tmpl-mustache/text">
+                <div class="marker" id='scroll_to_marker{{id}}' data-coords="{{x_coordinate}}, {{y_coordinate}}"></div> 
+            </script>
+        </div>
     </div>   
     
 </div>
@@ -73,7 +74,7 @@
         function renderAll (){
             var stores = getStoresList();
             renderPageData('#storelist_container','#storelist_template',stores)
-            renderPageData('#demo1','#pin_template',stores);
+            renderPageData('#pin_container','#pin_template',stores);
             $("#loading_screen").hide();
             $("#main_content").show();
             // specify the type of map here. "png" or "svg"
