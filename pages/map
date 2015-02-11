@@ -160,7 +160,7 @@
                 
             } else {
                 // $("#zControls").hide();
-                $(".panzoom-elements").hide();
+                $(".panzoom-elements").remove();
                 $(".png_map").attr("src", getPNGMapURL())
                 $(function(){
                 $('.demo1').craftmap({
