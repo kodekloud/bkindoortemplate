@@ -56,7 +56,7 @@
         <button class="zoom-out"><span class="glyphicon glyphicon-minus"></span></button>
     </div>
     <div id="map" class="panzoom-elements" style=""><img src=""></div>
-    <div class="demo1" id="demo1">
+    <div class="demo1 panzoom-elements" id="demo1">
         <img alt="map" src="" class="imgMap png_map" id="map_image" />                
         <div id="pin_container">
             <script id="pin_template" type="x-tmpl-mustache/text">
@@ -79,7 +79,7 @@
             $("#loading_screen").hide();
             $("#main_content").show();
             // specify the type of map here. "png" or "svg"
-            var maptype = "svg"
+            var maptype = "png"
             renderMap(maptype); 
         }
         
