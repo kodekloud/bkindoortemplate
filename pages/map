@@ -209,7 +209,7 @@
                     });
                     
                     panzoom.on('panzoomend', function(e, panzoom, matrix, changed) {
-                      didPanZoom = false;
+                      didPanZoom = true;
                     });
                 });
             }else{
