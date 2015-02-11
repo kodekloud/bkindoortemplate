@@ -204,11 +204,11 @@
                     });
                     $(".demo1").panzoom("pan", startingPanX, startingPanY, { relative: true });
                     
-                    panzoom.on('panzoomchange', function(e, panzoom, matrix, changed) {
+                    $(".demo1").panzoom.on('panzoomchange', function(e, panzoom, matrix, changed) {
                       didPanZoom = true;
                     });
                     
-                    panzoom.on('panzoomend', function(e, panzoom, matrix, changed) {
+                    $(".demo1").panzoom.on('panzoomend', function(e, panzoom, matrix, changed) {
                       didPanZoom = true;
                     });
                 });
