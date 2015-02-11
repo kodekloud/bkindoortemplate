@@ -203,7 +203,7 @@
                 $('.demo1').craftmap({
                         image: {
                             width: propertyDetails.map_image_width,
-                            height: 943,
+                            height: propertyDetails.map_image_height,
                             // width:1060,
                             // height:400,
                             
