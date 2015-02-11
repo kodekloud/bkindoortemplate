@@ -165,8 +165,10 @@
                 $(function(){
                 $('.demo1').craftmap({
                         image: {
-                            width: 1060,
-                            height: 400
+                            // width: 2240,
+                            // height: 943
+                            width:1060,
+                            height:400
                         },
                         map: {
                             position: 'center'
@@ -183,33 +185,33 @@
                 }
             }
 
-                // $( "#page_content" ).fadeIn( "fast", function() {
-                //     var panzoom = $(".demo1").panzoom({
-                //         cursor: "move",
-                //         increment: 0.5,
-                //         minScale: 0.5,
-                //         maxScale: 2,
-                //         transition: true,
-                //         duration: 150,
-                //         disablePan: true,
-                //         easing: "ease-in-out",
-                //         $zoomIn: $('.zoom-in'),
-                //         $zoomOut: $('.zoom-out'),
-                //         $zoomRange: $('.zoom-range'),
-                //         startTransform: startingMapTransform
+                $( "#page_content" ).fadeIn( "fast", function() {
+                    var panzoom = $(".demo1").panzoom({
+                        cursor: "move",
+                        increment: 0.5,
+                        minScale: 0.5,
+                        maxScale: 2,
+                        transition: true,
+                        duration: 150,
+                        disablePan: true,
+                        easing: "ease-in-out",
+                        $zoomIn: $('.zoom-in'),
+                        $zoomOut: $('.zoom-out'),
+                        $zoomRange: $('.zoom-range'),
+                        startTransform: startingMapTransform
                         
             
-                //     });
-                //     $(".demo1").panzoom("pan", startingPanX, startingPanY, { relative: true });
+                    });
+                    $(".demo1").panzoom("pan", startingPanX, startingPanY, { relative: true });
                     
-                //     panzoom.on('panzoomchange', function(e, panzoom, matrix, changed) {
-                //       didPanZoom = true;
-                //     });
+                    panzoom.on('panzoomchange', function(e, panzoom, matrix, changed) {
+                      didPanZoom = true;
+                    });
                     
-                //     panzoom.on('panzoomend', function(e, panzoom, matrix, changed) {
-                //       didPanZoom = false;
-                //     });
-                // });
+                    panzoom.on('panzoomend', function(e, panzoom, matrix, changed) {
+                      didPanZoom = false;
+                    });
+                });
             }else{
                 $('#loading').hide();
                 $('#zControls').hide();
