@@ -228,6 +228,7 @@
     }
     
     $("#storelist_container").on('change', function() {
+        console.log("=-=-=-")
         coords = this.value.split(',');
         x = parseInt(coords[0]) - 17 ;
         y = parseInt(coords[1]) - 75;
