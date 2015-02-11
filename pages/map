@@ -178,7 +178,7 @@
                         }
                     });
                 });
-                var startingMapTransform = 'scale(.10)';
+                var startingMapTransform = 'scale(.5)';
                 var startingPanX = 0;
                 var startingPanY = 0;
                 if(isMobile) {
