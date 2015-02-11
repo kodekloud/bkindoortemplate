@@ -193,7 +193,7 @@
                 $( "#page_content" ).fadeIn( "fast", function() {
                     var panzoom = $(".demo1").panzoom({
                         cursor: "move",
-                        increment: 0.05,
+                        increment: 0.01,
                         minScale: 1,
                         maxScale: 2,
                         transition: true,
