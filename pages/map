@@ -54,7 +54,6 @@
         <button class="zoom-in"><span class="glyphicon glyphicon-plus"></span></button>
         <button class="zoom-out"><span class="glyphicon glyphicon-minus"></span></button>
     </div>
-    <!--<div id="map" class="panzoom-elements" style=""><img class="png_map" src=""></div>-->
     <div class="demo1" id="demo1">
         <img alt="map" src="" class="imgMap png_map" id="map_image" />                
     </div>   
