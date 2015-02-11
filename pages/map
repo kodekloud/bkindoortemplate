@@ -56,6 +56,10 @@
     </div>
     <div class="demo1" id="demo1">
         <img alt="map" src="" class="imgMap png_map" id="map_image" />                
+        <script id="pin_template" type="x-tmpl-mustache/text">
+            <div class="marker" id='scroll_to_marker{{id}}' data-coords="{{x_coordinate}}, {{y_coordinate}}"></div> 
+        </script>
+        
     </div>   
     
 </div>
@@ -227,7 +231,6 @@
     }
     
     $("#storelist_container").on('change', function() {
-        console.log("=-=-=-")
         coords = this.value.split(',');
         x = parseInt(coords[0]) - 17 ;
         y = parseInt(coords[1]) - 75;
