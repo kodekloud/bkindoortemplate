@@ -47,6 +47,7 @@
 </div>
 <div style="overflow:hidden">
     <select id="storelist_container" class="pull-left storelist_dd">
+        <option>test</option>
         <script id="storelist_template" type="x-tmpl-mustache/text">
             <option value="scroll_to_marker{{id}}">{{name}}</option>
         </script>
