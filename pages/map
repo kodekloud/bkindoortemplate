@@ -45,17 +45,17 @@
     Centre Map
 </div>
 <div style="overflow:hidden">
-    <select id="storelist_container" class="pull-left storelist_dd">
-        <script id="storelist_template" type="x-tmpl-mustache/text">
-            <option value="{{x_coordinate}},{{y_coordinate}}">{{name}}</option>
-        </script>
-    </select>
     <div id="zControls" class="pull-right">
         <button class="zoom-in"><span class="glyphicon glyphicon-plus"></span></button>
         <button class="zoom-out"><span class="glyphicon glyphicon-minus"></span></button>
     </div>
     <!--<div id="map" class="panzoom-elements" style=""><img class="png_map" src=""></div>-->
     <div class="demo1">
+        <select id="storelist_container" class="pull-left storelist_dd">
+            <script id="storelist_template" type="x-tmpl-mustache/text">
+                <option value="{{x_coordinate}},{{y_coordinate}}">{{name}}</option>
+            </script>
+        </select>
         <img alt="map" src="" class="imgMap png_map" id="map_image" />                
         <!--<div class="marker" id='scroll_to_marker' data-coords="{{x_coordinate}}, {{y_coordinate}}"></div>   -->
     </div>   
