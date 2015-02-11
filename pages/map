@@ -212,7 +212,7 @@ background-color: #FFFFFF ;
     $("#storelist_container").on('change', function() {
         $(".panzoom-elements").panzoom("reset");
         var matrix = $(".panzoom-elements").panzoom("getMatrix");
-        coords(matrix)
+        console.log(matrix)
         coords = this.value.split(',');
         x = parseInt(coords[0]) / 217 ;
         y = parseInt(coords[1]) / 235;
