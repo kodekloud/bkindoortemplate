@@ -196,12 +196,13 @@
                 
             } else {
                 // $("#zControls").hide();
+                var propertyDetails = getPropertyDetails();
                 $(".panzoom-elements").hide();
                 $(".png_map").attr("src", getPNGMapURL())
                 $(function(){
                 $('.demo1').craftmap({
                         image: {
-                            width: 2240,
+                            width: propertyDetails.map_image_width,
                             height: 943,
                             // width:1060,
                             // height:400,
