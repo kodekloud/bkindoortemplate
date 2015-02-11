@@ -221,8 +221,7 @@
                         startingPanX = 0;
                         startingPanY = 0;
                 }
-            }
-
+                
                 $( "#page_content" ).fadeIn( "fast", function() {
                     var panzoom = $(".demo1").panzoom({
                         cursor: "move",
@@ -249,6 +248,9 @@
                       didPanZoom = false;
                     });
                 });
+            }
+
+               
             }else{
                 $('#loading').hide();
                 $('#zControls').hide();
