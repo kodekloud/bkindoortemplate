@@ -176,8 +176,6 @@
                             position: 'center'
                         }
                     });
-                    // $("#anchor_id").click();
-                    // $("#scroll_to_marker").click();
                 });
                 var startingMapTransform = 'scale(1)';
                 var startingPanX = 0;
