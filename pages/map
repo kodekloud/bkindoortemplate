@@ -149,7 +149,7 @@ background-color: #FFFFFF ;
                 
             } else {
                 $(".png_map").attr("src", getPNGMapURL())
-                var startingMapTransform = 'scale(1.10)';
+                var startingMapTransform = 'scale(1)';
                 var startingPanX = 0;
                 var startingPanY = 0;
                 if(isMobile) {
@@ -211,6 +211,7 @@ background-color: #FFFFFF ;
     
     $("#storelist_container").on('change', function() {
         $(".panzoom-elements").panzoom("reset");
+        current_matrix = 
         coords = this.value.split(',');
         console.log(coords[0])
         console.log(coords[1])
