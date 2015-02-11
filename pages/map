@@ -211,10 +211,11 @@ background-color: #FFFFFF ;
     
     $("#storelist_container").on('change', function() {
         $(".panzoom-elements").panzoom("reset");
-        current_matrix = 
+        current_matrix = $(".panzoom-elements").panzoom("getMatrix");
         coords = this.value.split(',');
         console.log(coords[0])
         console.log(coords[1])
+        console.log(current_matrix)
         x = parseInt(coords[0]) ;
         y = parseInt(coords[1]) ;
         $(".panzoom-elements").panzoom("pan", x, y, { relative: true, silent: false});
