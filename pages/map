@@ -124,7 +124,6 @@
                 $("#storelist_container").hide()
                 Snap.load(getSVGMapURL(), function (f) {
                     $.each( stores, function( key, value ) {
-                        console.log(value.svgmap_region)
                         if(value.svgmap_region != null && typeof(value.svgmap_region)  != 'undefined'){
                             var svg_id = "#" + value.svgmap_region;
                             f.select(svg_id).mouseover(function() {
@@ -178,7 +177,7 @@
                         }
                     });
                 });
-                var startingMapTransform = 'scale(1)';
+                var startingMapTransform = 'scale(0.5)';
                 var startingPanX = 0;
                 var startingPanY = 0;
                 if(isMobile) {
@@ -187,9 +186,7 @@
                         startingPanY = 0;
                 }
             }
-            
-            
-                // $('#loading').hide();
+
                 $( "#page_content" ).fadeIn( "fast", function() {
                     var panzoom = $(".demo1").panzoom({
                         cursor: "move",
