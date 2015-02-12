@@ -322,6 +322,21 @@
               relative: false,
               animate: true
           });
+          
+        var elements = [];
+
+        elements.push({x:x,y:y});
+        elements.forEach(function(element) {
+            context.beginPath();
+            context.arc(element.x,element.y,10,0,2*Math.PI);
+            context.stroke();
+            context.fillStyle = 'yellow';
+            context.fill();
+            context.lineWidth = 2;
+            context.strokeStyle = 'black';
+            context.stroke();
+        });
+
     });
     
     function pngZoomOut(){
