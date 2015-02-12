@@ -279,6 +279,7 @@
         id = this.value
         $("#"+id).show();
         $("#"+id).click();
+        $(".imgContent").addClass('zoomin');
         // $(".imgContent").addClass('transition');
         // $(".imgContent").css("zoom","1");
         // $(".imgContent").removeClass('transition');
