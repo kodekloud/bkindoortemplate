@@ -80,14 +80,7 @@
 </div>
 <div style="overflow:hidden;height:400px;margin:5px">
 
-    <!--<div class="select_box" onclick="javascript:toggle_dd()">-->
-    <!--Select store-->
-    <!--    <ul id= "storelist_container">-->
-    <!--        <script id="storelist_template" type="x-tmpl-mustache/text">-->
-    <!--            <li>{{name}}</li>-->
-    <!--        </script>-->
-    <!--    </ul>-->
-    <!--</div>-->
+
 
 
     <select id="storelist_container" class="pull-left storelist_dd">
