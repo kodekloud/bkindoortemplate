@@ -304,14 +304,7 @@
     }
     
     $("#storelist_container").on('change', function() {
-        console.log(this.value)
-        var matrix = $(".png_map").panzoom("getMatrix");
-        var calc_x = matrix[4];
-        var calc_y = matrix[5];
-        console.log(calc_x)
-        console.log(calc_y)
-        console.log(matrix)
-        
+        console.log(this.value);
         
     });
     
