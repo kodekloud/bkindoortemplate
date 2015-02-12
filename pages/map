@@ -71,6 +71,7 @@
 <div style="overflow:hidden;height:400px;margin:5px">
 
     <div class="select_box">
+    Select store
         <ul id= "storelist_container">
             <script id="storelist_template" type="x-tmpl-mustache/text">
                 <li>{{name}}</li>
