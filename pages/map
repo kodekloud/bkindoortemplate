@@ -351,7 +351,7 @@
         // console.log(f)
         // f.clientX = 974
         // f.clientY = 389
-        $(".png_map").panzoom("zoom", 1.5)
+        $(".png_map").panzoom("zoom", 1.5, { silent: true })
         
         
         $(".png_map").panzoom("pan", x, y, {
