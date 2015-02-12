@@ -337,21 +337,24 @@
           });
           
         f = []
-        var parentOffset = $(".png_map").offset(); 
-        f.clientX =  x + 530 
-        f.clientY = y + 379 
-        // f.clientY = 389
-        // console.log(x)
-        // console.log(y)
-        // console.log("=-=-=-=-=-=-=-")
-        // console.log(pin_x)
-        // console.log(pin_y)
-        // f.clientX =  ((x * 100) / 42) - 10
-        // f.clientY = ((y * 100) / 49) - 10
-        console.log(f)
+        // var parentOffset = $(".png_map").offset(); 
+        // f.clientX =  x + 530 
+        // f.clientY = y + 379 
+        // // f.clientY = 389
+        // // console.log(x)
+        // // console.log(y)
+        // // console.log("=-=-=-=-=-=-=-")
+        // // console.log(pin_x)
+        // // console.log(pin_y)
+        // // f.clientX =  ((x * 100) / 42) - 10
+        // // f.clientY = ((y * 100) / 49) - 10
+        // console.log(f)
         // f.clientX = 974
         // f.clientY = 389
-        $(".png_map").panzoom("zoom", 1, { focal: f })
+        $(".png_map").panzoom("zoom", 0.5, { 
+            animate:true
+            
+        })
         
     });
     
