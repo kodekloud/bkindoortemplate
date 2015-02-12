@@ -259,6 +259,18 @@
                     // panzoom.on("panzoomstart", function( e, panzoom ) { console.log( panzoom.getMatrix() ); });
                 });
                 
+                $(".png_map").parent().on('mousewheel.focal', function( e ) {
+                    e.preventDefault();
+                    var delta = e.delta || e.originalEvent.wheelDelta;
+                    var zoomOut = delta ? delta < 0 : e.originalEvent.deltaY > 0;
+                    $panzoom.panzoom('zoom', zoomOut, {
+                        increment: 0.1,
+                        animate: false,
+                        focal: e
+                    });
+                });
+
+                
                 lmargin = parseInt(propertyDetails.map_image_width) / 2
                 w = parseInt(propertyDetails.map_image_width)
                 h = parseInt(propertyDetails.map_image_height)
@@ -336,7 +348,7 @@
     function pngZoomIn(){
         v = $(".png_map").panzoom("getMatrix");
         console.log(v)
-        $(".png_map").panzoom("zoom", 2.5, { focal:[0] })
+        $(".png_map").panzoom("zoom", 2.5, { focal:[400, 400] })
      
 
     }
