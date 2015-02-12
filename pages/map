@@ -313,16 +313,29 @@
     });
     
     $("#storelist_container").on('change', function() {
-        console.log(this.value);
         coords = this.value.split(",");
+        var propertyDetails = getPropertyDetails();
         x = coords[0]
         y = coords[1]
+        x_offset = 1060 * 100 / propertyDetails.map_image_width
+        y_offset = 446 * 100 / propertyDetails.map_image_width
+        
+        
+        x = parseInt(x) 
+        console.log(x)
+        console.log(y)
+        console.log("--------")
         v = $(".png_map").panzoom("getMatrix");
         x = x * (1 / v[0])
         y = y * (1 / v[3])
         console.log(v)
         console.log(x)
         console.log(y)
+        
+        $(".png_map").panzoom("pan", x, y, {
+              relative: false,
+              animate: true
+          });
     });
     
     function pngZoomOut(){
