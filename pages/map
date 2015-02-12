@@ -315,6 +315,7 @@
         $(".png_map").css("background", "url("+getPNGMapURL()+")")
         var canvas = document.getElementById('map_image');
         var context = canvas.getContext('2d');  
+        context.clearRect ( 0 , 0 , canvas.width, canvas.height );
         var img = new Image;
         img.src = "http://kodekloud.s3.amazonaws.com/sites/54cfab316e6f6433ad020000/530d3a9b7bc13ce4a511089c23463f99/10dundas_pin.png"
         context.drawImage(img,pin_x,pin_y);
