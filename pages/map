@@ -263,15 +263,19 @@
         
     });
     
-    function pngZoomOut(){
-        
-    }
     
-    function pngZoomIn(){
-        
-    }
     
         loadMallData(renderAll);  
     });
+    
+    function pngZoomOut(){
+        var current_zoom = $(".imgContent").css("zoom");
+        console.log(current_zoom);
+    }
+    
+    function pngZoomIn(){
+        var current_zoom = $(".imgContent").css("zoom");
+        console.log(current_zoom);
+    }
     
 </script>
