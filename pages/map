@@ -322,7 +322,7 @@
               relative: false,
               animate: true
           });
-        // $(".png_map").panzoom("zoom", 1.5);
+        $(".png_map").panzoom("zoom", 1.5);
     });
     
     function pngZoomOut(){
