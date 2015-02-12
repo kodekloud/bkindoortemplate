@@ -312,7 +312,6 @@
         // );
         $(".imgContent").removeClass('zoomin');
         $(".imgContent").addClass('zoomout');
-        $(".imgContent").removeClass('zoomout');
     }
     
     
