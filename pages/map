@@ -336,10 +336,10 @@
               animate: true
           });
           
-        // f = []
-        // f.clientX = x
-        // f.clientY = y
-        // $(".png_map").panzoom("zoom", 1.5, { focal: f })
+        f = []
+        f.clientX = 985
+        f.clientY = 391
+        $(".png_map").panzoom("zoom", 1.5, { focal: f })
         
     });
     
