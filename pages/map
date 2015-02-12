@@ -11,6 +11,22 @@
 .froala-element img{
     cursor:default !important;
 }
+.marker {
+    background: url("http://kodekloud.s3.amazonaws.com/sites/54cfab316e6f6433ad020000/530d3a9b7bc13ce4a511089c23463f99/10dundas_pin.png") no-repeat;
+    cursor: pointer;
+    /*display: block;*/
+    height: 75px;
+    margin-top: 5px;
+    outline: medium none;
+    text-indent: -9999px;
+    width: 50px;
+    display:none;
+    position:absolute;
+    top:50%;
+    bottom:50%;
+    left:50%;
+    right:50%;
+}
 
 .png_map{
 
@@ -64,7 +80,9 @@
     </div>
     <div id="map" class="panzoom-elements" style=""><img src=""></div>
     <div class="demo1" id="demo1">
-        <canvas class="imgMap png_map" width="1060" height="400" id="map_image"></canvas>            
+        <canvas class="imgMap png_map" width="2240" height="943" id="map_image"></canvas>            
+        <div class="marker"></div> 
+        
     </div> 
     
 </div>
@@ -162,11 +180,11 @@
                     });
                     s.append(f.select("svg"));
                 });
-                var startingMapTransform = 'scale(1)';
+                var startingMapTransform = 'scale(0.5)';
                 var startingPanX = 0;
                 var startingPanY = 0;
                 if(isMobile) {
-                        startingMapTransform = 'scale(1)';
+                        startingMapTransform = 'scale(.5)';
                         startingPanX = 0;
                         startingPanY = 0;
                 }
@@ -204,11 +222,11 @@
                 var propertyDetails = getPropertyDetails();
                 $(".panzoom-elements").hide();
                 $(".png_map").css("background", "url("+getPNGMapURL()+")")
-                var startingMapTransform = 'scale(1)';
+                var startingMapTransform = 'scale(0.5)';
                 var startingPanX = 0;
                 var startingPanY = 0;
                 if(isMobile) {
-                        startingMapTransform = 'scale(1)';
+                        startingMapTransform = 'scale(0.5)';
                         startingPanX = 0;
                         startingPanY = 0;
                 }
@@ -257,7 +275,7 @@
                 lmargin = parseInt(propertyDetails.map_image_width) / 2
                 w = parseInt(propertyDetails.map_image_width)
                 h = parseInt(propertyDetails.map_image_height)
-                // $(".demo1").css({"width": w+"px", "height":h+"px", "margin-left": "-600px", "margin-top":"-300px"})
+                $(".demo1").css({"width": w+"px", "height":h+"px", "margin-left": "-600px", "margin-top":"-300px"})
                 
             }
 
