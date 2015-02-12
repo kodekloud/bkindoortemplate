@@ -84,7 +84,7 @@
     Select store
         <ul id= "storelist_container">
             <script id="storelist_template" type="x-tmpl-mustache/text">
-                <li>{{name}}</li>
+                <li onclick="javascript:pin_store({{x_coordinate}}, {{y_coordinate}})">{{name}}</li>
             </script>
         </ul>
     </div>
