@@ -315,8 +315,9 @@
         // y = y * (1 / v[3])
         
         new_width = (v[0] * 1060)
-        new_height = (v[3] * 943)
-        
+        new_height = (v[3] * 400)
+        x = (x * new_width) / 1060 
+        y = ((y * new_height) / 400)
         // x = (x * new_width) / 2240 + (10 * (1 / v[0]))
         // y = ((y * new_height) / 943) + (35 * (1 / v[3]))
         console.log (new_width)
