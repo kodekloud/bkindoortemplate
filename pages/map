@@ -24,19 +24,19 @@
 }
 
 .imgContent{
-    zoom: 0.5;
-    -moz-transform: scale(1);
-    -moz-transform-origin: 0 0;
-    -o-transform: scale(1);
-    -o-transform-origin: 0 0;
-    -webkit-transform: scale(1);
-    -webkit-transform-origin: 0 0;
+    /*zoom: 1;*/
+    /*-moz-transform: scale(1);*/
+    /*-moz-transform-origin: 0 0;*/
+    /*-o-transform: scale(1);*/
+    /*-o-transform-origin: 0 0;*/
+    /*-webkit-transform: scale(1);*/
+    /*-webkit-transform-origin: 0 0;*/
     transform: scale(1); /* Standard Property */
     transform-origin: 0 0;  /* Standard Property */
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    -ms-transition: all .2s ease-in-out;
+    /*-webkit-transition: all .2s ease-in-out;*/
+    /*-moz-transition: all .2s ease-in-out;*/
+    /*-o-transition: all .2s ease-in-out;*/
+    /*-ms-transition: all .2s ease-in-out;*/
 }
 
 .zoomout {
@@ -236,6 +236,9 @@
                             
                             name: 'imgMap'
                         },
+                        marker: {
+                            center: true    
+                        },
                         map: {
                             position: 'top_left'
                         }
@@ -271,10 +274,10 @@
     $("#storelist_container").on('change', function() {
         $(".marker").hide();
         id = this.value
-        pngZoomOut();
+        // pngZoomOut();
         $("#"+id).show();
         $("#"+id).click();
-        pngZoomIn();
+        // pngZoomIn();
         
         
     });
