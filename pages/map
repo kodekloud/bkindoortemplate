@@ -335,10 +335,10 @@
             context.stroke();
         });
         
-        $(".png_map").panzoom("pan", x, y, {
-              relative: false,
-              animate: true
-          });
+        // $(".png_map").panzoom("pan", x, y, {
+        //       relative: false,
+        //       animate: true
+        //   });
 
     });
     
