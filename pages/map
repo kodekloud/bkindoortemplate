@@ -312,6 +312,7 @@
         y = ((y * new_height) / 943) + (27 * (1 / v[3]))
         pin_x = (parseInt(coords[0]) - 12)
         pin_y = (parseInt(coords[1]) - 27) 
+        $(".png_map").css("background", "url("+getPNGMapURL()+")")
         var canvas = document.getElementById('map_image');
         var context = canvas.getContext('2d');  
         var img = new Image;
