@@ -24,11 +24,9 @@
 }
 
 .imgContent{
-    zoom: 50%;
-    -moz-transform: scale(0.5);
-    -webkit-transform: scale(0.5);
-    top:0;
-    left:0;
+    /*zoom: 50%; // at least IE, Chrome */
+    /*-moz-transform: scale(0.5);*/
+    /*-webkit-transform: scale(.5);*/
 }
 
 
