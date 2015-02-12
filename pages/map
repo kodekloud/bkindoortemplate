@@ -301,6 +301,7 @@
     }
     
     $("#storelist_container").on('change', function() {
+        console.log(this.value)
         // $(".marker").hide();
         // id = this.value
         // pngZoomOut();
