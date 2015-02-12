@@ -337,6 +337,11 @@
           });
           
         f = []
+        console.log(x)
+        console.log(y)
+        console.log("=-=-=-=-=-=-=-")
+        console.log(pin_x)
+        console.log(pin_y)
         f.clientX = 985
         f.clientY = 391
         $(".png_map").panzoom("zoom", 1.5, { focal: f })
