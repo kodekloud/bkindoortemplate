@@ -288,31 +288,12 @@
     });
     
     function pngZoomOut(){
-        // $(".imgContent").animate({height: "400px"});
-        // $(".imgContent").animate({width: "1060px"});
-        // $(".imgContent").width(
-        //     $(".imgContent").width() * 0.1
-        // );
-    
-        // $(".imgContent").height(
-        //     $(".imgContent").height() * 0.1
-        // );
-        // $(".imgContent").animate({transform: 'scale(1,1)'});
-        // $(".imgContent").addClass('zoomout');
+
     }
     
     
     function pngZoomIn(){
-        // $(".imgContent").width(
-        //     $(".imgContent").width() * 1.2
-        // );
-    
-        // $(".imgContent").height(
-        //     $(".imgContent").height() * 1.2
-        // );
-        // $(".imgContent").removeClass('zoomout');
-        // $(".imgContent").addClass('zoomin');
-        // $(".imgContent").animate({transform: 'scale(2,2)'});
+
     }
     
 </script>
