@@ -243,7 +243,8 @@
                         $zoomIn: $('.zoom-in'),
                         $zoomOut: $('.zoom-out'),
                         $zoomRange: $('.zoom-range'),
-                        startTransform: startingMapTransform
+                        startTransform: startingMapTransform, 
+                        focal: [100, 100]
                         
             
                     });
