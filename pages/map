@@ -248,7 +248,7 @@
                 }
                 
                 $( "#page_content" ).fadeIn( "fast", function() {
-                    var panzoom = $(".demo1").panzoom({
+                    var panzoom = $(".png_map").panzoom({
                         cursor: "move",
                         increment: 0.1,
                         minScale: 0.1,
@@ -263,7 +263,7 @@
                         
             
                     });
-                    $(".demo1").panzoom("pan", startingPanX, startingPanY, { relative: true });
+                    $(".png_map").panzoom("pan", startingPanX, startingPanY, { relative: true });
                     
                     panzoom.on('panzoomchange', function(e, panzoom, matrix, changed) {
                       didPanZoom = true;
