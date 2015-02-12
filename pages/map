@@ -14,13 +14,13 @@
 .marker {
     background: url("http://kodekloud.s3.amazonaws.com/sites/54cfab316e6f6433ad020000/530d3a9b7bc13ce4a511089c23463f99/10dundas_pin.png") no-repeat;
     cursor: pointer;
-    /*display: block;*/
+    display: block;
     height: 75px;
     margin-top: 5px;
     outline: medium none;
     text-indent: -9999px;
     width: 50px;
-    display:none;
+    /*display:none;*/
 }
 
 .imgContent{
@@ -75,11 +75,7 @@
     <div id="map" class="panzoom-elements" style=""><img src=""></div>
     <div class="demo1" id="demo1">
         <img alt="map" src="" class="imgMap png_map" id="map_image" />                
-        <div id="pin_container">
-            <script id="pin_template" type="x-tmpl-mustache/text">
-                <div class="marker" id='scroll_to_marker{{id}}' data-coords="{{x_coordinate}}, {{y_coordinate}}"></div> 
-            </script>
-        </div>
+        <div class="marker"></div> 
     </div>   
 </div>
 </div>
@@ -94,7 +90,7 @@
         function renderAll (){
             var stores = getStoresList();
             renderPageData('#storelist_container','#storelist_template',stores)
-            renderPageData('#pin_container','#pin_template',stores);
+            // renderPageData('#pin_container','#pin_template',stores);
             $("#loading_screen").hide();
             $("#main_content").show();
             // specify the type of map here. "png" or "svg"
