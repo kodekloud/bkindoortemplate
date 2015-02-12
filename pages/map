@@ -339,7 +339,7 @@
         console.log(x)
         console.log(y)
         
-        $(".png_map").panzoom("pan", -1120, -471.5, {
+        $(".png_map").panzoom("pan", 1120, 471.5, {
               relative: false,
               animate: true
           });
