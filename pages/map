@@ -269,7 +269,7 @@
         id = this.value
         $("#"+id).show();
         $("#"+id).click();
-        $("#"+id).zoomTo({targetsize:0.75, duration:600});
+        // $("#"+id).zoomTo({targetsize:0.75, duration:600});
         // $(".imgContent").addClass('transition');
         // $(".imgContent").css("zoom","1");
         // $(".imgContent").removeClass('transition');
