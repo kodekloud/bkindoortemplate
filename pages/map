@@ -337,6 +337,10 @@
           });
           
         f = []
+        var parentOffset = $(".png_map").offset(); 
+        f.clientX = pin_x - parentOffset.left;
+        f.clientY = pin_y - parentOffset.top;
+        f.clientY = 389
         // console.log(x)
         // console.log(y)
         // console.log("=-=-=-=-=-=-=-")
@@ -345,9 +349,10 @@
         // f.clientX =  ((x * 100) / 42) - 10
         // f.clientY = ((y * 100) / 49) - 10
         // console.log(f)
-        // // f.clientX = 974
-        // // f.clientY = 389
-        // $(".png_map").panzoom("zoom", 1.5, { focal: f })
+        // f.clientX = 974
+        // f.clientY = 389
+        $(".png_map").panzoom("zoom", 1.5, { focal: f })
+        
     });
     
     function pngZoomOut(){
