@@ -37,7 +37,7 @@
 <script src="http://mallmaverick.kodekloud.io/mallmaverick.js?v=0.3"></script>
 <script src="http://mallmaverick.kodekloud.io/mustache_mallmaverick.js?v=0.3"></script>
 
-<script src="jquery.zoomooz.min.js"></script>
+<script src="http://cdn.jsdelivr.net/jquery.zoomooz/1.1.6/jquery.zoomooz.min.js"></script>
 
 <script>
     $(document).ready(function() {
