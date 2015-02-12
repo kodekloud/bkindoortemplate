@@ -324,7 +324,7 @@
         y = coords[1]
         console.log (coords)
         console.log("-0-0-0-0-0")
-        x = (parseInt(propertyDetails.map_image_width)/2) - parseInt(x);
+        x = (parseInt(propertyDetails.map_image_width)/2) - parseInt(x) + 10;
         y = (parseInt(propertyDetails.map_image_height)/2) - parseInt(y) + 40;
         console.log(x)
         console.log(y)
