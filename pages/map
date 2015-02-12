@@ -305,12 +305,12 @@
     
     $("#storelist_container").on('change', function() {
         console.log(this.value)
-        // $(".marker").hide();
-        // id = this.value
-        // pngZoomOut();
-        // $("#"+id).show();
-        // $("#"+id).click();
-        // pngZoomIn();
+        var matrix = $(".png_map").panzoom("getMatrix");
+        var calc_x = x-matrix[4];
+        var calc_y = y-matrix[5];
+        console.log(calc_x)
+        console.log(calc_y)
+        console.log(matrix)
         
         
     });
