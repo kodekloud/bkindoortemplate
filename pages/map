@@ -319,8 +319,8 @@
         // console.log (x)
         // console.log(y)
         
-        pin_x = (parseInt(coords[0]) + 10)
-        pin_y = (parseInt(coords[1]) + 27) 
+        pin_x = (parseInt(coords[0]) - 10)
+        pin_y = (parseInt(coords[1]) - 27) 
         var canvas = document.getElementById('map_image');
         var context = canvas.getContext('2d');  
         var img = new Image;
