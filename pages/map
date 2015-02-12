@@ -336,12 +336,14 @@
     
     function pngZoomOut(){
         v = $(".png_map").panzoom("getMatrix");
+        console.log(v)
         
     }
     
     
     function pngZoomIn(){
         v = $(".png_map").panzoom("getMatrix");
+        console.log(v)
      
 
     }
