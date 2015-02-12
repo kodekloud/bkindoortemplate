@@ -288,8 +288,8 @@
     });
     
     function pngZoomOut(){
-        $(".imgContent").animate({height: "400px"});
-        $(".imgContent").animate({width: "1060px"});
+        // $(".imgContent").animate({height: "400px"});
+        // $(".imgContent").animate({width: "1060px"});
         // $(".imgContent").width(
         //     $(".imgContent").width() * 0.1
         // );
@@ -297,6 +297,8 @@
         // $(".imgContent").height(
         //     $(".imgContent").height() * 0.1
         // );
+        
+        $(".imgContent").addClass('zoomout');
     }
     
     
