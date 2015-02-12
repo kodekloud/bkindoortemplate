@@ -338,8 +338,8 @@
           
         f = []
         var parentOffset = $(".png_map").offset(); 
-        f.clientX =  x + 430 
-        f.clientY = y + 279 
+        f.clientX =  pin_x - 430 
+        f.clientY = pin_y - 279 
         // f.clientY = 389
         // console.log(x)
         // console.log(y)
@@ -351,7 +351,7 @@
         console.log(f)
         // f.clientX = 974
         // f.clientY = 389
-        $(".png_map").panzoom("zoom", 1.5, { focal: f })
+        $(".png_map").panzoom("zoom", 1, { focal: f })
         
     });
     
