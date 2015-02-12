@@ -315,7 +315,7 @@
     $("#storelist_container").on('change', function() {
         console.log(this.value);
         coords = this.value.split(",");
-        console.log(coords)
+        console.log(coords[0])
         // v = $(".png_map").panzoom("getMatrix");
         // x = x * (1 / v[0])
         
