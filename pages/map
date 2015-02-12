@@ -339,7 +339,7 @@
         f = []
         f.clientX = x
         f.clientY = y
-        $(".png_map").panzoom("zoom", 0.5, { focal: f })
+        $(".png_map").panzoom("zoom", 1.5, { focal: f })
         
     });
     
