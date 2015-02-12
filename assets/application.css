@@ -512,6 +512,11 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     height:30px;
     border: 1px solid #eeeeee;
 }
+
+.contest_image{
+    width:858px;
+    height:500px;
+}
 @media print {
   * {
     text-shadow: none !important;
