@@ -240,7 +240,7 @@
                 
                 var startingMapTransform = 'scale(0.5)';
                 var startingPanX = -290;
-                var startingPanY = 0;
+                var startingPanY = -200;
                 if(isMobile) {
                         startingMapTransform = 'scale(0.5)';
                         startingPanX = 0;
