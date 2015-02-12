@@ -505,7 +505,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     text-transform:uppercase;
 }
 
-.storelist_dd{
+#storelist_container{
     position:relative;
     z-index:999999;
     background:white;
