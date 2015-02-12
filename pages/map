@@ -315,7 +315,7 @@
         new_height = (v[3] * propertyDetails.map_image_height)
         
         x = (x * new_width) / 2240
-        y = (y * new_height) / 943
+        y = ((y * new_height) / 943) - (35 * v[3]))
         console.log (new_width)
         console.log(new_height)
         console.log (x)
