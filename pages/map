@@ -338,6 +338,8 @@
     });
     
     function pin_store(x, y) {
+        console.log(x)
+        console.log(y)
         // coords = this.value.split(",");
         var propertyDetails = getPropertyDetails();
         // x = coords[0]
