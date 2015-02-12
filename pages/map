@@ -275,7 +275,7 @@
                 lmargin = parseInt(propertyDetails.map_image_width) / 2
                 w = parseInt(propertyDetails.map_image_width)
                 h = parseInt(propertyDetails.map_image_height)
-                $(".demo1").css({"width": w+"px", "height":h+"px", "margin-left": "-600px", "margin-top":"-300px"})
+                // $(".demo1").css({"width": w+"px", "height":h+"px", "margin-left": "-600px", "margin-top":"-300px"})
                 
             }
 
