@@ -321,8 +321,8 @@
         y_offset = 446 * 100 / propertyDetails.map_image_width
         
         
-        // x = (parseInt(x)  - x_offset) ;
-        // y = (parseInt(y)  - y_offset) ;
+        x = (parseInt(x)  / x_offset) ;
+        y = (parseInt(y)  / y_offset) ;
         console.log(x)
         console.log(y)
         console.log("--------")
