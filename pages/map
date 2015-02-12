@@ -315,10 +315,13 @@
     $("#storelist_container").on('change', function() {
         console.log(this.value);
         coords = this.value.split(",");
-        console.log(coords[0])
-        // v = $(".png_map").panzoom("getMatrix");
-        // x = x * (1 / v[0])
-        
+        x = coords[0]
+        y = coords[0]
+        v = $(".png_map").panzoom("getMatrix");
+        x = x * (1 / v[0])
+        y = y * (1 / matrix[3])
+        console.log(x)
+        console.log(y)
     });
     
     function pngZoomOut(){
