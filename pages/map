@@ -46,7 +46,7 @@
 }
 
 #storelist_container{
-    margin:0;
+    padding:0;
 }
 
 #storelist_container li{
