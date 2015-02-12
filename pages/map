@@ -345,8 +345,8 @@
         f.clientX =  (x * 0.325)
         f.clientY = (y * 0.4143)
         console.log(f)
-        // f.clientX = 1040
-        // f.clientY = 400
+        // f.clientX = 974
+        // f.clientY = 389
         $(".png_map").panzoom("zoom", 1.5, { focal: f })
         
     });
