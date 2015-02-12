@@ -349,7 +349,7 @@
         // // f.clientY = 389
         // $(".png_map").panzoom("zoom", 1.5, { focal: f })
         console.log($(".png_map").offset())
-        console.log($(".png_map").pageX())
+        console.log($(".png_map").clientX())
         
     });
     
