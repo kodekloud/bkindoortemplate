@@ -256,10 +256,10 @@
     $("#storelist_container").on('change', function() {
         $(".marker").hide();
         id = this.value
+        $("#"+id).show();
         $("#"+id).click();
         $(".imgContent").addClass('transition');
         $(".imgContent").css("zoom","100%");
-        $("#"+id).show();
         
     });
     
