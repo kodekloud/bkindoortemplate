@@ -330,6 +330,7 @@
         console.log(matrix)
         pin_x = -1 * matrix[4];
         pin_y = -1 * matrix[5]
+        console.log(pin_x)
         elements.push({x:pin_x,y:pin_y});
         elements.forEach(function(element) {
             context.beginPath();
