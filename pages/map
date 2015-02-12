@@ -323,7 +323,7 @@
               animate: true
           });
           
-        var canvas = document.getElementById('png_map');
+        var canvas = document.getElementById('map_image');
         var context = canvas.getContext('2d');  
         var elements = [];
 
