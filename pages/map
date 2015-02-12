@@ -336,7 +336,7 @@
     function pngZoomIn(){
         v = $(".png_map").panzoom("getMatrix");
         console.log(v)
-        $(".png_map").panzoom("zoom", 2.5, { focal:[-200. -200] })
+        $(".png_map").panzoom("zoom", 2.5, { focal:[-400. -400] })
      
 
     }
