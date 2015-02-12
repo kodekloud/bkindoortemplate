@@ -2,8 +2,8 @@
 .demo1{
     float: left;
     margin-bottom:29px;
-    height: 943px;
-    width: 2040px;
+    height: 100%;
+    width: 100%;
     background-color: #FFFFFF ;
     overflow: visible !important;
 
@@ -278,6 +278,11 @@
                     });
                     panzoom.on("panzoomend", function( e, panzoom ) { console.log( panzoom.getMatrix() ); });
                 });
+                
+                lmargin = parseInt(propertyDetails.map_image_width) / 2
+                w = propertyDetails.map_image_width
+                h = propertyDetails.map_image_width
+                $(".demo1").css({"width":w. "height":h, "margin-left": -lmargin})
                 
             }
 
