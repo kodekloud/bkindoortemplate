@@ -340,7 +340,7 @@
         var parentOffset = $(".png_map").offset(); 
         f.clientX = pin_x - parentOffset.left;
         f.clientY = pin_y - parentOffset.top;
-        f.clientY = 389
+        // f.clientY = 389
         // console.log(x)
         // console.log(y)
         // console.log("=-=-=-=-=-=-=-")
@@ -351,35 +351,9 @@
         // console.log(f)
         // f.clientX = 974
         // f.clientY = 389
-        // $(".png_map").panzoom("zoom", 1.5, { silent: true })
-        
-        
-        // $(".png_map").panzoom("pan", x, y, {
-        //       relative: false,
-        //       animate: true
-        //   });
-        
-        zoomin().done(panTo(x, y));
+        $(".png_map").panzoom("zoom", 1.5, { focal: f })
         
     });
-    
-    
-    function zoomin(){
-        var r = $.Deferred();
-        $(".png_map").panzoom("zoom", 1.5, { silent: true })
-        setTimeout(function () {
-            // and call `resolve` on the deferred object, once you're done
-            r.resolve();
-          }, 2500);
-          return r;
-    }
-    
-    function panTo(x, y){
-        $(".png_map").panzoom("pan", x, y, {
-              relative: false,
-              animate: true
-          });
-    }
     
     function pngZoomOut(){
         v = $(".png_map").panzoom("getMatrix");
