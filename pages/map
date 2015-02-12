@@ -290,13 +290,9 @@
         $(".marker").hide();
         id = this.value
         $(".imgContent").removeClass('zoomout');
-        $(".imgContent").addClass('zoomin');
+        $(".imgContent").removeClass('zoomin');
         $("#"+id).show();
         $("#"+id).click();
-        
-        // $(".imgContent").addClass('transition');
-        // $(".imgContent").css("zoom","1");
-        // $(".imgContent").removeClass('transition');
         
     });
     
