@@ -43,6 +43,8 @@
 .zoomout {
     transform: scale(0.5);
     -webkit-transform: scale(0.5);
+    top:0;
+    left:0;
 }
 
 .zoomin {
