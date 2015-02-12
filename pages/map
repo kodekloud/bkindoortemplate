@@ -257,8 +257,10 @@
         $(".marker").hide();
         id = this.value
         $("#"+id).show();
-        $(".imgContent").css("zoom","100%");
         $("#"+id).click();
+        $(".imgContent").addClass('transition');
+        $(".imgContent").css("zoom","100%");
+        
     });
     
     function pngZoomOut(){
