@@ -510,6 +510,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     z-index:999999;
     background:white;
     height:30px;
+    border: 1px solid #eeeeee;
 }
 @media print {
   * {
