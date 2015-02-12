@@ -267,7 +267,7 @@
         $("#"+id).click();
         $(".imgContent").addClass('transition');
         $(".imgContent").css("zoom","1");
-        $(".imgContent").removeClass('transition');
+        // $(".imgContent").removeClass('transition');
         
     });
     
