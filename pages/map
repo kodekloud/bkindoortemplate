@@ -65,7 +65,7 @@
 <div style="overflow:hidden">
     <select id="storelist_container" class="pull-left storelist_dd">
         <script id="storelist_template" type="x-tmpl-mustache/text">
-            <option value="scroll_to_marker{{id}}">{{name}}</option>
+            <option value="{{x_coordinate}}, {{y_coordinate}}">{{name}}</option>
         </script>
     </select>
     <div id="zControls" class="pull-right">
@@ -301,11 +301,11 @@
     }
     
     $("#storelist_container").on('change', function() {
-        $(".marker").hide();
-        id = this.value
+        // $(".marker").hide();
+        // id = this.value
         // pngZoomOut();
-        $("#"+id).show();
-        $("#"+id).click();
+        // $("#"+id).show();
+        // $("#"+id).click();
         // pngZoomIn();
         
         
