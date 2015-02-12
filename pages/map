@@ -308,12 +308,14 @@
         console.log(y)
         console.log("--------")
         v = $(".png_map").panzoom("getMatrix");
-        x = x * (1 / v[0])
-        y = y * (1 / v[3])
+        // x = x * (1 / v[0])
+        // y = y * (1 / v[3])
         console.log(v)
-        console.log(x)
+        console.log(x * propertyDetails.map_image_width)
         console.log(y)
         
+        
+        x * new width / old width
         $(".png_map").panzoom("pan", x, y, {
               relative: false,
               animate: true
