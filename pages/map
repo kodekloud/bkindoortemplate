@@ -319,7 +319,7 @@
         y = coords[0]
         v = $(".png_map").panzoom("getMatrix");
         x = x * (1 / v[0])
-        y = y * (1 / matrix[3])
+        y = y * (1 / v[3])
         console.log(x)
         console.log(y)
     });
