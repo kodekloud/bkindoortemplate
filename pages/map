@@ -326,11 +326,12 @@
         var canvas = document.getElementById('map_image');
         var context = canvas.getContext('2d');  
         var elements = [];
-
-        elements.push({h:x,w:y});
+        matrix = $(".png_map").panzoom("getMatrix");
+        console.log(matrix)
+        elements.push({x:matrix[0],y:matrix[3]});
         elements.forEach(function(element) {
             context.beginPath();
-            context.arc(element.h,element.w,10,0,2*Math.PI);
+            context.arc(element.x,element.y,10,0,2*Math.PI);
             context.stroke();
             context.fillStyle = 'red';
             context.fill();
