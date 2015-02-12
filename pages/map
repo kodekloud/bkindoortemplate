@@ -42,7 +42,7 @@
     position:absolute;
     z-index:9999999;
     background:white;
-    border:1px solid gray;
+    border:1px solid lightgray;
 }
 
 </style>
