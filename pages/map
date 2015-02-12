@@ -342,8 +342,8 @@
         console.log("=-=-=-=-=-=-=-")
         console.log(pin_x)
         console.log(pin_y)
-        f.clientX = pin_x + (pin_x * 0.42065)
-        f.clientY = pin_y + (pin_y * 0.49168)
+        f.clientX = x + (x * 0.325)
+        f.clientY = y + (y * 0.4143)
         // f.clientX = 1040
         // f.clientY = 400
         $(".png_map").panzoom("zoom", 1.5, { focal: f })
