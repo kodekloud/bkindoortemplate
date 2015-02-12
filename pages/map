@@ -342,8 +342,8 @@
         console.log("=-=-=-=-=-=-=-")
         console.log(pin_x)
         console.log(pin_y)
-        f.clientX = 985
-        f.clientY = 391
+        f.clientX = 974
+        f.clientY = 420
         $(".png_map").panzoom("zoom", 1.5, { focal: f })
         
     });
