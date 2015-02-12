@@ -331,6 +331,10 @@
         var img = new Image;
         img.src = "http://kodekloud.s3.amazonaws.com/sites/54cfab316e6f6433ad020000/530d3a9b7bc13ce4a511089c23463f99/10dundas_pin.png"
         context.drawImage(img,pin_x,pin_y);
+        $(".png_map").panzoom("zoom", 0.5, { 
+            animate:true
+        })
+        
         $(".png_map").panzoom("pan", x, y, {
               relative: false,
               animate: true
@@ -351,10 +355,7 @@
         // console.log(f)
         // f.clientX = 974
         // f.clientY = 389
-        $(".png_map").panzoom("zoom", 0.5, { 
-            animate:true
-            
-        })
+        
         
     });
     
