@@ -282,7 +282,7 @@
         id = this.value
         $("#"+id).show();
         $("#"+id).click();
-        $(".imgContent").css("-webkit-transform","scale(1.0)");
+        $(".imgContent").css("zoom","100%");
         
     });
     
