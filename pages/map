@@ -314,8 +314,8 @@
         new_width = (v[0] * propertyDetails.map_image_width)
         new_height = (v[3] * propertyDetails.map_image_height)
         
-        x = (x * new_width) / 2240
-        y = (y * new_height) / 943
+        x = (coords[0] * new_width) / 2240
+        y = (coords[1] * new_height) / 943
         // x * new width / old width
         $(".png_map").panzoom("pan", x, y, {
               relative: false,
