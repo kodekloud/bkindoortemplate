@@ -24,9 +24,11 @@
 }
 
 .imgContent{
-    zoom: 50%; // at least IE, Chrome 
+    zoom: 100%; // at least IE, Chrome 
     -moz-transform: scale(0.5);
     -webkit-transform: scale(0.5);
+    top:0;
+    left:0;
 }
 
 
