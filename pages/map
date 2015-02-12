@@ -271,11 +271,11 @@
     $("#storelist_container").on('change', function() {
         $(".marker").hide();
         id = this.value
-        
+        pngZoomOut();
         $("#"+id).show();
         $("#"+id).click();
+        pngZoomIn();
         
-        $(".imgContent").animate({transform: 'scale(2,2)'});
         
     });
     
