@@ -314,8 +314,10 @@
     
     $("#storelist_container").on('change', function() {
         console.log(this.value);
-        v = $(".png_map").panzoom("getMatrix");
-        
+        coords = this.value.split(",");
+        console.log(coords)
+        // v = $(".png_map").panzoom("getMatrix");
+        // x = x * (1 / v[0])
         
     });
     
