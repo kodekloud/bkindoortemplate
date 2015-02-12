@@ -337,8 +337,8 @@
           });
           
         f = []
-        f.clientX = x
-        f.clientY = y
+        f.clientX = pin_x
+        f.clientY = pin_y
         $(".png_map").panzoom("zoom", 1.5, { focal: f })
         
     });
