@@ -245,6 +245,7 @@
                     });
                 });
                 
+                
                 var startingMapTransform = 'scale(1)';
                 var startingPanX = 0;
                 var startingPanY = 0;
