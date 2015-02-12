@@ -322,14 +322,10 @@
         var propertyDetails = getPropertyDetails();
         x = coords[0]
         y = coords[1]
-        // x_offset = 1060 * 100 / propertyDetails.map_image_width
-        // y_offset = 446 * 100 / propertyDetails.map_image_width
         console.log (coords)
         console.log("-0-0-0-0-0")
-        // x = parseInt(x) - (530) + parseInt(x);
-        // y = 0 ;
         x = (parseInt(propertyDetails.map_image_width)/2) - parseInt(x);
-        y = (parseInt(propertyDetails.map_image_height)/2) - parseInt(y) ;
+        y = (parseInt(propertyDetails.map_image_height)/2) - parseInt(y) + 100;
         console.log(x)
         console.log(y)
         console.log("--------")
