@@ -222,7 +222,7 @@
                 var propertyDetails = getPropertyDetails();
                 $(".panzoom-elements").hide();
                 $(".png_map").attr("src", getPNGMapURL())
-                var startingMapTransform = 'scale(0.5)';
+                var startingMapTransform = 'scale(-1)';
                 var startingPanX = 0;
                 var startingPanY = 0;
                 if(isMobile) {
