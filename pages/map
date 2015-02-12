@@ -259,7 +259,7 @@
         $("#"+id).click();
         $(".imgContent").addClass('transition');
         $(".imgContent").css("zoom","100%");
-        $("#"+id).slideUp();
+        $("#"+id).show();
         
     });
     
