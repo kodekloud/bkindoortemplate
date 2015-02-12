@@ -323,12 +323,7 @@
         var canvas = document.getElementById('map_image');
         var context = canvas.getContext('2d');  
         var elements = [];
-        matrix = $(".png_map").panzoom("getMatrix");
-        pin_x = matrix[4] * (1 / matrix[0]);
-        pin_y = matrix[5] * (1 / matrix[3])
-        console.log(matrix)
-        console.log(pin_x)
-        elements.push({x:pin_x,y:pin_y});
+        elements.push({x:x,y:y});
         elements.forEach(function(element) {
             context.beginPath();
             context.arc(element.x,element.y,10,0,2*Math.PI);
