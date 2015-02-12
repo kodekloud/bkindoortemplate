@@ -104,10 +104,7 @@
             var maptype = "png"
             renderMap(maptype);
             $.getScript("jquery.zoomooz.min.js");
-            $("#testme").click(function(evt) {
-                $(this).zoomTo({targetsize:0.75, duration:600});
-                evt.stopPropagation();
-            });
+           
         }
         
         function renderPageData(container, template, collection){
