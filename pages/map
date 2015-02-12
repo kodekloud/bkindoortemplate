@@ -65,8 +65,6 @@
     <div id="map" class="panzoom-elements" style=""><img src=""></div>
     <div class="demo1" id="demo1">
         <canvas class="imgMap png_map" width="1060" height="400" id="map_image"></canvas>            
-        <div class="marker"></div> 
-        
     </div> 
     
 </div>
