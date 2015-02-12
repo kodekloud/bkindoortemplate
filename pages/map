@@ -64,7 +64,7 @@
 <div class="page_banner">
     Centre Map
 </div>
-<div style="overflow:hidden" class="zoomViewport">
+<div style="overflow:hidden">
     <select id="storelist_container" class="pull-left storelist_dd">
         <script id="storelist_template" type="x-tmpl-mustache/text">
             <option value="scroll_to_marker{{id}}">{{name}}</option>
@@ -75,11 +75,11 @@
         <button onclick="pngZoomOut()" class="zoom-out"><span class="glyphicon glyphicon-minus"></span></button>
     </div>
     <div id="map" class="panzoom-elements" style=""><img src=""></div>
-    <div class="demo1 zoomContainer" id="demo1">
+    <div class="demo1" id="demo1">
         <img alt="map" src="" class="imgMap png_map" id="map_image" />                
         <div id="pin_container">
             <script id="pin_template" type="x-tmpl-mustache/text">
-                <div class="marker zoomTarget" id='scroll_to_marker{{id}}' data-coords="{{x_coordinate}}, {{y_coordinate}}"></div> 
+                <div class="marker " id='scroll_to_marker{{id}}' data-coords="{{x_coordinate}}, {{y_coordinate}}"></div> 
             </script>
         </div>
     </div>   
@@ -269,8 +269,9 @@
         id = this.value
         $("#"+id).show();
         $("#"+id).click();
-        $(".imgContent").addClass('transition');
-        $(".imgContent").css("zoom","1");
+        $("#"+id).zoomTarget();
+        // $(".imgContent").addClass('transition');
+        // $(".imgContent").css("zoom","1");
         // $(".imgContent").removeClass('transition');
         
     });
