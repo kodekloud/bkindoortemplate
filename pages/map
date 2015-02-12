@@ -280,8 +280,8 @@
                 });
                 
                 lmargin = parseInt(propertyDetails.map_image_width) / 2
-                w = propertyDetails.map_image_width
-                h = propertyDetails.map_image_width
+                w = parseInt(propertyDetails.map_image_width)
+                h = parseInt(propertyDetails.map_image_width)
                 $(".demo1").css({"width":w. "height":h, "margin-left": -lmargin})
                 
             }
