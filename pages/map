@@ -30,6 +30,10 @@
       -ms-transform:     scale(0.5);
       -o-transform:      scale(0.5);
       transform:         scale(0.5);
+      top:0 !important;
+    right:0 !important;
+    left:0 !important;
+    bottom:0 !important;
 }
 
 
