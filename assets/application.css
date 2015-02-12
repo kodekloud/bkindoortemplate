@@ -265,7 +265,7 @@ th {
 
 #zControls {
     position: relative;
-    z-index: 1;
+    z-index: 9999999;
 }
 #back-top{
     position:fixed;
