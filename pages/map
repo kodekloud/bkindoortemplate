@@ -316,11 +316,12 @@
     });
     
     function pngZoomOut(){
-
+        $(".png_map").panzoom("getMatrix");
     }
     
     
     function pngZoomIn(){
+        $(".png_map").panzoom("getMatrix");
 
     }
     
