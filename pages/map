@@ -305,14 +305,16 @@
         return 'http://cdn.mallmaverick.com' + mallDataJSON.property.svgmap_url;
     }
     
-    $("#storelist_container").on('change', function() {
-        console.log(this.value);
-        
-    });
+    
     
     
     
         loadMallData(renderAll);  
+    });
+    
+    $("#storelist_container").on('change', function() {
+        console.log(this.value);
+        
     });
     
     function pngZoomOut(){
