@@ -64,7 +64,7 @@
 </div>
 <div style="overflow:hidden;height:400px;margin:5px">
     <div class="dd_div">
-        <select id="storelist_container" class="pull-left storelist_dd">
+        <select id="storelist_container" class="storelist_dd">
             <script id="storelist_template" type="x-tmpl-mustache/text">
                 <option value="{{x_coordinate}}, {{y_coordinate}}">{{name}}</option>
             </script>
