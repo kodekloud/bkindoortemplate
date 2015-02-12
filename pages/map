@@ -303,7 +303,7 @@
     
     
     function pngZoomIn(){
-        
+        $(".imgContent").addClass('zoomin');
         // $(".imgContent").width(
         //     $(".imgContent").width() * 1.2
         // );
