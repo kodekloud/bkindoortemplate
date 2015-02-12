@@ -288,6 +288,7 @@
     $("#storelist_container").on('change', function() {
         $(".marker").hide();
         id = this.value
+        $(".imgContent").removeClass('zoomout');
         $(".imgContent").addClass('zoomin');
         $("#"+id).show();
         $("#"+id).click();
