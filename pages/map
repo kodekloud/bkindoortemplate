@@ -241,7 +241,7 @@
                 // });
                 
                 
-                var startingMapTransform = 'scale(1)';
+                var startingMapTransform = 'scale(2)';
                 var startingPanX = 0;
                 var startingPanY = 0;
                 if(isMobile) {
