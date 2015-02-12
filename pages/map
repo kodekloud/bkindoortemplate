@@ -222,26 +222,6 @@
                 var propertyDetails = getPropertyDetails();
                 $(".panzoom-elements").hide();
                 $(".png_map").attr("src", getPNGMapURL())
-                // $(function(){
-                // $('.demo1').craftmap({
-                //         image: {
-                //             width: propertyDetails.map_image_width,
-                //             height: propertyDetails.map_image_height,
-                //             // width:1060,
-                //             // height:400,
-                            
-                //             name: 'imgMap'
-                //         },
-                //         marker: {
-                //             center: true    
-                //         },
-                //         map: {
-                //             position: 'top_left'
-                //         }
-                //     });
-                // });
-                
-                
                 var startingMapTransform = 'scale(1)';
                 var startingPanX = 0;
                 var startingPanY = 0;
