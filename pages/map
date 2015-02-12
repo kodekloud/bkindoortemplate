@@ -337,11 +337,11 @@
         loadMallData(renderAll);  
     });
     
-    $("#storelist_container").on('change', function() {
-        coords = this.value.split(",");
+    function pin_store(x, y) {
+        // coords = this.value.split(",");
         var propertyDetails = getPropertyDetails();
-        x = coords[0]
-        y = coords[1]
+        // x = coords[0]
+        // y = coords[1]
         x = (parseInt(propertyDetails.map_image_width)/2) - parseInt(x);
         y = (parseInt(propertyDetails.map_image_height)/2) - parseInt(y);
         v = $(".png_map").panzoom("getMatrix");
