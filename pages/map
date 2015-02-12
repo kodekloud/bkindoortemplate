@@ -386,7 +386,7 @@
     });
     
     function toggle_dd(){
-        if ($"#storelist_container").is(":visible"){
+        if (($"#storelist_container").is(":visible")){
             ($"#storelist_container").slideUp();
         } else {
             ($"#storelist_container").slideDown();
