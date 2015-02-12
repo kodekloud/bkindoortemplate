@@ -47,10 +47,19 @@
     right:0;
     left:0;
     bottom:0;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
 }
 
 .zoomin {
     transform:scale(1);
+    -webkit-transform: scale(1);
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
 }
 
 </style>
