@@ -262,8 +262,7 @@
     $("#storelist_container").on('change', function() {
         $(".marker").hide();
         id = this.value
-        $(".imgContent").removeClass('zoomout');
-        $(".imgContent").removeClass('zoomin');
+        $(".imgContent").animate({transform: 'scale(1,1)'});
         $("#"+id).show();
         $("#"+id).click();
         
