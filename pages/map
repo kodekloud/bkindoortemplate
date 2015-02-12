@@ -328,7 +328,7 @@
         var elements = [];
         matrix = $(".png_map").panzoom("getMatrix");
         console.log(matrix)
-        elements.push({x:matrix[0],y:matrix[3]});
+        elements.push({x:matrix[4],y:matrix[5]});
         elements.forEach(function(element) {
             context.beginPath();
             context.arc(element.x,element.y,10,0,2*Math.PI);
