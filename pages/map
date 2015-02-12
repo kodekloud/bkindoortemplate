@@ -322,13 +322,9 @@
           
         var canvas = document.getElementById('map_image');
         var context = canvas.getContext('2d');  
-        var elements = [];
-        elements.push({x:x,y:y});
-        elements.forEach(function(element) {
-            var img = new Image;
-            img.src = "http://kodekloud.s3.amazonaws.com/sites/54cfab316e6f6433ad020000/530d3a9b7bc13ce4a511089c23463f99/10dundas_pin.png";
-            context.drawImage(img,x,y);
-        });
+        var img = new Image;
+        img.src = "http://kodekloud.s3.amazonaws.com/sites/54cfab316e6f6433ad020000/530d3a9b7bc13ce4a511089c23463f99/10dundas_pin.png";
+        context.drawImage(img,x,y);
         
         // $(".png_map").panzoom("pan", x, y, {
         //       relative: false,
