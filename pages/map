@@ -23,7 +23,11 @@
     display:none;
 }
 
-
+.imgContent{
+    zoom: 50%; // at least IE, Chrome 
+    -moz-transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+}
 
 
 .transition {
@@ -235,8 +239,8 @@
                
             }else{
                 $('#loading').hide();
-                // $('#zControls').hide();
-                // $('#map').hide();
+                $('#zControls').hide();
+                $('#map').hide();
                 $( "#page_content" ).fadeIn( "fast");
             }
         }
