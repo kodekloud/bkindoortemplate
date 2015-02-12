@@ -280,35 +280,27 @@
     });
     
     function pngZoomOut(){
-        // var current_zoom = $(".imgContent").css("zoom");
-        // console.log(current_zoom);
-        // var new_zoom = parseInt(current_zoom) - 0.1;
-        // console.log(new_zoom);
-        // $(".imgContent").css("zoom", new_zoom);
-        $(".imgContent").width(
-            $(".imgContent").width() * 0.5
-        );
+        $(".imgContent").animate({height: "400px"});
+        $(".imgContent").animate({width: "1060px"});
+        // $(".imgContent").width(
+        //     $(".imgContent").width() * 0.1
+        // );
     
-        $(".imgContent").height(
-            $(".imgContent").height() * 0.5
-        );
+        // $(".imgContent").height(
+        //     $(".imgContent").height() * 0.1
+        // );
     }
     
     
     function pngZoomIn(){
-        // var current_zoom = $(".imgContent").css("zoom");
-        // console.log(current_zoom);
-        // var new_zoom = parseInt(current_zoom) + 0.1;
-        // console.log(new_zoom);
-        // $(".imgContent").css("zoom", new_zoom);
-        // $(".imgContent").animate({ 'zoom': 0.5 }, 400);
-        $(".imgContent").width(
-            $(".imgContent").width() * 1.2
-        );
+        
+        // $(".imgContent").width(
+        //     $(".imgContent").width() * 1.2
+        // );
     
-        $(".imgContent").height(
-            $(".imgContent").height() * 1.2
-        );
+        // $(".imgContent").height(
+        //     $(".imgContent").height() * 1.2
+        // );
         
     }
     
