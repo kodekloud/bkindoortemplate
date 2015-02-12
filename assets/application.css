@@ -514,6 +514,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     width:230px;
     position:relative;
     z-index:999999;
+    overflow:hidden;
 }
 @media print {
   * {
