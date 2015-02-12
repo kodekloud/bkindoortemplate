@@ -304,21 +304,12 @@
         y = coords[1]
         x = (parseInt(propertyDetails.map_image_width)/2) - parseInt(x);
         y = (parseInt(propertyDetails.map_image_height)/2) - parseInt(y);
-        // console.log(x)
-        // console.log(y)
-        // console.log("--------")
         v = $(".png_map").panzoom("getMatrix");
         new_width = (v[0] * propertyDetails.map_image_width)
         new_height = (v[3] * propertyDetails.map_image_height)
         
         x = (x * new_width) / 2240 + (10 * (1 / v[0]))
         y = ((y * new_height) / 943) + (27 * (1 / v[3]))
-        // console.log(v)
-        // console.log (new_width)
-        // console.log(new_height)
-        // console.log (x)
-        // console.log(y)
-        
         pin_x = (parseInt(coords[0]) - 12)
         pin_y = (parseInt(coords[1]) - 27) 
         var canvas = document.getElementById('map_image');
@@ -326,7 +317,7 @@
         var img = new Image;
         img.src = "http://kodekloud.s3.amazonaws.com/sites/54cfab316e6f6433ad020000/530d3a9b7bc13ce4a511089c23463f99/10dundas_pin.png"
         context.drawImage(img,pin_x,pin_y);
-        
+        $(".png_map").panzoom("zoom", 1.5, { silent: false , focal: x});
         $(".png_map").panzoom("pan", x, y, {
               relative: false,
               animate: true
