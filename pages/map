@@ -23,6 +23,9 @@
     display:none;
 }
 
+
+
+
 .transition {
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
