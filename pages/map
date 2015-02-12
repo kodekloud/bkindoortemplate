@@ -295,7 +295,7 @@
         //     $(".imgContent").height() * 0.1
         // );
         console.log($(".imgContent"))
-        $(".imgContent").animate({transform: 'scale(0.5,0.5)'});
+        $(".imgContent").animate({transform: 'scale(1,1)'});
         // $(".imgContent").addClass('zoomout');
     }
     
