@@ -336,10 +336,10 @@
         f.clientY = y + 379 
         
         
-        $(".png_map").panzoom("zoom", 0.5, { 
-            animate:true, 
-            focal: f
-        })
+        // $(".png_map").panzoom("zoom", 0.5, { 
+        //     animate:true, 
+        //     focal: f
+        // })
         
         $(".png_map").panzoom("pan", x, y, {
               relative: false,
