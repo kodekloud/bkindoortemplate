@@ -28,7 +28,9 @@
     right:50%;
 }
 
-.imgContent{
+.png_map{
+    height:940px;
+    width:2240px;
 
     /*top:0 !important;*/
     /*bottom:0 !important;*/
