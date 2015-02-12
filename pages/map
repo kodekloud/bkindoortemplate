@@ -48,6 +48,9 @@
 }
 
 </style>
+<link rel="stylesheet" href="http://openlayers.org/en/v3.2.0/css/ol.css" type="text/css">
+<script src="http://openlayers.org/en/v3.2.0/build/ol.js" type="text/javascript"></script>
+
 <script src="http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/92b82a88144a6207ab1a5e8e0f63d3d1/craftmap.js"></script>
 <div id="pop-over">
     <span class="pull-left">
@@ -96,7 +99,7 @@
 <!--For more information please see http://learnjs.io/blog/2013/11/30/snapsvg-resources/-->
 <script src="//cdnjs.cloudflare.com/ajax/libs/snap.svg/0.3.0/snap.svg-min.js"></script>
 <script src="http://kodekloud.s3.amazonaws.com/sites/5422419e4a616d74d9030000/e1fb5e17ab727d248230fbcb51da868f/jquery.panzoom.min.js"></script>
-<script src="http:////cdn.jsdelivr.net/jquery.transform/0.1/jquery.transform2d.js"></script>
+<!--<script src="http:////cdn.jsdelivr.net/jquery.transform/0.1/jquery.transform2d.js"></script>-->
 <script>
     $(document).ready(function() {
         function renderAll (){
@@ -297,7 +300,7 @@
         // $(".imgContent").height(
         //     $(".imgContent").height() * 0.1
         // );
-        $(".imgContent").animate({transform: 'scale(1,1)'});
+        // $(".imgContent").animate({transform: 'scale(1,1)'});
         // $(".imgContent").addClass('zoomout');
     }
     
@@ -312,7 +315,7 @@
         // );
         // $(".imgContent").removeClass('zoomout');
         // $(".imgContent").addClass('zoomin');
-        $(".imgContent").animate({transform: 'scale(2,2)'});
+        // $(".imgContent").animate({transform: 'scale(2,2)'});
     }
     
 </script>
