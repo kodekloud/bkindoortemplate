@@ -279,10 +279,10 @@
                     panzoom.on("panzoomend", function( e, panzoom ) { console.log( panzoom.getMatrix() ); });
                 });
                 
-                // lmargin = parseInt(propertyDetails.map_image_width) / 2
-                // w = parseInt(propertyDetails.map_image_width)
-                // h = parseInt(propertyDetails.map_image_height)
-                // $(".demo1").css({"width": w+"px", "height":h+"px", "margin-left": "-530px"})
+                lmargin = parseInt(propertyDetails.map_image_width) / 2
+                w = parseInt(propertyDetails.map_image_width)
+                h = parseInt(propertyDetails.map_image_height)
+                $(".demo1").css({"width": w+"px", "height":h+"px", "left": "0", "top":"0"})
                 
             }
 
