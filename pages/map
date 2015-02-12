@@ -319,7 +319,7 @@
         // console.log (x)
         // console.log(y)
         
-        pin_x = (parseInt(coords[0]) * new_width) / 2240)
+        pin_x = (parseInt(coords[0]) * new_width) / 2240))
         console.log(pin_x)
         var canvas = document.getElementById('map_image');
         var context = canvas.getContext('2d');  
