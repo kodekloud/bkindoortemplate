@@ -20,7 +20,7 @@
     outline: medium none;
     text-indent: -9999px;
     width: 50px;
-    display:block;
+    display:none;
     position:absolute;
     top:50%;
     bottom:50%;
@@ -81,7 +81,7 @@
     <div id="map" class="panzoom-elements" style=""><img src=""></div>
     <div class="demo1" id="demo1">
         <canvas class="imgMap png_map" width="2240" height="943" id="map_image"></canvas>            
-        <div class="marker" id="marker"></div> 
+        <div class="marker"></div> 
         
     </div> 
     
@@ -318,10 +318,7 @@
         // console.log(new_height)
         // console.log (x)
         // console.log(y)
-        $(".png_map").panzoom("pan", x, y, {
-              relative: false,
-              animate: true
-          });
+        
           
         var canvas = document.getElementById('map_image');
         var context = canvas.getContext('2d');  
@@ -332,18 +329,21 @@
         console.log(matrix)
         console.log(pin_x)
         elements.push({x:pin_x,y:pin_y});
-        var img=document.getElementById("marker");
-        // elements.forEach(function(element) {
-            // context.beginPath();
-            // context.arc(element.x,element.y,10,0,2*Math.PI);
-            // context.stroke();
-            // context.fillStyle = 'red';
-            // context.fill();
-            // context.lineWidth = 2;
-            // context.strokeStyle = 'black';
-            // context.stroke();
-            context.drawImage(img,10,10);
-        // });
+        elements.forEach(function(element) {
+            context.beginPath();
+            context.arc(element.x,element.y,10,0,2*Math.PI);
+            context.stroke();
+            context.fillStyle = 'red';
+            context.fill();
+            context.lineWidth = 2;
+            context.strokeStyle = 'black';
+            context.stroke();
+        });
+        
+        $(".png_map").panzoom("pan", x, y, {
+              relative: false,
+              animate: true
+          });
 
     });
     
