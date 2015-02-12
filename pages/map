@@ -240,11 +240,10 @@
                         transition: true,
                         duration: 150,
                         easing: "ease-in-out",
-                        $zoomIn: $('.zoom-in'),
-                        $zoomOut: $('.zoom-out'),
+                        // $zoomIn: $('.zoom-in'),
+                        // $zoomOut: $('.zoom-out'),
                         $zoomRange: $('.zoom-range'),
-                        startTransform: startingMapTransform, 
-                        focal: [100, 100]
+                        startTransform: startingMapTransform
                         
             
                     });
