@@ -226,7 +226,7 @@
                 var propertyDetails = getPropertyDetails();
                 $(".panzoom-elements").hide();
                 $(".png_map").attr("src", getPNGMapURL())
-                $(function(){
+                // $(function(){
                 // $('.demo1').craftmap({
                 //         image: {
                 //             width: propertyDetails.map_image_width,
@@ -281,6 +281,7 @@
                     });
                 });
                 
+            }
 
                
             }else{
