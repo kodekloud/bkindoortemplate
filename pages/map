@@ -283,7 +283,7 @@
         // $(".imgContent").height(
         //     $(".imgContent").height() * 0.1
         // );
-        $(".imgContent").animate({transform: 'scale(2,2)'});
+        $(".imgContent").animate({transform: 'scale(0.5,0.5)'});
         // $(".imgContent").addClass('zoomout');
     }
     
@@ -298,6 +298,7 @@
         // );
         // $(".imgContent").removeClass('zoomout');
         // $(".imgContent").addClass('zoomin');
+        $(".imgContent").animate({transform: 'scale(2,2)'});
     }
     
 </script>
