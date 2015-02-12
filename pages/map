@@ -338,8 +338,8 @@
           
         f = []
         var parentOffset = $(".png_map").offset(); 
-        f.clientX = x - parentOffset.left;
-        f.clientY = y - parentOffset.top;
+        f.clientX = x 
+        f.clientY = y 
         // f.clientY = 389
         // console.log(x)
         // console.log(y)
