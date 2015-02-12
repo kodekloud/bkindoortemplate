@@ -116,11 +116,11 @@
         function renderMap(maptype){
         var isMobile = ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) );
         var didPanZoom = false;
-        if(navigator.appVersion.indexOf("MSIE 9.") == -1){
-            $('#map').bind('mousemove', function(e){
-                //console.log(e.pageX+","+e.pageY);
-               $('#pop-over').css({'top':e.pageY+20,'left':e.pageX-70});
-            });
+        // if(navigator.appVersion.indexOf("MSIE 9.") == -1){
+        //     $('#map').bind('mousemove', function(e){
+        //         //console.log(e.pageX+","+e.pageY);
+        //       $('#pop-over').css({'top':e.pageY+20,'left':e.pageX-70});
+        //     });
             var s = Snap("#map");
             var stores = getStoresList();
             if (maptype == "svg"){
@@ -227,7 +227,7 @@
                     });
                 });
                 
-                $(".imgContent").css({"zoom":"50%","top":"0","left":"0"})
+                // $(".imgContent").css({"zoom":"50%","top":"0","left":"0"})
                 // $(".imgContent").addClass('transition');
                 
             }
