@@ -342,8 +342,8 @@
         console.log("=-=-=-=-=-=-=-")
         console.log(pin_x)
         console.log(pin_y)
-        f.clientX =  (x * 0.325)
-        f.clientY = (y * 0.4143)
+        f.clientX =  (x * 3.25)
+        f.clientY = (y * 4.143)
         console.log(f)
         // f.clientX = 974
         // f.clientY = 389
