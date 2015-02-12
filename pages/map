@@ -283,8 +283,8 @@
         // $(".imgContent").height(
         //     $(".imgContent").height() * 0.1
         // );
-        $(".imgContent").removeClass('zoomin');
-        $(".imgContent").addClass('zoomout');
+        // $(".imgContent").removeClass('zoomin');
+        // $(".imgContent").addClass('zoomout');
     }
     
     
@@ -296,8 +296,8 @@
         // $(".imgContent").height(
         //     $(".imgContent").height() * 1.2
         // );
-        $(".imgContent").removeClass('zoomout');
-        $(".imgContent").addClass('zoomin');
+        // $(".imgContent").removeClass('zoomout');
+        // $(".imgContent").addClass('zoomin');
     }
     
 </script>
