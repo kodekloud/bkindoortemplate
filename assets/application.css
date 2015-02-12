@@ -507,7 +507,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 
 .storelist_dd{
     position:relative;
-    z-index:1;
+    z-index:999999;
 }
 @media print {
   * {
