@@ -79,7 +79,7 @@
     </div>
     <div id="map" class="panzoom-elements" style=""><img src=""></div>
     <div class="demo1" id="demo1">
-        <img alt="map" src="" class="imgMap png_map" id="map_image" />                
+        <canvas alt="map" src="" class="imgMap png_map" id="map_image"></canvas>                
         <div class="marker"></div> 
         
     </div> 
