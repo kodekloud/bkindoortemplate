@@ -295,7 +295,14 @@
         // var new_zoom = parseInt(current_zoom) + 0.1;
         // console.log(new_zoom);
         // $(".imgContent").css("zoom", new_zoom);
-        $(".imgContent").animate({ 'zoom': 0.5 }, 400);
+        // $(".imgContent").animate({ 'zoom': 0.5 }, 400);
+        $(".imgContent").width(
+            $(".imgContent").width() * 1.2
+        );
+    
+        $(".imgContent").height(
+            $(".imgContent").height() * 1.2
+        );
         
     }
     
