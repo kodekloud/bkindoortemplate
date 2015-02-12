@@ -272,6 +272,7 @@
         var current_zoom = $(".imgContent").css("zoom");
         console.log(current_zoom);
         var new_zoom = parseInt(current_zoom) - 1;
+        console.log(new_zoom);
         $(".imgContent").css("zoom", new_zoom);
     }
     
@@ -279,6 +280,7 @@
         var current_zoom = $(".imgContent").css("zoom");
         console.log(current_zoom);
         var new_zoom = parseInt(current_zoom) + 1;
+        console.log(new_zoom);
         $(".imgContent").css("zoom", new_zoom);
     }
     
