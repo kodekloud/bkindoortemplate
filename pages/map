@@ -30,7 +30,10 @@
       -ms-transform:     scale(0.5);
       -o-transform:      scale(0.5);
       transform:         scale(0.5);
-      
+      top:0;
+      left:0;
+      right:0;
+      bottom:0;
 }
 
 
