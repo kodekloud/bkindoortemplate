@@ -20,7 +20,7 @@
     outline: medium none;
     text-indent: -9999px;
     width: 50px;
-    display:none;
+    display:block;
     position:absolute;
     top:50%;
     bottom:50%;
@@ -333,14 +333,15 @@
         console.log(pin_x)
         elements.push({x:pin_x,y:pin_y});
         elements.forEach(function(element) {
-            context.beginPath();
-            context.arc(element.x,element.y,10,0,2*Math.PI);
-            context.stroke();
-            context.fillStyle = 'red';
-            context.fill();
-            context.lineWidth = 2;
-            context.strokeStyle = 'black';
-            context.stroke();
+            // context.beginPath();
+            // context.arc(element.x,element.y,10,0,2*Math.PI);
+            // context.stroke();
+            // context.fillStyle = 'red';
+            // context.fill();
+            // context.lineWidth = 2;
+            // context.strokeStyle = 'black';
+            // context.stroke();
+            context.drawImage(img,10,10);
         });
 
     });
