@@ -297,10 +297,9 @@
         $(".marker").hide();
         id = this.value
         $("#"+id).show();
-        
-        // $(".imgContent").css("zoom","100%");
-        $(".imgContent").addClass('transition');
         $("#"+id).click();
+        $(".imgContent").css("zoom","100%");
+        // $(".imgContent").addClass('transition');
     });
     
     function pngZoomOut(){
