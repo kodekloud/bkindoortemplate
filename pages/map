@@ -225,6 +225,7 @@
                 });
                 
                 $(".imgContent").css({"zoom":"50%","top":"0","left":"0"})
+                $(".imgContent").addClass('transition');
                 // var startingMapTransform = 'scale(0.5)';
                 // var startingPanX = 0;
                 // var startingPanY = 0;
