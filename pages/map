@@ -333,7 +333,7 @@
         console.log(pin_x)
         elements.push({x:pin_x,y:pin_y});
         var img=document.getElementById("marker");
-        elements.forEach(function(element) {
+        // elements.forEach(function(element) {
             // context.beginPath();
             // context.arc(element.x,element.y,10,0,2*Math.PI);
             // context.stroke();
@@ -343,7 +343,7 @@
             // context.strokeStyle = 'black';
             // context.stroke();
             context.drawImage(img,10,10);
-        });
+        // });
 
     });
     
