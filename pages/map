@@ -386,10 +386,10 @@
     });
     
     function toggle_dd(){
-        if (($"#storelist_container").is(":visible")){
-            ($"#storelist_container").slideUp();
+        if ($("#storelist_container").is(":visible")) {
+            $("#storelist_container").slideUp();
         } else {
-            ($"#storelist_container").slideDown();
+            $("#storelist_container").slideDown();
         }
     }
     
