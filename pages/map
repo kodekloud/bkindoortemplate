@@ -325,14 +325,9 @@
         var elements = [];
         elements.push({x:x,y:y});
         elements.forEach(function(element) {
-            context.beginPath();
-            context.arc(element.x,element.y,10,0,2*Math.PI);
-            context.stroke();
-            context.fillStyle = 'red';
-            context.fill();
-            context.lineWidth = 2;
-            context.strokeStyle = 'black';
-            context.stroke();
+            var img = new Image;
+            img.src = "http://kodekloud.s3.amazonaws.com/sites/54cfab316e6f6433ad020000/530d3a9b7bc13ce4a511089c23463f99/10dundas_pin.png";
+            context.drawImage(img,0,0);
         });
         
         // $(".png_map").panzoom("pan", x, y, {
