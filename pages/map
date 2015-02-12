@@ -327,7 +327,6 @@
         var context = canvas.getContext('2d');  
         var elements = [];
         matrix = $(".png_map").panzoom("getMatrix");
-        console.log(matrix)
         pin_x = -1 * matrix[4];
         pin_y = -1 * matrix[5]
         console.log(pin_x)
