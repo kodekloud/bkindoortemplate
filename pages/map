@@ -81,7 +81,7 @@
     <div id="map" class="panzoom-elements" style=""><img src=""></div>
     <div class="demo1" id="demo1">
         <canvas class="imgMap png_map" width="2240" height="943" id="map_image"></canvas>            
-        <div class="marker"></div> 
+        <div class="marker" id="marker"></div> 
         
     </div> 
     
@@ -332,6 +332,7 @@
         console.log(matrix)
         console.log(pin_x)
         elements.push({x:pin_x,y:pin_y});
+        var img=document.getElementById("marker");
         elements.forEach(function(element) {
             // context.beginPath();
             // context.arc(element.x,element.y,10,0,2*Math.PI);
