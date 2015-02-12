@@ -323,7 +323,7 @@
         console.log("-0-0-0-0-0")
         
         x = parseInt(x) - (parseInt(x)  / x_offset) - 530 ;
-        y = parseInt(y) - (parseInt(y)  / y_offset) ;
+        y = parseInt(y) - (parseInt(y)  / y_offset)  - 226;
         console.log(x)
         console.log(y)
         console.log("--------")
