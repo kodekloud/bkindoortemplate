@@ -51,10 +51,6 @@
     transform:scale(1);
 }
 
-.png_map{
-    padding:100px;
-}
-
 </style>
 <script src="http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/92b82a88144a6207ab1a5e8e0f63d3d1/craftmap.js"></script>
 <div id="pop-over">
@@ -124,8 +120,8 @@
             var template_html = $(template).html();
             Mustache.parse(template_html);   // optional, speeds up future uses
             $.each( collection , function( key, val ) {
-                val.x_coordinate = val.x_coordinate - 110;
-                val.y_coordinate = val.y_coordinate - 135;
+                val.x_coordinate = val.x_coordinate - 10;
+                val.y_coordinate = val.y_coordinate - 35;
                 var rendered = Mustache.render(template_html,val);
                 item_rendered.push(rendered);
     
