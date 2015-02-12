@@ -320,7 +320,6 @@
         console.log(new_height)
         console.log (x)
         console.log(y)
-        // x * new width / old width
         $(".png_map").panzoom("pan", x, y, {
               relative: false,
               animate: true
