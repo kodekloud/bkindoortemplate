@@ -390,7 +390,7 @@
         // f.clientY = 389
         
         
-    });
+    };
     
     function toggle_dd(){
         if ($("#storelist_container").is(":visible")) {
