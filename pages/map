@@ -247,7 +247,7 @@
                         
             
                     });
-                    $(".png_map").panzoom("pan", startingPanX, startingPanY, { relative: false });
+                    $(".png_map").panzoom("pan", startingPanX, startingPanY, { relative: true });
                     
                     panzoom.on('panzoomchange', function(e, panzoom, matrix, changed) {
                       didPanZoom = true;
