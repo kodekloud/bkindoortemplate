@@ -228,7 +228,7 @@
                             name: 'imgMap'
                         },
                         map: {
-                            position: 'center'
+                            position: 'top_left'
                         }
                     });
                 });
