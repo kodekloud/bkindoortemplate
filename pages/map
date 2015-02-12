@@ -310,9 +310,9 @@
         v = $(".png_map").panzoom("getMatrix");
         // x = x * (1 / v[0])
         // y = y * (1 / v[3])
-        console.log(v)
-        console.log(v[0] * propertyDetails.map_image_width)
-        console.log(y)
+        
+        new_width = (v[0] * propertyDetails.map_image_width)
+        new_height = (v[3] * propertyDetails.map_image_height)
         
         
         // x * new width / old width
