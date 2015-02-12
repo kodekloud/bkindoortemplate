@@ -239,7 +239,7 @@
                 
                 
                 var startingMapTransform = 'scale(0.5)';
-                var startingPanX = -285;
+                var startingPanX = -290;
                 var startingPanY = 0;
                 if(isMobile) {
                         startingMapTransform = 'scale(0.5)';
