@@ -314,8 +314,8 @@
         // x = x * (1 / v[0])
         // y = y * (1 / v[3])
         
-        new_width = (v[0] * propertyDetails.map_image_width)
-        new_height = (v[3] * propertyDetails.map_image_height)
+        new_width = (v[0] * 1060)
+        new_height = (v[3] * 943)
         
         // x = (x * new_width) / 2240 + (10 * (1 / v[0]))
         // y = ((y * new_height) / 943) + (35 * (1 / v[3]))
