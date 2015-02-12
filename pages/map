@@ -37,12 +37,8 @@
     /*right:0 !important;*/
 }
 
-.zoomout {
-
-}
-
-.zoomin {
-
+.storelist_container{
+    
 }
 
 </style>
