@@ -140,7 +140,13 @@
     
             });
             
-            $(container).show();
+            if (container == "#storelist_container") {
+                
+            } else {
+               $(container).show(); 
+            }
+            
+            
             $(container).html(item_rendered.join(''));
         };
         
