@@ -327,12 +327,12 @@
         var context = canvas.getContext('2d');  
         var elements = [];
 
-        elements.push({x:x,y:y});
+        elements.push({h:x,w:y});
         elements.forEach(function(element) {
             context.beginPath();
-            context.arc(element.x,element.y,10,0,2*Math.PI);
+            context.arc(element.h,element.w,10,0,2*Math.PI);
             context.stroke();
-            context.fillStyle = 'yellow';
+            context.fillStyle = 'red';
             context.fill();
             context.lineWidth = 2;
             context.strokeStyle = 'black';
