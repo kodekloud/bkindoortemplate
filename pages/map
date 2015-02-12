@@ -33,12 +33,12 @@
 }
 
 
-.transition {
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    -ms-transition: all .2s ease-in-out;
-}
+/*.transition {*/
+/*    -webkit-transition: all .2s ease-in-out;*/
+/*    -moz-transition: all .2s ease-in-out;*/
+/*    -o-transition: all .2s ease-in-out;*/
+/*    -ms-transition: all .2s ease-in-out;*/
+/*}*/
 
 
 </style>
@@ -290,11 +290,13 @@
     
     
     function pngZoomIn(){
-        var current_zoom = $(".imgContent").css("zoom");
-        console.log(current_zoom);
-        var new_zoom = parseInt(current_zoom) + 0.1;
-        console.log(new_zoom);
-        $(".imgContent").css("zoom", new_zoom);
+        // var current_zoom = $(".imgContent").css("zoom");
+        // console.log(current_zoom);
+        // var new_zoom = parseInt(current_zoom) + 0.1;
+        // console.log(new_zoom);
+        // $(".imgContent").css("zoom", new_zoom);
+        $(this).animate({ 'zoom': 0.5 }, 400);
+        
     }
     
 </script>
