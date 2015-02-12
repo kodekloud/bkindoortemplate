@@ -315,7 +315,7 @@
     $("#storelist_container").on('change', function() {
         console.log(this.value);
         v = $(".png_map").panzoom("getMatrix");
-        console.log(v);
+        
         
     });
     
