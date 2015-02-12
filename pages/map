@@ -281,10 +281,10 @@
 
                
             }else{
-                // $('#loading').hide();
-                // $('#zControls').hide();
-                // $('#map').hide();
-                // $( "#page_content" ).fadeIn( "fast");
+                $('#loading').hide();
+                $('#zControls').hide();
+                $('#map').hide();
+                $( "#page_content" ).fadeIn( "fast");
             }
         }
         
