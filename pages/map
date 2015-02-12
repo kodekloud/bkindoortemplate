@@ -284,7 +284,7 @@
         // $(".imgContent").height(
         //     $(".imgContent").height() * 0.1
         // );
-        $(".imgContent").animate({transform: '+=rotate(-90deg)'});
+        $(".imgContent").animate({transform: 'scale(2,.5)'});
         // $(".imgContent").addClass('zoomout');
     }
     
