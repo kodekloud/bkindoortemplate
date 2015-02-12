@@ -327,7 +327,7 @@
         elements.forEach(function(element) {
             var img = new Image;
             img.src = "http://kodekloud.s3.amazonaws.com/sites/54cfab316e6f6433ad020000/530d3a9b7bc13ce4a511089c23463f99/10dundas_pin.png";
-            context.drawImage(img,0,0);
+            context.drawImage(img,x,y);
         });
         
         // $(".png_map").panzoom("pan", x, y, {
