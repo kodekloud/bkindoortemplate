@@ -50,7 +50,7 @@
 }
 
 #storelist_container li{
-    
+    list-style:none;
 }
 
 </style>
