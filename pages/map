@@ -320,6 +320,7 @@
         v = $(".png_map").panzoom("getMatrix");
         x = x * (1 / v[0])
         y = y * (1 / v[3])
+        console.log(v)
         console.log(x)
         console.log(y)
     });
