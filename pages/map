@@ -252,7 +252,7 @@
                         cursor: "move",
                         increment: 0.1,
                         minScale: 0.1,
-                        maxScale: 1,
+                        maxScale: 5,
                         transition: true,
                         duration: 150,
                         easing: "ease-in-out",
