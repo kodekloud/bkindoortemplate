@@ -24,7 +24,7 @@
 }
 
 .imgContent{
-    zoom: 100%; // at least IE, Chrome 
+    zoom: 100%;
     -moz-transform: scale(0.5);
     -webkit-transform: scale(0.5);
     top:0;
