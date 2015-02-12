@@ -29,8 +29,8 @@
 }
 
 .png_map{
-    height:940px;
-    width:2240px;
+    height:2240;
+    width:943;
 
     /*top:0 !important;*/
     /*bottom:0 !important;*/
