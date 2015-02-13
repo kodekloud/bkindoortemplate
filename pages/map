@@ -304,7 +304,7 @@
                         var panzoom = $(".mobile_demo1").panzoom({
                             cursor: "move",
                             increment: 0.1,
-                            minScale: 0.5,
+                            minScale: 0.1,
                             maxScale: 1.5,
                             transition: true,
                             duration: 150,
