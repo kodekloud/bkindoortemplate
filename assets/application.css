@@ -1927,7 +1927,9 @@ table th[class*="col-"] {
 }
 @media (max-width: 767px) {
     
-    
+    .page_banner{
+        font-size:20px;
+    }
     .main_window{
         width:100%;
         border:30px solid #eaf1fb !important;
