@@ -297,7 +297,7 @@
                             // $("#scroll_to_marker").click();
                         });
                         $( "#page_content" ).fadeIn( "fast", function() {
-                        var startingMapTransform = 'scale(1)';
+                        var startingMapTransform = 'scale(0.1)';
                         var startingPanX = 0;
                         var startingPanY = 0;
                            
