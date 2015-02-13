@@ -478,6 +478,7 @@
             // f.clientY = 389
         
         } else {
+            alert("called")
             coords = this.value.split(",");
             $("#scroll_to_marker"+coords[2]).show();
             $("#scroll_to_marker"+coords[2]).click();
