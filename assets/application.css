@@ -2076,7 +2076,7 @@ table th[class*="col-"] {
         display:none;
     }
     
-    .demo1 {
+    .demo1, .store_map{
         width:100% !important;
     }
   .table-responsive {
