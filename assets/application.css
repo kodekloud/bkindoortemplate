@@ -2022,7 +2022,9 @@ table th[class*="col-"] {
         text-align:center !important;
     }
     .portfolio_strict .portfolio_item figure{
-        
+        width:80%;
+        margin-left:auto
+        margin-right:auto;
     }
     
     .hgroup .breadcrumb {
