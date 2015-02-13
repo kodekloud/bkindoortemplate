@@ -2013,6 +2013,11 @@ table th[class*="col-"] {
         margin:0 ;
     }
     
+    .feature_div{
+        margin-right:0;
+        width:100%;
+    }
+    
     .hgroup .breadcrumb {
         position:relative !important;
         bottom:0 !important;
