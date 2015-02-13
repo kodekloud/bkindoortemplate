@@ -1930,6 +1930,7 @@ table th[class*="col-"] {
     
     .main_window{
         width:100%;
+        border-top:none;
     }
     .footer_text{
         width:auto !important;
