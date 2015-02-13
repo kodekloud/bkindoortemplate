@@ -2033,6 +2033,9 @@ table th[class*="col-"] {
         margin-bottom:10px !important;
     }
     
+    #footer_teasers_wrapper .footer_teaser{
+        width:100% !important;
+    }
     
   .table-responsive {
     width: 100%;
