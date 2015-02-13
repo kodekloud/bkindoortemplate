@@ -270,10 +270,7 @@
                 // $("#zControls").hide();
                 var propertyDetails = getPropertyDetails();
                 $(".panzoom-elements").hide();
-                $(".png_map").css("background", "url("+getPNGMapURL()+")")
-                var startingMapTransform = 'scale(0.5)';
-                var startingPanX = 0;
-                var startingPanY = 0;
+                
                 if(isMobile) {
                         $("#mobile_map_image").attr("src",getPNGMapURL());
                         $(function(){
@@ -293,7 +290,10 @@
                    
                         
                 } else {
-                    
+                    $(".png_map").css("background", "url("+getPNGMapURL()+")")
+                    var startingMapTransform = 'scale(0.5)';
+                    var startingPanX = 0;
+                    var startingPanY = 0;
                     $( "#page_content" ).fadeIn( "fast", function() {
                         var panzoom = $(".png_map").panzoom({
                             cursor: "move",
