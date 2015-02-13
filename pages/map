@@ -1,5 +1,5 @@
 <style>
-.demo1{
+.demo1, .mobile_demo1{
     float: left;
     margin-bottom:29px;
     height: 100%;
