@@ -2043,6 +2043,10 @@ table th[class*="col-"] {
         width:100% !important;
     }
     
+    .inside_page_content{
+        width:100%;
+    }
+    
   .table-responsive {
     width: 100%;
     margin-bottom: 15px;
