@@ -2089,6 +2089,19 @@ table th[class*="col-"] {
     .demo1, .store_map{
         width:100% !important;
     }
+    
+    .promo_desc_box{
+        width:100%;
+        
+    }
+    
+    .promo_image{
+        margin-left:auto;
+        margin-right:auto;
+        display:block;
+        margin-bottom:30px;
+    }
+    
   .table-responsive {
     width: 100%;
     margin-bottom: 15px;
