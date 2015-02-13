@@ -262,36 +262,21 @@
                 var startingPanX = 0;
                 var startingPanY = 0;
                 if(isMobile) {
-                        startingMapTransform = 'scale(0.3)';
-                        startingPanX = 0;
-                        startingPanY = 0;
-                        
-                        $( "#page_content" ).fadeIn( "fast", function() {
-                            var panzoom = $(".png_map").panzoom({
-                                cursor: "move",
-                                increment: 0.1,
-                                minScale: 0.5,
-                                maxScale: 1.5,
-                                transition: true,
-                                duration: 150,
-                                easing: "ease-in-out",
-                                $zoomIn: $('.zoom-in'),
-                                $zoomOut: $('.zoom-out'),
-                                $zoomRange: $('.zoom-range'),
-                                startTransform: startingMapTransform
-                                
-                    
+                        $("#mobile_map_image").attr("src",getPNGMapURL());
+                        $(function(){
+                            $('#mobile_demo1').craftmap({
+                                image: {
+                                    width: 2240,
+                                    height: 943,
+                                    name: 'imgMap'
+                                },
+                                map: {
+                                    position: 'center'
+                                }
                             });
-                            $(".png_map").panzoom("pan", startingPanX, startingPanY, { relative: true });
-                            
-                            panzoom.on('panzoomchange', function(e, panzoom, matrix, changed) {
-                              didPanZoom = true;
-                            });
-                            
-                            panzoom.on('panzoomend', function(e, panzoom, matrix, changed) {
-                              didPanZoom = false;
-                            });
-                            // panzoom.on("panzoomstart", function( e, panzoom ) { console.log( panzoom.getMatrix() ); });
+                
+                            $("#scroll_to_marker").click();
+                        });
                         });
                         
                 } else {
