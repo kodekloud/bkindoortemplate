@@ -428,7 +428,7 @@
         y = coords[1]
         x = (parseInt(propertyDetails.map_image_width)/2) - parseInt(x);
         y = (parseInt(propertyDetails.map_image_height)/2) - parseInt(y);
-        v = $(".mobile_demo1").panzoom("getMatrix");
+        v = $(".png_map").panzoom("getMatrix");
         new_width = (v[0] * propertyDetails.map_image_width)
         new_height = (v[3] * propertyDetails.map_image_height)
         
@@ -453,11 +453,6 @@
         // })
         
         $(".png_map").panzoom("pan", x, y, {
-              relative: false,
-              animate: true
-          });
-          
-        $(".mobile_demo1").panzoom("pan", x, y, {
               relative: false,
               animate: true
           });
