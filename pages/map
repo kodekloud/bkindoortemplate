@@ -290,7 +290,7 @@
                                     name: 'imgMap'
                                 },
                                 map: {
-                                    position: 'center'
+                                    position: 'topLeft'
                                 }
                             });
                             // $("#anchor_id").click();
