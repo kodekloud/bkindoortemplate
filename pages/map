@@ -145,6 +145,7 @@
             $("#main_content").show();
             // specify the type of map here. "png" or "svg"
             var maptype = "png"
+            
             renderMap(maptype);
            
         }
@@ -275,7 +276,7 @@
                 var startingPanY = 0;
                 if(isMobile) {
                         $("#mobile_map_image").attr("src",getPNGMapURL());
-                        $(function(){
+                        
                             $('#mobile_demo1').craftmap({
                                 image: {
                                     width: 2240,
@@ -288,8 +289,7 @@
                             });
                 
                             // $("#scroll_to_marker").click();
-                        });
-                      
+                   
                         
                 } else {
                     
