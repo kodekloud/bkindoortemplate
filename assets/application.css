@@ -2110,7 +2110,7 @@ table th[class*="col-"] {
     }
     
     .breadcrumb{
-        padding-left:10px;
+        padding-left:10px !important;
     }
     
     
