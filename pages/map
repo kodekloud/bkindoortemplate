@@ -104,7 +104,7 @@
     </div> 
     
 
-    <div class="demo1" id="mobile_demo1">
+    <div class="mobile_demo1" id="mobile_demo1">
         <img alt="map" src="" class="imgMap" id="mobile_map_image" />      
         <div id="marker_container">
             // <script id="marker_template" type="x-tmpl-mustache/text">
