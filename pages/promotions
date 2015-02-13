@@ -62,9 +62,9 @@
             $.getScript("http://cdn.jsdelivr.net/slimbox/2.0.5/js/slimbox2.js");
             $.getScript("http://cdn.jsdelivr.net/jquery.ellipsis.interactive/2.0.0/jquery.ellipsis.interactive.min.js");
             $('head').append('<link rel="stylesheet" href="http://cdn.jsdelivr.net/slimbox/2.0.5/css/slimbox2.css" type="text/css" media="screen" />');
-            $("#desc").ellipsis({
-                row: 2
-            });
+            $("#desc").dotdotdot({
+        		//	configuration goes here
+        	});
         }
         
     
