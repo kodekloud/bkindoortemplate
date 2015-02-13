@@ -2077,7 +2077,7 @@ table th[class*="col-"] {
     }
     
     .demo1 {
-        width:100%;
+        width:100% !important;
     }
   .table-responsive {
     width: 100%;
