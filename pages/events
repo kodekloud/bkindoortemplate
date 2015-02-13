@@ -52,7 +52,7 @@
             renderPageData('#centre_info_container','#centre_info_template',propertyDetails, 'property_details')
             all_events = getEventsList();
             if (all_events.length > 0 ) {
-                renderPageData("#promo_list_container","#promo_list_template", all_events);    
+                renderPageData("#promo_list_container","#promo_list_template", all_events, 'events');    
             } else {
                 $("#no_event_container").show();
             }
@@ -73,7 +73,8 @@
                 collection = item_list;
             }
             $.each( collection , function( key, val ) {
-                if ((val.event_image_url).indexOf('missing.png') > -1){
+                if (type == "events"){
+                    if ((val.event_image_url).indexOf('missing.png') > -1){
                     if (val.eventable_type == "Store") {
                         var store_details = getStoreDetailsByID(val.promotionable_id);
                         val.alt_event_image_url = getImageURL(store_details.store_front_url);    
@@ -81,12 +82,15 @@
                         val.alt_promo_image_url = "http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/dcd66cb0efbccf1a9dc76822e0b9da23/logo_10dundas.png"
                     }
                     
-                } else {
-                    val.alt_promo_image_url = getImageURL(val.event_image_url);
+                    } else {
+                        val.alt_promo_image_url = getImageURL(val.event_image_url);
+                    }
+                    start = new Date (val.start_date);
+                    end = new Date (val.end_date);
+                    val.dates = (get_month(start.getMonth()))+" "+(start.getDate())+" - "+get_month(end.getMonth())+" "+end.getDate();
+                        
                 }
-                start = new Date (val.start_date);
-                end = new Date (val.end_date);
-                val.dates = (get_month(start.getMonth()))+" "+(start.getDate())+" - "+get_month(end.getMonth())+" "+end.getDate();
+                
                 var rendered = Mustache.render(template_html,val);
                 item_rendered.push(rendered);
     
