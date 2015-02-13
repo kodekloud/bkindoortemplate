@@ -2053,6 +2053,7 @@ table th[class*="col-"] {
         padding:0;
         margin:0;
         width:100%;
+        border:none;
     }
     
     .inside_banner_image{
