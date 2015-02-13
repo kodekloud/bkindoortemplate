@@ -285,8 +285,7 @@
                         $(function(){
                             $('.mobile_demo1').craftmap({
                                 image: {
-                                    width: 2240,
-                                    height: 943,
+                                    
                                     name: 'imgMap'
                                 },
                                 map: {
