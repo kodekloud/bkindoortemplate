@@ -2066,8 +2066,8 @@ table th[class*="col-"] {
         width:50%;
         vertical-align:top;
     }
-    .directory_name_col{
-        margin-right:10px;
+    .directory_phone_col{
+        text-align:center;
     }
     .directory_div{
         width:100%;
