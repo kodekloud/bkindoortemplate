@@ -2109,7 +2109,9 @@ table th[class*="col-"] {
         margin-bottom:30px;
     }
     
-    
+    .breadcrumb{
+        padding-left:10px;
+    }
     
     
     #zControls{
