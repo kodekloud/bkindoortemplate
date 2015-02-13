@@ -1991,7 +1991,8 @@ table th[class*="col-"] {
     }
     
     .navbar a.navbar-brand {
-        margin-top: 20px !important;
+        padding-top: 20px !important;
+        height:80px !important;
       }
       
     .store_directory_hgroup{
