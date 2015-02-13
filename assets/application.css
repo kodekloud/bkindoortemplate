@@ -1926,6 +1926,8 @@ table th[class*="col-"] {
   background-color: #ebcccc;
 }
 @media (max-width: 767px) {
+    
+    
     .main_window{
         width:100%;
     }
@@ -1950,6 +1952,7 @@ table th[class*="col-"] {
     
     #social_media_wrapper{
         right:0 !important;
+        margin-top:0;
     }
     
     .navbar .btn-navbar{
