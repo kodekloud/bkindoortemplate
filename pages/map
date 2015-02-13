@@ -95,15 +95,15 @@
     <div id="map" class="panzoom-elements" style=""><img src=""></div>
     <div class="demo1" id="demo1">
         <canvas class="imgMap png_map" width="2240" height="943" id="map_image"></canvas>            
-        <div class="marker"></div> 
-        
     </div> 
     
 
     <div class="demo1" id="mobile_demo1">
         <img alt="map" src="" class="imgMap" id="mobile_map_image" />      
         <div id="marker_container">
-            <div class="marker" id='scroll_to_marker{{id}}' data-coords="{{x_coordinate}}, {{y_coordinate}}"></div>     
+            <script id="marker_template" type="x-tmpl-mustache/text">
+                <div class="marker" id='scroll_to_marker{{id}}' data-coords="{{x_coordinate}}, {{y_coordinate}}"></div> 
+            </script>
         </div>
           
     </div>   
