@@ -1997,6 +1997,11 @@ table th[class*="col-"] {
         height:80px !important;
       }
       
+      .navbar a.navbar-brand img{
+          height:auto;
+          width:55%;
+      }
+      
     .store_directory_hgroup{
         padding-bottom:35px !important;
     }
