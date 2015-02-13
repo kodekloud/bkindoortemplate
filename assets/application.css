@@ -2021,6 +2021,9 @@ table th[class*="col-"] {
     .feature_title{
         text-align:center !important;
     }
+    .portfolio_strict .portfolio_item figure{
+        width:100%;
+    }
     
     .hgroup .breadcrumb {
         position:relative !important;
