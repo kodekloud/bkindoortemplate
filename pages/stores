@@ -1,9 +1,3 @@
-<style>
-    .top_mobile_col{
-        display:none;
-    }
-    
-</style>
 <div id="back-top"><img alt="BackToTop" src="http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/c0a5afb0d05049981f657ccf2e67d904/totop.jpg"/></div>
 <div id="loading_screen">
     <img alt="loading" src="http://kodekloud.s3.amazonaws.com/sites/5447ebb66e6f641987020000/3604f5c26997bea3de504de139debcec/loading.gif"/>
@@ -17,15 +11,6 @@
         store directory
     </div>
     <div class="inside_page_content">
-        <div class="top_mobile_col right_column">
-            <a href="/map"><p class="right_column_header">centre map</p></a>
-            <br>
-            <p class="right_column_header">categories</p>
-            <div id="mobile_categories_container">
-                <a href="#categories_container" onclick="(show_cat('view_all', 'all'))" id="view_all_link" class="cat_links directory_content" style="font-weight:bold">View All</a><br>
-            </div>
-            <br>
-        </div>
         <div class="left_column">
             <img class="inside_banner_image" alt="banner" src="http://kodekloud.s3.amazonaws.com/sites/54d4e9206e6f64691f000000/1f4fed1d858c9ddcaf0105aacf32e785/store_list_banner.jpg"/>
             <div class="directory_div" id="no_cat_list">
