@@ -155,6 +155,23 @@
             // specify the type of map here. "png" or "svg"
             var maptype = "png"
             
+            
+            $("#mobile_map_image").attr("src",getPNGMapURL());
+            $(function(){
+                $('.mobile_demo1').craftmap({
+                    image: {
+                        width: 2240,
+                        height: 943,
+                        name: 'imgMap'
+                    },
+                    map: {
+                        position: 'center'
+                    }
+                });
+                // $("#anchor_id").click();
+                // $("#scroll_to_marker").click();
+            });
+            
             renderMap(maptype);
            
         }
@@ -281,21 +298,7 @@
                 $(".panzoom-elements").hide();
                 
                 if(isMobile) {
-                        $("#mobile_map_image").attr("src",getPNGMapURL());
-                        $(function(){
-                            $('.mobile_demo1').craftmap({
-                                image: {
-                                    width: 2240,
-                                    height: 943,
-                                    name: 'imgMap'
-                                },
-                                map: {
-                                    position: 'center'
-                                }
-                            });
-                            // $("#anchor_id").click();
-                            // $("#scroll_to_marker").click();
-                        });
+                        
                    
                         
                 } else {
