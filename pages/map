@@ -249,6 +249,65 @@
                         startingMapTransform = 'scale(1)';
                         startingPanX = 0;
                         startingPanY = 0;
+                        
+                        $( "#page_content" ).fadeIn( "fast", function() {
+                            var panzoom = $(".png_map").panzoom({
+                                cursor: "move",
+                                increment: 0.1,
+                                minScale: 0.5,
+                                maxScale: 1.5,
+                                transition: true,
+                                duration: 150,
+                                easing: "ease-in-out",
+                                $zoomIn: $('.zoom-in'),
+                                $zoomOut: $('.zoom-out'),
+                                $zoomRange: $('.zoom-range'),
+                                startTransform: startingMapTransform
+                                
+                    
+                            });
+                            $(".png_map").panzoom("pan", startingPanX, startingPanY, { relative: true });
+                            
+                            panzoom.on('panzoomchange', function(e, panzoom, matrix, changed) {
+                              didPanZoom = true;
+                            });
+                            
+                            panzoom.on('panzoomend', function(e, panzoom, matrix, changed) {
+                              didPanZoom = false;
+                            });
+                            // panzoom.on("panzoomstart", function( e, panzoom ) { console.log( panzoom.getMatrix() ); });
+                        });
+                        
+                } else {
+                    
+                    $( "#page_content" ).fadeIn( "fast", function() {
+                        var panzoom = $(".png_map").panzoom({
+                            cursor: "move",
+                            increment: 0.1,
+                            minScale: 0.5,
+                            maxScale: 1.5,
+                            transition: true,
+                            duration: 150,
+                            easing: "ease-in-out",
+                            $zoomIn: $('.zoom-in'),
+                            $zoomOut: $('.zoom-out'),
+                            $zoomRange: $('.zoom-range'),
+                            startTransform: startingMapTransform
+                            
+                
+                        });
+                        $(".png_map").panzoom("pan", startingPanX, startingPanY, { relative: true });
+                        
+                        panzoom.on('panzoomchange', function(e, panzoom, matrix, changed) {
+                          didPanZoom = true;
+                        });
+                        
+                        panzoom.on('panzoomend', function(e, panzoom, matrix, changed) {
+                          didPanZoom = false;
+                        });
+                        // panzoom.on("panzoomstart", function( e, panzoom ) { console.log( panzoom.getMatrix() ); });
+                    });
+                    
                 }
                 
                 $( "#page_content" ).fadeIn( "fast", function() {
