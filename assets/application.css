@@ -1930,7 +1930,7 @@ table th[class*="col-"] {
     
     .main_window{
         width:100%;
-        border:30px solid #eaf1fb;
+        border:30px solid #eaf1fb !important;
         border-top:none !important;
         
     }
