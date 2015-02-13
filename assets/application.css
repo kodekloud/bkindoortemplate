@@ -2066,6 +2066,9 @@ table th[class*="col-"] {
         width:50%;
         vertical-align:top;
     }
+    .directory_div{
+        width:100%;
+    }
     
   .table-responsive {
     width: 100%;
