@@ -2112,6 +2112,9 @@ table th[class*="col-"] {
     .demo1{
         display:none;
     }
+    #zControls{
+        display:none;
+    }
     
   .table-responsive {
     width: 100%;
