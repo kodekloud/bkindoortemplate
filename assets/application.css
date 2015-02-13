@@ -2049,6 +2049,12 @@ table th[class*="col-"] {
         padding:10px;
     }
     
+    .left_column, .right_column{
+        padding:0
+        margin:0;
+        width:100%;
+    }
+    
   .table-responsive {
     width: 100%;
     margin-bottom: 15px;
