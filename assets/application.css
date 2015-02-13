@@ -1986,8 +1986,7 @@ table th[class*="col-"] {
     }
     
     .navbar a.navbar-brand {
-        width: 280px;
-        margin: 0px 0 0px 15px;
+        margin-top: 20px !important;
       }
       
     .store_directory_hgroup{
