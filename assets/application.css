@@ -2118,6 +2118,10 @@ table th[class*="col-"] {
     #storelist_container{
         width:100%;
     }
+    
+    #mobile_centre_map_link{
+        display:block !important;
+    }
   .table-responsive {
     width: 100%;
     margin-bottom: 15px;
