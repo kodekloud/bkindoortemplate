@@ -2072,7 +2072,9 @@ table th[class*="col-"] {
     .directory_div{
         width:100%;
     }
-    
+    .right_column{
+        display:none;
+    }
   .table-responsive {
     width: 100%;
     margin-bottom: 15px;
