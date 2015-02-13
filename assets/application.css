@@ -2007,6 +2007,7 @@ table th[class*="col-"] {
     
     #description_section{
         margin-top:0;
+        margin-bottom:30px;
     }
     
     #feature_items{
