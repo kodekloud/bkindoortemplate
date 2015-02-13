@@ -457,6 +457,11 @@
               animate: true
           });
           
+        $(".mobile_demo1").panzoom("pan", x, y, {
+              relative: false,
+              animate: true
+          });
+          
         f = []
         // var parentOffset = $(".png_map").offset(); 
         // f.clientX =  x + 530 
