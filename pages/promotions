@@ -19,7 +19,7 @@
                             <img alt="promo image" class="promo_image" src="{{alt_promo_image_url}}" />
                         </a> 
                         <div class="promo_desc_box">
-                            <p class="promo_header right_column_header">{{name}}</p>
+                            <a href="../promotions/{{slug}}"><p class="promo_header right_column_header">{{name}}</p></a>
                             <p class="directory_content promo_date"><a href="/stores/{{store_detail_btn}}">{{store_name}}</a><br>{{dates}}</p>
                             <p>{{description}}</p>
                             <a href="../promotions/{{slug}}" class="btn btn-primary pull-right">view detail</a> </div>
