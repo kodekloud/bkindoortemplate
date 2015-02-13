@@ -51,6 +51,18 @@
 }
 
 
+@media (max-width: 767px) {
+    .mobile_demo1{
+        display:block !important;
+    }
+    
+    .demo1{
+        display:none;
+    }
+}
+
+
+
 
 /*#storelist_container{*/
 /*    padding:0;*/
