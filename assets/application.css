@@ -2045,6 +2045,8 @@ table th[class*="col-"] {
     
     .inside_page_content{
         width:100%;
+        margin:0;
+        padding:10px;
     }
     
   .table-responsive {
