@@ -2023,8 +2023,8 @@ table th[class*="col-"] {
     }
     .portfolio_strict .portfolio_item figure{
         width:80% !important;
-        margin-left:auto;
-        margin-right:auto;
+        margin-left:auto !important;
+        margin-right:auto !important;
     }
     
     .hgroup .breadcrumb {
