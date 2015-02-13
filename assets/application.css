@@ -1926,7 +1926,11 @@ table th[class*="col-"] {
   background-color: #ebcccc;
 }
 @media (max-width: 767px) {
-    
+    .contest_image{
+        height:auto;
+        width:auto;
+        margin-top:20px;
+    }
     .page_banner{
         font-size:20px;
     }
