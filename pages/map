@@ -277,7 +277,7 @@
                 
                             $("#scroll_to_marker").click();
                         });
-                        });
+                      
                         
                 } else {
                     
