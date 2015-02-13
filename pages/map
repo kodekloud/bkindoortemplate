@@ -298,7 +298,7 @@
                         });
                         $( "#page_content" ).fadeIn( "fast", function() {
                         var startingMapTransform = 'scale(0.5)';
-                        var startingPanX = 200;
+                        var startingPanX = 500;
                         var startingPanY = 0;
                            
                         var panzoom = $(".mobile_demo1").panzoom({
