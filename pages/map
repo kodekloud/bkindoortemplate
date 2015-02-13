@@ -276,20 +276,20 @@
                 var startingPanY = 0;
                 if(isMobile) {
                         $("#mobile_map_image").attr("src",getPNGMapURL());
-                        // $(function(){
-                        //     $('.mobile_demo1').craftmap({
-                        //         image: {
-                        //             width: 2240,
-                        //             height: 943,
-                        //             name: 'imgMap'
-                        //         },
-                        //         map: {
-                        //             position: 'center'
-                        //         }
-                        //     });
-                        //     // $("#anchor_id").click();
-                        //     // $("#scroll_to_marker").click();
-                        // });
+                        $(function(){
+                            $('.mobile_demo1').craftmap({
+                                image: {
+                                    width: 2240,
+                                    height: 943,
+                                    name: 'imgMap'
+                                },
+                                map: {
+                                    position: 'center'
+                                }
+                            });
+                            // $("#anchor_id").click();
+                            // $("#scroll_to_marker").click();
+                        });
                    
                         
                 } else {
