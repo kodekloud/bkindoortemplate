@@ -12,24 +12,21 @@
     <div class="inside_page_content">
         <div class="left_column">
             <img class="inside_banner_image" alt="banner" src="http://kodekloud.s3.amazonaws.com/sites/54d4e9206e6f64691f000000/1f4fed1d858c9ddcaf0105aacf32e785/store_list_banner.jpg"/>
-            <section class="service_teasers" id="promo_list_container">
+            <div class="promo_list_div" id="promo_list_container">
                 <script id="promo_list_template" type="x-tmpl-mustache/text">
-                   <div class="service_teaser">
-                        <div class="row">
-                            <div class="service_photo col-sm-4 col-md-4">
-                                <a href="{{alt_promo_image_url}}" rel="lightbox-gallery" title="{{name}}">
-                                    <img alt="promo image" class="promo_image" src="{{alt_promo_image_url}}" />
-                                </a>                              
-                            </div>
-                             
-                             <div class="service_details col-sm-8 col-md-8">
-                                  <h2 class="section_header skincolored"><b><a href="../promotions/{{slug}}">{{name}}</a></b><p style="font-size:14px;color:gray;margin-top:15px;margin-bottom:0;line-height:14px">{{dates}}</p></h2>
-                                  <p>{{description}}</p>
-                                  <a href="../promotions/{{slug}}" class="btn btn-primary pull-right">view detail</a> </div>
+                    <p class="promo_header right_column_header">{{name}}</p>
+                    <p class="directory_content promo_date">{{dates}}</p>
+                    <div class="promo_inside_content">
+                        <a href="{{alt_promo_image_url}}" rel="lightbox-gallery" title="{{name}}">
+                            <img alt="promo image" class="promo_image" src="{{alt_promo_image_url}}" />
+                        </a> 
+                        <div class="promo_desc_box">
+                            <p>{{description}}</p>
+                            <a href="../promotions/{{slug}}" class="btn btn-primary pull-right">view detail</a> </div>
                         </div>
-                   </div>
+                    </div>
                 </script>
-            </section>   
+            </div>  
             <section class="service_teasers" style="display:none" id="no_event_container">
                 <h2>There are no events at this time, please check back later.</h2>
             </section>
