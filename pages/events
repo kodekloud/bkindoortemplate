@@ -16,9 +16,10 @@
                 <script id="promo_list_template" type="x-tmpl-mustache/text">
                    <div class="service_teaser">
                         <div class="row">
-                             <div class="service_photo col-sm-4 col-md-4">
-                                  <a href="../events/{{slug}}"><figure style="background-image:url('{{alt_promo_image_url}}')"></figure></a>
-                             </div>
+                    
+                             <a href="{{alt_promo_image_url}}" rel="lightbox-gallery" title="{{name}}">
+                                <img alt="promo image" class="promo_image" src="{{alt_promo_image_url}}" />
+                            </a> 
                              <div class="service_details col-sm-8 col-md-8">
                                   <h2 class="section_header skincolored"><b><a href="../events/{{slug}}">{{name}}</a></b><p style="font-size:14px;color:gray;margin-top:15px;margin-bottom:0;line-height:14px">{{dates}}</p></h2>
                                   <p>{{description}}</p>
@@ -142,7 +143,9 @@
             }
             return month;
         }
-
+        $.getScript("http://cdn.jsdelivr.net/slimbox/2.0.5/js/slimbox2.js");
+        $('head').append('<link rel="stylesheet" href="http://cdn.jsdelivr.net/slimbox/2.0.5/css/slimbox2.css" type="text/css" media="screen" />');
+            
         loadMallData(renderAll);  
 
     
