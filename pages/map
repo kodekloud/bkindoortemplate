@@ -277,7 +277,7 @@
                 if(isMobile) {
                         $("#mobile_map_image").attr("src",getPNGMapURL());
                         $(function(){
-                            $('.demo1').craftmap({
+                            $('.mobile_demo1').craftmap({
                                 image: {
                                     width: 2240,
                                     height: 943,
