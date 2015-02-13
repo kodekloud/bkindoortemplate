@@ -7,7 +7,7 @@
     .contest_form_div{
         margin-top:20px;
         width:75%;
-        margin-left:85px;
+        margin-left:80px;
     }
     
     .large_field{
