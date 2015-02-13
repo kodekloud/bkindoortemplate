@@ -1952,7 +1952,7 @@ table th[class*="col-"] {
     
     #social_media_wrapper{
         right:0 !important;
-        margin-top:0;
+        margin-top:0 !important;
     }
     
     .navbar .btn-navbar{
