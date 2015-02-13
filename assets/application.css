@@ -1995,6 +1995,7 @@ table th[class*="col-"] {
     .navbar a.navbar-brand {
         padding-top: 20px !important;
         height:80px !important;
+        width:auto !important;
       }
       
       .navbar a.navbar-brand img{
