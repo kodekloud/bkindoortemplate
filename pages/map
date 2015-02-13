@@ -85,7 +85,7 @@
 
     <select id="storelist_container" class="pull-left storelist_dd">
         <script id="storelist_template" type="x-tmpl-mustache/text">
-            <option value="{{x_coordinate}}, {{y_coordinate}}">{{name}}</option>
+            <option value="{{x_coordinate}}, {{y_coordinate}}, {{id}}">{{name}}</option>
         </script>
     </select>
     <div id="zControls" class="pull-right">
@@ -98,6 +98,16 @@
         <div class="marker"></div> 
         
     </div> 
+    
+
+    <div class="demo1" id="mobile_demo1">
+        <img alt="map" src="" class="imgMap" id="mobile_map_image" />      
+        <div id="marker_container">
+            <div class="marker" id='scroll_to_marker{{id}}' data-coords="{{x_coordinate}}, {{y_coordinate}}"></div>     
+        </div>
+          
+    </div>   
+
     
 </div>
 </div>
