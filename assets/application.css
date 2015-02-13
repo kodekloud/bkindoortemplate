@@ -2111,6 +2111,8 @@ table th[class*="col-"] {
     
     .breadcrumb{
         padding-left:10px !important;
+        font-size:10px;
+        height:50px !important;
     }
     
     
