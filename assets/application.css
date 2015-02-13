@@ -2018,6 +2018,9 @@ table th[class*="col-"] {
         margin-right:0;
         width:100%;
     }
+    .feature_title{
+        text-align:center;
+    }
     
     .hgroup .breadcrumb {
         position:relative !important;
