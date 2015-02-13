@@ -486,7 +486,12 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 }
 
 
-.promo_inside_content{}
+.promo_inside_content{
+    border-bottom:1px solid #eeeeee;
+    margin-bottom:30px;
+    padding-bottom:30px;
+
+}
 .promo_image{
     height:211px;
     width:211px;
