@@ -1998,8 +1998,8 @@ table th[class*="col-"] {
       }
       
       .navbar a.navbar-brand img{
-          height:auto;
-          width:55%;
+          height:auto !important;
+          width:55% !important;
       }
       
     .store_directory_hgroup{
