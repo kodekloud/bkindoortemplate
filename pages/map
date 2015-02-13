@@ -300,7 +300,7 @@
                         var startingPanX = 0;
                         var startingPanY = 0;
                            
-                        var panzoom = $("#mobile_map_image").panzoom({
+                        var panzoom = $(".mobile_demo1").panzoom({
                             cursor: "move",
                             increment: 0.1,
                             minScale: 0.5,
@@ -315,7 +315,7 @@
                             
                 
                         });
-                        $("#mobile_map_image").panzoom("pan", startingPanX, startingPanY, { relative: true });
+                        $(".mobile_demo1").panzoom("pan", startingPanX, startingPanY, { relative: true });
                         
                         panzoom.on('panzoomchange', function(e, panzoom, matrix, changed) {
                           didPanZoom = true;
