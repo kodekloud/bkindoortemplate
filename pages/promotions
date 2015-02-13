@@ -55,7 +55,7 @@
             renderPageData('#centre_info_container','#centre_info_template',propertyDetails, 'property_details')
             all_promos = getPromotionsList();
             if (all_promos.length > 0 ) {
-                renderTemplate("#promo_list_container","#promo_list_template", all_promos, "promos");    
+                renderPageData("#promo_list_container","#promo_list_template", all_promos, "promos");    
             } else {
                 $("#no_promo_container").show();
             } 
