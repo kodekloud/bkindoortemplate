@@ -96,7 +96,7 @@
     
                     }
                     
-                    if (val.description.length > 100) {
+                    if (val.description.length > 110) {
                        val.description =  val.description.substring(0,100)+'...';
                     } 
                           
