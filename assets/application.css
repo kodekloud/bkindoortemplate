@@ -1940,6 +1940,10 @@ table th[class*="col-"] {
         width:100%;
     }
     
+    .footer_teaser{
+        margin-right:0 !important;
+    }
+    
     #search_input{
         width:88% !important;
     }
