@@ -2064,6 +2064,7 @@ table th[class*="col-"] {
     
     .directory_name_col, .directory_phone_col{
         width:50%;
+        vertical-align:top;
     }
     
   .table-responsive {
