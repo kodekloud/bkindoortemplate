@@ -60,6 +60,7 @@
         width: 943px;
         background-color: #FFFFFF ;
         border: 1px solid #b2aaab;
+        overflow:visible !important;
 
 
     }
