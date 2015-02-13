@@ -275,7 +275,7 @@
                                 }
                             });
                 
-                            $("#scroll_to_marker").click();
+                            // $("#scroll_to_marker").click();
                         });
                       
                         
