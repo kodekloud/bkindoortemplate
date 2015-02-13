@@ -46,6 +46,12 @@
     width:280px;
 }
 
+.mobile_demo1{
+    display:none;
+}
+
+
+
 /*#storelist_container{*/
 /*    padding:0;*/
 /*    display:none;*/
