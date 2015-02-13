@@ -174,7 +174,7 @@
                <div class="navbar-header"><a class="navbar-brand" href="/home" id="site_logo">
                <script id="logo_template" type="x-tmpl-mustache/text">{% raw %}<img src="{{site_logo}}">{% endraw %}</script>
                </a><a class="btn btn-navbar btn-default navbar-toggle" onclick="javascript:toggle_menu()"><span class="nb_left pull-left"> <span class="fa fa-reorder"></span></span> <!--  <span class="nb_right pull-right">menu</span> --> </a></div>
-                <div class="mobile_menu" style="display:none;margin-top:-30px">
+                <div class="mobile_menu" style="display:none">
                     <ul>
                         <li><a onclick="javascript:toggle_submenu('directory_dd');">Store Directory <span class="caret"></span></a>
                             <div id="directory_dd" class="submenu" style="display:none">
