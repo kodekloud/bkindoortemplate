@@ -2019,7 +2019,7 @@ table th[class*="col-"] {
         width:100%;
     }
     .feature_title{
-        text-align:center;
+        text-align:center !important;
     }
     
     .hgroup .breadcrumb {
