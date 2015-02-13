@@ -2075,6 +2075,10 @@ table th[class*="col-"] {
     .right_column{
         display:none;
     }
+    
+    .demo1 {
+        width:100%;
+    }
   .table-responsive {
     width: 100%;
     margin-bottom: 15px;
