@@ -2062,6 +2062,10 @@ table th[class*="col-"] {
         margin-top:30px;
     }
     
+    .directory_name_col, .directory_phone_col{
+        width:50%;
+    }
+    
   .table-responsive {
     width: 100%;
     margin-bottom: 15px;
