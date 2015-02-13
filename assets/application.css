@@ -2055,6 +2055,11 @@ table th[class*="col-"] {
         width:100%;
     }
     
+    .inside_banner_image{
+        width:auto;
+        height:auto;
+    }
+    
   .table-responsive {
     width: 100%;
     margin-bottom: 15px;
