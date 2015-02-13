@@ -1,5 +1,5 @@
 <style>
-.demo1, .mobile_demo1{
+.demo1{
     float: left;
     margin-bottom:29px;
     height: 100%;
@@ -54,6 +54,15 @@
 @media (max-width: 767px) {
     .mobile_demo1{
         display:block !important;
+       
+        float: left;
+        margin-bottom:29px;
+        height: 318px;
+        width: 562px;
+        background-color: #FFFFFF ;
+        border: 1px solid #b2aaab;
+
+
     }
     
     .demo1{
