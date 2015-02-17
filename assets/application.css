@@ -1967,7 +1967,7 @@ table th[class*="col-"] {
 }
 @media (max-width: 767px) {
     .mobile_cat_list{
-        display:block;
+        display:block !important;
         margin-bottom:30px;
     }
     
