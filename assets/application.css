@@ -1980,12 +1980,7 @@ table th[class*="col-"] {
     .page_banner{
         font-size:20px;
     }
-    .main_window{
-        width:100%;
-        border:15px solid #eaf1fb !important;
-        border-top:none !important;
-        
-    }
+    
     .footer_text{
         width:auto !important;
     }
