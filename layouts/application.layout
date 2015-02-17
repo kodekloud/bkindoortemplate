@@ -102,6 +102,10 @@
         background:white;
     }
     
+    header{
+        
+    }
+    
     .main_window{
         border:40px solid #eaf1fb;
     }
