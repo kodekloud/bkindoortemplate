@@ -2153,6 +2153,10 @@ table th[class*="col-"] {
         display:block;
     }
     
+    .promo_image_div {
+        margin-bottom:20px;
+    }
+    
     .breadcrumb{
         padding-left:10px !important;
         font-size:10px;
