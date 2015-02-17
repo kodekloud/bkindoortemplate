@@ -1966,6 +1966,11 @@ table th[class*="col-"] {
   background-color: #ebcccc;
 }
 @media (max-width: 767px) {
+    .mobile_cat_list{
+        display:block;
+        margin-bottom:30px;
+    }
+    
     .contest_image{
         height:auto;
         width:auto;
