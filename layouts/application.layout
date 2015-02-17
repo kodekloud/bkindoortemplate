@@ -43,7 +43,6 @@
 
 <script>
     $(document).ready(function() {
-        var propertyDetails = getPropertyDetails();
         $.reject({  
             reject: { all: false, msie: 9 },  
             header: 'Thanks for visiting 10 Dundas East', // Header Text  
