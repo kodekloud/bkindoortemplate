@@ -425,7 +425,8 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     text-align:center;
 }
 #loading_screen img{
-    margin-top:50px;
+    margin:175px;
+    height:50px;
 }
 
 /********************inside page CSS*****************************/
