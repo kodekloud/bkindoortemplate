@@ -183,7 +183,7 @@
           <div class="navbar navbar-default" role="navigation">
                <div class="navbar-header"><a class="navbar-brand" href="/home" id="site_logo">
                <script id="logo_template" type="x-tmpl-mustache/text">{% raw %}<img src="{{site_logo}}">{% endraw %}</script>
-               </a><a href="#" class="btn btn-navbar btn-default navbar-toggle" onclick="javascript:toggle_menu()"><span class="nb_left pull-left"> &nbsp <span class="fa fa-reorder"></span></span> <!--  <span class="nb_right pull-right">menu</span> --> </a></div>
+               </a><a href="#" class="btn btn-navbar btn-default navbar-toggle" onclick="javascript:toggle_menu()"><span class="nb_left pull-left"> &nbsp; <span class="fa fa-reorder"></span></span> <!--  <span class="nb_right pull-right">menu</span> --> </a></div>
                 <div class="mobile_menu" style="display:none">
                     <ul>
                         <li><a href="#" onclick="javascript:toggle_submenu('directory_dd');">Store Directory <span class="caret"></span></a>
