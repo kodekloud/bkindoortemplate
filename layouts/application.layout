@@ -157,6 +157,10 @@
         box-shadow: 0px 0px 30px lightgray inset;
     }
     
+    #description_section{
+        
+    }
+    
     .section_header{}
     .promo_header{
         border-bottom:solid 1px #cccccc;
