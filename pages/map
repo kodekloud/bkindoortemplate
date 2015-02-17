@@ -111,8 +111,7 @@
 
 
     <select id="storelist_container" class="pull-left storelist_dd">
-            <option>Select a Store</option>
-            <option value="{{x_coordinate}}, {{y_coordinate}}, {{id}}">{{name}}</option>
+            <option disabled selected>Select a Store</option>
     </select>
     <div id="zControls" class="pull-right">
         <button onclick="pngZoomIn()" class="zoom-in"><span class="glyphicon glyphicon-plus"></span></button>
