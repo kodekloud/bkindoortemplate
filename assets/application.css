@@ -356,9 +356,9 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     display:block;
 }
 
- .flex-direction-nav{
-  display:none \9 !important;
-}
+/*.flex-control-nav, .flex-direction-nav{*/
+/*  display:none \9 !important;*/
+/*}*/
 
 .slides{
     height:333px;
