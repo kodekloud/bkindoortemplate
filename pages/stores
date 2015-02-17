@@ -1,4 +1,3 @@
-<div id="back-top"><img alt="BackToTop" src="http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/c0a5afb0d05049981f657ccf2e67d904/totop.jpg"/></div>
 <div id="loading_screen">
     <img alt="loading" src="http://kodekloud.s3.amazonaws.com/sites/5447ebb66e6f641987020000/3604f5c26997bea3de504de139debcec/loading.gif"/>
 </div>
@@ -223,28 +222,4 @@
     
         
     }
-    
-    
-   
-    // hide #back-top first
-	$("#back-top").hide();
-	
-	// fade in #back-top
-	$(function () {
-		$(window).scroll(function () {
-		    if ($(this).scrollTop() > 300) {
-    			$('#back-top').fadeIn();
-			} else {
-				$('#back-top').fadeOut();
-			}
-		});
-
-		// scroll body to 0px on click
-		$('#back-top img').click(function () {
-			$('body,html').animate({
-				scrollTop: 0
-			}, 800);
-			return false;
-		});
-	});
 </script>
