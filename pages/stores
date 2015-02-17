@@ -205,6 +205,7 @@
         $(".cat_links").css("font-weight","normal");
         
         if (type == "all"){
+            $("#mobile_view_all_link").css("font-weight","bold");
             $("#view_all_link").css("font-weight","bold");
             $("#no_cat_list").show();
             $(".cat_list_div").hide();    
