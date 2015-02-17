@@ -18,15 +18,9 @@
             
                             <div class="portfolio_item wow animated flipInX" style="height:230px;box-shadow:none"> 
                                 <a href="{{alt_url}}" rel="lightbox-gallery" title="{{name}}">
-                                    <figure style="background-image:url({{alt_url}})">
-                                        <svg viewBox="0 0 180 320" preserveAspectRatio="none">
-                                            <path d="M 180,0 0,0 0,0 180,0 z"/>
-                                        </svg>
-                                        <figcaption>
-                                            <p>{{description}}</p>
-                                            <div class="view_button">View</div>
-                                        </figcaption>
-                                    </figure>
+                                    
+                                    <img src="{{alt_url}}"/>
+                                  
                                 </a>
                              </div>
                     </script>
