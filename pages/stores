@@ -83,6 +83,10 @@
             $.each( categories , function( key, val ) {
                 val.link = "cat" + val.id;
                 $("#categories_container").append('<a href="#categories_container" class="cat_links directory_content" onclick=(show_cat('+val.link+')) id="cat'+val.id+'_link">'+val.name+'</a><br>');
+                $("#categories_container").append('<a href="#categories_container" class="cat_links directory_content" onclick=(show_cat(mobile_'+val.link+')) id="mobile_cat'+val.id+'_link">'+val.name+'</a><br>');
+
+                
+                
             });
         };
         function renderPageData(container, template, collection, type){
@@ -210,7 +214,6 @@
             $("#no_cat_list").show();
             $(".cat_list_div").hide();    
         } else {
-            $("#mobile"+link.id+"_link").css("font-weight","bold");
             $("#"+link.id+"_link").css("font-weight","bold");
             $("#no_cat_list").hide();
             $(".cat_list_div").hide();
