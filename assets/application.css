@@ -501,6 +501,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 .detail_logo{
     height:211px;
     width:211px;
+    margin-bottom:10px;
 }
 
 .promo_date{
