@@ -1,6 +1,7 @@
 <style>
     .portfolio_item{
         height:211px;
+        width:211px;
     }
 </style>
 
