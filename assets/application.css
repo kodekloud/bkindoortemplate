@@ -1968,6 +1968,12 @@ table th[class*="col-"] {
 }
 @media (max-width: 767px) {
     
+    .detail_logo{
+        margin-left:auto;
+        margin-right:auto;
+        display:block;
+    }
+    
     #loading_screen img {
         margin:30%;
     }
