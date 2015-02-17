@@ -6628,8 +6628,8 @@ header .container {
 #social_media_wrapper a:hover,
 #social_media_wrapper a:active {
   text-decoration: none;
-  color: #fff;
-  background: #18498d;
+  color: #18498d;
+  background: #e2222f;
 }
 #sign {
   position: absolute;
