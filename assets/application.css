@@ -6428,7 +6428,7 @@ img {
 /* =Header
 -------------------------------------------------------------- */
 header {
-  background: none #18498d;
+  background: none #000;
   height:120px;
   /* background: none #fff;  
   border-bottom: solid 1px #cccccc; */
@@ -6628,7 +6628,7 @@ header .container {
 #social_media_wrapper a:hover,
 #social_media_wrapper a:active {
   text-decoration: none;
-  color: #18498d;
+  color: #fff;
   background: #e2222f;
 }
 #sign {
@@ -7887,7 +7887,7 @@ footer {
 }
 footer a:hover,
 footer a:active {
-  color: #e2222f;
+  color: #18498d;
   text-decoration: none;
 }
 .twitter_feed_wrapper {
