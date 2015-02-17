@@ -19,7 +19,7 @@
                             <div class="portfolio_item wow animated flipInX" style="height:230px;box-shadow:none"> 
                                 <a href="{{alt_url}}" rel="lightbox-gallery" title="{{name}}">
                                     
-                                    <img src="{{alt_url}}"/>
+                                    <img alt="photo{{id}}" src="{{alt_url}}"/>
                                   
                                 </a>
                              </div>
