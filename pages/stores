@@ -16,7 +16,7 @@
             <!--<a href="/map"><p class="right_column_header" id="mobile_centre_map_link" style="display:none">centre map</p></a><br>-->
             <div class="mobile_cat_list" style="display:none">
                 <p class="right_column_header">categories</p>
-                <div id="categories_container">
+                <div id="mobile_categories_container">
                     <a href="#categories_container" onclick="(show_cat('view_all', 'all'))" id="mobile_view_all_link" class="cat_links directory_content" style="font-weight:bold">View All</a><br>
                 </div>
             </div>
@@ -83,7 +83,7 @@
             $.each( categories , function( key, val ) {
                 val.link = "cat" + val.id;
                 $("#categories_container").append('<a href="#categories_container" class="cat_links directory_content" onclick=(show_cat('+val.link+')) id="cat'+val.id+'_link">'+val.name+'</a><br>');
-                $("#categories_container").append('<a href="#categories_container" class="cat_links directory_content" onclick=(show_cat(mobile_'+val.link+')) id="mobile_cat'+val.id+'_link">'+val.name+'</a><br>');
+                $("#mobile_categories_container").append('<a href="#categories_container" class="cat_links directory_content" onclick=(show_cat(mobile_'+val.link+')) id="mobile_cat'+val.id+'_link">'+val.name+'</a><br>');
 
                 
                 
