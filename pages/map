@@ -161,6 +161,8 @@
         
         function renderStoreList(stores){
             for(var i = 0; i < stores.length;i++){
+                stores[i].x_coordinate = stores[i].x_coordinate - 10;
+                stores[i].y_coordinate = stores[i].y_coordinate - 35;
                $("#storelist_container").append('<option value="'+stores[i].x_coordinate+', '+stores[i].y_coordinate+', '+stores[i].id+'">'+stores[i].name+'</option>') 
             }
             
