@@ -3649,7 +3649,7 @@ input[type="button"].btn-block {
 }
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
-  text-decoration: none;
+  text-decoration: underline;
   color: #262626;
   background-color: #f5f5f5;
 }
