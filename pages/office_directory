@@ -13,7 +13,7 @@
         <div class="left_column">
             <img class="inside_banner_image" alt="banner" src="http://kodekloud.s3.amazonaws.com/sites/54d4e9206e6f64691f000000/1f4fed1d858c9ddcaf0105aacf32e785/store_list_banner.jpg"/>
             <section class="article-text">
-              <p><br />
+              <p style="margin-bottom:0"><br />
             <strong>10 Dundas East Mgmt.<br />
             Office - Bentall Kennedy</strong></p>
             
@@ -21,7 +21,7 @@
             
             <p>Phone Number: 416-591-2220</p>
             
-            <p><br />
+            <p style="margin-bottom:0"><br />
             <strong>Digital Media Zone at&nbsp;<br />
             Ryerson University</strong></p>
             
@@ -29,17 +29,17 @@
             
             <p>Phone Number: 416-949-5000, ext. 2072</p>
             <br>
-            <p>
+            <p style="margin-bottom:0">
             <strong>Ontario Tourism Marketing<br />
             Partnership Corporation</strong><br />
             <p>Level: 9</p>
             <p>Phone Number: 1-800-263-7836</p>
             <br>
-            <p><strong>Ontario Realty Corporation</strong><br /></p>
+            <p style="margin-bottom:0"><strong>Ontario Realty Corporation</strong><br /></p>
             <p>Level: 8<br /></p>
             <p>Phone Number: 416-314-2329</p><br />
             
-            <p><strong>Toronto Film School</strong></p>
+            <p style="margin-bottom:0"><strong>Toronto Film School</strong></p>
             <p>Level: 7</p>
             <p>Phone Number: 647-288-8496</p>
             
