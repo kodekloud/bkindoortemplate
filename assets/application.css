@@ -362,6 +362,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 
 .slides{
     height:333px;
+    width:1000px \9;
 }
 
 ::-ms-reveal .flex-control-paging{
