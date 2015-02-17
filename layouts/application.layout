@@ -160,7 +160,7 @@
     .section_header{}
     .promo_header{
         border-bottom:solid 1px #cccccc;
-        padding-bottom:15px;
+        padding-bottom:10px;
     }
     
 </style>
