@@ -357,7 +357,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 }
 
 .flex-control-nav {
-  display:none;
+  /*display:none;*/
 }
 ::-ms-reveal .flex-control-paging{
     display: none;
