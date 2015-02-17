@@ -14,6 +14,13 @@
         <div class="left_column">
             <img class="inside_banner_image" alt="banner" src="http://kodekloud.s3.amazonaws.com/sites/54d4e9206e6f64691f000000/1f4fed1d858c9ddcaf0105aacf32e785/store_list_banner.jpg"/>
             <!--<a href="/map"><p class="right_column_header" id="mobile_centre_map_link" style="display:none">centre map</p></a><br>-->
+            <div class="mobile_cat_list">
+                <p class="right_column_header">categories</p>
+                <div id="categories_container">
+                    <a href="#categories_container" onclick="(show_cat('view_all', 'all'))" id="view_all_link" class="cat_links directory_content" style="font-weight:bold">View All</a><br>
+                </div>
+            </div>
+            
             <div class="directory_div" id="no_cat_list">
                 <span><p class="directory_header_name directory_name_col">Merchant Name</p><p class="directory_header_phone directory_phone_col">Phone</p></span>
                 <div class="store_list" id="store_list_container">
