@@ -370,7 +370,9 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 .flex-direction-nav li{
     list-style:none;
 }
-
+.flexslider {
+    border:none;
+}
 #feature_items{
     margin-top:57px;
     margin-left:56px;
