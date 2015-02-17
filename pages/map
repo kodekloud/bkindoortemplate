@@ -111,9 +111,8 @@
 
 
     <select id="storelist_container" class="pull-left storelist_dd">
-        <script id="storelist_template" type="x-tmpl-mustache/text">
+            <option>Select a Store</option>
             <option value="{{x_coordinate}}, {{y_coordinate}}, {{id}}">{{name}}</option>
-        </script>
     </select>
     <div id="zControls" class="pull-right">
         <button onclick="pngZoomIn()" class="zoom-in"><span class="glyphicon glyphicon-plus"></span></button>
@@ -148,7 +147,7 @@
     $(document).ready(function() {
         function renderAll (){
             var stores = getStoresList();
-            renderPageData('#storelist_container','#storelist_template',stores)
+            // renderPageData('#storelist_container','#storelist_template',stores)
             renderPageData('#marker_container','#marker_template',stores);
             $("#loading_screen").hide();
             $("#main_content").show();
@@ -157,6 +156,14 @@
             
             renderMap(maptype);
            
+        }
+        
+        function renderStoreList(stores){
+            for(var i = 0; i < stores.length;i++){
+               $("#storelist_container").append('<option value="'+stores[i].x_coordinate+', '+stores[i].y_coordinate+', '+stores[i].id+'">'+stores[i].name+'</option>') 
+            }
+            
+            
         }
         
         function renderPageData(container, template, collection){
