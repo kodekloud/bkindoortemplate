@@ -2139,7 +2139,7 @@ table th[class*="col-"] {
     }
     
     .view_button{
-        display:none \9;
+        display:none \9 !important;
     }
   .table-responsive {
     width: 100%;
