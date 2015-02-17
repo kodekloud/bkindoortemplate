@@ -1,3 +1,8 @@
+<style>
+    .inside_page_content{
+        margin:0;
+    }
+</style>
 <div  id="main_content">
     <ul class="breadcrumb">
         <li><a href="/home">Home</a> </li>
