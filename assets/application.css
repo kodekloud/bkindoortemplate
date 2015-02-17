@@ -3657,7 +3657,7 @@ input[type="button"].btn-block {
 .dropdown-menu > .active > a:hover,
 .dropdown-menu > .active > a:focus {
   color: #ffffff;
-  text-decoration: none;
+  text-decoration: inherit;
   outline: 0;
   background-color: #428bca;
 }
