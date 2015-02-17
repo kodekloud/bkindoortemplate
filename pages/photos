@@ -20,7 +20,9 @@
                                 <a href="{{alt_url}}" rel="lightbox-gallery" title="{{name}}">
                                     
                                     <img alt="photo{{id}}" src="{{alt_url}}"/>
-                                  
+                                    <figcaption>
+                                            <div class="view_button">View</div>
+                                        </figcaption>
                                 </a>
                              </div>
                     </script>
