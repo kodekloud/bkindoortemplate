@@ -7455,6 +7455,7 @@ ul.portfolio_filters li .active a:hover {
   text-align: center;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
+  display:none \9 !important;
 }
 .portfolio_strict .portfolio_item figure figcaption h2 {
   margin: 0px 0 20px 0;
