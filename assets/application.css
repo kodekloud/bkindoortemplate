@@ -492,13 +492,17 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     padding-bottom:30px;
 
 }
-.promo_image{
+.promo_image_div{
     height:211px;
     width:211px;
     vertical-align:top;
     margin-right:30px;
     display:inline-block;
     border:1px solid #eeeeee;
+}
+
+.promo_image{
+    
 }
 .promo_desc_box{
     display:inline-block;
