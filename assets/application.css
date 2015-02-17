@@ -497,6 +497,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     width:211px;
     vertical-align:top;
     margin-right:30px;
+    display:inline-block;
 }
 .promo_desc_box{
     display:inline-block;
