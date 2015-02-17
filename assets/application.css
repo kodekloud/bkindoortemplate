@@ -2138,7 +2138,7 @@ table th[class*="col-"] {
         display:block !important;
     }
     
-    .view_button{
+    .portfolio_item figure figcaption{
         display:none \9 !important;
     }
   .table-responsive {
