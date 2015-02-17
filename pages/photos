@@ -6,6 +6,13 @@
         margin-bottom:17px !important;
         margin-right:17px !important;
     }
+    
+    @media (max-width: 767px) {
+        .portfolio_item{
+            margin-right:0;
+        }  
+    }
+    
 </style>
 
 
