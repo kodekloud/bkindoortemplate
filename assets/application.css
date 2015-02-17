@@ -2143,9 +2143,9 @@ table th[class*="col-"] {
         width:100%;
         
     }
-    .promo_desc_box a {
-        float:left !important;
-    }
+    /*.promo_desc_box a {*/
+    /*    float:left !important;*/
+    /*}*/
     
     .promo_image{
         margin-left:auto;
