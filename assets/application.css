@@ -57,7 +57,7 @@ a {
 a:active,
 a:hover {
   outline: 0;
-  color:#18498d;
+  color:#e2222f;
 }
 abbr[title] {
   border-bottom: 1px dotted;
@@ -338,15 +338,15 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 } 
 #description_section {
       /* For Safari 5.1 to 6.0 */
-      background: -webkit-linear-gradient(left,#d3dae8,#dee4ef, #d3dae8);
+      background: -webkit-linear-gradient(left,#6e6e6e,#bebdbd, #6e6e6e);
       /* For Opera 11.1 to 12.0 */
-      background: -o-linear-gradient(left,#d3dae8,#dee4ef, #d3dae8);
+      background: -o-linear-gradient(left,#6e6e6e,#bebdbd, #6e6e6e);
       /* For Fx 3.6 to 15 */
-      background: -moz-linear-gradient(left,#d3dae8,#dee4ef, #d3dae8);
+      background: -moz-linear-gradient(left,#6e6e6e,#bebdbd, #6e6e6e);
       /* Standard syntax */
-      background: linear-gradient(to right,#d3dae8,#dee4ef, #d3dae8); 
+      background: linear-gradient(to right,#6e6e6e,#bebdbd, #6e6e6e); 
       margin-top:40px;
-      box-shadow:0px 0px 10px 0px #d3dae8;
+      box-shadow:0px 0px 10px 0px gray inset;
       padding:20px 62px;
 }
 
@@ -645,12 +645,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #18498d;
+  color: #e2222f;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #18498d;
+  color: #e2222f;
   text-decoration: underline;
 }
 a:focus {
@@ -6428,7 +6428,7 @@ img {
 /* =Header
 -------------------------------------------------------------- */
 header {
-  background: none #18498d;
+  background: none #000;
   height:120px;
   /* background: none #fff;  
   border-bottom: solid 1px #cccccc; */
@@ -6743,7 +6743,7 @@ header .container {
 }
 .flexslider .item {
   height: 332px;
-  width: 100%;
+  width: 960px;
   background: no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -7887,7 +7887,7 @@ footer {
 }
 footer a:hover,
 footer a:active {
-  color: #18498d;
+  color: #e2222f;
   text-decoration: none;
 }
 .twitter_feed_wrapper {
