@@ -2137,6 +2137,10 @@ table th[class*="col-"] {
     #mobile_centre_map_link{
         display:block !important;
     }
+    
+    .view_button{
+        display:none !important /9;
+    }
   .table-responsive {
     width: 100%;
     margin-bottom: 15px;
