@@ -15,7 +15,7 @@
             <form name="contact_form" id="contact_form" method="post" action="http://mobilefringe.createsend.com/t/d/s/tkuikd/">
                 <div class="row" style="margin-left:-15px;margin-right:-15px">
                     <div class="col-sm-6 col-md-6">
-                        <label>Name</label>
+                        <label for="name">Name</label>
                         <input name="cm-name" id="name" class="form-control" type="text" value="" required>
                     </div>
                     <div class="col-sm-6 col-md-6">
