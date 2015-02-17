@@ -214,6 +214,7 @@
             $("#no_cat_list").show();
             $(".cat_list_div").hide();    
         } else {
+            $("#mobile_"+link.id+"_link").css("font-weight","bold");
             $("#"+link.id+"_link").css("font-weight","bold");
             $("#no_cat_list").hide();
             $(".cat_list_div").hide();
