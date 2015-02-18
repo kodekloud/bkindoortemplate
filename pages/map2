@@ -64,6 +64,7 @@
         <button onclick="pngZoomOut()" class="zoom-out"><span class="glyphicon glyphicon-minus"></span></button>
     </div>
     <div id="map" class="panzoom-elements" style=""><img src=""></div>
+    <img id="png_map" class="png_map" src=""/>
 </div>
 </div>
 
@@ -237,60 +238,9 @@
                         
                 } else {
                     $(".png_map").attr("src", getPNGMapURL())
-                    var startingMapTransform = 'scale(0.5)';
-                    var startingPanX = 0;
-                    var startingPanY = 0;
-                    $( "#page_content" ).fadeIn( "fast", function() {
-                        var panzoom = $(".png_map").panzoom({
-                            cursor: "move",
-                            increment: 0.1,
-                            minScale: 0.5,
-                            maxScale: 1.5,
-                            transition: true,
-                            duration: 150,
-                            easing: "ease-in-out",
-                            $zoomIn: $('.zoom-in'),
-                            $zoomOut: $('.zoom-out'),
-                            $zoomRange: $('.zoom-range'),
-                            startTransform: startingMapTransform
-                            
-                
-                        });
-                        $(".png_map").panzoom("pan", startingPanX, startingPanY, { relative: true });
-                        
-                        panzoom.on('panzoomchange', function(e, panzoom, matrix, changed) {
-                          didPanZoom = true;
-                        });
-                        
-                        panzoom.on('panzoomend', function(e, panzoom, matrix, changed) {
-                          didPanZoom = false;
-                        });
-                        // panzoom.on("panzoomstart", function( e, panzoom ) { console.log( panzoom.getMatrix() ); });
-                    });
                     
-                    
-                    lmargin = parseInt(propertyDetails.map_image_width) / 2
-                    w = parseInt(propertyDetails.map_image_width)
-                    h = parseInt(propertyDetails.map_image_height)
-                    $(".demo1").css({"width": w+"px", "height":h+"px", "margin-left": "-600px", "margin-top":"-300px"})
                     
                 }
-                
-                
-                
-                $(".png_map").parent().on('mousewheel.focal', function( e ) {
-                    e.preventDefault();
-                    var delta = e.delta || e.originalEvent.wheelDelta;
-                    var zoomOut = delta ? delta < 0 : e.originalEvent.deltaY > 0;
-                    $(".png_map").panzoom('zoom', zoomOut, {
-                        increment: 0.1,
-                        animate: false,
-                        focal: e
-                    });
-                    // console.log(e)
-                });
-
-                
                 
                 
             }
@@ -322,67 +272,6 @@
     $("#storelist_container").on('change', function() {
         
         var isMobile = ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) );
-        
-        if (!isMobile) {
-            coords = this.value.split(",");
-            var propertyDetails = getPropertyDetails();
-            x = coords[0]
-            y = coords[1]
-            x = (parseInt(propertyDetails.map_image_width)/2) - parseInt(x);
-            y = (parseInt(propertyDetails.map_image_height)/2) - parseInt(y);
-            v = $(".png_map").panzoom("getMatrix");
-            new_width = (v[0] * propertyDetails.map_image_width)
-            new_height = (v[3] * propertyDetails.map_image_height)
-            
-            x = (x * new_width) / 2240 + (10 * (1 / v[0]))
-            y = ((y * new_height) / 943) + (27 * (1 / v[3]))
-            pin_x = (parseInt(coords[0]) - 12)
-            pin_y = (parseInt(coords[1]) - 27) 
-            var canvas = document.getElementById('map_image');
-            var context = canvas.getContext('2d');  
-            context.clearRect ( 0 , 0 , canvas.width, canvas.height );
-            var img = new Image;
-            img.src = "http://kodekloud.s3.amazonaws.com/sites/54cfab316e6f6433ad020000/530d3a9b7bc13ce4a511089c23463f99/10dundas_pin.png"
-            context.drawImage(img,pin_x,pin_y);
-            // f = []
-            // f.clientX =  x + 530 
-            // f.clientY = y + 379 
-            
-            
-            // $(".png_map").panzoom("zoom", 0.5, { 
-            //     animate:true, 
-            //     focal: f
-            // })
-            
-            $(".png_map").panzoom("pan", x, y, {
-                  relative: false,
-                  animate: true
-              });
-              
-            f = []
-            // var parentOffset = $(".png_map").offset(); 
-            // f.clientX =  x + 530 
-            // f.clientY = y + 379 
-            // // f.clientY = 389
-            // // console.log(x)
-            // // console.log(y)
-            // // console.log("=-=-=-=-=-=-=-")
-            // // console.log(pin_x)
-            // // console.log(pin_y)
-            // // f.clientX =  ((x * 100) / 42) - 10
-            // // f.clientY = ((y * 100) / 49) - 10
-            // console.log(f)
-            // f.clientX = 974
-            // f.clientY = 389
-        
-        } else {
-            coords = this.value.split(",");
-            console.log(coords)
-            $("#scroll_to_marker"+coords[2]).show();
-            $("#scroll_to_marker")+coords[2].click();
-        }
-        
-        
         
     });
     
