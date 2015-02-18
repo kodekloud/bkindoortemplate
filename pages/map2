@@ -278,9 +278,7 @@
             			pan_BUTTONS_SHOW : 'NO',
             			pan_LIMIT_BOUNDARY : 'NO',
             			button_ALIGN: "top left",
-            			zoom_MAX: 400,
-            			responsive: false,
-			            responsive_maintain_ratio: true,
+            			zoom_MAX: 400
             		});
                 });
                 
