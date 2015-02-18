@@ -83,7 +83,7 @@
 <div class="page_banner">
     Centre Map
 </div>
-<div style="overflow:hidden;height:400px;margin:5px" id="zoom_container">
+<div style="overflow:hidden;height:400px;margin:5px">
 
 
 
@@ -273,12 +273,12 @@
             			width: 2240,
             			height: 943,
             			initial_ZOOM: 40,
+            			initial_POSITION: '1120 0',
             			zoom_BUTTONS_SHOW : 'YES',
             			pan_BUTTONS_SHOW : 'NO',
             			pan_LIMIT_BOUNDARY : 'NO',
             			button_ALIGN: "top left",
-            			zoom_MAX: 400,
-            			container: 'zoom_container'
+            			zoom_MAX: 400
             		});
                 });
                 
