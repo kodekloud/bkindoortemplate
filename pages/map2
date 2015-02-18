@@ -1,13 +1,5 @@
 <style>
-.demo1{
-    float: left;
-    margin-bottom:29px;
-    height: 100%;
-    width: 100%;
-    background-color: #FFFFFF ;
-    overflow: visible !important;
 
-}
 .froala-element img{
     cursor:default !important;
 }
@@ -28,62 +20,16 @@
     right:50%;
 }
 
-.png_map{
-
-
-    /*top:0 !important;*/
-    /*bottom:0 !important;*/
-    /*left:0 !important;*/
-    /*right:0 !important;*/
-}
-
-.select_box{
-    float:left;
-    position:absolute;
-    z-index:9999999;
-    background:white;
-    border:1px solid lightgray;
-    width:280px;
-}
-
-.mobile_demo1{
-    display:none;
-}
-
-
 @media (max-width: 767px) {
-    .mobile_demo1{
-        display:block !important;
-        float: left;
-        margin-bottom:29px;
-        height: 100%;
-        width: 100%;
-        background-color: #FFFFFF ;
-        border: 1px solid #b2aaab;
-        overflow:visible !important;
 
-
-    }
-    
-    .demo1{
-        display:none;
-    }
 }
 
 
 
 
-/*#storelist_container{*/
-/*    padding:0;*/
-/*    display:none;*/
-/*}*/
-
-/*#storelist_container li{*/
-/*    list-style:none;*/
-/*}*/
 
 </style>
-<script src="http://kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/92b82a88144a6207ab1a5e8e0f63d3d1/craftmap.js"></script>
+<script src="http://kodekloud.s3.amazonaws.com/sites/54d4e9206e6f64691f000000/d9e054e28dd1bad70a952dd85777e93f/jquery-1.9.1.min.js"></script>
 <div id="pop-over">
     <span class="pull-left">
         <p id="pop-over-map-name">Default Name</p>
@@ -118,22 +64,6 @@
         <button onclick="pngZoomOut()" class="zoom-out"><span class="glyphicon glyphicon-minus"></span></button>
     </div>
     <div id="map" class="panzoom-elements" style=""><img src=""></div>
-    <div class="demo1" id="demo1">
-        <canvas class="png_map" width="2240" height="943" id="map_image"></canvas>            
-    </div> 
-    
-
-    <div class="mobile_demo1" id="mobile_demo1">
-        <img alt="map" src="" class="imgMap" id="mobile_map_image" />      
-        <div id="marker_container">
-            <script id="marker_template" type="x-tmpl-mustache/text">
-                <div class="marker" id='scroll_to_marker{{id}}' data-coords="{{x_coordinate}}, {{y_coordinate}}"></div> 
-            </script>
-        </div>
-          
-    </div>   
-
-    
 </div>
 </div>
 
@@ -148,12 +78,10 @@
             var stores = getStoresList();
             // renderPageData('#storelist_container','#storelist_template',stores)
             renderStoreList(stores)
-            renderPageData('#marker_container','#marker_template',stores);
             $("#loading_screen").hide();
             $("#main_content").show();
             // specify the type of map here. "png" or "svg"
             var maptype = "png"
-            
             renderMap(maptype);
            
         }
@@ -308,7 +236,7 @@
                    
                         
                 } else {
-                    $(".png_map").css("background", "url("+getPNGMapURL()+")")
+                    $(".png_map").attr("src", getPNGMapURL())
                     var startingMapTransform = 'scale(0.5)';
                     var startingPanX = 0;
                     var startingPanY = 0;
