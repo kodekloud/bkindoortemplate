@@ -322,7 +322,7 @@
         
         $(".mark img").hide();
         
-        $('#png_map').smoothZoom('focusTo', {x:x_coord, y:y_coord, zoom:300});
+        $('#png_map').smoothZoom('focusTo', {x:x_coord, y:y_coord, zoom:0});
         $("#marker"+coords[2]).show();
         
     });
