@@ -272,13 +272,12 @@
             		$('#png_map').smoothZoom({
             			width: 2240,
             			height: 943,
-            			initial_ZOOM: 0,
+            			initial_ZOOM: 75,
             			zoom_BUTTONS_SHOW : 'YES',
             			pan_BUTTONS_SHOW : 'NO',
             			pan_LIMIT_BOUNDARY : 'NO',
             			button_ALIGN: "top left",
-            			zoom_MAX: 400,
-            			zoom_MIN: -500
+            			zoom_MAX: 400
             		});
                 });
                 
