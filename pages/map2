@@ -314,8 +314,10 @@
         coords = this.value.split(",");
         var zoomData = $('#png_map').smoothZoom('getZoomData');
         console.log(zoomData)
-        x_coord = coords[0]
-        y_coord = coords[1]
+        // x_coord = coords[0]
+        // y_coord = coords[1]
+        x_coord = 1120
+        y_coord = 471.5
         $('#png_map').smoothZoom('focusTo', {x:x_coord, y:y_coord, zoom:100})
         
     });
