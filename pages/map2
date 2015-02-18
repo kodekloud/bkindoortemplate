@@ -106,7 +106,7 @@
     		</div>	
     		
     		<div class="item mark" data-position="343,224" data-bg-color="#000000" data-bg-opacity="1" data-show-at-zoom="0">
-    		    	<img src="http://kodekloud.s3.amazonaws.com/sites/54cfab316e6f6433ad020000/530d3a9b7bc13ce4a511089c23463f99/10dundas_pin.png" height="50px" width="50px" alt="mark"/>	
+    		    	<img src="http://kodekloud.s3.amazonaws.com/sites/54cfab316e6f6433ad020000/530d3a9b7bc13ce4a511089c23463f99/10dundas_pin.png"/>	
     		</div>	
 	    </div>    
     </div>
@@ -272,7 +272,7 @@
             		$('#png_map').smoothZoom({
             		    height: 940,
             		    width:2240,
-            			initial_POSITION: '0 0',
+            // 			initial_POSITION: '470 0',
             			zoom_BUTTONS_SHOW : 'YES',
             			pan_BUTTONS_SHOW : 'NO',
             			pan_LIMIT_BOUNDARY : 'NO',
@@ -280,7 +280,7 @@
             			container: 'zoom_container',
             	     	responsive: true,
             	     	responsive_maintain_ratio: false,
-            	     	zoom_MAX: 150
+            	     	zoom_MAX: 150,
             		});
                 });
                 
