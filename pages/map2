@@ -319,7 +319,7 @@
         var zoomData = $('#png_map').smoothZoom('getZoomData');
         console.log(zoomData)
         x_coord = coords[0] * zoomData.ratio
-        y_coord = coords[1]
+        y_coord = coords[1] * zoomData.ratio
         // x_coord = 1120
         // y_coord = 471.5
         console.log (x_coord)
