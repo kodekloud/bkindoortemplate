@@ -564,6 +564,11 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     width:858px;
     height:500px;
 }
+
+
+.list-group li {
+    list-style:none;
+}
 @media print {
   * {
     text-shadow: none !important;
