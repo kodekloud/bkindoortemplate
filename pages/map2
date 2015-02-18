@@ -314,7 +314,9 @@
         coords = this.value.split(",");
         var zoomData = $('#png_map').smoothZoom('getZoomData');
         console.log(zoomData)
-        $('#png_map').smoothZoom('focusTo', {x:coords[0], y:coords[1], zoom:100})
+        x_coord = coords[0]
+        y_coord = coords[1]
+        $('#png_map').smoothZoom('focusTo', {x:x_coord, y:y_coord, zoom:100})
         
     });
     
