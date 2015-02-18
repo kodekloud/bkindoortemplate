@@ -239,7 +239,7 @@
                 } else {
                     $(".png_map").attr("src", getPNGMapURL())
                     jQuery(function($){
-                		$('#yourImageID').smoothZoom({
+                		$('#png_map').smoothZoom({
                 			width: 512,
                 			height: 384,
                 			pan_BUTTONS_SHOW: "NO",
