@@ -232,7 +232,7 @@
                          <li id="directory_link" class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle">Store Directory <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="/stores">Store Directory</a></li>
-                                <li><a href="/map">Centre Map</a></li>
+                                <li id="menu_map"><a href="/map">Centre Map</a></li>
                                 <li><a href="/office_directory">Office Directory</a></li>
                             </ul> 
                          </li>
@@ -412,7 +412,11 @@
 <script type="text/javascript" src="http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/360754705c291ba7cd4a4a18102adbaf/restart_theme.js"></script>
 <script type="text/javascript" src="http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/360754705c291ba7cd4a4a18102adbaf/collapser.js"></script>
 <script>
-
+    if(navigator.appVersion.indexOf("MSIE 9.") == -1){
+        
+    } else {
+        $("#menu_map").hide();
+    }
     $('#subForm').submit(function (e) {
         e.preventDefault();
         if ($("#agree_terms").prop("checked") == true){
