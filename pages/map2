@@ -249,6 +249,7 @@
             			pan_BUTTONS_SHOW : 'YES',
             			pan_LIMIT_BOUNDARY : 'NO',
             			button_ALIGN: "top left",
+            			zoom_MAX: 200,
             		});
                 });
             }
