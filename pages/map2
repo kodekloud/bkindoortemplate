@@ -105,7 +105,7 @@
     
         <div class="landmarks" data-show-at-zoom="100" data-allow-drag="true" id="landmark_container">
             <script id="landmark_template" type="x-tmpl-mustache/text">
-                <div class="item mark" id="{{id}}_marker" data-position="{{x_coordinate}},{{y_coordinate}}" data-bg-color="#000000" data-bg-opacity="0.7" data-show-at-zoom="0">
+                <div class="item mark" id="marker{{id}}" data-position="{{x_coordinate}},{{y_coordinate}}" data-bg-color="#000000" data-bg-opacity="0.7" data-show-at-zoom="0">
         		    	<img src="http://kodekloud.s3.amazonaws.com/sites/54cfab316e6f6433ad020000/530d3a9b7bc13ce4a511089c23463f99/10dundas_pin.png"/>	
         		</div>
     		</script>
@@ -320,7 +320,7 @@
         y_coord = parseInt(coords[1]) + 100
         $('#png_map').smoothZoom('focusTo', {x:x_coord, y:y_coord, zoom:300})
         var zoomData = $('#png_map').smoothZoom('getZoomData');
-        $("#"+coords[2]+"_marker").css("opacity",1)
+        $("#marker"+coords[2]).css("opacity",1)
         
     });
     
