@@ -266,9 +266,9 @@
                 // $.getScript("http://cdn.jsdelivr.net/slimbox/2.0.5/js/slimbox2.js");
                 jQuery(function($){
             		$('#png_map').smoothZoom({
-            			width: 960,
-            			height: 400,
-            			initial_ZOOM: 100,
+            // 			width: 960,
+            // 			height: 400,
+            // 			initial_ZOOM: 100,
             // 			initial_POSITION: '470 0',
             			zoom_BUTTONS_SHOW : 'YES',
             			pan_BUTTONS_SHOW : 'NO',
