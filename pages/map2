@@ -104,12 +104,12 @@
                 // stores[i].x_coordinate = stores[i].x_coordinate - 10;
                 // stores[i].y_coordinate = stores[i].y_coordinate - 35;
                $("#storelist_container").append('<option value="'+stores[i].x_coordinate+', '+stores[i].y_coordinate+', '+stores[i].id+'">'+stores[i].name+'</option>') 
-        //         $('#png_map').smoothZoom('addLandmark', 
-        // 			[
-        // 			'<div class="marker" data-show-at-zoom="0" data-position="'+stores[i].x_coordinate+','+stores[i].y_coordinate+'">\
-        // 			</div>'
-        // 			]
-        // 		);
+                $('#png_map').smoothZoom('addLandmark', 
+        			[
+        			'<div class="marker" data-show-at-zoom="0" data-position="'+stores[i].x_coordinate+','+stores[i].y_coordinate+'">\
+        			</div>'
+        			]
+        		);
                 
                 
                 
