@@ -251,7 +251,7 @@
             			pan_LIMIT_BOUNDARY : 'NO',
             			button_ALIGN: "top left",
             			zoom_MAX: 200,
-            			zoom_min: -100
+            			zoom_min: -300
             		});
                 });
                 
