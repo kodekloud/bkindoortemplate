@@ -100,16 +100,8 @@
     <div id="zoom_container">
         <img id="png_map" class="png_map" alt="center map" src="" width="2240px" height="943px"/>
     
-        <div class="landmarks" data-show-at-zoom="100" data-allow-drag="true">		
+        <div class="landmarks" data-show-at-zoom="100" data-allow-drag="true" id="landmark_container">		
             <div class="item mark" data-position="226,261" data-bg-color="#000000" data-bg-opacity="1" data-show-at-zoom="0">
-    		    	<img src="http://kodekloud.s3.amazonaws.com/sites/54cfab316e6f6433ad020000/530d3a9b7bc13ce4a511089c23463f99/10dundas_pin.png"/>	
-    		</div>	
-    		
-    		<div class="item mark" data-position="333,224" data-bg-color="#000000" data-bg-opacity="1" data-show-at-zoom="0">
-    		    	<img src="http://kodekloud.s3.amazonaws.com/sites/54cfab316e6f6433ad020000/530d3a9b7bc13ce4a511089c23463f99/10dundas_pin.png"/>	
-    		</div>	
-    		
-    		<div class="item mark" data-position="0,0" data-bg-color="#000000" data-bg-opacity="1" data-show-at-zoom="0">
     		    	<img src="http://kodekloud.s3.amazonaws.com/sites/54cfab316e6f6433ad020000/530d3a9b7bc13ce4a511089c23463f99/10dundas_pin.png"/>	
     		</div>	
 	    </div>    
@@ -320,12 +312,8 @@
         console.log(zoomData)
         x_coord = parseInt(coords[0]) + 200
         y_coord = parseInt(coords[1]) + 100
-        // x_coord = 1120
-        // y_coord = 471.5
-        console.log (x_coord)
         $('#png_map').smoothZoom('focusTo', {x:x_coord, y:y_coord, zoom:300})
         var zoomData = $('#png_map').smoothZoom('getZoomData');
-        console.log(zoomData)
         
     });
     
