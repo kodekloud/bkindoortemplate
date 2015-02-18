@@ -39,7 +39,7 @@
             </div>
         </div>
         <div class="right_column">
-            <a href="/map"><p class="right_column_header">centre map</p></a>
+            <a href="/map" id="map_link"><p class="right_column_header">centre map</p></a>
             <br>
             <p class="right_column_header">categories</p>
             <div id="categories_container">
@@ -60,6 +60,9 @@
     </div>
 </div>
 <script>
+    if(navigator.appVersion.indexOf("MSIE 9.") == -1){
+        $("#map_link").hide();
+    }
     $(document).ready(function() {
         function renderAll (){
             var stores = getStoresList();
