@@ -320,7 +320,7 @@
         y_coord = parseInt(coords[1]) + 100
         $('#png_map').smoothZoom('focusTo', {x:x_coord, y:y_coord, zoom:300})
         var zoomData = $('#png_map').smoothZoom('getZoomData');
-        $("#marker"+coords[2]).css("opacity","1")
+        $("#marker"+coords[2]).show();
         
     });
     
