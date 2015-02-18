@@ -121,13 +121,14 @@
     $(document).ready(function() {
         function renderAll (){
             var stores = getStoresList();
-            // renderPageData('#storelist_container','#storelist_template',stores)
+            renderPageData('#slandmark_container','#landmark_template',stores)
             
             $("#loading_screen").hide();
             $("#main_content").show();
             // specify the type of map here. "png" or "svg"
             var maptype = "png"
             renderMap(maptype);
+            
             
            
         }
