@@ -20,6 +20,15 @@
     right:50%;
 }
 
+
+.smooth_zoom_preloader {
+	background-image: url(http://kodekloud.s3.amazonaws.com/sites/54d4e9206e6f64691f000000/d9e054e28dd1bad70a952dd85777e93f/preloader.gif);
+}	
+.smooth_zoom_icons {
+	background-image: url(http://kodekloud.s3.amazonaws.com/sites/54d4e9206e6f64691f000000/d9e054e28dd1bad70a952dd85777e93f/icons.png);
+}
+
+
 @media (max-width: 767px) {
 
 }
@@ -64,7 +73,7 @@
         <button onclick="pngZoomOut()" class="zoom-out"><span class="glyphicon glyphicon-minus"></span></button>
     </div>
     <div id="map" class="panzoom-elements" style=""><img src=""></div>
-    <img id="png_map" class="png_map" src=""/>
+    <img id="png_map" class="png_map" alt="center map" src=""/>
 </div>
 </div>
 
