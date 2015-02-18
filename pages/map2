@@ -318,7 +318,7 @@
         coords = this.value.split(",");
         var zoomData = $('#png_map').smoothZoom('getZoomData');
         console.log(zoomData)
-        x_coord = parseInt(coords[0]) + 150
+        x_coord = parseInt(coords[0]) + 250
         y_coord = parseInt(coords[1]) + 100
         // x_coord = 1120
         // y_coord = 471.5
