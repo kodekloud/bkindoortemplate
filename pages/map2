@@ -28,7 +28,7 @@
 	background-image: url(http://kodekloud.s3.amazonaws.com/sites/54d4e9206e6f64691f000000/d9e054e28dd1bad70a952dd85777e93f/icons.png);
 }
 
-#zoom_container .landmarks{
+.landmarks{
 		position:absolute;
 		z-index:10;	
 		top:0px;
@@ -37,16 +37,16 @@
 		font-size:12px;
 		color: #ffffff;
 	}	
-	#zoom_container .landmarks .item {
+.landmarks, .item {
 		position:absolute;		
 		text-align:center;		
 		display: none;	
 	}	
-	#zoom_container .landmarks .lable div {
+.landmarks ,.lable div {
 		width: 100px;
 		padding: 4px;		
 	}	
-	#zoom_container .landmarks .mark .text{
+.landmarks, .mark, .text{
 		background-color:#000000;
 		padding:2px 6px;
 	}	
