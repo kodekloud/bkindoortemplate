@@ -61,6 +61,8 @@
 </div>
 <script>
     if(navigator.appVersion.indexOf("MSIE 9.") == -1){
+        
+    } else {
         $("#map_link").hide();
     }
     $(document).ready(function() {
