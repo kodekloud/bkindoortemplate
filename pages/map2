@@ -121,7 +121,7 @@
     $(document).ready(function() {
         function renderAll (){
             var stores = getStoresList();
-            renderPageData('#slandmark_container','#landmark_template',stores)
+            renderPageData('#landmark_container','#landmark_template',stores)
             
             $("#loading_screen").hide();
             $("#main_content").show();
