@@ -29,7 +29,7 @@
 
 
 </style>
-<script src="http://kodekloud.s3.amazonaws.com/sites/54d4e9206e6f64691f000000/d9e054e28dd1bad70a952dd85777e93f/jquery-1.9.1.min.js"></script>
+<script src="http://kodekloud.s3.amazonaws.com/sites/54d4e9206e6f64691f000000/d9e054e28dd1bad70a952dd85777e93f/jquery.smoothZoom.min.js"></script>
 <div id="pop-over">
     <span class="pull-left">
         <p id="pop-over-map-name">Default Name</p>
@@ -238,6 +238,7 @@
                         
                 } else {
                     $(".png_map").attr("src", getPNGMapURL())
+                    // $.getScript("http://cdn.jsdelivr.net/slimbox/2.0.5/js/slimbox2.js");
                     jQuery(function($){
                 		$('#png_map').smoothZoom({
                 			width: 512,
