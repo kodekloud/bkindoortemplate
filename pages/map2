@@ -99,13 +99,13 @@
     <img id="png_map" class="png_map" alt="center map" src=""/>
     
     <div class="landmarks" data-show-at-zoom="100" data-allow-drag="true">		
-    <div class="item lable" data-position="780,170" data-bg-color="#000000" data-bg-opacity=".7" data-show-at-zoom="0">
+    <div class="item lable" data-position="200,200" data-bg-color="#000000" data-bg-opacity=".7" data-show-at-zoom="0">
 				<div>												
 					<strong>Permanent Lable</strong>  Shows at all zoom levels.
 				</div>
 			</div>
 			
-			<div class="item lable" data-position="490,540" data-allow-scale="true">
+			<div class="item lable" data-position="200,200" data-allow-scale="true">
 				<div>						
 					<strong>Lable 2</strong>
 				</div>	
