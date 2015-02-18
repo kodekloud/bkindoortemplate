@@ -267,8 +267,8 @@
     $("#storelist_container").on('change', function() {
         
         var isMobile = ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) );
-        
-        $('#png_map').smoothZoom('focusTo', {x:492, y:482, zoom:200})
+        coords = this.value.split(",");
+        $('#png_map').smoothZoom('focusTo', {x:coords[0], y:coords[1], zoom:200})
         
     });
     
