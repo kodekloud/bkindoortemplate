@@ -322,7 +322,7 @@
         // y_coord = coords[1]
         x_coord = 1120
         y_coord = 471.5
-        $('#png_map').smoothZoom('focusTo', {x:x_coord, y:y_coord, zoom:100})
+        $('#png_map').smoothZoom('focusTo', {x:x_coord, y:y_coord, zoom:0})
         
     });
     
