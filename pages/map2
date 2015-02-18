@@ -323,7 +323,7 @@
         $(".mark img").hide();
         
         $('#png_map').smoothZoom('focusTo', {x:x_coord, y:y_coord, zoom:300});
-        $("#marker"+coords[2]).show().animate({ top: 305 }, {duration: 1000, easing: 'easeOutBounce'});
+        $("#marker"+coords[2]).show().animate( {duration: 1000, easing: 'easeOutBounce'});
         
     });
     
