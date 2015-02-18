@@ -99,17 +99,9 @@
     <img id="png_map" class="png_map" alt="center map" src="" width="940px" height="400px"/>
     
     <div class="landmarks" data-show-at-zoom="100" data-allow-drag="true">		
-    <div class="item lable" data-position="200,200" data-bg-color="#000000" data-bg-opacity=".7" data-show-at-zoom="0">
-				<div>												
-					<strong>Permanent Lable</strong>  Shows at all zoom levels.
-				</div>
-			</div>
-			
-			<div class="item lable" data-position="200,200" data-allow-scale="true">
-				<div>						
-					<strong>Lable 2</strong>
-				</div>	
-			</div>		
+        <div class="item lable" data-position="236,261" data-bg-color="#000000" data-bg-opacity="1" data-show-at-zoom="0">
+		    		
+		</div>		
 	</div>
 </div>
 </div>
@@ -272,7 +264,7 @@
             		$('#png_map').smoothZoom({
             			width: 2240,
             			height: 943,
-            			initial_ZOOM: 50,
+            			initial_ZOOM: 0,
             // 			initial_POSITION: '470 0',
             			zoom_BUTTONS_SHOW : 'YES',
             			pan_BUTTONS_SHOW : 'NO',
