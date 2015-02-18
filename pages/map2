@@ -103,13 +103,7 @@
                $("#storelist_container").append('<option value="'+stores[i].x_coordinate+', '+stores[i].y_coordinate+', '+stores[i].id+'">'+stores[i].name+'</option>') 
                 $('#png_map').smoothZoom('addLandmark', 
         			[
-        			'<div class="item mark" data-show-at-zoom="0" data-position="400,200">\
-        				<div>\
-        					<div class="text">\
-        					<strong>Pin 1</strong>\
-        				</div>\
-        				<img src="images/pin.png" width="50px" height="40px" alt="mark 1" />\
-        				</div>\
+        			'<div class="marker" data-show-at-zoom="0" data-position="'+stores[i].x_coordinate+','+stores[i].y_coordinate+'">\
         			</div>'
         			]
         		);
