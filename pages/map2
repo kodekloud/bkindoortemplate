@@ -260,7 +260,7 @@
             	     	button_SIZE: 34,
             	        button_ALIGN: "top right",    
             	     	container: 'zoom_container_directory',
-            	     	responsive: true,
+            	     	responsive: false,
             	     	responsive_maintain_ratio: false,
             			container: 'zoom_container'
             		});
