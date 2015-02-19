@@ -411,6 +411,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     height:100%;
     width:100%;
     border:1px solid #eeeeee;
+    padding:3px;
 }
 
 .page_banner{
