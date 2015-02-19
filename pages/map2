@@ -278,7 +278,7 @@
             		    initial_ZOOM: 50,
             			initial_POSITION: '5000 1000',
             			zoom_MIN: 50,
-            			zoom_MAX: 500,
+            			zoom_MAX: 200,
             			zoom_OUT_TO_FIT: true,
             			pan_LIMIT_BOUNDARY: false,
             			zoom_BUTTONS_SHOW : 'YES',
