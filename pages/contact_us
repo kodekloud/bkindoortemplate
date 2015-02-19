@@ -85,7 +85,7 @@
             e.preventDefault();
     		if($('#enterVerify').val() == $('#verifyNumHidden').val() ) {
     		    alert("passed")
-    // 			$('#contact_form').unbind('submit').submit();
+    			$('#contact_form').unbind('submit').submit();
     		}
     		else
     		{
