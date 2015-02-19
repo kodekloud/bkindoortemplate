@@ -1,26 +1,5 @@
 <style>
 
-/*.froala-element img{*/
-/*    cursor:default !important;*/
-/*}*/
-.marker {
-    background: url("http://kodekloud.s3.amazonaws.com/sites/54cfab316e6f6433ad020000/530d3a9b7bc13ce4a511089c23463f99/10dundas_pin.png") no-repeat;
-    cursor: pointer;
-    /*display: block;*/
-    height: 75px;
-    margin-top: 5px;
-    outline: medium none;
-    text-indent: -9999px;
-    width: 50px;
-    display:block;
-    /*position:absolute;*/
-    /*top:50%;*/
-    /*bottom:50%;*/
-    /*left:50%;*/
-    /*right:50%;*/
-}
-
-
 .smooth_zoom_preloader {
 	background-image: url(http://kodekloud.s3.amazonaws.com/sites/54d4e9206e6f64691f000000/d9e054e28dd1bad70a952dd85777e93f/preloader.gif);
 }	
@@ -54,6 +33,7 @@
 	.mark a{
 	    color:black;
 	}
+	
 	
 @media (max-width: 767px) {
 
