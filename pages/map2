@@ -51,7 +51,7 @@
 		padding:2px 6px;
 	}	
 	
-	.marker_div{
+	.mark{
 	    display:none;
 	}
 @media (max-width: 767px) {
