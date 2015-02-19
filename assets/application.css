@@ -347,7 +347,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
       background: linear-gradient(to right,#6e6e6e,#bebdbd, #6e6e6e); 
       margin-top:40px;
       box-shadow:0px 0px 10px 0px gray inset;
-      padding:20px 62px;
+      padding:40px 62px;
 }
 
 .bentall_banner{
