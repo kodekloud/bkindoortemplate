@@ -32,6 +32,7 @@
 	
 	.mark a{
 	    color:black;
+	    display:none;
 	}
 	
 	
