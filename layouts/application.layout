@@ -187,7 +187,8 @@
         color:black !important;
     
     }
-    
+     .site-map-section a:hover {
+     }
     @media (max-width: 767px) {
         .main_window{
             width:100%;
