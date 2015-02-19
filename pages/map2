@@ -311,7 +311,7 @@
         $(".mark").hide();
         
         $('#png_map').smoothZoom('focusTo', {x:x_coord, y:y_coord, zoom:300});
-        $("#marker"+coords[2]).slideUp();
+        // $("#marker"+coords[2]).slideUp();
         // $("#marker"+coords[2]+"_img").show();
         
     });
