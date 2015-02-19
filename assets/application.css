@@ -416,8 +416,8 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 
 .page_banner{
     text-align:center;
-    line-height:127px;
-    height:127px;
+    line-height:100px;
+    height:100px;
     font-size:28px;
     text-transform:uppercase;
 }
