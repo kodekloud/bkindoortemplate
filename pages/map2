@@ -265,7 +265,7 @@
                 jQuery(function($){
             		$('#png_map').smoothZoom({
             		    zoom_MAX: "300",
-            		    initial_ZOOM: 50,
+            		    initial_ZOOM: 30,
             		    animation_SMOOTHNESS: 10,
     	     	        initial_POSITION: "0 0",
             	    	pan_BUTTONS_SHOW: "NO",
