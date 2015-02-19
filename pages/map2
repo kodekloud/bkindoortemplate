@@ -109,7 +109,7 @@
         					<div class="text" style="width:100px">
         						<strong>Permanent Mark</strong><br /> Shows at all zoom levels.
         					</div>
-        					<img src="http://kodekloud.s3.amazonaws.com/sites/54cfab316e6f6433ad020000/530d3a9b7bc13ce4a511089c23463f99/10dundas_pin.png" width="50px" height="50px" alt="Permanent Mark" />	
+        					<img id="marker{{id}}_img" src="http://kodekloud.s3.amazonaws.com/sites/54cfab316e6f6433ad020000/530d3a9b7bc13ce4a511089c23463f99/10dundas_pin.png" width="50px" height="50px" alt="Permanent Mark" />	
         				</div>	
         		</div>
     		</script>
@@ -331,6 +331,7 @@
         
         $('#png_map').smoothZoom('focusTo', {x:x_coord, y:y_coord, zoom:300});
         $("#marker"+coords[2]).show();
+        $("#marker"+coords[2]+"_img").show();
         
     });
     
