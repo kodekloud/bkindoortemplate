@@ -430,6 +430,11 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     height:50px;
 }
 
+#map-canvas {
+    width: 557px;
+    height: 480px;
+}
+
 /********************inside page CSS*****************************/
 .inside_page_content{
     width:960px;
