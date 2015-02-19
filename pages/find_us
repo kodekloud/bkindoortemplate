@@ -50,7 +50,7 @@
                 }
                 var map = new google.maps.Map(mapCanvas, mapOptions)
                 var marker = new google.maps.Marker({
-                      position: center,
+                      position: mapOptions.center,
                       map: map,
                       title: 'Hello World!'
                   });
