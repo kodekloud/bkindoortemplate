@@ -304,7 +304,7 @@
         $('#png_map').smoothZoom('focusTo', {x:x_coord, y:y_coord, zoom:300});
         $('#png_map').smoothZoom('addLandmark', 
 			[
-			'<div class="item mark" data-show-at-zoom="0" data-position="'+x_coord+','+y_coord+'">\
+			'<div class="item mark" data-show-at-zoom="0" data-position="'+parseInt(coords[0])+','+parseInt(coords[1])+'">\
 				<div>\
 					<div class="text">\
 					<strong>Pin 1</strong>\
