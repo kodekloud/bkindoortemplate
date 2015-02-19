@@ -84,17 +84,8 @@
     <div id="zoom_container">
         <img id="png_map" class="png_map" alt="center map" src="" width="2240px" height="943px"/>
     
-        <div class="landmarks" data-show-at-zoom="100" data-allow-drag="true" id="landmark_container">
-            <script id="landmark_template" type="x-tmpl-mustache/text">
-                <div class="item mark" id="div_{{id}}" data-position="{{x_coordinate}},{{y_coordinate}}" data-bg-opacity="1" data-show-at-zoom="0">
-        		    	<a id="marker{{id}}" class="" href="/stores/{{slug}}">
-        					<div class="text" style="width:auto">
-        						<strong>{{name}}</strong><br/>
-        					</div>
-        					<img id="marker{{id}}_img" src="http://kodekloud.s3.amazonaws.com/sites/54cfab316e6f6433ad020000/530d3a9b7bc13ce4a511089c23463f99/10dundas_pin.png" width="40px" height="50px" alt="Permanent Mark" />	
-        				</a>	
-        		</div>
-    		</script>
+        <div class="landmarks" data-show-at-zoom="100" data-allow-drag="true">
+            
 	    </div>    
     </div>
     
