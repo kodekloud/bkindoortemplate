@@ -277,7 +277,7 @@
             		    height: 940,
             		    width:2240,
             		    initial_ZOOM: 50,
-            // 			initial_POSITION: '5000 1000',
+            			initial_POSITION: '5000 1000',
             			zoom_MIN: 50,
             			zoom_MAX: 100,
             			zoom_OUT_TO_FIT: true,
