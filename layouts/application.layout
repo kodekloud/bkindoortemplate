@@ -179,6 +179,15 @@
     }
     
     
+    .right_column_header {
+        color: #009cde ;
+    }
+    
+    .navbar .nav li a:hover {
+        color:black !important;
+    
+    }
+    
     @media (max-width: 767px) {
         .main_window{
             width:100%;
