@@ -51,9 +51,6 @@
 		padding:2px 6px;
 	}	
 	
-	.mark{
-	    display:none !important;
-	}
 @media (max-width: 767px) {
 
 }
@@ -104,7 +101,7 @@
     
         <div class="landmarks" data-show-at-zoom="100" data-allow-drag="true" id="landmark_container">
             <script id="landmark_template" type="x-tmpl-mustache/text">
-                <div class="item mark" id="marker{{id}}" data-position="{{x_coordinate}},{{y_coordinate}}" data-bg-opacity="1" data-show-at-zoom="0">
+                <div class="item mark" style="display:none" id="marker{{id}}" data-position="{{x_coordinate}},{{y_coordinate}}" data-bg-opacity="1" data-show-at-zoom="0">
         		    	<div class="">
         					<div class="text" style="width:100px">
         						<strong>Permanent Mark</strong><br /> Shows at all zoom levels.
