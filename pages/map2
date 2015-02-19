@@ -85,8 +85,8 @@
     
         <div class="landmarks" data-show-at-zoom="100" data-allow-drag="true" id="landmark_container">
             <script id="landmark_template" type="x-tmpl-mustache/text">
-                <div class="item mark" style="display:none" id="marker{{id}}" data-position="{{x_coordinate}},{{y_coordinate}}" data-bg-opacity="1" data-show-at-zoom="0">
-        		    	<a class="" href="/stores/{{slug}}">
+                <div class="item mark" style="display:none" data-position="{{x_coordinate}},{{y_coordinate}}" data-bg-opacity="1" data-show-at-zoom="0">
+        		    	<a id="marker{{id}}" class="" href="/stores/{{slug}}">
         					<div class="text" style="width:auto">
         						<strong>{{name}}</strong><br/>
         					</div>
