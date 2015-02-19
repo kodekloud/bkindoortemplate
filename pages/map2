@@ -300,7 +300,7 @@
         
         // $(".mark").hide();
         // $(".mark a").hide();
-        
+        $('#png_map').smoothZoom('removeLandmark')
         $('#png_map').smoothZoom('focusTo', {x:x_coord, y:y_coord, zoom:300});
         $('#png_map').smoothZoom('addLandmark', 
 			[
