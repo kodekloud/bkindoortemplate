@@ -308,6 +308,7 @@
         y_coord = parseInt(coords[1]) + 300
         
         $(".mark").hide();
+        $(".mark a").hide();
         
         $('#png_map').smoothZoom('focusTo', {x:x_coord, y:y_coord, zoom:300});
         $("#div_"+coords[2]).show();
