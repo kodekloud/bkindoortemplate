@@ -77,14 +77,12 @@ function randomgen() {
             console.log("test")
             e.preventDefault();
     		if($('#enterVerify').val() == $('#verifyNumHidden').val() ) {
-    // 			$('#contact_form').unbind('submit').submit();
+    			$('#contact_form').unbind('submit').submit();
     		}
     		else
     		{
     			alert("Please Enter Correct Verification Number");
     			randomgen();
-    // 			$('#enterVerify').select();
-    // 			$('#enterVerify').focus();
     		}
     	});
     $(document).ready(function() {
