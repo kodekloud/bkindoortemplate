@@ -35,7 +35,12 @@
 	    display:none;
 	}
 	
-	
+	#png_map{
+	    width:2240px;
+		height: 943px;
+		min-width:2240px;
+		min-height: 943px;
+	}
 @media (max-width: 767px) {
 
 }
