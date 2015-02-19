@@ -7993,7 +7993,7 @@ footer a:active {
   margin: 20px 0 20px 0;
   border-bottom: solid 0px #ccc;
   color: #ccc;
-  font-weight: 800;
+  font-weight: 800 !important;
   text-transform: uppercase;
 }
 #footer_teasers_wrapper .footer_teaser p {
