@@ -83,8 +83,8 @@ function randomgen() {
     		{
     			alert("Please Enter Correct Verification Number");
     			randomgen();
-    			$('#enterVerify').select();
-    			$('#enterVerify').focus();
+    // 			$('#enterVerify').select();
+    // 			$('#enterVerify').focus();
     		}
     	});
     $(document).ready(function() {
