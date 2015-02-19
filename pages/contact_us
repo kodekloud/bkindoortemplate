@@ -12,7 +12,7 @@
     <div class="inside_page_content">
         <div class="left_column">
             <img class="inside_banner_image" alt="banner" src="http://kodekloud.s3.amazonaws.com/sites/54d4e9206e6f64691f000000/1f4fed1d858c9ddcaf0105aacf32e785/store_list_banner.jpg"/>
-            <form name="contact_form" id="contact_form" method="post" action="http://mobilefringe.createsend.com/t/d/s/tkuikd/">
+            <form name="contact_form" id="contact_form" method="post">
                 <div class="row" style="margin-left:-15px;margin-right:-15px">
                     <div class="col-sm-6 col-md-6">
                         <label for="name">Name</label>
@@ -81,6 +81,21 @@
         	randomgen();
         }
         
+        
+        $('#contact_form').submit(function() {
+    		if($('#enterVerify').val() == $('#verifyNumHidden').val() ) {
+    			$('form').attr('action', 'http://mobilefringe.createsend.com/t/d/s/tkuikd/');
+    			return true;
+    		}
+    		else
+    		{
+    			alert("Please Enter Correct Verification Number");
+    			randomgen();
+    			$('#enterVerify').select();
+    			$('#enterVerify').focus();
+    			return false;
+    		}
+    	});
     
         function renderPageData(container, template, collection, type){
             var item_list = [];
