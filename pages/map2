@@ -101,7 +101,7 @@
     $(document).ready(function() {
         function renderAll (){
             var stores = getStoresList();
-            renderPageData('#landmark_container','#landmark_template',stores)
+            // renderPageData('#landmark_container','#landmark_template',stores)
             
             $("#loading_screen").hide();
             $("#main_content").show();
@@ -298,12 +298,24 @@
         x_coord = parseInt(coords[0]) + 500
         y_coord = parseInt(coords[1]) + 300
         
-        $(".mark").hide();
-        $(".mark a").hide();
+        // $(".mark").hide();
+        // $(".mark a").hide();
         
         $('#png_map').smoothZoom('focusTo', {x:x_coord, y:y_coord, zoom:300});
-        $("#div_"+coords[2]).fadeIn("slow");
-        $("#marker"+coords[2]).fadeIn("slow");
+        $('#png_map').smoothZoom('addLandmark', 
+			[
+			'<div class="item mark" data-show-at-zoom="0" data-position="'x_coord','x_coord'">\
+				<div>\
+					<div class="text">\
+					<strong>Pin 1</strong>\
+				</div>\
+				<img src="images/pin.png" width="50px" height="40px" alt="mark 1" />\
+				</div>\
+			</div>'
+			]
+		);
+        // $("#div_"+coords[2]).fadeIn("slow");
+        // $("#marker"+coords[2]).fadeIn("slow");
         // $("#marker"+coords[2]+"_img").show();
         
     });
