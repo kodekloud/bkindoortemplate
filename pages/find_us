@@ -1,15 +1,6 @@
 <script src="https://maps.googleapis.com/maps/api/js"></script>
 <script>
-  function initialize() {
-    var mapCanvas = document.getElementById('map-canvas');
-    var mapOptions = {
-      center: new google.maps.LatLng(43.656142, -79.379260),
-      zoom: 20,
-      mapTypeId: google.maps.MapTypeId.ROADMAP
-    }
-    var map = new google.maps.Map(mapCanvas, mapOptions)
-  }
-  google.maps.event.addDomListener(window, 'load', initialize);
+  
 </script>
 <div id="loading_screen">
     <img alt="loading" src="http://kodekloud.s3.amazonaws.com/sites/5447ebb66e6f641987020000/3604f5c26997bea3de504de139debcec/loading.gif"/>
@@ -50,6 +41,16 @@
             renderPageData('#centre_info_container','#centre_info_template',propertyDetails, 'property_details')
             $("#loading_screen").hide();
             $("#main_content").show();
+            function initialize() {
+    var mapCanvas = document.getElementById('map-canvas');
+    var mapOptions = {
+      center: new google.maps.LatLng(43.656142, -79.379260),
+      zoom: 20,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+    var map = new google.maps.Map(mapCanvas, mapOptions)
+  }
+  google.maps.event.addDomListener(window, 'load', initialize);
         }
         
     
