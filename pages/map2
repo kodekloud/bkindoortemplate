@@ -43,6 +43,11 @@
 		min-width:2240px;
 		min-height: 943px;
 	}
+	
+	.text {
+	    color:black;
+	    font-size:16px;
+	}
 @media (max-width: 767px) {
 
 }
