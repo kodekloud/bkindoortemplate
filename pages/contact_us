@@ -33,6 +33,10 @@
                 <br>
                 <div class="row" style="margin-left:-15px;margin-right:-15px">
                     <div class="col-sm-12 col-md-12">
+                        <label for="message">Message</label>
+                        <textarea name="cm-f-jrhiir" id="message" rows="8" class="form-control" required></textarea>
+                    </div>
+                    <div class="col-sm-12 col-md-12">
                         <label for="enterVerify">Enter the below number:<div id="verifyNum"></div> </label>
                         <input type="hidden" value="701469" id="verifyNumHidden" name="verifyNumHidden" />
                         <input type="text" id="enterVerify" name="enterVerify" />
@@ -40,10 +44,7 @@
                 </div>
                 
                 <div class="row" style="margin-left:-15px;margin-right:-15px">
-                    <div class="col-sm-12 col-md-12">
-                        <label for="message">Message</label>
-                        <textarea name="cm-f-jrhiir" id="message" rows="8" class="form-control" required></textarea>
-                    </div>
+                    
                         <div class="col-sm-12 col-md-12"><br/>
                         <button id="submit" class="btn btn-primary" type="submit">Submit</button>
                     </div>
