@@ -101,7 +101,7 @@
     
         <div class="landmarks" data-show-at-zoom="100" data-allow-drag="true" id="landmark_container">
             <script id="landmark_template" type="x-tmpl-mustache/text">
-                <div class="item mark" style="display:none" id="marker{{id}}" data-position="{{x_coordinate}},{{y_coordinate}}" data-bg-opacity="1" >
+                <div class="item mark" style="display:none" id="marker{{id}}" data-position="{{x_coordinate}},{{y_coordinate}}" data-bg-opacity="1" data-show-at-zoom="0">
         		    	<a class="" href="/stores/{{slug}}">
         					<div class="text" style="width:auto">
         						<strong>{{name}}</strong><br/>
@@ -278,7 +278,7 @@
             		    initial_ZOOM: 50,
             			initial_POSITION: '5000 1000',
             			zoom_MIN: 50,
-            			zoom_MAX: 200,
+            			zoom_MAX: 100,
             			zoom_OUT_TO_FIT: true,
             			pan_LIMIT_BOUNDARY: false,
             			zoom_BUTTONS_SHOW : 'YES',
