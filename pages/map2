@@ -281,6 +281,7 @@
             			zoom_MIN: 50,
             			zoom_MAX: 100,
             			zoom_OUT_TO_FIT: true,
+            			pan_LIMIT_BOUNDARY: true,
             			zoom_BUTTONS_SHOW : 'YES',
             			pan_BUTTONS_SHOW : 'NO',
             			pan_LIMIT_BOUNDARY : 'NO',
