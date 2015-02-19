@@ -12,7 +12,7 @@
     outline: medium none;
     text-indent: -9999px;
     width: 50px;
-    display:none;
+    display:block;
     /*position:absolute;*/
     /*top:50%;*/
     /*bottom:50%;*/
@@ -48,14 +48,13 @@
 	}	
 .landmarks, .mark, .text{
 		/*background-color:#000000;*/
-		/*padding:2px 6px;*/
-		/*height:50px;*/
-		/*width:50px;*/
-		/*display:none;*/
+		padding:2px 6px;
+		height:50px;
+		width:50px;
+		display:none;
 	}	
-.mark{
+.mark img{
     display:none;
-
 }
 
 @media (max-width: 767px) {
@@ -108,7 +107,8 @@
     
         <div class="landmarks" data-show-at-zoom="100" data-allow-drag="true" id="landmark_container">
             <script id="landmark_template" type="x-tmpl-mustache/text">
-                <div id="marker{{id}}" class="item marker" data-position="{{x_coordinate}},{{y_coordinate}}" data-bg-color="#000000" data-bg-opacity="0.7" data-show-at-zoom="0">
+                <div class="item mark" data-position="{{x_coordinate}},{{y_coordinate}}" data-bg-color="#000000" data-bg-opacity="0.7" data-show-at-zoom="0">
+        		    	<img  id="marker{{id}}" src="http://kodekloud.s3.amazonaws.com/sites/54cfab316e6f6433ad020000/530d3a9b7bc13ce4a511089c23463f99/10dundas_pin.png"/>	
         		</div>
     		</script>
 	    </div>    
@@ -326,10 +326,9 @@
         y_coord = parseInt(coords[1]) + 300
         
         $(".mark img").hide();
-        mark = $("#marker"+coords[2])
+        
         $('#png_map').smoothZoom('focusTo', {x:x_coord, y:y_coord, zoom:300});
         $("#marker"+coords[2]).show();
-        console.log(mark)
         
     });
     
