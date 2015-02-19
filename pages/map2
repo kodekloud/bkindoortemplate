@@ -50,6 +50,9 @@
 		background-color:#000000;
 		padding:2px 6px;
 	}	
+	.item, .mark {
+	    display:none;
+	}
 	
 @media (max-width: 767px) {
 
