@@ -1,5 +1,5 @@
 
-<script type="text/javascript" src="//maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyD5uyl4jADrzWqKLOGcFyRSK6YffYW3XdQ&amp;sensor=false"></script>
 <script>
     function initialise() {
                 var myLatlng = new google.maps.LatLng(53.068165,-4.076803); // Add the coordinates
