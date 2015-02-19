@@ -52,7 +52,9 @@
 	    font-size:16px;
 	}
 @media (max-width: 767px) {
-
+    #zoom_container{
+        overflow:hidden !important;
+    }
 }
 
 
