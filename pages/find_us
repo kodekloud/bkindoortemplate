@@ -37,6 +37,7 @@
             renderPageData('#centre_info_container','#centre_info_template',propertyDetails, 'property_details')
             $("#loading_screen").hide();
             $("#main_content").show();
+            $.getScript("https://maps.googleapis.com/maps/api/js");
             function initialize() {
                 var mapCanvas = document.getElementById('map-canvas');
                 var mapOptions = {
