@@ -74,9 +74,10 @@ function randomgen() {
       
         
         $('#contact_form').submit(function(e) {
+            console.log("test")
             e.preventDefault();
     		if($('#enterVerify').val() == $('#verifyNumHidden').val() ) {
-    			$('#contact_form').unbind('submit').submit();
+    // 			$('#contact_form').unbind('submit').submit();
     		}
     		else
     		{
