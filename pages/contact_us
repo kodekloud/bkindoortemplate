@@ -40,6 +40,11 @@
                         <button id="submit" class="btn btn-primary" type="submit">Submit</button>
                     </div>
                 </div>
+                
+                <label>Enter the below number: </label>
+    <input type="hidden" value="701469" id="verifyNumHidden" name="verifyNumHidden" />
+    <input type="text" id="enterVerify" name="enterVerify" />
+    <div id="verifyNum"></div>
             </form>
         </div>
         <div class="right_column">
