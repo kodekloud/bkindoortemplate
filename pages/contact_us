@@ -62,17 +62,7 @@
     </div>
 </div>
 <script>
-    $(document).ready(function() {
-        function renderAll (){
-            var propertyDetails = getPropertyDetails();
-            renderPageData('#centre_info_container','#centre_info_template',propertyDetails, 'property_details')
-            $("#loading_screen").hide();
-            $("#main_content").show();
-            
-            
-        }
-        
-        function randomgen() {
+function randomgen() {
                 var rannumber='';
         		for(ranNum=1; ranNum<=6; ranNum++){
         			rannumber+=Math.floor(Math.random()*10).toString();
@@ -96,6 +86,17 @@
     			$('#enterVerify').focus();
     		}
     	});
+    $(document).ready(function() {
+        function renderAll (){
+            var propertyDetails = getPropertyDetails();
+            renderPageData('#centre_info_container','#centre_info_template',propertyDetails, 'property_details')
+            $("#loading_screen").hide();
+            $("#main_content").show();
+            
+            
+        }
+        
+        
     
         function renderPageData(container, template, collection, type){
             var item_list = [];
