@@ -82,7 +82,7 @@
     <div id="map" class="panzoom-elements" style=""><img src=""></div>
     
     <div id="zoom_container">
-        <img id="png_map" class="png_map" alt="center map" src=""/>
+        <img id="png_map" class="png_map" alt="center map" src="" width="2240px" height="943px"/>
     
         <div class="landmarks" data-show-at-zoom="100" data-allow-drag="true">
             
@@ -261,7 +261,7 @@
             	     	button_SIZE: 34,
             	        button_ALIGN: "top right",    
             	     	container: 'zoom_container_directory',
-            	     	responsive: false,
+            	     	responsive: true,
             	     	responsive_maintain_ratio: false,
             			container: 'zoom_container'
             		});
@@ -310,6 +310,9 @@
 			[
 			'<div class="item mark" data-show-at-zoom="0" data-position="'+parseInt(coords[0])+','+parseInt(coords[1])+'">\
 				<div>\
+					<div class="text">\
+					<strong>Pin 1</strong>\
+				</div>\
 				<img src="http://kodekloud.s3.amazonaws.com/sites/54cfab316e6f6433ad020000/530d3a9b7bc13ce4a511089c23463f99/10dundas_pin.png" width="40px" height="50px" alt="marker" />\
 				</div>\
 			</div>'
