@@ -50,9 +50,6 @@
 		background-color:#000000;
 		padding:2px 6px;
 	}	
-	.link_div{
-	    display:none;
-	}
 	
 @media (max-width: 767px) {
 
@@ -104,8 +101,8 @@
     
         <div class="landmarks" data-show-at-zoom="100" data-allow-drag="true" id="landmark_container">
             <script id="landmark_template" type="x-tmpl-mustache/text">
-                <div class="item mark" style="display:none" data-position="{{x_coordinate}},{{y_coordinate}}" data-bg-opacity="1" data-show-at-zoom="0">
-        		    	<a  id="marker{{id}}" class="link_div" href="/stores/{{slug}}">
+                <div class="item mark" style="display:none" id="marker{{id}}" data-position="{{x_coordinate}},{{y_coordinate}}" data-bg-opacity="1" data-show-at-zoom="0">
+        		    	<a class="" href="/stores/{{slug}}">
         					<div class="text" style="width:auto">
         						<strong>{{name}}</strong><br/>
         					</div>
@@ -331,7 +328,7 @@
         
         $('#png_map').smoothZoom('focusTo', {x:x_coord, y:y_coord, zoom:300});
         $("#marker"+coords[2]).css("display","block");
-        $("#marker"+coords[2]+"_img").show();
+        // $("#marker"+coords[2]+"_img").show();
         
     });
     
