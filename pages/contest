@@ -105,6 +105,7 @@
                         <label for="enterVerify">Enter the following number below to proceed: <div id="verifyNum"></div></label><br>
                         <input type="hidden" value="701469" id="verifyNumHidden" name="verifyNumHidden" />
                         <input type="text" id="enterVerify" name="enterVerify" />
+                    <br>
 
             <span>
                 <label for="newsletter_signup" style="display:none">Agree Terms</label>
