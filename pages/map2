@@ -108,7 +108,7 @@
     
         <div class="landmarks" data-show-at-zoom="100" data-allow-drag="true" id="landmark_container">
             <script id="landmark_template" type="x-tmpl-mustache/text">
-                <div id="marker{{id}}" class="item mark marker" data-position="{{x_coordinate}},{{y_coordinate}}" data-bg-color="#000000" data-bg-opacity="0.7" data-show-at-zoom="0">
+                <div id="marker{{id}}" class="item marker" data-position="{{x_coordinate}},{{y_coordinate}}" data-bg-color="#000000" data-bg-opacity="0.7" data-show-at-zoom="0">
         		  //  	<img  id="marker{{id}}" src="http://kodekloud.s3.amazonaws.com/sites/54cfab316e6f6433ad020000/530d3a9b7bc13ce4a511089c23463f99/10dundas_pin.png"/>	
         		</div>
     		</script>
