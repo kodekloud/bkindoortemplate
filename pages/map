@@ -136,7 +136,7 @@
             for(var i = 0; i < stores.length;i++){
                 // stores[i].x_coordinate = stores[i].x_coordinate - 10;
                 // stores[i].y_coordinate = stores[i].y_coordinate - 35;
-               $("#storelist_container").append('<option value="'+stores[i].x_coordinate+','+stores[i].y_coordinate+','+stores[i].slug+'">'+stores[i].name+'</option>') 
+               $("#storelist_container").append('<option value="'+stores[i].x_coordinate+','+stores[i].y_coordinate+','+stores[i].id+'">'+stores[i].name+'</option>') 
                 
             }
             
@@ -315,7 +315,6 @@
         var zoomData = $('#png_map').smoothZoom('getZoomData');
         x_coord = parseInt(coords[0])
         y_coord = parseInt(coords[1])
-        slug = (coords[2])
         name = $("#storelist_container option:selected").text();
         $('#png_map').smoothZoom('removeLandmark')
         if (isMobile) {
@@ -327,10 +326,10 @@
         $('#png_map').smoothZoom('addLandmark', 
 			[
 			'<div class="item mark" data-show-at-zoom="0" data-position="'+x_coord+','+y_coord+'">\
-				<a href="/stores/'+slug+'"><div>\
+				<div>\
 					<div class="text">\
 					<strong>'+name+'</strong>\
-				</div></a>\
+				</div>\
 				<img src="http://kodekloud.s3.amazonaws.com/sites/54cfab316e6f6433ad020000/530d3a9b7bc13ce4a511089c23463f99/10dundas_pin.png" width="40px" height="59px" alt="marker" />\
 				</div>\
 			</div>'
