@@ -104,8 +104,8 @@
     
         <div class="landmarks" data-show-at-zoom="100" data-allow-drag="true" id="landmark_container">
             <script id="landmark_template" type="x-tmpl-mustache/text">
-                <div class="item mark" data-position="{{x_coordinate}},{{y_coordinate}}" data-bg-opacity="1" data-show-at-zoom="0">
-        		    	<div id="marker{{id}}" class="marker_div">
+                <div class="item mark" id="marker{{id}}" data-position="{{x_coordinate}},{{y_coordinate}}" data-bg-opacity="1" data-show-at-zoom="0">
+        		    	<div class="marker_div">
         					<div class="text" style="width:100px">
         						<strong>Permanent Mark</strong><br /> Shows at all zoom levels.
         					</div>
