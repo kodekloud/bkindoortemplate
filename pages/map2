@@ -258,7 +258,12 @@
             			zoom_BUTTONS_SHOW : 'YES',
             			pan_BUTTONS_SHOW : 'NO',
             			pan_LIMIT_BOUNDARY : 'NO',
-            			button_ALIGN: "top left",
+            	    	zoom_OUT_TO_FIT: "NO",
+            	     	button_SIZE: 34,
+            	        button_ALIGN: "top right",    
+            	     	container: 'zoom_container_directory',
+            	     	responsive: true,
+            	     	responsive_maintain_ratio: false,
             			container: 'zoom_container'
             		});
                 });
