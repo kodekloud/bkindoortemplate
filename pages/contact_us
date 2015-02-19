@@ -82,15 +82,16 @@
         
         $('#contact_form').submit(function(e) {
             alert("test")
-            e.preventDefault();
+            // e.preventDefault();
     		if($('#enterVerify').val() == $('#verifyNumHidden').val() ) {
     		    alert("passed")
-    			$('#contact_form').unbind('submit').submit();
+    // 			$('#contact_form').unbind('submit').submit();
     		}
     		else
     		{
     			alert("Please Enter Correct Verification Number");
     			randomgen();
+    			e.preventDefault();
     		}
     	});
     $(document).ready(function() {
