@@ -251,7 +251,7 @@
             		$('#png_map').smoothZoom({
             		    
             		   
-            			zoom_MIN: 50,
+            			zoom_MIN: 100,
             			zoom_MAX: 300,
             			zoom_BUTTONS_SHOW : 'YES',
             			pan_BUTTONS_SHOW : 'NO',
