@@ -36,6 +36,7 @@
                         <label for="message">Message</label>
                         <textarea name="cm-f-jrhiir" id="message" rows="8" class="form-control" required></textarea>
                     </div>
+                    <br>
                     <div class="col-sm-12 col-md-12">
                         <label for="enterVerify">Enter the following number below to proceed: <div id="verifyNum"></div></label><br>
                         <input type="hidden" value="701469" id="verifyNumHidden" name="verifyNumHidden" />
