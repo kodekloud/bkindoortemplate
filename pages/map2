@@ -155,7 +155,7 @@
             Mustache.parse(template_html);   // optional, speeds up future uses
             $.each( collection , function( key, val ) {
                 val.x_coordinate = val.x_coordinate - 5;
-                val.y_coordinate = val.y_coordinate + 10;
+                val.y_coordinate = val.y_coordinate + 5;
                 var rendered = Mustache.render(template_html,val);
                 item_rendered.push(rendered);
     
