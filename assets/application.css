@@ -6564,7 +6564,7 @@ header .container {
   margin: 0px 0;
   padding: 0;
   overflow: hidden;
-  width: 290px;
+  width: auto;
   height: 84px;
 }
 .navbar a.navbar-brand img {
