@@ -139,18 +139,6 @@
     randomgen();
   
     
-    // $('#contact_form').submit(function(e) {
-
-    //     if($('#enterVerify').val() == $('#verifyNumHidden').val() ) {
-    //     }
-    //     else
-    //     {
-    //         alert("Please Enter Correct Verification Number");
-    //         randomgen();
-    //         e.preventDefault();
-    //     }
-    // });
-    
     $('#contest_form').submit(function (e) {
         if($('#enterVerify').val() == $('#verifyNumHidden').val() ) {
             if ($("#agree_terms").prop("checked") == true){
