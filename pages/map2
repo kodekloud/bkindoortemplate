@@ -250,7 +250,7 @@
                 jQuery(function($){
             		$('#png_map').smoothZoom({
             		    initial_ZOOM: 100,
-            			initial_POSITION: '5000 1000',
+            			
             			zoom_MIN: 100,
             			zoom_MAX: 500,
             			zoom_BUTTONS_SHOW : 'YES',
