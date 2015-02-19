@@ -330,8 +330,8 @@
         $(".mark").hide();
         
         $('#png_map').smoothZoom('focusTo', {x:x_coord, y:y_coord, zoom:300});
-        $("#marker"+coords[2]).css("display","block !important");
-        // $("#marker"+coords[2]+"_img").show();
+        $("#marker"+coords[2]).css("display","block");
+        $("#marker"+coords[2]+"_img").show();
         
     });
     
