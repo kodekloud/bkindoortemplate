@@ -115,6 +115,12 @@
         text-align:center;
     }
     
+    .btn-primary:hover{
+        background: #d9534f !important;
+        border-color:#d43f3a !important;
+        text-align:center;
+    }
+    
     /*menu colors*/
     .navbar .nav li a{
         color:white;
