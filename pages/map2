@@ -311,7 +311,6 @@
         x_coord = parseInt(coords[0])
         y_coord = parseInt(coords[1])
         name = $("#storelist_container option:selected").text();
-        $('#png_map').smoothZoom('Reset'); 
         $('#png_map').smoothZoom('removeLandmark')
         $('#png_map').smoothZoom('focusTo', {x:x_coord, y:y_coord, zoom:300});
         $('#png_map').smoothZoom('addLandmark', 
