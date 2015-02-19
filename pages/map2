@@ -19,7 +19,7 @@
 	#zoom_container .landmarks .item {
 		position:absolute;		
 		text-align:center;		
-		display: none;	
+		/*display: none;	*/
 	}	
 	#zoom_container .landmarks .lable div {
 		width: 100px;
