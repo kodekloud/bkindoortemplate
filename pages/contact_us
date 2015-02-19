@@ -69,7 +69,10 @@
             $("#loading_screen").hide();
             $("#main_content").show();
             
-            function randomgen() {
+            
+        }
+        
+        function randomgen() {
                 var rannumber='';
         		for(ranNum=1; ranNum<=6; ranNum++){
         			rannumber+=Math.floor(Math.random()*10).toString();
@@ -78,8 +81,6 @@
         		$('#verifyNumHidden').val(rannumber);
         	}
         	randomgen();
-        }
-        
       
         
         $('#contact_form').submit(function(e) {
