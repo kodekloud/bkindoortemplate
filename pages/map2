@@ -304,12 +304,12 @@
         $('#png_map').smoothZoom('focusTo', {x:x_coord, y:y_coord, zoom:300});
         $('#png_map').smoothZoom('addLandmark', 
 			[
-			'<div class="item mark" data-show-at-zoom="0" data-position="'x_coord','x_coord'">\
+			'<div class="item mark" data-show-at-zoom="0" data-position="0,0">\
 				<div>\
 					<div class="text">\
 					<strong>Pin 1</strong>\
 				</div>\
-				<img src="images/pin.png" width="50px" height="40px" alt="mark 1" />\
+				<img src="http://kodekloud.s3.amazonaws.com/sites/54cfab316e6f6433ad020000/530d3a9b7bc13ce4a511089c23463f99/10dundas_pin.png" width="40px" height="50px" alt="marker" />\
 				</div>\
 			</div>'
 			]
