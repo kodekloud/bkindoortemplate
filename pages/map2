@@ -310,6 +310,7 @@
         $(".mark").hide();
         
         $('#png_map').smoothZoom('focusTo', {x:x_coord, y:y_coord, zoom:300});
+        $("#div_"+coords[2]).show();
         $("#marker"+coords[2]).show();
         // $("#marker"+coords[2]+"_img").show();
         
