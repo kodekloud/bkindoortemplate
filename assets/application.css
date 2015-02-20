@@ -573,6 +573,10 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 .list-group li {
     list-style:none;
 }
+
+.desc{
+    font-size:14px;
+}
 @media print {
   * {
     text-shadow: none !important;
