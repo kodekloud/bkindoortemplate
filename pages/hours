@@ -33,8 +33,8 @@
         function renderAll (){
             var propertyDetails = getPropertyDetails();
             var hours = getPropertyHours();
-            console.log(hours)
             renderPageData('#centre_info_container','#centre_info_template',propertyDetails, 'property_details')
+            renderPageData('#reg_hours_container','#reg_hours_template',hours, 'hours')
             $("#loading_screen").hide();
             $("#main_content").show();
         }
@@ -49,6 +49,9 @@
                 item_list.push(collection);
                 collection = []
                 collection = item_list;
+            }
+            if (type == "hours") {
+                
             }
             $.each( collection , function( key, val ) {
                 var rendered = Mustache.render(template_html,val);
