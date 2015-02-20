@@ -105,6 +105,8 @@
                     start = new Date (val.start_date);
                     end = new Date (val.end_date);
                     start = (new Date(start.getTime() + start.getTimezoneOffset()*60000))
+                    console.log(val.start_date)
+                    console.log (start)
                     val.dates = (get_month(start.getMonth()))+" "+(start.getDate())+" - "+get_month(end.getMonth())+" "+end.getDate();
                     
                
