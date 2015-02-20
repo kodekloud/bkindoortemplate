@@ -574,7 +574,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     list-style:none;
 }
 
-.desc{
+.promo_desc_box p{
     font-size:14px;
 }
 @media print {
