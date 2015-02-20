@@ -104,6 +104,10 @@
                           
                     start = new Date (val.start_date);
                     end = new Date (val.end_date);
+                    console.log(val.start_date)
+                    console.log(start)
+                    console.log(val.end_date)
+                    console.log(end)
                     val.dates = (get_month(start.getMonth()))+" "+(start.getDate())+" - "+get_month(end.getMonth())+" "+end.getDate();
                     
                
