@@ -58,6 +58,7 @@
                 });
                 collection = []
                 collection = item_list;
+                console.log(collection)
             }
             $.each( collection , function( key, val ) {
                 var rendered = Mustache.render(template_html,val);
