@@ -124,7 +124,7 @@
             count = 0
             $.each( featureList , function( key, val ) {
                 console.log(count)
-                if (count < 4){
+                if (count < 3){
                 val.alt_url = val.image_url;
                 var featureitem_rendered = Mustache.render(feature_template_html,val);
                 item_rendered.push(featureitem_rendered);
