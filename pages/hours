@@ -52,8 +52,13 @@
             }
             if (type == "hours") {
                 $.each( collection , function( key, val ) {
-                    console.log(key)
+                    if (!val.store_id) {
+                        item_list.push(val)
+                    }
                 });
+                collection = []
+                collection = item_list;
+                console.log (collection)
             }
             $.each( collection , function( key, val ) {
                 var rendered = Mustache.render(template_html,val);
