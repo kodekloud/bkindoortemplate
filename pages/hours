@@ -52,7 +52,7 @@
             }
             if (type == "hours") {
                 $.each( collection , function( key, val ) {
-                    console.log(val)
+                    console.log(key)
                 });
             }
             $.each( collection , function( key, val ) {
