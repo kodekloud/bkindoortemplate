@@ -102,7 +102,7 @@
                        val.description =  val.description.substring(0,100)+'...';
                     } 
                           
-                    start = new Date (val.start_date+" GMT");
+                    start = new Date (val.start_date);
                     end = new Date (val.end_date);
                     console.log(val.start_date)
                     console.log (start)
