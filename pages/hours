@@ -19,6 +19,11 @@
                 </script>
             </ul>
             <p class="right_column_header">holiday hours</p>
+            <ul id="holiday_hours_container">
+                <script id="holiday_hours_template" type="x-tmpl-mustache/text">
+                    <li>{{holiday_name}} - {{holiday_date}}</li>
+                </script>
+            </ul>
         </div>
         <div class="right_column">
             <p class="right_column_header">centre information</p>
