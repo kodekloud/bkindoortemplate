@@ -102,9 +102,8 @@
                        val.description =  val.description.substring(0,100)+'...';
                     } 
                           
-                    start = new Date (val.start_date);
+                    start = new Date (val.start_date+" EDT");
                     end = new Date (val.end_date);
-                    start = (new Date(start.getTime() + start.getTimezoneOffset()*60000))
                     console.log(val.start_date)
                     console.log (start)
                     val.dates = (get_month(start.getMonth()))+" "+(start.getDate())+" - "+get_month(end.getMonth())+" "+end.getDate();
