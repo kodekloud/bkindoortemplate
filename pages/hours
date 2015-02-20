@@ -53,7 +53,7 @@
             if (type == "hours") {
                 $.each( collection , function( key, val ) {
                     console.log(val)
-                }
+                });
             }
             $.each( collection , function( key, val ) {
                 var rendered = Mustache.render(template_html,val);
