@@ -18,7 +18,10 @@
                     <tr>
                         <td>
                             {{h}}
-                        </td>    
+                        </td>   
+                        <td>
+                            {{h}}
+                        </td>
                     </tr>
                 </script>
             </table>
