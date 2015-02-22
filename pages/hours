@@ -13,11 +13,15 @@
         <div class="left_column">
             <img class="inside_banner_image" alt="banner" src="http://kodekloud.s3.amazonaws.com/sites/54d4e9206e6f64691f000000/5a559199c13efa2cbd2001f37022c6c2/Banner-Image-004_edited.jpg"/>
             <p class="right_column_header">regular hours</p>
-            <ul id="reg_hours_container">
+            <table id="reg_hours_container">
                 <script id="reg_hours_template" type="x-tmpl-mustache/text">
-                    <li>{{h}}</li>
+                    <tr>
+                        <td>
+                            {{h}}
+                        </td>    
+                    </tr>
                 </script>
-            </ul>
+            </table>
             
             <!--<p class="right_column_header">Custom Text</p>-->
             <!--put whatever text you want in this block-->
