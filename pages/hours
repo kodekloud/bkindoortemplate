@@ -18,6 +18,10 @@
                     <li>{{h}}</li>
                 </script>
             </ul>
+            
+            <!--<p class="right_column_header">Custom Text</p>-->
+            <!--put whatever text you want in this block-->
+            
             <p class="right_column_header">holiday hours</p>
             <ul id="holiday_hours_container">
                 <script id="holiday_hours_template" type="x-tmpl-mustache/text">
