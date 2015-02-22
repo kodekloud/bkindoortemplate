@@ -16,7 +16,7 @@
             <table id="reg_hours_container">
                 <script id="reg_hours_template" type="x-tmpl-mustache/text">
                     <tr>
-                        <td>
+                        <td style="width:80%">
                             {{h}}
                         </td>   
                         <td>
