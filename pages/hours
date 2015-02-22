@@ -30,11 +30,19 @@
             <!--put whatever text you want in this block-->
             
             <p class="right_column_header">holiday hours</p>
-            <ul id="holiday_hours_container">
+            <table id="holiday_hours_container">
                 <script id="holiday_hours_template" type="x-tmpl-mustache/text">
-                    <li>{{holiday_name}} - {{holiday_date}} - {{h}}</li>
+                    <tr>{{holiday_name}}</tr>
+                    <tr>
+                        <td>
+                            {{holiday_date}}
+                        </td>
+                        <td>
+                            {{h}}
+                        </td>
+                    </tr>
                 </script>
-            </ul>
+            </table>
         </div>
         <div class="right_column">
             <p class="right_column_header">centre information</p>
