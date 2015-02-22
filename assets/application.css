@@ -583,7 +583,9 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 .hours_left {
     
 }
-
+.hours_right {
+    
+}
 @media print {
   * {
     text-shadow: none !important;
