@@ -572,12 +572,8 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 #desc{
     font-size:16px;
 }
-#reg_hours_container{
-    
-}
-
-#holiday_hours_container{
-    
+#reg_hours_container, #holiday_hours_container{
+    width:100%;
 }
 
 .hours_left {
