@@ -128,7 +128,8 @@
                 $.each( collection , function( key, val ) {
                     if (!val.store_id && val.is_holiday == true) {
                         holiday = new Date (val.holiday_date)
-                        console.log((holiday.getDate()))
+                        var weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+                        console.log(weekdays[holiday.getDay()])
                         if (val.open_time && val.close_time){
                             var open_time = new Date (val.open_time)
                             var close_time = new Date (val.close_time)
