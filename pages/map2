@@ -296,6 +296,7 @@
         
     function zoomToSvgRegion(id){
         var s = Snap("#map");
+        s.select("#"+id).animate({ fill: 'red' }, 200);
     }
     
     function goToStore(store_details){
