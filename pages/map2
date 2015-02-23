@@ -346,15 +346,10 @@
     
     
     
-    function zoomToSvgRegion(id){
+    function zoomToSvgRegion(id, x, y){
         var s = Snap("#map");
         s.select("#"+id).animate({ fill: 'red' }, 200);
-        element = document.getElementById(id)
-        var rect = element.getBoundingClientRect();
-        console.log(rect.top, rect.right, rect.bottom, rect.left);
-        x = (rect.right)
-        y = (rect.top) 
-        $(".panzoom-elements").panzoom("pan",5 ,5, { relative: false });
+        $(".panzoom-elements").panzoom("pan",x ,y, { relative: false });
     }
     
     
