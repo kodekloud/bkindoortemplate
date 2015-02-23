@@ -584,6 +584,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     width:76%;
 }
 .hours_right {
+    text-align:right;
     
 }
 @media print {
