@@ -180,13 +180,15 @@
             if (maptype == "svg"){
                 $(".png_map").hide();
                 $("#storelist_container").hide()
+                regions = []
                 for(var i = 0; i < stores.length;i++){
-                    
+                    r = stores[i].svgmap_region+" : { tooltip: 'hello world'}"
+                    regions.push(r)
                 }
                 var map = $('#mapsvg').mapSvg({
                     source: getSVGMapURL(),    // Path to SVG map
                     colors: {stroke: '#aaaaaa', selected: -20, hover: "#a6a6a6"},
-                    regions: {
+                    regions: { regions
                                      
                     },
                     height:696,
