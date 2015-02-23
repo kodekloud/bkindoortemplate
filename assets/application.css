@@ -578,8 +578,11 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 
 #reg_hours_container tr, #holiday_hours_container tr{
    border:1px solid #eeeeee;
-   vertical-align:bottom;
    height:40px;
+}
+
+#holiday_hours_container tr{
+    vertical-align:bottom;
 }
 
 .hours_left {
