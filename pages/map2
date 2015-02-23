@@ -214,6 +214,8 @@
                     });
                     s.append(f.select("svg"));
                 });
+                
+                zoomToSvgRegion("stores_x5F_5_x5F_6_1_")
                 var startingMapTransform = 'scale(0.5)';
                 var startingPanX = 0;
                 var startingPanY = 0;
@@ -250,7 +252,7 @@
                     });
                 });
                 
-                zoomToSvgRegion("stores_x5F_5_x5F_6_1_")
+               
             } else {
                 // $("#zControls").hide();
                 var propertyDetails = getPropertyDetails();
