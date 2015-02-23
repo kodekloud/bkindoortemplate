@@ -50,10 +50,10 @@
 	
 	
 	.panzoom-elements{
-	    width:2240px;
-		height: 943px;
-		min-width:2240px;
-		min-height: 943px;
+	    width:1332.125px;
+		height: 735.063px;
+		min-width:1332.125px;
+		min-height: 735.063px;
 	}
 	
 	.text {
