@@ -199,7 +199,7 @@
                 for(var i = 0; i < stores.length;i++){
                     r = "'"+stores[i].svgmap_region+"' : {attrs: {fill: '#eeeeee'}}"
                     map.mapSvg({
-                        regions: r
+                        regions: {r}
                     })
                 }
                 
