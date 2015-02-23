@@ -165,7 +165,7 @@
         
         
         function convert_hour(d){
-            var h = (d.getUTCHours());
+            var h = addZero(d.getUTCHours());
             var m = addZero(d.getUTCMinutes());
             var s = addZero(d.getUTCSeconds());
             if (h >= 12) {
