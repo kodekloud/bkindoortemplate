@@ -354,7 +354,7 @@
         console.log(rect.top, rect.right, rect.bottom, rect.left);
         x = (rect.right)
         y = (rect.top) 
-        $(".panzoom-elements").panzoom("pan",0 ,0, { relative: true });
+        $(".panzoom-elements").panzoom("pan",5 ,5, { relative: true });
     }
     
     
