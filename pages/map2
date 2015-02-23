@@ -98,7 +98,9 @@
         <button class="zoom-in"><span class="glyphicon glyphicon-plus"></span></button>
         <button class="zoom-out"><span class="glyphicon glyphicon-minus"></span></button>
     </div>
-    <div id="map" class="panzoom-elements" style=""><img src=""></div>
+    <div id="map">
+        <div id="mapsvg"></div>
+    </div>
     
     <div id="zoom_container">
         <img id="png_map" class="png_map" alt="center map" src="" width="2240" height="943"/>
@@ -185,76 +187,104 @@
             if (maptype == "svg"){
                 $(".png_map").hide();
                 $("#storelist_container").hide()
-                Snap.load(getSVGMapURL(), function (f) {
-                    $.each( stores, function( key, value ) {
-                        if(value.svgmap_region != null && typeof(value.svgmap_region)  != 'undefined'){
-                            var svg_id = "#" + value.svgmap_region;
-                            f.select(svg_id).mouseover(function() {
-                                if(typeof(value) != 'undefined' && value != null){
-                                    this.addClass("map-mouse-over");
-                                    $("#pop-over").show();
-                                    $("#pop-over-map-name").html(value.name);
-                                    $("#pop-over-map-phone").html(value.phone);
-                                }
-                                          
-                            });
+                var map = $('#mapsvg').mapSvg({
+                    source: getSVGMapURL(),    // Path to SVG map
+                    colors: {stroke: '#aaaaaa', selected: -20, hover: "#a6a6a6"},
+                    regions: {
+                            $.each( stores, function( key, value ) {
                                 
-                            //add the mouse up handler for hiding the pop over when done hovering
-                            f.select(svg_id).mouseout(function() {
-                                this.removeClass("map-mouse-over");
-                                $("#pop-over").hide(0);
-                                
-                            });
-                                
-                            //add the mouse up function for when the user clicks a store
-                            f.select(svg_id).mouseup(function() {
-                                
-                                if(!isMobile && !didPanZoom){
-                                    
-                                    goToStore(value);
-                                }
-                                didPanZoom = false;
-                                      
-                            });
-                        }
-                    });
-                    s.append(f.select("svg"));
+                            }
+                               
+                                    val.svgmap_region:{
+                                        tooltip:"hello world",
+                                    attr:{
+                    						href:'/stores/'+val.slug
+                    					}
+                    				},
+                    },
+                    height:696,
+                    width:682,
+                    tooltipsMode:'custom',
+                    zoom:true,
+                    zoomButtons: {'show': true, 'location': 'left'},
+                    pan:true,
+                    cursor:'pointer',
+                    responsive:true,
+                    zoomLimit: [0,10],
+                    viewBox:[100,100,650,650]
                 });
-                var startingMapTransform = 'scale(0.5)';
-                var startingPanX = 0;
-                var startingPanY = 0;
-                if(isMobile) {
-                        startingMapTransform = 'scale(.5)';
-                        startingPanX = 0;
-                        startingPanY = 0;
-                }
                 
-                $( "#page_content" ).fadeIn( "fast", function() {
-                    var panzoom = $(".panzoom-elements").panzoom({
-                        cursor: "move",
-                        increment: 0.5,
-                        minScale: 0.5,
-                        maxScale: 2,
-                        transition: true,
-                        duration: 150,
-                        easing: "ease-in-out",
-                        $zoomIn: $('.zoom-in'),
-                        $zoomOut: $('.zoom-out'),
-                        $zoomRange: $('.zoom-range'),
-                        startTransform: startingMapTransform
+                
+                // Snap.load(getSVGMapURL(), function (f) {
+                //     $.each( stores, function( key, value ) {
+                //         if(value.svgmap_region != null && typeof(value.svgmap_region)  != 'undefined'){
+                //             var svg_id = "#" + value.svgmap_region;
+                //             f.select(svg_id).mouseover(function() {
+                //                 if(typeof(value) != 'undefined' && value != null){
+                //                     this.addClass("map-mouse-over");
+                //                     $("#pop-over").show();
+                //                     $("#pop-over-map-name").html(value.name);
+                //                     $("#pop-over-map-phone").html(value.phone);
+                //                 }
+                                          
+                //             });
+                                
+                //             //add the mouse up handler for hiding the pop over when done hovering
+                //             f.select(svg_id).mouseout(function() {
+                //                 this.removeClass("map-mouse-over");
+                //                 $("#pop-over").hide(0);
+                                
+                //             });
+                                
+                //             //add the mouse up function for when the user clicks a store
+                //             f.select(svg_id).mouseup(function() {
+                                
+                //                 if(!isMobile && !didPanZoom){
+                                    
+                //                     goToStore(value);
+                //                 }
+                //                 didPanZoom = false;
+                                      
+                //             });
+                //         }
+                //     });
+                //     s.append(f.select("svg"));
+                // });
+                // var startingMapTransform = 'scale(0.5)';
+                // var startingPanX = 0;
+                // var startingPanY = 0;
+                // if(isMobile) {
+                //         startingMapTransform = 'scale(.5)';
+                //         startingPanX = 0;
+                //         startingPanY = 0;
+                // }
+                
+                // $( "#page_content" ).fadeIn( "fast", function() {
+                //     var panzoom = $(".panzoom-elements").panzoom({
+                //         cursor: "move",
+                //         increment: 0.5,
+                //         minScale: 0.5,
+                //         maxScale: 2,
+                //         transition: true,
+                //         duration: 150,
+                //         easing: "ease-in-out",
+                //         $zoomIn: $('.zoom-in'),
+                //         $zoomOut: $('.zoom-out'),
+                //         $zoomRange: $('.zoom-range'),
+                //         startTransform: startingMapTransform
                         
             
-                    });
-                    $(".panzoom-elements").panzoom("pan", startingPanX, startingPanY, { relative: true });
+                //     });
+                //     $(".panzoom-elements").panzoom("pan", startingPanX, startingPanY, { relative: true });
                     
-                    panzoom.on('panzoomchange', function(e, panzoom, matrix, changed) {
-                      didPanZoom = true;
-                    });
+                //     panzoom.on('panzoomchange', function(e, panzoom, matrix, changed) {
+                //       didPanZoom = true;
+                //     });
                     
-                    panzoom.on('panzoomend', function(e, panzoom, matrix, changed) {
-                      didPanZoom = false;
-                    });
-                });
+                //     panzoom.on('panzoomend', function(e, panzoom, matrix, changed) {
+                //       didPanZoom = false;
+                //     });
+                // });
                 
                 
             } else {
