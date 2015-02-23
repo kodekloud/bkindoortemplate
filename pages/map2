@@ -352,7 +352,9 @@
         element = document.getElementById(id)
         var rect = element.getBoundingClientRect();
         console.log(rect.top, rect.right, rect.bottom, rect.left);
-        $(".panzoom-elements")..panzoom("pan", (rect.right), (rect.top), { relative: true });
+        x = (rect.right)
+        y = (rect.top) 
+        $(".panzoom-elements")..panzoom("pan",x ,y, { relative: true });
     }
     
     
