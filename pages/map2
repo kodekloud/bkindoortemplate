@@ -378,7 +378,7 @@
     
     function zoomToSvgRegion(id, x, y){
         var s = Snap("#map");
-        s.select("#"+id).animate({ fill: 'red' }, 200);
+        // s.select("#"+id).animate({ fill: 'red' }, 200);
         $('.panzoom-elements').smoothZoom('addLandmark', 
 			[
 			'<div class="item mark" data-show-at-zoom="0" data-position="'+x+','+y+'">\
