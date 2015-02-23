@@ -197,7 +197,7 @@
                 });
                 
                 for(var i = 0; i < stores.length;i++){
-                    r = stores[i].svgmap_region
+                    r = "'"+stores[i].svgmap_region+"' : {attrs: {href: 'http://google.com'}}"
                     map.regionAdd(r)
                 }
                 
