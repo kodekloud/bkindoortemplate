@@ -296,11 +296,7 @@
         }
         
         
-    function zoomToSvgRegion(id){
-        var s = Snap("#map");
-        s.select("#"+id).animate({ fill: 'red' }, 200);
-    }
-    
+   
     function goToStore(store_details){
         if(typeof(store_details) != 'undefined' && store_details != null){
             window.location.href = "/stores/"+store_details.slug;
@@ -350,6 +346,10 @@
     
     
     
-   
+    function zoomToSvgRegion(id){
+        var s = Snap("#map");
+        s.select("#"+id).animate({ fill: 'red' }, 200);
+    }
+    
     
 </script>
