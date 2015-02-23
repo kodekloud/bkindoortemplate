@@ -352,6 +352,9 @@
         var matrix =  $(".panzoom-elements").panzoom("getMatrix");
         x = x * (1 / matrix[0]);
         y = y * (1 / matrix[3]);
+        console.log(x)
+        console.log(y)
+        console.log(matrix)
         $(".panzoom-elements").panzoom("pan",x ,y, { relative: false });
     }
     
