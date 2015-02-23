@@ -175,7 +175,6 @@
                $('#pop-over').css({'top':e.pageY+20,'left':e.pageX-70});
             });
             var propertyDetails = getPropertyDetails();
-            $("#map").css({"width":"934.55px","height":"640.281px"})
             
             var s = Snap("#map");
             var stores = getStoresList();
@@ -353,8 +352,8 @@
         var s = Snap("#map");
         s.select("#"+id).animate({ fill: 'red' }, 200);
         var matrix =  $(".panzoom-elements").panzoom("getMatrix");
-        x = parseInt(x + ( parseInt(x / (matrix[0]))))
-        y = parseInt(y + (parseInt(y / (matrix[3]))));
+        x = x * (1 / matrix[0]);
+        y = y * (1 / matrix[3]);
         console.log(x)
         console.log(y)
         console.log(matrix)
