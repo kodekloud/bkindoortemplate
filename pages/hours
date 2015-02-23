@@ -26,9 +26,9 @@
                 </script>
             </table>
             <br>
-            <p class="right_column_header">Custom Text</p>
-            put whatever text you want in this block
-            <br>
+            <!--<p class="right_column_header">Custom Text</p>-->
+            <!--uncomment and put whatever text you want in this block-->
+            <!--<br>-->
             <br>
             <p class="right_column_header">holiday hours</p>
             <table id="holiday_hours_container">
