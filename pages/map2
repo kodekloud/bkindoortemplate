@@ -175,7 +175,7 @@
                $('#pop-over').css({'top':e.pageY+20,'left':e.pageX-70});
             });
             var propertyDetails = getPropertyDetails();
-            $("#map").css({"width":"934.55px","height":"640.281px"})
+            $("#map").css({"width":"1475px","height":"924px"})
             
             var s = Snap("#map");
             var stores = getStoresList();
