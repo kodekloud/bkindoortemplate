@@ -198,7 +198,7 @@
                                     val.svgmap_region:{
                                         tooltip:"hello world",
                                     attr:{
-                    						href:'/stores/'+val.slug
+                    						href:'/stores/'
                     					}
                     				},
                     },
