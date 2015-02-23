@@ -231,7 +231,7 @@
                     initial_zoom = 15;
                     zoom_min = 15
                 } else {
-                    initial_zoom = 50;
+                    initial_zoom = 60;
                     zoom_min = 40;
                 }
                 jQuery(function($){
