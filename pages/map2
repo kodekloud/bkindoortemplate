@@ -94,11 +94,15 @@
     <select id="storelist_container" class="pull-left storelist_dd">
             <option disabled selected>Select a Store</option>
     </select>
-    <div id="zControls" class="pull-right">
-        <button class="zoom-in"><span class="glyphicon glyphicon-plus"></span></button>
-        <button class="zoom-out"><span class="glyphicon glyphicon-minus"></span></button>
+    <!--<div id="zControls" class="pull-right">-->
+    <!--    <button class="zoom-in"><span class="glyphicon glyphicon-plus"></span></button>-->
+    <!--    <button class="zoom-out"><span class="glyphicon glyphicon-minus"></span></button>-->
+    <!--</div>-->
+    
+    <div id="svg_zoom_container">
+        <div id="map" class="panzoom-elements" style=""></div>    
     </div>
-    <div id="map" class="panzoom-elements" style=""><img src=""></div>
+    
     
     <div id="zoom_container">
         <img id="png_map" class="png_map" alt="center map" src="" width="2240" height="943"/>
@@ -233,7 +237,7 @@
             	    	zoom_OUT_TO_FIT: "NO",
             	     	button_SIZE: 34,
             	        button_ALIGN: "top right",    
-            	     	container: 'zoom_container',
+            	     	container: 'svg_zoom_container',
             	     	responsive: true,
             	     	responsive_maintain_ratio: false
             		});
