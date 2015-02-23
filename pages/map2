@@ -228,7 +228,7 @@
                 }
                 
                 $( "#page_content" ).fadeIn( "fast", function() {
-                    var panzoom = $(".panzoom-elements").panzoom({
+                    var panzoom = s.panzoom({
                         cursor: "move",
                         increment: 0.5,
                         minScale: 0.5,
