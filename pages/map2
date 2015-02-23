@@ -201,7 +201,7 @@
                     viewBox:[100,100,650,650]
                 });
                 
-                map.setViewBox([100,100,100,100]);
+               
                 // Snap.load(getSVGMapURL(), function (f) {
                 //     $.each( stores, function( key, value ) {
                 //         if(value.svgmap_region != null && typeof(value.svgmap_region)  != 'undefined'){
