@@ -250,6 +250,8 @@
             	     	responsive_maintain_ratio: false
             		});
                 });
+                
+                zoomToSvgRegion("stores_x5F_1_x5F_17", "325.5", "255")
                 // var startingMapTransform = 'scale(0.5)';
                 // var startingPanX = 0;
                 // var startingPanY = 0;
@@ -374,12 +376,6 @@
     });
     
     
-    
-        loadMallData(renderAll);  
-    });
-    
-    
-    
     function zoomToSvgRegion(id, x, y){
         var s = Snap("#map");
         s.select("#"+id).animate({ fill: 'red' }, 200);
@@ -396,6 +392,15 @@
 			]
 		);
     }
+    
+    
+    
+        loadMallData(renderAll);  
+    });
+    
+    
+    
+    
     
     
 </script>
