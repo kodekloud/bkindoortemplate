@@ -349,6 +349,8 @@
     function zoomToSvgRegion(id){
         var s = Snap("#map");
         s.select("#"+id).animate({ fill: 'red' }, 200);
+        shape = document.getElementsByTagName("svg")[0];
+        shape.setAttribute("viewBox", "-250 -250 500 750"); 
     }
     
     
