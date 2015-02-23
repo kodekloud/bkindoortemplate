@@ -349,7 +349,7 @@
     function zoomToSvgRegion(id){
         var s = Snap("#map");
         s.select("#"+id).animate({ fill: 'red' }, 200);
-        console.log( s.select("#"+id))
+        console.log( document.getElementById(id))
     }
     
     
