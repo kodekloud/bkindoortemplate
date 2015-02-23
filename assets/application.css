@@ -420,6 +420,9 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     height:100px;
     font-size:28px;
     text-transform:uppercase;
+    box-shadow: none !important;
+    border-top:2px solid darkgray;
+      border-bottom:2px solid darkgray;
 }
 
 #loading_screen {
