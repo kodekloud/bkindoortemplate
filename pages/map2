@@ -180,9 +180,9 @@
             if (maptype == "svg"){
                 $(".png_map").hide();
                 $("#storelist_container").hide()
-                 $.each( stores, function( key, value ) {
+                //  $.each( stores, function( key, value ) {
                      
-                 }
+                //  }
                 var map = $('#mapsvg').mapSvg({
                     source: getSVGMapURL(),    // Path to SVG map
                     colors: {stroke: '#aaaaaa', selected: -20, hover: "#a6a6a6"},
