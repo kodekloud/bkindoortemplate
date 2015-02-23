@@ -121,22 +121,6 @@
 
 <!--<script src="http:////cdn.jsdelivr.net/jquery.transform/0.1/jquery.transform2d.js"></script>-->
 <script>
-    var map = $('#mapsvg').mapSvg({
-                    source: getSVGMapURL(),    // Path to SVG map
-                    colors: {stroke: '#aaaaaa', selected: -20, hover: "#a6a6a6"},
-                    height:696,
-                    width:682,
-                    tooltipsMode:'custom',
-                    zoom:true,
-                    zoomButtons: {'show': true, 'location': 'left'},
-                    pan:true,
-                    cursor:'pointer',
-                    responsive:true,
-                    zoomLimit: [0,10],
-                    viewBox:[100,100,650,650]
-                });
-
-
     $(document).ready(function() {
         function renderAll (){
             var stores = getStoresList();
@@ -196,27 +180,26 @@
             if (maptype == "svg"){
                 $(".png_map").hide();
                 $("#storelist_container").hide()
-                // regions = []
-                // for(var i = 0; i < stores.length;i++){
-                //     r = stores[i].svgmap_region+" : { tooltip: 'hello world'},"
-                //     regions.push(r)
-                //     console.log (regions)
-                // }
-                // var map = $('#mapsvg').mapSvg({
-                //     source: getSVGMapURL(),    // Path to SVG map
-                //     colors: {stroke: '#aaaaaa', selected: -20, hover: "#a6a6a6"},
-                //     regions: regions,
-                //     height:696,
-                //     width:682,
-                //     tooltipsMode:'custom',
-                //     zoom:true,
-                //     zoomButtons: {'show': true, 'location': 'left'},
-                //     pan:true,
-                //     cursor:'pointer',
-                //     responsive:true,
-                //     zoomLimit: [0,10],
-                //     viewBox:[100,100,650,650]
-                // });
+                
+                var map = $('#mapsvg').mapSvg({
+                    source: getSVGMapURL(),    // Path to SVG map
+                    colors: {stroke: '#aaaaaa', selected: -20, hover: "#a6a6a6"},
+                    height:696,
+                    width:682,
+                    tooltipsMode:'custom',
+                    zoom:true,
+                    zoomButtons: {'show': true, 'location': 'left'},
+                    pan:true,
+                    cursor:'pointer',
+                    responsive:true,
+                    zoomLimit: [0,10],
+                    viewBox:[100,100,650,650]
+                });
+                
+                for(var i = 0; i < stores.length;i++){
+                    r = stores[i].svgmap_region
+                    map.regionAdd(r)
+                }
                 
                
                 // Snap.load(getSVGMapURL(), function (f) {
