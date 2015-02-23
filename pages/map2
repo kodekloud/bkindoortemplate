@@ -182,7 +182,7 @@
             var stores = getStoresList();
             if (maptype == "svg"){
                 $(".png_map").hide();
-                $("#storelist_container").hide()
+                // $("#storelist_container").hide()
                 Snap.load(getSVGMapURL(), function (f) {
                     $.each( stores, function( key, value ) {
                         if(value.svgmap_region != null && typeof(value.svgmap_region)  != 'undefined'){
