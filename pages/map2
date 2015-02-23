@@ -182,7 +182,7 @@
                 $("#storelist_container").hide()
                 regions = []
                 for(var i = 0; i < stores.length;i++){
-                    r = stores[i].svgmap_region+" : { tooltip: 'hello world'}"
+                    r = stores[i].svgmap_region+" : { tooltip: 'hello world'},"
                     regions.push(r)
                 }
                 var map = $('#mapsvg').mapSvg({
