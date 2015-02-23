@@ -353,7 +353,7 @@
         var s = Snap("#map");
         s.select("#"+id).animate({ fill: 'red' }, 200);
         var matrix =  $(".panzoom-elements").panzoom("getMatrix");
-        x = x + ( x / (matrix[0]);)
+        x = x + ( x / (matrix[0]))
         y = y + (y / (matrix[3]));
         console.log(x)
         console.log(y)
