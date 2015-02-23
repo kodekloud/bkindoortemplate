@@ -250,7 +250,7 @@
                     });
                 });
                 
-                
+                zoomToSvgRegion("stores_x5F_5_x5F_6_1_")
             } else {
                 // $("#zControls").hide();
                 var propertyDetails = getPropertyDetails();
