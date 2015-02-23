@@ -318,13 +318,13 @@
         x_coord = parseInt(coords[0])
         y_coord = parseInt(coords[1])
         name = $("#storelist_container option:selected").text();
-        
+        $('#yourImageID').smoothZoom('Reset').then(function(){ $('#png_map').smoothZoom('focusTo', {x:x_coord, y:y_coord, zoom:300}); });
         $('#png_map').smoothZoom('removeLandmark')
-        if (isMobile) {
-            $('#png_map').smoothZoom('focusTo', {x:x_coord, y:y_coord, zoom:100});    
-        } else {
-            $('#png_map').smoothZoom('focusTo', {x:x_coord, y:y_coord, zoom:300});
-        }
+        // if (isMobile) {
+        //     $('#png_map').smoothZoom('focusTo', {x:x_coord, y:y_coord, zoom:200});    
+        // } else {
+        //     $('#png_map').smoothZoom('focusTo', {x:x_coord, y:y_coord, zoom:300});
+        // }
         
         $('#png_map').smoothZoom('addLandmark', 
 			[
