@@ -294,7 +294,9 @@
         }
         
         
-    
+    function zoomToSvgRegion(id){
+        var s = Snap("#map");
+    }
     
     function goToStore(store_details){
         if(typeof(store_details) != 'undefined' && store_details != null){
