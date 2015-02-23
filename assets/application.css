@@ -340,8 +340,10 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     
       background: #dc0ebf5;
       margin-top:40px;
-      box-shadow:0px 0px 10px 0px gray inset;
-      padding:40px 62px;
+      box-shadow:none !important;
+      padding:20px 62px;
+      border-top:2px solid darkgray;
+      border-bottom:2px solid darkgray;
 }
 
 .bentall_banner{
