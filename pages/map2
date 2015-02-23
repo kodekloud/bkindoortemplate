@@ -353,7 +353,7 @@
         s.select("#"+id).animate({ fill: 'red' }, 200);
         var matrix =  $(".panzoom-elements").panzoom("getMatrix");
         x = x * (1 / matrix[0]);
-        y = y * (1 / matrix[3]);
+        y = y * (1 / matrix[4]);
         console.log(x)
         console.log(y)
         console.log(matrix)
