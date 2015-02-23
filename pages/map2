@@ -349,9 +349,6 @@
     function zoomToSvgRegion(id, x, y){
         var s = Snap("#map");
         s.select("#"+id).animate({ fill: 'red' }, 200);
-        // $(".panzoom-elements").panzoom("reset", {
-        //   animate: true
-        // });
         $(".panzoom-elements").panzoom("pan",x ,y, { relative: false });
     }
     
