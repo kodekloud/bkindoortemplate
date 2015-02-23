@@ -175,7 +175,7 @@
                 //console.log(e.pageX+","+e.pageY);
                $('#pop-over').css({'top':e.pageY+20,'left':e.pageX-70});
             });
-            var s = Snap("#map");
+            // var s = Snap("#map");
             var stores = getStoresList();
             if (maptype == "svg"){
                 $(".png_map").hide();
@@ -198,7 +198,7 @@
                     viewBox:[100,100,650,650]
                 });
                 
-                
+                map.setViewBox([100,100,650,650]);
                 // Snap.load(getSVGMapURL(), function (f) {
                 //     $.each( stores, function( key, value ) {
                 //         if(value.svgmap_region != null && typeof(value.svgmap_region)  != 'undefined'){
