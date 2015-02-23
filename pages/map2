@@ -184,6 +184,7 @@
                 for(var i = 0; i < stores.length;i++){
                     r = stores[i].svgmap_region+" : { tooltip: 'hello world'},"
                     regions.push(r)
+                    console.log (regions)
                 }
                 var map = $('#mapsvg').mapSvg({
                     source: getSVGMapURL(),    // Path to SVG map
