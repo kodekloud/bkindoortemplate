@@ -352,7 +352,7 @@
         // $(".panzoom-elements").panzoom("reset", {
         //   animate: true
         // });
-        $(".panzoom-elements").panzoom("pan",x ,y, { relative: true });
+        $(".panzoom-elements").panzoom("pan",x ,y, { relative: false });
     }
     
     
