@@ -383,10 +383,18 @@
     function zoomToSvgRegion(id, x, y){
         var s = Snap("#map");
         s.select("#"+id).animate({ fill: 'red' }, 200);
-        // $(".panzoom-elements").panzoom("reset", {
-        //   animate: true
-        // });
-        $(".panzoom-elements").panzoom("pan",x ,y, { relative: false });
+        $('.panzoom-elements').smoothZoom('addLandmark', 
+			[
+			'<div class="item mark" data-show-at-zoom="0" data-position="'+x+','+y+'">\
+				<div>\
+					<div class="text">\
+					<strong>TEST</strong>\
+				</div>\
+				<img src="http://kodekloud.s3.amazonaws.com/sites/54cfab316e6f6433ad020000/530d3a9b7bc13ce4a511089c23463f99/10dundas_pin.png" width="40px" height="59px" alt="marker" />\
+				</div>\
+			</div>'
+			]
+		);
     }
     
     
