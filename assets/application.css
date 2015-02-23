@@ -1998,6 +1998,15 @@ table th[class*="col-"] {
 }
 @media (max-width: 767px) {
     
+    .hours_left {
+        width:70%;
+        padding:10px;
+    }
+    .hours_right {
+        text-align:right;
+        padding:10px;
+    }
+    
     .detail_logo{
         margin-left:auto;
         margin-right:auto;
