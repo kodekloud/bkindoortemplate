@@ -348,8 +348,8 @@
      $("#svg_storelist_container").on('change', function() {
         coords = this.value.split(","); 
         id =  (coords[2])
-        x = parseInt(coords[0]) - 100
-        y = parseInt(coords[1]) - 300
+        x = parseInt(coords[0]) - 11
+        y = parseInt(coords[1]) - 44
         var s = Snap("#map");
         s.select("#"+id).animate({ fill: 'red' }, 200);
         var matrix =  $("#map").panzoom("getMatrix");
