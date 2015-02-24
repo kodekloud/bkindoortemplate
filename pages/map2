@@ -352,9 +352,9 @@
         y = parseInt(coords[1]) - 300
         var s = Snap("#map");
         s.select("#"+id).animate({ fill: 'red' }, 200);
-        var matrix =  $(".panzoom-elements").panzoom("getMatrix");
+        var matrix =  $(".panzoom-elements svg").panzoom("getMatrix");
         
-        $(".panzoom-elements").panzoom("pan",x ,y, { relative: false });
+        $(".panzoom-elements svg").panzoom("pan",x ,y, { relative: false });
          
      });
     
