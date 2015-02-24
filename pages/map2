@@ -18,12 +18,12 @@
 		font-size:12px;
 		color: #ffffff;
 	}	
-	#zoom_container .landmarks .item{
+	#zoom_container .landmarks .item {
 		position:absolute;		
 		text-align:center;		
 		/*display: none;	*/
 	}	
-	#zoom_container .landmarks .lable div{
+	#zoom_container .landmarks .lable div {
 		width: 100px;
 		padding: 4px;		
 	}	
@@ -98,10 +98,7 @@
         <button class="zoom-in"><span class="glyphicon glyphicon-plus"></span></button>
         <button class="zoom-out"><span class="glyphicon glyphicon-minus"></span></button>
     </div>
-    <div id ="svg_zoom_container">
-        <div id="svg_map" class="panzoom-elements" style=""><img src=""></div>    
-    </div>
-    
+    <div id="map" class="panzoom-elements" style=""><img src=""></div>
     
     <div id="zoom_container">
         <img id="png_map" class="png_map" alt="center map" src="" width="2240" height="943"/>
@@ -178,13 +175,11 @@
                $('#pop-over').css({'top':e.pageY+20,'left':e.pageX-70});
             });
             var propertyDetails = getPropertyDetails();
-            $("#svg_map").css({"height":propertyDetails.map_image_height, "width":propertyDetails.map_image_width})
-            var s = Snap("#svg_map");
+            
+            var s = Snap("#map");
             var stores = getStoresList();
             if (maptype == "svg"){
                 $(".png_map").hide();
-                $(".panzoom-elements").hide();
-                $("#zControls").hide();
                 $("#storelist_container").hide()
                 Snap.load(getSVGMapURL(), function (f) {
                     $.each( stores, function( key, value ) {
@@ -222,65 +217,42 @@
                     s.append(f.select("svg"));
                 });
                 
-                if(isMobile) {
-                    initial_zoom = 15;
-                    zoom_min = 15
-                } else {
-                    initial_zoom = 40;
-                    zoom_min = 40;
-                }
-                jQuery(function($){
-            		$('#svg_map').smoothZoom({
-            		    zoom_MAX: "300",
-            		    initial_ZOOM: initial_zoom,
-            		    zoom_MIN: zoom_min,
-            		    animation_SMOOTHNESS: 10,
-    	     	        initial_POSITION: "0 0",
-            	    	pan_BUTTONS_SHOW: "NO",
-            	    	zoom_OUT_TO_FIT: "NO",
-            	     	button_SIZE: 34,
-            	        button_ALIGN: "top right",    
-            	     	container: 'svg_zoom_container',
-            	     	responsive: true,
-            	     	responsive_maintain_ratio: false
-            		});
-                });
-                zoomToSvgRegion("stores_x5F_1_x5F_17", 325.5, 255)
-                // var startingMapTransform = 'scale(1)';
-                // var startingPanX = 0;
-                // var startingPanY = 0;
-                // if(isMobile) {
-                //         startingMapTransform = 'scale(.5)';
-                //         startingPanX = 0;
-                //         startingPanY = 0;
-                // }
                 
-                // $( "#page_content" ).fadeIn( "fast", function() {
-                //     var panzoom = $("#map").panzoom({
-                //         cursor: "move",
-                //         increment: 0.5,
-                //         minScale: 0.5,
-                //         maxScale: 2,
-                //         transition: true,
-                //         duration: 150,
-                //         easing: "ease-in-out",
-                //         $zoomIn: $('.zoom-in'),
-                //         $zoomOut: $('.zoom-out'),
-                //         $zoomRange: $('.zoom-range'),
-                //         startTransform: startingMapTransform
+                var startingMapTransform = 'scale(1)';
+                var startingPanX = 0;
+                var startingPanY = 0;
+                if(isMobile) {
+                        startingMapTransform = 'scale(.5)';
+                        startingPanX = 0;
+                        startingPanY = 0;
+                }
+                
+                $( "#page_content" ).fadeIn( "fast", function() {
+                    var panzoom = $("#map").panzoom({
+                        cursor: "move",
+                        increment: 0.5,
+                        minScale: 0.5,
+                        maxScale: 2,
+                        transition: true,
+                        duration: 150,
+                        easing: "ease-in-out",
+                        $zoomIn: $('.zoom-in'),
+                        $zoomOut: $('.zoom-out'),
+                        $zoomRange: $('.zoom-range'),
+                        startTransform: startingMapTransform
                         
             
-                //     });
-                //     $(".panzoom-elements").panzoom("pan", startingPanX, startingPanY, { relative: true });
+                    });
+                    $(".panzoom-elements").panzoom("pan", startingPanX, startingPanY, { relative: true });
                     
-                //     panzoom.on('panzoomchange', function(e, panzoom, matrix, changed) {
-                //       didPanZoom = true;
-                //     });
+                    panzoom.on('panzoomchange', function(e, panzoom, matrix, changed) {
+                      didPanZoom = true;
+                    });
                     
-                //     panzoom.on('panzoomend', function(e, panzoom, matrix, changed) {
-                //       didPanZoom = false;
-                //     });
-                // });
+                    panzoom.on('panzoomend', function(e, panzoom, matrix, changed) {
+                      didPanZoom = false;
+                    });
+                });
                 
                
             } else {
@@ -325,12 +297,7 @@
             }
         }
         
-    function zoomToSvgRegion(id, x_coord, y_coord){
-        // var s = Snap("#svg_map");
-        // s.select("#"+id).animate({ fill: 'red' }, 200);
-        $("#svg_map").smoothZoom('focusTo', {x:x_coord, y:y_coord, zoom:500});    
         
-    }    
    
     function goToStore(store_details){
         if(typeof(store_details) != 'undefined' && store_details != null){
@@ -381,7 +348,12 @@
     
     
     
-    
+    function zoomToSvgRegion(id, x, y){
+        var s = Snap("#map");
+        s.select("#"+id).animate({ fill: 'red' }, 200);
+        var matrix =  $(".panzoom-elements").panzoom("getMatrix");
+        $(".panzoom-elements").panzoom("pan",x ,y, { relative: false });
+    }
     
     
 </script>
