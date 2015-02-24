@@ -6,10 +6,10 @@
 .smooth_zoom_icons {
 	background-image: url(http://kodekloud.s3.amazonaws.com/sites/54d4e9206e6f64691f000000/d9e054e28dd1bad70a952dd85777e93f/icons.png);
 }
-#zoom_container{
+#zoom_container, #svg_zoom_container{
     overflow:visible !important;
 }
-#zoom_container .landmarks{
+#zoom_container .landmarks, #svg_zoom_container .landmarks{
 		position:absolute;
 		z-index:10;	
 		top:0px;
@@ -18,16 +18,16 @@
 		font-size:12px;
 		color: #ffffff;
 	}	
-	#zoom_container .landmarks .item {
+	#zoom_container .landmarks .item, #svg_zoom_container .landmarks .item {
 		position:absolute;		
 		text-align:center;		
 		/*display: none;	*/
 	}	
-	#zoom_container .landmarks .lable div {
+	#zoom_container .landmarks .lable div , #svg_zoom_container .landmarks .lable div{
 		width: 100px;
 		padding: 4px;		
 	}	
-	#zoom_container .landmarks .mark .text{
+	#zoom_container .landmarks .mark .text, #svg_zoom_container .landmarks .mark .text{
 		background-color:#6e6e6e;
 		padding:10px;
 		width:150px;
@@ -98,7 +98,10 @@
         <button class="zoom-in"><span class="glyphicon glyphicon-plus"></span></button>
         <button class="zoom-out"><span class="glyphicon glyphicon-minus"></span></button>
     </div>
-    <div id="map" class="panzoom-elements" style=""><img src=""></div>
+    <div id ="svg_zoom_container">
+        <div id="svg_map" class="panzoom-elements" style=""><img src=""></div>    
+    </div>
+    
     
     <div id="zoom_container">
         <img id="png_map" class="png_map" alt="center map" src="" width="2240" height="943"/>
@@ -176,7 +179,7 @@
             });
             var propertyDetails = getPropertyDetails();
             
-            var s = Snap("#map");
+            var s = Snap("#svg_map");
             var stores = getStoresList();
             if (maptype == "svg"){
                 $(".png_map").hide();
@@ -217,41 +220,64 @@
                     s.append(f.select("svg"));
                 });
                 
-                
-                var startingMapTransform = 'scale(1)';
-                var startingPanX = 0;
-                var startingPanY = 0;
                 if(isMobile) {
-                        startingMapTransform = 'scale(.5)';
-                        startingPanX = 0;
-                        startingPanY = 0;
+                    initial_zoom = 15;
+                    zoom_min = 15
+                } else {
+                    initial_zoom = 40;
+                    zoom_min = 40;
                 }
+                jQuery(function($){
+            		$('#svg_map').smoothZoom({
+            		    zoom_MAX: "300",
+            		    initial_ZOOM: initial_zoom,
+            		    zoom_MIN: zoom_min,
+            		    animation_SMOOTHNESS: 10,
+    	     	        initial_POSITION: "0 0",
+            	    	pan_BUTTONS_SHOW: "NO",
+            	    	zoom_OUT_TO_FIT: "NO",
+            	     	button_SIZE: 34,
+            	        button_ALIGN: "top right",    
+            	     	container: 'zoom_container',
+            	     	responsive: true,
+            	     	responsive_maintain_ratio: false
+            		});
+                });
                 
-                $( "#page_content" ).fadeIn( "fast", function() {
-                    var panzoom = $("#map").panzoom({
-                        cursor: "move",
-                        increment: 0.5,
-                        minScale: 0.5,
-                        maxScale: 2,
-                        transition: true,
-                        duration: 150,
-                        easing: "ease-in-out",
-                        $zoomIn: $('.zoom-in'),
-                        $zoomOut: $('.zoom-out'),
-                        $zoomRange: $('.zoom-range'),
-                        startTransform: startingMapTransform
+                // var startingMapTransform = 'scale(1)';
+                // var startingPanX = 0;
+                // var startingPanY = 0;
+                // if(isMobile) {
+                //         startingMapTransform = 'scale(.5)';
+                //         startingPanX = 0;
+                //         startingPanY = 0;
+                // }
+                
+                // $( "#page_content" ).fadeIn( "fast", function() {
+                //     var panzoom = $("#map").panzoom({
+                //         cursor: "move",
+                //         increment: 0.5,
+                //         minScale: 0.5,
+                //         maxScale: 2,
+                //         transition: true,
+                //         duration: 150,
+                //         easing: "ease-in-out",
+                //         $zoomIn: $('.zoom-in'),
+                //         $zoomOut: $('.zoom-out'),
+                //         $zoomRange: $('.zoom-range'),
+                //         startTransform: startingMapTransform
                         
             
-                    });
-                    $(".panzoom-elements").panzoom("pan", startingPanX, startingPanY, { relative: true });
+                //     });
+                //     $(".panzoom-elements").panzoom("pan", startingPanX, startingPanY, { relative: true });
                     
-                    panzoom.on('panzoomchange', function(e, panzoom, matrix, changed) {
-                      didPanZoom = true;
-                    });
+                //     panzoom.on('panzoomchange', function(e, panzoom, matrix, changed) {
+                //       didPanZoom = true;
+                //     });
                     
-                    panzoom.on('panzoomend', function(e, panzoom, matrix, changed) {
-                      didPanZoom = false;
-                    });
+                //     panzoom.on('panzoomend', function(e, panzoom, matrix, changed) {
+                //       didPanZoom = false;
+                //     });
                 });
                 
                
