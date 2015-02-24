@@ -325,7 +325,12 @@
             }
         }
         
+    function zoomToSvgRegion(id, x, y){
+        var s = Snap("#svg_map");
+        s.select("#"+id).animate({ fill: 'red' }, 200);
+        $("#svg_map").smoothZoom('focusTo', {x:x_coord, y:y_coord, zoom:200});    
         
+    }    
    
     function goToStore(store_details){
         if(typeof(store_details) != 'undefined' && store_details != null){
@@ -376,12 +381,7 @@
     
     
     
-    function zoomToSvgRegion(id, x, y){
-        var s = Snap("#map");
-        s.select("#"+id).animate({ fill: 'red' }, 200);
-        var matrix =  $(".panzoom-elements").panzoom("getMatrix");
-        $(".panzoom-elements").panzoom("pan",x ,y, { relative: false });
-    }
+    
     
     
 </script>
