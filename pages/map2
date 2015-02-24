@@ -356,23 +356,11 @@
         
         $(".panzoom-elements").panzoom("pan",x ,y, { relative: false });
          
-     }
-    
+     });
     
         loadMallData(renderAll);  
     });
     
-    
-    
-    function zoomToSvgRegion(id, x, y){
-        
-        
-        var s = Snap("#map");
-        s.select("#"+id).animate({ fill: 'red' }, 200);
-        var matrix =  $(".panzoom-elements").panzoom("getMatrix");
-        
-        $(".panzoom-elements").panzoom("pan",x ,y, { relative: false });
-    }
     
     
 </script>
