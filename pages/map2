@@ -349,7 +349,7 @@
         coords = this.value.split(","); 
         id =  (coords[2])
         x = parseInt(coords[0])
-        y = parseInt(coords[1])
+        y = parseInt(coords[1]) - 100
         var s = Snap("#map");
         s.select("#"+id).animate({ fill: 'red' }, 200);
         var matrix =  $(".panzoom-elements").panzoom("getMatrix");
