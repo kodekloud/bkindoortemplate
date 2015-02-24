@@ -346,7 +346,7 @@
     });
     
      $("#svg_storelist_container").on('change', function() {
-         
+        coords = this.value.split(","); 
         id =  (coords[2])
         x = parseInt(coords[0])
         y = parseInt(coords[1])
