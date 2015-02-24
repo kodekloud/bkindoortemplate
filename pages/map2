@@ -178,7 +178,7 @@
                $('#pop-over').css({'top':e.pageY+20,'left':e.pageX-70});
             });
             var propertyDetails = getPropertyDetails();
-            $("#svg_map").css({"height":propertyDetails.1703, "width":map_image_width})
+            $("#svg_map").css({"height":propertyDetails.1703, "width":propertyDetails.map_image_width})
             var s = Snap("#svg_map");
             var stores = getStoresList();
             if (maptype == "svg"){
