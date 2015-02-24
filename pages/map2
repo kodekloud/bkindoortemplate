@@ -325,10 +325,10 @@
             }
         }
         
-    function zoomToSvgRegion(id, x, y){
+    function zoomToSvgRegion(id, x_coord, y_coord){
         // var s = Snap("#svg_map");
         // s.select("#"+id).animate({ fill: 'red' }, 200);
-        $("#svg_map").smoothZoom('focusTo', {x:x, y:y, zoom:500});    
+        $("#svg_map").smoothZoom('focusTo', {x:x_coord, y:y_coord, zoom:500});    
         
     }    
    
