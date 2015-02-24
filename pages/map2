@@ -140,7 +140,7 @@
                 // stores[i].x_coordinate = stores[i].x_coordinate - 10;
                 // stores[i].y_coordinate = stores[i].y_coordinate - 35;
                 $("#storelist_container").append('<option value="'+stores[i].x_coordinate+','+stores[i].y_coordinate+','+stores[i].id+'">'+stores[i].name+'</option>') 
-                $("#svg_storelist_container").append('<option value="'+stores[i].x_coordinate+','+stores[i].y_coordinate+','+stores[i].id+'">'+stores[i].name+'</option>') 
+                $("#svg_storelist_container").append('<option value="'+stores[i].x_coordinate+','+stores[i].y_coordinate+','+stores[i].svgmap_region+'">'+stores[i].name+'</option>') 
 
             }
             
@@ -345,6 +345,18 @@
         
     });
     
+     $("#svg_storelist_container").on('change', function() {
+         
+        id =  (coords[2])
+        x = parseInt(coords[0])
+        y = parseInt(coords[1])
+        var s = Snap("#map");
+        s.select("#"+id).animate({ fill: 'red' }, 200);
+        var matrix =  $(".panzoom-elements").panzoom("getMatrix");
+        
+        $(".panzoom-elements").panzoom("pan",x ,y, { relative: false });
+         
+     }
     
     
         loadMallData(renderAll);  
@@ -353,6 +365,8 @@
     
     
     function zoomToSvgRegion(id, x, y){
+        
+        
         var s = Snap("#map");
         s.select("#"+id).animate({ fill: 'red' }, 200);
         var matrix =  $(".panzoom-elements").panzoom("getMatrix");
