@@ -240,7 +240,7 @@
             	    	zoom_OUT_TO_FIT: "NO",
             	     	button_SIZE: 34,
             	        button_ALIGN: "top right",    
-            	     	container: 'zoom_container',
+            	     	container: 'svg_zoom_container',
             	     	responsive: true,
             	     	responsive_maintain_ratio: false
             		});
