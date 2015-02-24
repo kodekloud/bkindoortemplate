@@ -232,7 +232,7 @@
                 }
                 
                 $( "#page_content" ).fadeIn( "fast", function() {
-                    var panzoom = $("#map").panzoom({
+                    var panzoom = $("#map svg").panzoom({
                         cursor: "move",
                         increment: 0.5,
                         minScale: 0.5,
@@ -247,7 +247,7 @@
                         
             
                     });
-                    $(".panzoom-elements").panzoom("pan", startingPanX, startingPanY, { relative: true });
+                    $("#map svg").panzoom("pan", startingPanX, startingPanY, { relative: true });
                     
                     panzoom.on('panzoomchange', function(e, panzoom, matrix, changed) {
                       didPanZoom = true;
@@ -352,9 +352,9 @@
         y = parseInt(coords[1]) - 300
         var s = Snap("#map");
         s.select("#"+id).animate({ fill: 'red' }, 200);
-        var matrix =  $(".panzoom-elements svg").panzoom("getMatrix");
+        var matrix =  $("#map svg").panzoom("getMatrix");
         
-        $(".panzoom-elements svg").panzoom("pan",x ,y, { relative: false });
+        $("#map svg").panzoom("pan",x ,y, { relative: false });
          
      });
     
