@@ -257,7 +257,7 @@
                       didPanZoom = false;
                     });
                 });
-                
+                renderStoreList(stores);
                
             } else {
                 // $("#zControls").hide();
