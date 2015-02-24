@@ -94,6 +94,9 @@
     <select id="storelist_container" class="pull-left storelist_dd">
             <option disabled selected>Select a Store</option>
     </select>
+    <select id="svg_storelist_container" class="pull-left storelist_dd">
+            <option disabled selected>Select a Store</option>
+    </select>
     <div id="zControls" class="pull-right">
         <button class="zoom-in"><span class="glyphicon glyphicon-plus"></span></button>
         <button class="zoom-out"><span class="glyphicon glyphicon-minus"></span></button>
@@ -352,6 +355,7 @@
         var s = Snap("#map");
         s.select("#"+id).animate({ fill: 'red' }, 200);
         var matrix =  $(".panzoom-elements").panzoom("getMatrix");
+        
         $(".panzoom-elements").panzoom("pan",x ,y, { relative: false });
     }
     
