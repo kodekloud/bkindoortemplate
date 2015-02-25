@@ -77,7 +77,6 @@
                 collection = []
                 collection = item_list;
             }
-            console.log(collection.sort(SortByID))
             $.each( collection , function( key, val ) {
                 if (type == "promos"){
                     if ((val.promo_image_url_abs).indexOf('missing.png') > -1){
@@ -123,12 +122,6 @@
         };
         
         
-        function SortByID(a, b){
-          var aID = a.id;
-          var bID = b.id; 
-          return ((aID < aID) ? -1 : ((aID > aID) ? 1 : 0));
-        }
-                
         function get_month (id){
             switch(id) {
                 case 0:
