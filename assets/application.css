@@ -2216,9 +2216,9 @@ table th[class*="col-"] {
     }
     
     
-    #zControls{
-        display:none;
-    }
+    /*#zControls{*/
+    /*    display:none;*/
+    /*}*/
     #storelist_container{
         width:100%;
     }
