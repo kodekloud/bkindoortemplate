@@ -580,6 +580,8 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 
 .list-group li {
     list-style:none;
+    margin-top:2px;
+    width:98%;
 }
 
 #desc{
