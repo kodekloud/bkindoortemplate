@@ -434,6 +434,9 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     height:50px;
 }
 
+.results_div{
+    display:none;
+}
 
 /********************inside page CSS*****************************/
 .inside_page_content{
