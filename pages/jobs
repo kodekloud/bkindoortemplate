@@ -66,8 +66,7 @@
              $.each( all_jobs , function( key, val ){
                  console.log (val.show_on_web_date)
                  today = new Date();
-                 webDate = new Date(val.show_on_web_date)
-                 webDate.setDate(webDate.getDate()+1);
+                 webDate = new Date(val.show_on_web_date);
                  if (today >= webDate) {
                      jobs_array.push(val)
                  } 
