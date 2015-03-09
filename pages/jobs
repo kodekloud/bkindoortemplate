@@ -64,7 +64,6 @@
             
             jobs_array = []
              $.each( all_jobs , function( key, val ){
-                 console.log (val.show_on_web_date)
                  today = new Date();
                  webDate = new Date(val.show_on_web_date);
                  if (today >= webDate) {
