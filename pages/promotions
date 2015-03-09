@@ -56,10 +56,8 @@
             all_promos = all_promos.reverse();
             promo_array = []
              $.each( all_promos , function( key, val ){
-                 console.log (val.show_on_web_date)
                  today = new Date();
                  webDate = new Date(val.show_on_web_date)
-                //  webDate.setDate(webDate.getDate()+1);
                  if (today >= webDate) {
                      promo_array.push(val)
                  } 
