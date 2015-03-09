@@ -57,6 +57,10 @@
             promo_array = []
              $.each( all_promos , function( key, val ){
                  console.log (val.show_on_web_date)
+                 today = new Date();
+                 webDate = new Date(val.show_on_web_date)
+                 console.log (today)
+                 console.log (webDate)
              });
             if (all_promos.length > 0 ) {
                 renderPageData("#promo_list_container","#promo_list_template", all_promos, "promos");    
