@@ -57,8 +57,7 @@
             events_array = []
              $.each( all_events , function( key, val ){
                  today = new Date();
-                 webDate = new Date(val.show_on_web_date)
-                //  webDate.setDate(webDate.getDate()+1);
+                 webDate = new Date(val.show_on_web_date);
                  if (today >= webDate) {
                      events_array.push(val)
                  } 
