@@ -58,7 +58,7 @@
              $.each( all_promos , function( key, val ){
                  console.log (val.show_on_web_date)
                  today = new Date();
-                 webDate = new Date(val.show_on_web_date)
+                 webDate = new Date(val.show_on_web_date) + 1
                  console.log (today)
                  console.log (webDate)
              });
