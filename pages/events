@@ -56,7 +56,6 @@
             all_events = all_events.reverse();
             events_array = []
              $.each( all_events , function( key, val ){
-                 console.log (val.show_on_web_date)
                  today = new Date();
                  webDate = new Date(val.show_on_web_date)
                 //  webDate.setDate(webDate.getDate()+1);
