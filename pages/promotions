@@ -60,12 +60,11 @@
                  today = new Date();
                  webDate = new Date(val.show_on_web_date)
                  webDate.setDate(webDate.getDate()+1);
-                 console.log (today)
-                 console.log (webDate)
                  if (today >= webDate) {
                      promo_array.push(val)
                  } 
              });
+             all_promos = promo_array
             if (all_promos.length > 0 ) {
                 renderPageData("#promo_list_container","#promo_list_template", all_promos, "promos");    
             } else {
