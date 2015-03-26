@@ -72,7 +72,8 @@
             var repoList = getRepoList();
             var featureList = getFeatureList();
             var propertyDetails = getPropertyDetails();
-            renderBanner('#banner_template','#home_banner',repoList);
+            var banners = getBanners()
+            renderBanner('#banner_template','#home_banner',banners);
             renderFeatureItems('#feature_template', '#feature_items', featureList)
             renderPropertyDescription('#description_template','#description_section', propertyDetails )
             $("#feature_items > :nth-child(3n)").css("margin-right","0");
@@ -92,23 +93,19 @@
             $(description_section).html(item_rendered.join(''));
         }
         
-        function renderBanner(banner_template,home_banner,repo){
+        function renderBanner(banner_template,home_banner,banners){
             var item_list = [];
             var item_rendered = [];
             var banner_template_html = $(banner_template).html();
             Mustache.parse(banner_template_html);   // optional, speeds up future uses
-            $.each( repo , function( key, val ) {
-                if( val.name == "banner"){
-                    $.each( val.images , function( key, val ) {
-                       if(val.url == ""){
-                           val.css = "style=cursor:default;";
-                           val.noLink = "return false";
-                       }
-                        item_list.push(val);
-                       
-                    });
-                }
-            });
+            $.each( banners , function( key, val ) {
+               if(val.url == ""){
+                   val.css = "style=cursor:default;";
+                   val.noLink = "return false";
+               }
+                item_list.push(val);
+            }
+        });
 
             $.each( item_list , function( key, val ) {
                 var repo_rendered = Mustache.render(banner_template_html,val);
