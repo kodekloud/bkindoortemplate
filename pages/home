@@ -100,13 +100,12 @@
             Mustache.parse(banner_template_html);   // optional, speeds up future uses
             $.each( banners , function( key, val ) {
                 console.log(val)
-                if( val.name == "banner"){
+              
                        if(val.url == ""){
                            val.css = "style=cursor:default;";
                            val.noLink = "return false";
                        }
                         item_list.push(val);
-                }
             });
 
             $.each( item_list , function( key, val ) {
