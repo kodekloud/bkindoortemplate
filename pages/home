@@ -103,19 +103,23 @@
                 today = new Date;
                 start = new Date (val.start_date);
                 start.setDate(start.getDate()+1);
-               console.log(today + start)
-               if (start <= today){
-                 if (val.end_date){
-                     end = new Date (val.end_date);
-                     end.setDate(end.getDate()+1);
-                     console.log("has end date")
-                     
-                 }
                if(val.url == ""){
                    val.css = "style=cursor:default;";
                    val.noLink = "return false";
                }
-                item_list.push(val);
+               if (start <= today){
+                 if (val.end_date){
+                     end = new Date (val.end_date);
+                     end.setDate(end.getDate()+1);
+                     if (end >= today){
+                       item_list.push(val);  
+                     }
+                     
+                 } else {
+                     item_list.push(val);
+                 }
+               
+                
                }
             });
 
