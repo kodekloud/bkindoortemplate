@@ -103,7 +103,7 @@
                 today = new Date;
                 start = new Date (val.start_date);
                 start.setDate(start.getDate()+1);
-               console.log(today + start + end)
+               console.log(today + start)
                if (start <= today){
                  if (val.end_date){
                      end = new Date (val.end_date);
