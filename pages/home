@@ -16,7 +16,7 @@
                  
                <li class="item">
                 <a href="{{url}}" {{css}} onclick="{{noLink}}">
-                    <img src="{{photo_url_abs}}"/>
+                    <img src="{{image_url}}"/>
                     </a>
                </li>
               
@@ -99,13 +99,11 @@
             var banner_template_html = $(banner_template).html();
             Mustache.parse(banner_template_html);   // optional, speeds up future uses
             $.each( banners , function( key, val ) {
-                console.log(val)
-              
-                       if(val.url == ""){
-                           val.css = "style=cursor:default;";
-                           val.noLink = "return false";
-                       }
-                        item_list.push(val);
+               if(val.url == ""){
+                   val.css = "style=cursor:default;";
+                   val.noLink = "return false";
+               }
+                item_list.push(val);
             });
 
             $.each( item_list , function( key, val ) {
