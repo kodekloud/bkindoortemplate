@@ -106,11 +106,13 @@
                 start.setDate(start.getDate()+1);
                 end.setDate(end.getDate()+1);
                console.log(today + start + end)
+               if (start >= today){
                if(val.url == ""){
                    val.css = "style=cursor:default;";
                    val.noLink = "return false";
                }
                 item_list.push(val);
+               }
             });
 
             $.each( item_list , function( key, val ) {
