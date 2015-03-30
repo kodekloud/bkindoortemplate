@@ -100,7 +100,7 @@
             var banner_template_html = $(banner_template).html();
             Mustache.parse(banner_template_html);   // optional, speeds up future uses
             $.each( banners , function( key, val ) {
-                console.log(val.name);
+                console.log();
                 today = new Date;
                 start = new Date (val.start_date);
                 start.setDate(start.getDate());
