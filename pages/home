@@ -100,7 +100,6 @@
             var banner_template_html = $(banner_template).html();
             Mustache.parse(banner_template_html);   // optional, speeds up future uses
             $.each( banners , function( key, val ) {
-                console.log(val.description);
                 today = new Date;
                 start = new Date (val.start_date);
                
@@ -111,16 +110,13 @@
                }
                if (start <= today){
                  if (val.end_date){
-                     console.log('1111');
                      end = new Date (val.end_date);
                      end.setDate(end.getDate() + 1);
                      if (end >= today){
-                         console.log('2222222');
                        item_list.push(val);  
                      }
                      
                  } else {
-                     console.log('3333');
                      item_list.push(val);
                  }
                
