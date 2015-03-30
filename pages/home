@@ -103,7 +103,7 @@
                 console.log(val.description);
                 today = new Date;
                 start = new Date (val.start_date);
-                console.log(val.description);
+               
                 start.setDate(start.getDate());
                if(val.url == ""){
                    val.css = "style=cursor:default;";
