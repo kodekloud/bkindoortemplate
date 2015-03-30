@@ -114,8 +114,8 @@
                      console.log('1111');
                      end = new Date (val.end_date);
                      end.setDate(end.getDate());
-                     console.log(today);
-                     console.log(end);
+                     console.log("today" + today);
+                     console.log("end: " + end);
                      if (end >= today){
                          console.log('2222222');
                        item_list.push(val);  
