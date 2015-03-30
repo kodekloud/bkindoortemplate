@@ -109,13 +109,16 @@
                }
                if (start <= today){
                  if (val.end_date){
+                     console.log('1111');
                      end = new Date (val.end_date);
                      end.setDate(end.getDate());
                      if (end >= today){
+                         console.log('2222222');
                        item_list.push(val);  
                      }
                      
                  } else {
+                     console.log('3333');
                      item_list.push(val);
                  }
                
