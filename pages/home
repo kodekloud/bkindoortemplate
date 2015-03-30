@@ -113,7 +113,7 @@
                  if (val.end_date){
                      console.log('1111');
                      end = new Date (val.end_date);
-                     end.setDate(end.getDate());
+                     end.setDate(end.getDate() + 1);
                      console.log("today: " + today);
                      console.log("end: " + end);
                      if (end >= today){
