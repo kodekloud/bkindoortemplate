@@ -48,14 +48,13 @@
             var pages_json = prefix+"/pages/" + slug + ".json"
             $.getJSON(pages_json).done(function(data) {
                 //var pages_data = JSON.parse(data);
-                //console.log(data.body);
+                console.log(data.body);
                 
                 document.title = data.title;
                 $("#active_breadcrumb").html(data.title)
                 $("#page_title").html(data.title)
                 $('#mm_page_content').html(data.body);
             }); 
-            alert("=-")
                 if (data.length == 0) {
                     alert("empty")
                 } else {
