@@ -10,9 +10,9 @@
     $(document).ready(function() {
         var pathArray = window.location.pathname.split( '/' );
         var slug = pathArray[pathArray.length-1];
-
-        console.log(page_prefix)
-        var pages_json = page_prefix+"/pages/" + slug + ".json"
+        prefix = get_prefix();
+        console.log(prefix)
+        var pages_json = prefix+"/pages/" + slug + ".json"
         
         $.getJSON(pages_json).done(function(data) {
             //var pages_data = JSON.parse(data);
