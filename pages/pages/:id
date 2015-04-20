@@ -56,7 +56,7 @@
                 $('#mm_page_content').html(data.body);
             }).fail(function(jqXHR) {
                 if (jqXHR.status == 404) {
-                    alert("404 Not Found");
+                    window.location.href = "/404";
                 }
             }); 
                 // if (data.length == 0) {
