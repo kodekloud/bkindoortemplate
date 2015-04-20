@@ -72,11 +72,6 @@
                     $("#404_msg").fadeIn("fast");
                 }
             }); 
-                // if (data.length == 0) {
-                //     alert("empty")
-                // } else {
-                //     alert("not")
-                // }
         }
         
         function renderPageData(container, template, collection, type){
