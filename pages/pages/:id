@@ -1,8 +1,3 @@
-<style>
-    #404_msg {
-        display:none;
-    }
-</style>
 
 <div id="loading_screen">
     <img alt="loading" src="http://kodekloud.s3.amazonaws.com/sites/5447ebb66e6f641987020000/3604f5c26997bea3de504de139debcec/loading.gif"/>
@@ -21,7 +16,7 @@
             
         </div>
         
-        <div class="left_column" id="404_msg">
+        <div class="left_column" id="404_msg" style="display:none">
             <section class="call_to_action">
                <h3>OH NO! <strong>error 404</strong></h3>
                <h4>we are really sorry but the page you requested cannot be found.</h4>
