@@ -14,7 +14,6 @@
         var page_prefix = main_url[0]+'//'+main_url[2]
         console.log(page_prefix)
         var pages_json = page_prefix+"/pages/" + slug + ".json"
-        alert(pages_json);
         
         $.getJSON(pages_json).done(function(data) {
             //var pages_data = JSON.parse(data);
