@@ -60,7 +60,7 @@
     } else {
         alert("Other non-handled error type");
     }
-});; 
+}); 
                 // if (data.length == 0) {
                 //     alert("empty")
                 // } else {
