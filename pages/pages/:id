@@ -35,8 +35,6 @@
 <script>
     $(document).ready(function() {
         
-        
-        
         function renderAll (){
             var propertyDetails = getPropertyDetails();
             renderPageData('#centre_info_container','#centre_info_template',propertyDetails, 'property_details')
@@ -44,7 +42,6 @@
             $("#loading_screen").hide();
             $( "#main_content" ).fadeIn( "fast");
         }
-        
         
         function renderpageHTML(){
             var pathArray = window.location.pathname.split( '/' );
@@ -60,8 +57,6 @@
                 $('#mm_page_content').html(data.body);
             });    
         }
-        
-        
         
         function renderPageData(container, template, collection, type){
             var item_list = [];
