@@ -55,12 +55,10 @@
                 $("#page_title").html(data.title)
                 $('#mm_page_content').html(data.body);
             }).fail(function(jqXHR) {
-    if (jqXHR.status == 404) {
-        alert("404 Not Found");
-    } else {
-        alert("Other non-handled error type");
-    }
-}); 
+                if (jqXHR.status == 404) {
+                    alert("404 Not Found");
+                }
+            }); 
                 // if (data.length == 0) {
                 //     alert("empty")
                 // } else {
