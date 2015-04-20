@@ -55,11 +55,11 @@
                 $("#page_title").html(data.title)
                 $('#mm_page_content').html(data.body);
             }); 
-                if (data.length == 0) {
-                    alert("empty")
-                } else {
-                    alert("not")
-                }
+                // if (data.length == 0) {
+                //     alert("empty")
+                // } else {
+                //     alert("not")
+                // }
         }
         
         function renderPageData(container, template, collection, type){
