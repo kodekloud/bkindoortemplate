@@ -49,17 +49,18 @@
             $.getJSON(pages_json).done(function(data) {
                 //var pages_data = JSON.parse(data);
                 //console.log(data.body);
-                alert("=-")
+                
+                document.title = data.title;
+                $("#active_breadcrumb").html(data.title)
+                $("#page_title").html(data.title)
+                $('#mm_page_content').html(data.body);
+            }); 
+            alert("=-")
                 if (data.length == 0) {
                     alert("empty")
                 } else {
                     alert("not")
                 }
-                document.title = data.title;
-                $("#active_breadcrumb").html(data.title)
-                $("#page_title").html(data.title)
-                $('#mm_page_content').html(data.body);
-            });    
         }
         
         function renderPageData(container, template, collection, type){
