@@ -143,6 +143,7 @@
   
     
     $('#contest_form').submit(function (e) {
+        e.preventDefault();
         if($('#enterVerify').val() == $('#verifyNumHidden').val() ) {
             if ($("#agree_terms").prop("checked") == true){
                 var e = verify_required_fields();
@@ -160,7 +161,7 @@
                                         e.preventDefault();
                                         alert("Please try again later.");
                                     } else { // 200
-                                         alert(data)
+                                         console.log(data)
                                     }
                             });  
                         } else {
