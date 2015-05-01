@@ -66,7 +66,7 @@
      <div class="contest_form_div">
            <p class="contest_description">{{description}}</p>
 
-         <form>
+         <form id="contest_form">
             <input id="property_id" name="property_id" style="display:none" value="{{property_id}}"/>
             <input id="contest_id" name="contest_id" style="display:none" value="{{id}}" />
             <p class="large_field">
