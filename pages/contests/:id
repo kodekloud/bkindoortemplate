@@ -174,7 +174,8 @@
                                                     e.preventDefault();
                                                     alert("Please try again later.");
                                                 } else { // 200
-                                                     console.log(data)
+                                                      e.preventDefault();
+                                                      
                                                 }
                                         });  
                                     } else {
