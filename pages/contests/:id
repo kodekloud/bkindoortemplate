@@ -184,7 +184,18 @@
                                     }
                                     
                                 } else {
-                                     e.preventDefault();  
+                                     $.ajax({
+                                        url: "http://ptc.lvh.me:3000/newsletter_no_captcha",
+                                        type: "POST",
+                                        data: {"start" : start, "end":end},
+                                        dataType: "html",
+                                        success: function(data) {
+                                          var data = jQuery.parseJSON(data);
+                                          feature_items = data["items"];
+                                          refresh_featureList(feature_items);
+                                          show_alert("success","Success!","Feature Items position updated Successfully")
+                                        }
+                                      });
                                 }    
                             } else {
                                 alert("One or more required fields are blank! please fill in all fields marked with * and try again.")
