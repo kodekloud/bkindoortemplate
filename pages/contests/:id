@@ -53,6 +53,8 @@
            <p class="contest_description">{{description}}</p>
 
          <form>
+            <input id="property_id" name="property_id" style="display:none" value="{{property_id}}"/>
+            <input id="contest_id" name="contest_id" style="display:none" value="{{id}}" />
             <p class="large_field">
                 <label for="first_name">First Name*</label><br/>
                 <input id="first_name" type="text" required placeholder="First Name" />
