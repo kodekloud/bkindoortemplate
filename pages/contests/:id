@@ -181,7 +181,7 @@
                                     
                                 } else {
                                     data = $(this).serialize();
-                                    console.log(dats)
+                                    console.log(data)
                                     // submit_contest(data);
                                 }    
                             } else {
