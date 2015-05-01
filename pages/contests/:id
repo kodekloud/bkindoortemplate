@@ -156,55 +156,54 @@
                 $("#main_content").fadeIn( "fast");
                 randomgen();
                 $('#form_submit').click(function() {
-            alert("clicked")
-          
-        // if($('#enterVerify').val() == $('#verifyNumHidden').val() ) {
-        //     if ($("#agree_terms").prop("checked") == true){
-        //         var e = verify_required_fields();
-        //         if (e == true){
-        //             if ($("#newsletter_signup").prop("checked") == true){
-        //                 var s = check_email();
-        //                 if (s == true){
-        //                     var email = $("#email").val();
-        //                     $('input[name="cm-tkyhii-tkyhii"]').attr('value',email);
-        //                      $.getJSON(
-        //                         "http://mobilefringe.createsend.com/t/d/s/tkyhii/?callback=?",
-        //                       $("#subForm").serialize(),
-        //                         function (data) {
-        //                             if (data.Status === 400) {
-        //                                 e.preventDefault();
-        //                                 alert("Please try again later.");
-        //                             } else { // 200
-        //                                  console.log(data)
-        //                             }
-        //                     });  
-        //                 } else {
-        //                     e.preventDefault();
-        //                     alert("Invaid E-mail address.")
-        //                 }
+                 
+                if($('#enterVerify').val() == $('#verifyNumHidden').val() ) {
+                    if ($("#agree_terms").prop("checked") == true){
+                        var e = verify_required_fields();
+                        if (e == true){
+                            if ($("#newsletter_signup").prop("checked") == true){
+                                var s = check_email();
+                                if (s == true){
+                                    var email = $("#email").val();
+                                    $('input[name="cm-tkyhii-tkyhii"]').attr('value',email);
+                                     $.getJSON(
+                                        "http://mobilefringe.createsend.com/t/d/s/tkyhii/?callback=?",
+                                      $("#subForm").serialize(),
+                                        function (data) {
+                                            if (data.Status === 400) {
+                                                e.preventDefault();
+                                                alert("Please try again later.");
+                                            } else { // 200
+                                                 console.log(data)
+                                            }
+                                    });  
+                                } else {
+                                    e.preventDefault();
+                                    alert("Invaid E-mail address.")
+                                }
+                                
+                            } else {
+                                 e.preventDefault();  
+                            }    
+                        } else {
+                            e.preventDefault();
+                            alert("One or more required fields are blank! please fill in all fields marked with * and try again.")
+                        }
                         
-        //             } else {
-        //                  e.preventDefault();  
-        //             }    
-        //         } else {
-        //             e.preventDefault();
-        //             alert("One or more required fields are blank! please fill in all fields marked with * and try again.")
-        //         }
+                        
+                    } else {
+                        e.preventDefault();
+                        alert("Please agree to the terms and conditions before submitting!")
+                    }
+                }
+                    else
+                    {
+                        alert("Please Enter Correct Verification Number");
+                        randomgen();
+                        e.preventDefault();
+                    }
                 
-                
-        //     } else {
-        //         e.preventDefault();
-        //         alert("Please agree to the terms and conditions before submitting!")
-        //     }
-        // }
-        //     else
-        //     {
-        //         alert("Please Enter Correct Verification Number");
-        //         randomgen();
-        //         e.preventDefault();
-        //     }
-        
-        });
+                });
             } else {
                 $("#loading_screen").hide();
                 $("#404_msg").fadeIn( "fast");
