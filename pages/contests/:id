@@ -261,6 +261,7 @@
         function renderAll (){
             var pathArray = window.location.pathname.split( '/' );
             var slug = pathArray[pathArray.length-1];
+            var contestDetails = getContestBySlug(slug);
             var propertyDetails = getPropertyDetails();
             renderPageData('#centre_info_container','#centre_info_template',propertyDetails, 'property_details')
             $("#loading_screen").hide();
