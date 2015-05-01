@@ -209,8 +209,10 @@
         }
         
         function submit_contest(data) {
+            var propertyDetails = getPropertyDetails();
+            var host = propertyDetails.mm_host
             $.ajax({
-                url: "http://ptc.mallmaverickstaging.com/newsletter_no_captcha",
+                url: host+"/newsletter_no_captcha",
                 type: "POST",
                 data: data,
                 success: function(data) {
