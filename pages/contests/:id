@@ -197,7 +197,7 @@
 
         loadMallData(renderAll);  
         
-        $('#form_submit').click() {
+        $('#form_submit').click(function() {
             alert("clicked")
           
         // if($('#enterVerify').val() == $('#verifyNumHidden').val() ) {
