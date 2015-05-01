@@ -170,7 +170,7 @@
                                                     e.preventDefault();
                                                     alert("Please try again later.");
                                                 } else { // 200
-                                                    data = $(this).serialize();
+                                                    data = $("#contest_form").serialize();
                                                     submit_contest(data);
                                                       
                                                 }
