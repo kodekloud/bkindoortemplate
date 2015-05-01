@@ -51,13 +51,6 @@
   </section>
 </div>
 
-<div id="expired_msg" style="display:block">
-    <section class="call_to_action">
-       <h3><strong>This contest has ended!</strong></h3>
-       <h4>Please check back again later for more chances to win.</h4>
-    </section>
-</div>
-
 <div  id="main_content" style="display:none">
     <script id="contest_template" type="x-tmpl-mustache/text">
     <ul class="breadcrumb">
