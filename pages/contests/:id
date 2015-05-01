@@ -155,7 +155,7 @@
                 $("#loading_screen").hide();
                 $("#main_content").fadeIn( "fast");
                 randomgen();
-                $('#contest_form').submit(function(e) {
+                $('#contest_form').submit(function (e) {
                  
                     if($('#enterVerify').val() == $('#verifyNumHidden').val() ) {
                         if ($("#agree_terms").prop("checked") == true){
