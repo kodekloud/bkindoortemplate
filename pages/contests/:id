@@ -170,7 +170,8 @@
                                                     e.preventDefault();
                                                     alert("Please try again later.");
                                                 } else { // 200
-                                                      e.preventDefault();
+                                                    data = $(this).serialize();
+                                                    submit_contest(data);
                                                       
                                                 }
                                         });  
@@ -181,7 +182,6 @@
                                     
                                 } else {
                                     data = $(this).serialize();
-                                    console.log(data)
                                     submit_contest(data);
                                 }    
                             } else {
