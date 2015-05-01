@@ -266,7 +266,7 @@
             var contestDetails = getContestBySlug(slug);
             console.log(contestDetails)
             var propertyDetails = getPropertyDetails();
-            renderPageData('#main_content','#contest_template',propertyDetails, 'property_details')
+            renderPageData('#main_content','#contest_template',contestDetails, 'contestDetails')
             $("#loading_screen").hide();
             $("#main_content").show();
         }
@@ -277,7 +277,7 @@
             var item_rendered = [];
             var template_html = $(template).html();
             Mustache.parse(template_html);   // optional, speeds up future uses
-            if (type == "property_details"){
+            if (type == "contestDetails"){
                 item_list.push(collection);
                 collection = []
                 collection = item_list;
