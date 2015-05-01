@@ -211,6 +211,7 @@
         function submit_contest(data) {
             var propertyDetails = getPropertyDetails();
             var host = propertyDetails.mm_host
+            console.log(data)
             $.ajax({
                 url: host+"/newsletter_no_captcha",
                 type: "POST",
