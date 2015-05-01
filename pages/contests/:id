@@ -246,7 +246,7 @@
         //         e.preventDefault();
         //     }
         
-        });
+        };
         
         
         function verify_required_fields (){
