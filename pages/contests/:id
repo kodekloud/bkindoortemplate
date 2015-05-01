@@ -139,15 +139,7 @@
     </script>
 </div>
 <script>
-    function randomgen() {
-        var rannumber='';
-        for(ranNum=1; ranNum<=6; ranNum++){
-            rannumber+=Math.floor(Math.random()*10).toString();
-        }
-        $('#verifyNum').html(rannumber);
-        $('#verifyNumHidden').val(rannumber);
-    }
-    randomgen();
+    
   
     
     $('#contest_form').submit(function (e) {
@@ -236,6 +228,7 @@
                 renderPageData('#main_content','#contest_template',contestDetails, 'contestDetails')
                 $("#loading_screen").hide();
                 $("#main_content").fadeIn( "fast");
+                randomgen();
             } else {
                 $("#loading_screen").hide();
                 $("#404_msg").fadeIn( "fast");
@@ -244,6 +237,15 @@
             
         }
         
+        function randomgen() {
+            var rannumber='';
+            for(ranNum=1; ranNum<=6; ranNum++){
+                rannumber+=Math.floor(Math.random()*10).toString();
+            }
+            $('#verifyNum').html(rannumber);
+            $('#verifyNumHidden').val(rannumber);
+        }
+    
     
         function renderPageData(container, template, collection, type){
             var item_list = [];
