@@ -301,6 +301,7 @@
             if (type == "contestDetails"){
                 var propertyDetails = getPropertyDetails();
                 collection.alt_photo_url = getImageURL(collection.photo_url)
+                console.log(propertyDetails)
                 collection.property_id = propertyDetails.id
                 item_list.push(collection);
                 collection = []
