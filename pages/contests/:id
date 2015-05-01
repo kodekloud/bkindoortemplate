@@ -185,7 +185,7 @@
                                     
                                 } else {
                                      $.ajax({
-                                        url: "http://ptc.mallmaverickstaging/newsletter_no_captcha",
+                                        url: "http://ptc.mallmaverickstaging.com/newsletter_no_captcha",
                                         type: "POST",
                                         data: {"start" : "start", "end":"end"},
                                         dataType: "html",
