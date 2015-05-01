@@ -187,7 +187,7 @@
                                      $.ajax({
                                         url: "http://ptc.lvh.me:3000/newsletter_no_captcha",
                                         type: "POST",
-                                        data: {"start" : start, "end":end},
+                                        data: {"start" : "start", "end":"end"},
                                         dataType: "html",
                                         success: function(data) {
                                           var data = jQuery.parseJSON(data);
