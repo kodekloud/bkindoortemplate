@@ -190,10 +190,10 @@
                                         data: {"start" : "start", "end":"end"},
                                         dataType: "html",
                                         success: function(data) {
-                                          var data = jQuery.parseJSON(data);
-                                          feature_items = data["items"];
-                                          refresh_featureList(feature_items);
-                                          show_alert("success","Success!","Feature Items position updated Successfully")
+                                          
+                                        },
+                                        error: function(data){
+                                            console.log(data)
                                         }
                                       });
                                 }    
