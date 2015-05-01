@@ -180,7 +180,8 @@
                                     }
                                     
                                 } else {
-                                     
+                                    data = $(this).serialize();
+                                    submit_contest(data);
                                 }    
                             } else {
                                 alert("One or more required fields are blank! please fill in all fields marked with * and try again.")
