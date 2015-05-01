@@ -142,83 +142,7 @@
     
   
     
-    $('#contest_form').submit(function (e) {
-        alert("clicked")
-        e.preventDefault();
-        if($('#enterVerify').val() == $('#verifyNumHidden').val() ) {
-            if ($("#agree_terms").prop("checked") == true){
-                var e = verify_required_fields();
-                if (e == true){
-                    if ($("#newsletter_signup").prop("checked") == true){
-                        var s = check_email();
-                        if (s == true){
-                            var email = $("#email").val();
-                            $('input[name="cm-tkyhii-tkyhii"]').attr('value',email);
-                             $.getJSON(
-                                "http://mobilefringe.createsend.com/t/d/s/tkyhii/?callback=?",
-                               $("#subForm").serialize(),
-                                function (data) {
-                                    if (data.Status === 400) {
-                                        e.preventDefault();
-                                        alert("Please try again later.");
-                                    } else { // 200
-                                         console.log(data)
-                                    }
-                            });  
-                        } else {
-                            e.preventDefault();
-                            alert("Invaid E-mail address.")
-                        }
-                        
-                    } else {
-                         e.preventDefault();  
-                    }    
-                } else {
-                    e.preventDefault();
-                    alert("One or more required fields are blank! please fill in all fields marked with * and try again.")
-                }
-                
-                
-            } else {
-                e.preventDefault();
-                alert("Please agree to the terms and conditions before submitting!")
-            }
-        }
-            else
-            {
-                alert("Please Enter Correct Verification Number");
-                randomgen();
-                e.preventDefault();
-            }
-        
-    });
     
-    
-    function verify_required_fields (){
-        if ($("#first_name").val() != "" && $("#last_name").val() != "" && $("#email").val() != "" && $("#phone").val() != "" && $("#postal_code").val() != "" && $("#birthday").val() != "") {
-            return true;
-        } else {
-            return false;
-        }
-    }
-    
-    function check_email (){
-        var email = $("#fieldEmail").val();
-        if( !validateEmail(email)) {
-            return false
-        } else {
-            return true
-        }
-    }
-    
-    function validateEmail($email) {
-      var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
-      if( !emailReg.test( $email ) ) {
-        return false;
-      } else {
-        return true;
-      }
-    }
     
 
     $(document).ready(function() {
@@ -272,6 +196,84 @@
         };
 
         loadMallData(renderAll);  
+        
+        $('#contest_form').submit(function (e) {
+        alert("clicked")
+        e.preventDefault();
+        if($('#enterVerify').val() == $('#verifyNumHidden').val() ) {
+            if ($("#agree_terms").prop("checked") == true){
+                var e = verify_required_fields();
+                if (e == true){
+                    if ($("#newsletter_signup").prop("checked") == true){
+                        var s = check_email();
+                        if (s == true){
+                            var email = $("#email").val();
+                            $('input[name="cm-tkyhii-tkyhii"]').attr('value',email);
+                             $.getJSON(
+                                "http://mobilefringe.createsend.com/t/d/s/tkyhii/?callback=?",
+                               $("#subForm").serialize(),
+                                function (data) {
+                                    if (data.Status === 400) {
+                                        e.preventDefault();
+                                        alert("Please try again later.");
+                                    } else { // 200
+                                         console.log(data)
+                                    }
+                            });  
+                        } else {
+                            e.preventDefault();
+                            alert("Invaid E-mail address.")
+                        }
+                        
+                    } else {
+                         e.preventDefault();  
+                    }    
+                } else {
+                    e.preventDefault();
+                    alert("One or more required fields are blank! please fill in all fields marked with * and try again.")
+                }
+                
+                
+            } else {
+                e.preventDefault();
+                alert("Please agree to the terms and conditions before submitting!")
+            }
+        }
+            else
+            {
+                alert("Please Enter Correct Verification Number");
+                randomgen();
+                e.preventDefault();
+            }
+        
+        });
+        
+        
+        function verify_required_fields (){
+            if ($("#first_name").val() != "" && $("#last_name").val() != "" && $("#email").val() != "" && $("#phone").val() != "" && $("#postal_code").val() != "" && $("#birthday").val() != "") {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        
+        function check_email (){
+            var email = $("#fieldEmail").val();
+            if( !validateEmail(email)) {
+                return false
+            } else {
+                return true
+            }
+        }
+        
+        function validateEmail($email) {
+          var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+          if( !emailReg.test( $email ) ) {
+            return false;
+          } else {
+            return true;
+          }
+        }
 
     
   
