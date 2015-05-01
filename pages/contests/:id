@@ -280,7 +280,7 @@
             var pathArray = window.location.pathname.split( '/' );
             var slug = pathArray[pathArray.length-1];
             var contestDetails = getContestBySlug(slug);
-            console.log(contestDetails.size)
+            console.log(contestDetails.length())
             renderPageData('#main_content','#contest_template',contestDetails, 'contestDetails')
             $("#loading_screen").hide();
             $("#main_content").show();
