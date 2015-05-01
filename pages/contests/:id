@@ -131,7 +131,7 @@
             <br>
             <br>
             <p>
-                <button class="btn btn-primary" type="submit">Submit</button>
+                <button class="btn btn-primary" id="form_submit">Submit</button>
             </p>
         </form>
      </div>
@@ -197,9 +197,9 @@
 
         loadMallData(renderAll);  
         
-        $('#contest_form').submit(function (e) {
+        $('#form_submit').click() {
             alert("clicked")
-            e.preventDefault();
+          
         // if($('#enterVerify').val() == $('#verifyNumHidden').val() ) {
         //     if ($("#agree_terms").prop("checked") == true){
         //         var e = verify_required_fields();
