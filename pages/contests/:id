@@ -39,7 +39,7 @@
     <img alt="loading" src="http://kodekloud.s3.amazonaws.com/sites/5447ebb66e6f641987020000/3604f5c26997bea3de504de139debcec/loading.gif"/>
 </div>
 <div  id="main_content" style="display:none">
-    <script id="centre_info_template" type="x-tmpl-mustache/text">
+    <script id="contest_template" type="x-tmpl-mustache/text">
     <ul class="breadcrumb">
         <li><a href="/home">Home</a> </li>
     </ul>
@@ -264,8 +264,7 @@
             var pathArray = window.location.pathname.split( '/' );
             var slug = pathArray[pathArray.length-1];
             var contestDetails = getContestBySlug(slug);
-            var propertyDetails = getPropertyDetails();
-            renderPageData('#main_content','#centre_info_template',propertyDetails, 'property_details')
+            renderPageData('#main_content','#contest_template',contestDetails, 'contestDetails')
             $("#loading_screen").hide();
             $("#main_content").show();
         }
