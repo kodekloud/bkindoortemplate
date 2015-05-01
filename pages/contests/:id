@@ -51,7 +51,7 @@
   </section>
 </div>
 
-<div id="expired_msg" style="display:none">
+<div id="expired_msg" style="display:block">
     <section class="call_to_action">
        <h3>OH NO! <strong>Contest Expired</strong></h3>
        <h4>we are really sorry but this contest has ended.</h4>
