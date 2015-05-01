@@ -182,7 +182,7 @@
                                 } else {
                                     data = $(this).serialize();
                                     console.log(data)
-                                    // submit_contest(data);
+                                    submit_contest(data);
                                 }    
                             } else {
                                 alert("One or more required fields are blank! please fill in all fields marked with * and try again.")
