@@ -180,17 +180,7 @@
                                     }
                                     
                                 } else {
-                                     $.ajax({
-                                        url: "http://ptc.mallmaverickstaging.com/newsletter_no_captcha",
-                                        type: "POST",
-                                        data: $(this).serialize(),
-                                        success: function(data) {
-                                            console.log(data)
-                                        },
-                                        error: function(data){
-                                            console.log(data)
-                                        }
-                                      });
+                                     
                                 }    
                             } else {
                                 alert("One or more required fields are blank! please fill in all fields marked with * and try again.")
@@ -214,6 +204,20 @@
                 }
             
             
+        }
+        
+        function submit_contest(data) {
+            $.ajax({
+                url: "http://ptc.mallmaverickstaging.com/newsletter_no_captcha",
+                type: "POST",
+                data: data,
+                success: function(data) {
+                    console.log(data)
+                },
+                error: function(data){
+                    console.log(data)
+                }
+            });
         }
         
         function randomgen() {
