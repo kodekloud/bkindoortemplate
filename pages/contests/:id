@@ -50,7 +50,7 @@
         <img class="contest_image" src="{{photo_url}}" />
      <br>
      <div class="contest_form_div">
-           <p class="contest_description">Contest closes February 28th, 2015.   One entry per person.  Winner will be contacted via telephone.</p>
+           <p class="contest_description">{{description}}</p>
 
          <form>
             <p class="large_field">
