@@ -177,7 +177,7 @@
                         }
                         
                     } else {
-                        $('#contest_form').unbind('submit').submit();    
+                          
                     }    
                 } else {
                     e.preventDefault();
