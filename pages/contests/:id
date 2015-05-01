@@ -1,6 +1,4 @@
 <style>
-
-
     .contest_description{
         margin-bottom:35px;
     }
@@ -53,49 +51,44 @@
      <div class="contest_form_div">
            <p class="contest_description">Contest closes February 28th, 2015.   One entry per person.  Winner will be contacted via telephone.</p>
 
-         <form action="http://mobilefringe.createsend.com/t/d/s/tkhiut/" method="post" id="contest_form">
-            <p style="display:none">
-                <label for="fieldName">Name</label><br />
-                <input id="fieldName" name="cm-name" type="text"/>
-            </p>
-            
+         <form>
             <p class="large_field">
-                <label for="firstName">First Name*</label><br/>
-                <input id="firstName" type="text" required placeholder="First Name" />
+                <label for="first_name">First Name*</label><br/>
+                <input id="first_name" type="text" required placeholder="First Name" />
             </p>
             <p class="large_field">
-                <label for="lastName">Last Name*</label><br/>
-                <input id="lastName" type="text" required placeholder="Last Name"/>
+                <label for="last_name">Last Name*</label><br/>
+                <input id="last_name" type="text" required placeholder="Last Name"/>
             </p>
           
             <p class="large_field">
-                <label for="fieldEmail">Email*</label><br />
-                <input id="fieldEmail" name="cm-tkhiut-tkhiut" type="email" required placeholder="Email"/>
+                <label for="email">Email*</label><br />
+                <input id="email" name="email" type="text" required placeholder="Email"/>
             </p>
             <p class="large_field">
-                <label for="fieldjrihe">Phone Number*</label><br />
-                <input id="fieldjrihe" name="cm-f-jrihe" type="text" required placeholder="Phone Number"/>
+                <label for="phone">Phone Number*</label><br />
+                <input id="phone" name="phone" type="text" required placeholder="Phone Number"/>
             </p>
             <p class="full_field">
-                <label for="fieldjrihyh">Street Address</label><br />
-                <input id="fieldjrihyh" name="cm-f-jrihyh" type="text" placeholder="Street Address"/>
+                <label for="mailing_address">Street Address</label><br />
+                <input id="mailing_address" name="mailing_address" type="text" placeholder="Street Address"/>
             </p>
             <p class="small_field">
-                <label for="fieldjrihyd">City</label><br />
-                <input id="fieldjrihyd" name="cm-f-jrihyd" type="text" placeholder="City"/>
+                <label for="city">City</label><br />
+                <input id="city" name="city" type="text" placeholder="City"/>
             </p>
             
             <p class="small_field">
-                <label for="fieldjrihs">Postal Code*</label><br />
-                <input id="fieldjrihs" name="cm-f-jrihs" type="text" required placeholder="Postal Code"/>
+                <label for="postal_code">Postal Code*</label><br />
+                <input id="postal_code" name="postal_code" type="text" required placeholder="Postal Code"/>
             </p>
             <p class="small_field">
-                <label for="fieldjrihg">Year of Birth*</label><br />
-                <input id="fieldjrihg" name="cm-f-jrihg" type="text" required placeholder= "Year of Birth"/>
+                <label for="birthday">Year of Birth*</label><br />
+                <input id="birthday" name="birthday" type="text" required placeholder= "Year of Birth"/>
             </p>
             <p style="display:none">
-                <label for="fieldjrihw">Contest ID</label><br />
-                <input id="fieldjrihw" name="cm-f-jrihw" type="text" />
+                <label for="id">Contest ID</label><br />
+                <input id="id" name="id" type="text" />
             </p>
             <br>
             <br>
@@ -196,7 +189,7 @@
     
     
     function verify_required_fields (){
-        if ($("#firstName").val() != "" && $("#lastName").val() != "" && $("#fieldEmail").val() != "" && $("#fieldjrihe").val() != "" && $("#fieldjrihs").val() != "" && $("#fieldjrihg").val() != "") {
+        if ($("#first_name").val() != "" && $("#last_name").val() != "" && $("#email").val() != "" && $("#phone").val() != "" && $("#postal_code").val() != "" && $("#birthday").val() != "") {
             return true;
         } else {
             return false;
@@ -266,6 +259,8 @@
 
     $(document).ready(function() {
         function renderAll (){
+            var pathArray = window.location.pathname.split( '/' );
+            var slug = pathArray[pathArray.length-1];
             var propertyDetails = getPropertyDetails();
             renderPageData('#centre_info_container','#centre_info_template',propertyDetails, 'property_details')
             $("#loading_screen").hide();
