@@ -264,6 +264,7 @@
             var pathArray = window.location.pathname.split( '/' );
             var slug = pathArray[pathArray.length-1];
             var contestDetails = getContestBySlug(slug);
+            console.log(contestDetails)
             var propertyDetails = getPropertyDetails();
             renderPageData('#main_content','#contest_template',propertyDetails, 'property_details')
             $("#loading_screen").hide();
