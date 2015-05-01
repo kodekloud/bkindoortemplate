@@ -179,7 +179,7 @@
                                                 }
                                         });  
                                     } else {
-                                        e.preventDefault();
+            
                                         alert("Invaid E-mail address.")
                                     }
                                     
@@ -187,13 +187,11 @@
                                      e.preventDefault();  
                                 }    
                             } else {
-                                e.preventDefault();
                                 alert("One or more required fields are blank! please fill in all fields marked with * and try again.")
                             }
                             
                             
                         } else {
-                            e.preventDefault();
                             alert("Please agree to the terms and conditions before submitting!")
                         }
                     }
@@ -201,7 +199,6 @@
                         {
                             alert("Please Enter Correct Verification Number");
                             randomgen();
-                            e.preventDefault();
                         }
                     
                     });
