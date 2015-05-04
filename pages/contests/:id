@@ -216,7 +216,7 @@
         function submit_contest(data) {
             var propertyDetails = getPropertyDetails();
             var host = propertyDetails.mm_host
-            console.log(data)
+            
             $.ajax({
                 url: host+"/newsletter_no_captcha",
                 type: "POST",
@@ -225,6 +225,7 @@
                     window.location.href="/contest_thank_you";
                 },
                 error: function(data){
+                    console.log(data)
                     alert("There was an issue with submitting the contest entry. Please try again at a later time.")
                 }
             });
