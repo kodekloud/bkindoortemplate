@@ -219,7 +219,7 @@
             console.log(data)
             $.ajax({
                 url: host+"/newsletter_no_captcha",
-                type: "POST",
+                type: "GET",
                 data: data,
                 success: function(data) {
                     window.location.href="/contest_thank_you";
