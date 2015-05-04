@@ -237,6 +237,10 @@
             $('#verifyNumHidden').val(rannumber);
         }
     
+        jQuery(function($){
+           $("#birthday").mask("99/99/9999",{placeholder:"mm/dd/yyyy"});
+        });
+    
     
         function renderPageData(container, template, collection, type){
             var item_list = [];
