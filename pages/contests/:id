@@ -218,7 +218,7 @@
             var host = propertyDetails.mm_host
             console.log(host)
             $.ajax({
-                url: host+"/newsletter_no_captcha",
+                url: host+"/newsletter_no_captcha?callback=?",
                 type: "POST",
                 data: data,
                 success: function(data) {
