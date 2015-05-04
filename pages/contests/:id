@@ -103,7 +103,7 @@
             </p>
             <p class="small_field">
                 <label for="birthday">Date of Birth*</label><br />
-                <input id="birthday" name="contest[birthday]" type="text" required placeholder= "yyyy-mm-dd"/>
+                <input id="birthday" name="contest[birthday]" type="text" required/>
             </p>
             <br>
             <br>
