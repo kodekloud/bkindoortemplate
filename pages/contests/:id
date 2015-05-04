@@ -153,6 +153,9 @@
                 $("#loading_screen").hide();
                 $("#main_content").fadeIn( "fast");
                 randomgen();
+                jQuery(function($){
+                   $("#birthday").mask("99/99/9999",{placeholder:"mm/dd/yyyy"});
+                });
                 $('#contest_form').submit(function (e) {
                     e.preventDefault();
                     if($('#enterVerify').val() == $('#verifyNumHidden').val() ) {
@@ -236,11 +239,7 @@
             $('#verifyNumHidden').val(rannumber);
         }
     
-        jQuery(function($){
-           $("#birthday").mask("99/99/9999",{placeholder:"mm/dd/yyyy"});
-        });
-    
-    
+        
         function renderPageData(container, template, collection, type){
             var item_list = [];
             var item_rendered = [];
