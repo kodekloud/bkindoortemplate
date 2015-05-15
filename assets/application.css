@@ -329,7 +329,9 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     height:1px; 
     overflow:hidden;
 } 
- 
+.show_mobile{
+    display:none;        
+}
 .accessible:focus 
 { 
     position:static; 
@@ -918,6 +920,9 @@ p {
   line-height: 1.4;
 }
 @media (min-width: 768px) {
+  .show_mobile{
+      display:block;
+  }
   .lead {
     font-size: 21px;
   }
