@@ -10,6 +10,16 @@
         Contact Us
     </div>
     <div class="inside_page_content">
+        <div class="show_mobile">
+            <p class="right_column_header">centre information</p>
+            <div id="centre_info_container_mobile">
+                <script id="centre_info_template_mobile" type="x-tmpl-mustache/text">
+                    <p class="directory_content">{{name}}</p>
+                    <p class="directory_content">{{address1}}</p>
+                    <p class="directory_content">{{city}}, {{province_state}} {{postal_code}}</p>
+                </script>
+            </div>
+        </div>
         <div class="left_column">
             <img class="inside_banner_image" alt="banner" src="http://kodekloud.s3.amazonaws.com/sites/54d4e9206e6f64691f000000/1f4fed1d858c9ddcaf0105aacf32e785/store_list_banner.jpg"/>
             <div id="send_contact_success" class="alert alert-success" role="alert" style="display:none">
@@ -74,8 +84,6 @@
                     <p class="directory_content">{{city}}, {{province_state}} {{postal_code}}</p>
                 </script>
             </div>
-            
-            
         </div>
     </div>
 </div>
@@ -126,6 +134,7 @@
         function renderAll (){
             var propertyDetails = getPropertyDetails();
             renderPageData('#centre_info_container','#centre_info_template',propertyDetails, 'property_details')
+            renderPageData('#centre_info_container_mobile','#centre_info_template_mobile',propertyDetails, 'property_details')
             $("#loading_screen").hide();
             $("#main_content").show();
         }
