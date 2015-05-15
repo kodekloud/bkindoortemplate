@@ -2015,7 +2015,9 @@ table th[class*="col-"] {
   background-color: #ebcccc;
 }
 @media (max-width: 767px) {
-    
+    .show_mobile{
+        display:block;
+    }
     .hours_left {
         width:46%;
         padding:10px;
