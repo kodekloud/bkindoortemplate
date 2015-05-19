@@ -58,7 +58,7 @@
             <input id="fieldjdhdiu" name="cm-f-jdhdiu" type="hidden" value="contest" />
                     
             <!-- Confirmation Message -->
-            <input id="fieldjdhddy" name="cm-f-jdhddy" type="hidden" value="I agree to receive emails from 10 Dundas East" />
+            <input id="fieldjdhddy" name="cm-f-jdhddy" type="hidden" value="Contest Agree" />
          
          
             <p style="display:none">
