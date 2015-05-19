@@ -55,7 +55,7 @@
 
          <form action="http://mobilefringe.createsend.com/t/d/s/tkhiut/" method="post" id="contest_form">
             <!-- source -->
-            <input id="fieldjdhdiu" name="cm-f-jdhdiu" type="hidden" value="footer" />
+            <input id="fieldjdhdiu" name="cm-f-jdhdiu" type="hidden" value="contest" />
                     
             <!-- Confirmation Message -->
             <input id="fieldjdhddy" name="cm-f-jdhddy" type="hidden" value="I agree to receive emails from 10 Dundas East" />
