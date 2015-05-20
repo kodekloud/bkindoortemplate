@@ -54,9 +54,6 @@
            <p class="contest_description">Contest closes February 28th, 2015.   One entry per person.  Winner will be contacted via telephone.</p>
 
          <form action="http://mobilefringe.createsend.com/t/d/s/tkhiut/" method="post" id="contest_form">
-     
-         
-         
             <p style="display:none">
                 <label for="fieldName">Name</label><br />
                 <input id="fieldName" name="cm-name" type="text"/>
