@@ -141,6 +141,12 @@
   
     
     $('#contest_form').submit(function (e) {
+               //Add date and time when Footer newsletter form submitted
+        var myDate = new Date();
+        var displayDate = (myDate.getMonth()+1) + '/' + (myDate.getDate()) + '/' + myDate.getFullYear()+ ' ';
+        var times = myDate.getHours() + ":" + myDate.getMinutes() + ":" + myDate.getSeconds();
+        var localTime = displayDate + ' ' + times;
+        $('#fieldjdkje').val(localTime);
         if($('#enterVerify').val() == $('#verifyNumHidden').val() ) {
             if ($("#agree_terms").prop("checked") == true){
                 var e = verify_required_fields();
