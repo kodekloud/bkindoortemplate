@@ -155,17 +155,18 @@
                             var email = $("#fieldEmail").val();
                             $('input[name="cm-tkyhii-tkyhii"]').attr('value',email);
                             console.log($("#subForm").serialize())
-                             $.getJSON(
-                                "http://mobilefringe.createsend.com/t/d/s/tkyhii/?callback=?",
-                               $("#subForm").serialize(),
-                                function (data) {
-                                    if (data.Status === 400) {
-                                        e.preventDefault();
-                                        alert("Please try again later.");
-                                    } else { // 200
-                                        // $('#contest_form').unbind('submit').submit();
-                                    }
-                            });  
+                            //  $.getJSON(
+                            //     "http://mobilefringe.createsend.com/t/d/s/tkyhii/?callback=?",
+                            //   $("#subForm").serialize(),
+                            //     function (data) {
+                            //         if (data.Status === 400) {
+                            //             e.preventDefault();
+                            //             alert("Please try again later.");
+                            //         } else { // 200
+                            //             // $('#contest_form').unbind('submit').submit();
+                            //         }
+                            // });  
+                            return false;
                         } else {
                             e.preventDefault();
                             alert("Invaid E-mail address.")
