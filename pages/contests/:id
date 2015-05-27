@@ -220,7 +220,17 @@
         function submit_contest(data) {
             var propertyDetails = getPropertyDetails();
             var host = propertyDetails.mm_host
-            
+            var email = $("#email").val();
+            $('input[name="cm-tkhiut-tkhiut"]').attr('value',email);
+            $.getJSON(
+                "http://mobilefringe.createsend.com/t/d/s/tkhiut/?callback=?",
+              $("#cm_email").serialize(),
+                function (data) {
+                    if (data.Status === 400) {
+                        e.preventDefault();
+                        alert("Please try again later.");
+                    }
+            });  
             $.ajax({
                 url: host+"/newsletter_no_captcha",
                 type: "POST",
@@ -229,7 +239,6 @@
                     window.location.href="/contest_thank_you";
                 },
                 error: function(data){
-                    console.log(data)
                     alert("There was an issue with submitting the contest entry. Please try again at a later time.")
                 }
             });
