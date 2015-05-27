@@ -222,6 +222,8 @@
             var propertyDetails = getPropertyDetails();
             var host = propertyDetails.mm_host
             var email = $("#email").val();
+            var name = $("#firstName").val() + " " + $("#lastName").val();
+            $('input[name="cm-name"]').attr('value',name);
             $('input[name="cm-tkhiut-tkhiut"]').attr('value',email);
             $.getJSON(
                 "http://mobilefringe.createsend.com/t/d/s/tkhiut/?callback=?",
