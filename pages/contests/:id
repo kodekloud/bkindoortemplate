@@ -132,6 +132,10 @@
                 <button class="btn btn-primary" id="form_submit">Submit</button>
             </p>
         </form>
+        
+        <form id="cm_email" style="display:none">
+            <input type="hidden" name="cm-tkhiut-tkhiut" id="hidden_email"/>
+        </form>
      </div>
     </div>
     </script>
@@ -216,6 +220,7 @@
         function submit_contest(data) {
             var propertyDetails = getPropertyDetails();
             var host = propertyDetails.mm_host
+            
             $.ajax({
                 url: host+"/newsletter_no_captcha",
                 type: "POST",
