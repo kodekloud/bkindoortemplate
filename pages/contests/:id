@@ -236,7 +236,7 @@
             });  
             $.ajax({
                 url: host+"/newsletter_no_captcha",
-                type: "GET",
+                type: "POST",
                 data: data,
                 success: function(data) {
                     window.location.href="/contest_thank_you";
