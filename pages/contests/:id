@@ -239,7 +239,6 @@
                 url: host+"/newsletter_no_captcha/",
                 type: "POST",
                 data: data,
-                crossDomain: true ,
                 success: function(data) {
                     window.location.href="/contest_thank_you";
                 },
