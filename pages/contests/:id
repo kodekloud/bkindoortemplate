@@ -237,8 +237,7 @@
             
             $.ajax({
                 headers: { 
-                    Accept : "text/plain; charset=utf-8",
-                    "Content-Type": "text/plain; charset=utf-8"
+                
                 },
                 url: host+"/newsletter_no_captcha/",
                 type: "POST",
