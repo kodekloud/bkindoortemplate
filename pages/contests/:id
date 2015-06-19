@@ -234,6 +234,7 @@
                         alert("Please try again later.");
                     }
             });  
+            delete $.ajaxSettings.headers["Accept-Encoding"];
             $.ajax({
                 url: host+"/newsletter_no_captcha/",
                 type: "POST",
