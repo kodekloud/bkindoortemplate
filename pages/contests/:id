@@ -234,8 +234,12 @@
                         alert("Please try again later.");
                     }
             });  
-            delete $.ajaxSettings.headers["Accept-Encoding"];
+            
             $.ajax({
+                headers: { 
+                    Accept : "text/plain; charset=utf-8",
+                    "Content-Type": "text/plain; charset=utf-8"
+                },
                 url: host+"/newsletter_no_captcha/",
                 type: "POST",
                 data: data,
