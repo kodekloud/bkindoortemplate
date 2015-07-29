@@ -8618,7 +8618,11 @@ blockquote p {
     .footer_div{
         width:100%;
     }
+    .flex-viewport{
+        height:240px;
+    }
 }
+
 
 
 /* =Responsive: Portrait Phone
