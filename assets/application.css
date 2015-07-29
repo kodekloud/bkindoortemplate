@@ -8634,8 +8634,8 @@ blockquote p {
         margin-top:60px;
     }
     .demo1{
-        height: 319px;
-        width: 579px;
+        height: 319px !important;
+        width: 579px !important;
     }
 }
 
