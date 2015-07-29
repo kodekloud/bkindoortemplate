@@ -8606,6 +8606,9 @@ blockquote p {
         width:180px;
         top:-20px;
     }
+    .main_window{
+        width:100%;
+    }
 
 }
 
