@@ -8621,6 +8621,12 @@ blockquote p {
     .flex-viewport{
         height:240px;
     }
+    .inside_page_content{
+        width:100%;
+    }
+    .right_column{
+        display:none;
+    }
 }
 
 
