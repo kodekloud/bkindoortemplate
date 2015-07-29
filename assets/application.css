@@ -8625,8 +8625,7 @@ blockquote p {
         width:100%;
     }
     .left_column{
-        padding-right:0;
-        width:100%;
+  
         border-right:none;
     }
     .right_column{
