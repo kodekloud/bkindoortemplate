@@ -8598,6 +8598,18 @@ blockquote p {
     margin: 0 0 10px 0;
   }
 }
+
+/*responsive:ipad portrait*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    .navbar-header{
+        position:absolute;
+        width:180px;
+        top:-20px;
+    }
+
+}
+
+
 /* =Responsive: Portrait Phone
 -------------------------------------------------------------- */
 @media only screen and (max-width: 480px) {
@@ -8665,3 +8677,4 @@ blockquote p {
     display: none;
   }
 }
+
