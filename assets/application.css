@@ -355,6 +355,11 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     display:block;
 }
 
+.directory_content:hover{
+    color: #c8c8c8;
+    text-decoration:underline;
+}
+
 #wrapper{
     
 }
